@@ -10,13 +10,15 @@ public class MoveToClick : MonoBehaviour
 	[SerializeField]
 	private LayerMask mask;
 
-	// Start is called before the first frame update
+	private Animator anim;
+	private Rigidbody rb;
+
 	void Start()
 	{
-		
+		anim = transform.GetChild(0).GetComponent<Animator>();
+		rb = GetComponent<Rigidbody>();
 	}
 
-	// Update is called once per frame
 	void Update()
 	{
 		if (Input.GetMouseButtonDown(0))
@@ -25,7 +27,10 @@ public class MoveToClick : MonoBehaviour
 			if (Physics.Raycast(movePos, out var hitInfo, mask))
 			{
 				agent.SetDestination(hitInfo.point);
+				Debug.Log("hi");
 			}
 		}
+
+		anim.SetFloat("Velocity", agent.velocity.magnitude);
 	}
 }
