@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee83461f5c43472ba50ec75caff41c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  empty: {fileID: 0}
   nextPassage: {fileID: 0}
   passageLinkAnchor: {fileID: 8448508545167196805}
 --- !u!1 &8448508543875212737

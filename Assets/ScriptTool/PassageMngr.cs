@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 using System;
@@ -13,6 +11,7 @@ public class PassageMngr : MonoBehaviour
 	private GameObject optionPrefab;
 	public Transform anchor;
 
+	//TMP text objects
 	[SerializeField]
 	private TMP_Text title;
 	[SerializeField]
@@ -21,6 +20,7 @@ public class PassageMngr : MonoBehaviour
 	private Transform optionPanel;
 	private TMP_Text[] options;
 
+	//content
 	[TextArea(2, 7)]
 	[SerializeField]
 	private string titleText;
@@ -30,23 +30,34 @@ public class PassageMngr : MonoBehaviour
     [SerializeField]
 	private optionLink[] optionLinks;
 
-	// Start is called before the first frame update
-	void Start()
+
+	public void AddToHistory()
 	{
-		
-	}
+		//add passage to history
+		TMP_Text history = GameObject.FindGameObjectWithTag("History").GetComponent<TMP_Text>();
+		history.text += passageText + "\n\n";
+		//scroll to bottom of history
+		StartCoroutine(DelayScrollUpdate(history));
+    }
+
+    private IEnumerator DelayScrollUpdate(TMP_Text history)
+	{
+		//wait for scrollrect update
+        yield return new WaitForEndOfFrame();
+		//scroll to bottom of text
+        history.transform.parent.GetComponent<ScrollRect>().verticalNormalizedPosition = 0f;
+    }
 
 	private void OnValidate()
 	{
+		//update TMP objects
 		title.text = titleText;
 		passage.text = passageText;
 		gameObject.name = titleText;
 
+		//update objects to reflect inspector settings
 		if (optionLinks.Length > optionPanel.childCount)
-		{
 			GameObject.Instantiate(optionPrefab, optionPanel);
-		}
-		
 		for (int i = 0; i < optionPanel.childCount; i++)
 		{
 			if (i >= optionLinks.Length)
@@ -59,16 +70,6 @@ public class PassageMngr : MonoBehaviour
 			}
 		}
 	}
-
-	/*
-	private void OnDrawGizmos()
-	{
-		Gizmos.color = Color.cyan;
-		Gizmos.DrawLine(transform.position, Vector3.zero);
-		Gizmos.color = Color.red;
-		Gizmos.DrawLine(transform.position, Vector3.up);
-	}
-	*/
 }
 
 [Serializable]
