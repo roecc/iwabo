@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class KitchenSoundController : MonoBehaviour
 {
+    [SerializeField]
     private AudioLowPassFilter filter;
-
-    private void Start()
-    {
-        filter = transform.parent.GetComponent<AudioLowPassFilter>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {

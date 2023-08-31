@@ -33,4 +33,16 @@ public class MoveToClick : MonoBehaviour
 
 		anim.SetFloat("Velocity", agent.velocity.magnitude);
 	}
+
+	public void Teleport(Vector3 nextPos)
+	{
+		// Set the new position directly
+		transform.position = nextPos;
+
+		// Reset the NavMeshAgent's path and update its position
+		agent.Warp(nextPos);
+
+		// Optional: Set the destination to the new position
+		agent.SetDestination(nextPos);
+	}
 }
