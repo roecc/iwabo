@@ -32,7 +32,7 @@ public class DoorScr : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("switchRoom");
+        //Debug.Log("switchRoom");
         Player.GetComponent<MoveToClick>().Teleport(target.position);
         if (filter != null)
             filter.enabled = !filter.enabled;

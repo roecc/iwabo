@@ -27,7 +27,7 @@ public class MoveToClick : MonoBehaviour
 			if (Physics.Raycast(movePos, out var hitInfo, mask))
 			{
 				agent.SetDestination(hitInfo.point);
-				Debug.Log("hi");
+				//Debug.Log("hi");
 			}
 		}
 

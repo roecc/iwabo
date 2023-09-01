@@ -9,7 +9,7 @@ public class KitchenSoundController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("entered");
+        // Debug.Log("entered");
         filter.enabled = false;
     }
     private void OnTriggerExit(Collider other)
