@@ -8,6 +8,9 @@ using System;
 public class PassageMngr : MonoBehaviour
 {
 	[SerializeField]
+	private bool isActive = false;
+	
+	[SerializeField]
 	private GameObject optionPrefab;
 	public Transform anchor;
 
@@ -33,7 +36,25 @@ public class PassageMngr : MonoBehaviour
 	private TMP_Text history;
 	private string noOptHist;
 
-	public void AddToHistory()
+    private void Start()
+    {
+		if (isActive)
+		{
+			SetActicePassage(true);
+			AddToHistory();
+		}
+	}
+
+	public void StartConversation()
+	{
+		if (isActive)
+		{
+			SetActicePassage(true);
+			AddToHistory();
+		}
+	}
+
+    public void AddToHistory()
 	{
 		//add passage to history
 		history = GameObject.FindGameObjectWithTag("History").GetComponent<TMP_Text>();
@@ -83,10 +104,53 @@ public class PassageMngr : MonoBehaviour
 	{
         for (int i = 0; i < optionLinks.Length; i++)
         {
-			history.text += "<style=link>" + (i+1) + ". " + optionLinks[i].option + "</style>\n";
+			history.text += "<link=" + optionLinks[i].option + "><style=link>" + (i+1) + ". " + optionLinks[i].option + "</style></link>\n";
         }
 
 		history.text += "\n";
+	}
+
+	public void SetActicePassage(bool value)
+	{
+		isActive = value;
+		if (isActive)
+			LinkHandlerForTMP.OnClickedOnLinkEvent += LoadNextPassage;
+		else
+			LinkHandlerForTMP.OnClickedOnLinkEvent -= LoadNextPassage;
+	}
+
+	private void LoadNextPassage(string option)
+	{
+		int firstSpaceIndex = option.IndexOf(' ');
+		if(firstSpaceIndex != -1)
+			option = option.Substring(firstSpaceIndex + 1);
+
+        for (int i = 0; i < optionLinks.Length; i++)
+        {
+			if (optionLinks[i].option == option)
+			{
+
+				history.text = noOptHist;
+				SetActicePassage(false);
+
+				if (optionLinks[i].nextPassage != null)
+				{
+					optionLinks[i].nextPassage.AddToHistory();
+					optionLinks[i].nextPassage.SetActicePassage(true);
+				}
+				else
+					return;
+				//optionPanel.GetChild(i).GetComponent<OptionScr>().
+			}
+        }
+		
+		foreach (var optionLink in optionLinks)
+        {
+			if (optionLink.option == option)
+			{ 
+				
+			}
+        }
 	}
 }
 

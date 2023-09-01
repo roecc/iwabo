@@ -1923,6 +1923,7 @@ GameObject:
   - component: {fileID: 1964785529}
   - component: {fileID: 1964785528}
   - component: {fileID: 1964785530}
+  - component: {fileID: 1964785531}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: History
@@ -2061,6 +2062,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &1964785531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964785526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9521b626242d294b90e448c8dfeb98a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
 --- !u!1001 &8448508543235335320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2187,6 +2201,10 @@ PrefabInstance:
     - target: {fileID: 8448508543875212738, guid: 494b2eb61890a4468a3cb7a2cda474f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448508543875212742, guid: 494b2eb61890a4468a3cb7a2cda474f8, type: 3}
+      propertyPath: isActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8448508543875212742, guid: 494b2eb61890a4468a3cb7a2cda474f8, type: 3}
       propertyPath: titleText

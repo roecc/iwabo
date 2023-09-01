@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e85d2a4715845fbbb428cff2168e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
   optionPrefab: {fileID: 257927916959371737, guid: 492d8da4f01c04b61ad51cf1abd9f9f1, type: 3}
   anchor: {fileID: 2561355423126222846}
   title: {fileID: 8448508545067356370}
