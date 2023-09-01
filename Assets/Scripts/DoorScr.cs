@@ -30,6 +30,7 @@ public class DoorScr : MonoBehaviour
         transform.parent.GetComponent<Renderer>().material = doorMat;
     }
 
+    //should be an interface
     private void OnMouseDown()
     {
         //Debug.Log("switchRoom");

@@ -8,7 +8,7 @@ using System;
 public class PassageMngr : MonoBehaviour
 {
 	[SerializeField]
-	private bool isActive = false;
+	public bool isActive = false;
 	
 	[SerializeField]
 	private GameObject optionPrefab;
@@ -139,7 +139,7 @@ public class PassageMngr : MonoBehaviour
 					optionLinks[i].nextPassage.SetActicePassage(true);
 				}
 				else
-					return;
+					history.transform.parent.parent.parent.gameObject.SetActive(false);
 				//optionPanel.GetChild(i).GetComponent<OptionScr>().
 			}
         }

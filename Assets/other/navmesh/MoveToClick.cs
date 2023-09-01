@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class MoveToClick : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class MoveToClick : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
 		{
 			Ray movePos = cam.ScreenPointToRay(Input.mousePosition);
 			if (Physics.Raycast(movePos, out var hitInfo, mask))
