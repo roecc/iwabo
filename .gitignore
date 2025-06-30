@@ -87,3 +87,6 @@ unreal/Plugins/**/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 unreal/DerivedDataCache/*
+
+# Bought Asset Library
+unreal/Content/ThirdParty/TMPAssetPacks/*
