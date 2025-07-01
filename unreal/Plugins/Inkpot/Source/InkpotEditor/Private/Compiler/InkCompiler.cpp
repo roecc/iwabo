@@ -22,7 +22,7 @@ namespace InkCompiler
 
 	FString GetInkleCatePath()
 	{
-		return GetPluginPath() + TEXT( "/ThirdParty/InkCommandLine/inklecate.exe" );
+		return GetPluginPath() + TEXT( "/ThirdParty/InkCommandLine/inklecate_mac/inklecate" );
 	}
 
 	FString GetScratchDirectory()
@@ -41,7 +41,7 @@ namespace InkCompiler
 		const FString inkExePath = GetInkleCatePath();
 		if (!FPaths::FileExists(inkExePath))
 		{
-			INKPOT_ERROR("CompileInkFile_Internal - could not locate inklecate.exe." );
+			INKPOT_ERROR("A TEST CompileInkFile_Internal - could not locate inklecate.exe." );
 			return false;
 		}
 
