@@ -22,7 +22,14 @@ namespace InkCompiler
 
 	FString GetInkleCatePath()
 	{
-		return GetPluginPath() + TEXT( "/ThirdParty/InkCommandLine/inklecate_mac/inklecate" );
+		#if PLATFORM_WINDOWS
+				return GetPluginPath() + TEXT("/ThirdParty/InkCommandLine/inklecate.exe");
+		#elif PLATFORM_MAC
+				return GetPluginPath() + TEXT("/ThirdParty/InkCommandLine/inklecate_mac/inklecate");
+		#else
+				UE_LOG(LogTemp, Error, TEXT("Unable to determine platform. Failed to resolve inklecate path."));
+				return TEXT("UNABLE TO DETERMINE PLATFORM");
+		#endif
 	}
 
 	FString GetScratchDirectory()
