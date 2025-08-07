@@ -17,7 +17,7 @@ M:I'm going to use up tons of our food
  ->ma_cooking_1(s1,m1)  
  * [That's nice # asc_foresight_16]
  ->ma_cooking_2(s2, m2)
- * YOU BETTER NOT # sc_authority_30
+ * YOU BETTER NOT # sc_authority
  ->ma_cooking_3(s3,m3)
 
 === ma_cooking_1(s, m) ===
