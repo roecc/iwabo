@@ -12,11 +12,11 @@ I'm going to use up tons of our food # ma
 ~temp m2=16
 ~temp s3="authority"
 ~temp m3=30
- * We need that food for later # sc_{s1}_{m1}
+ * We need that food for later #sc_foresight_-12
  ->ma_cooking_1(s1,m1)  
- * That's nice # asc_{s2}_{m2}
+ * That's nice # asc_foresight_16
  ->ma_cooking_2(s2, m2)
- * YOU BETTER NOT # sc_{s3}_{m3}
+ * YOU BETTER NOT # sc_authority_30
  ->ma_cooking_3(s3,m3)
 
 === ma_cooking_1(s, m) ===
