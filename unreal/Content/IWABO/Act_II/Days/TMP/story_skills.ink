@@ -12,6 +12,7 @@ I'm going to use up tons of our food # ma
 ~temp m2=16
 ~temp s3="authority"
 ~temp m3=30
+// For some very weird reason putting variables into tags jumbles the order of the characters on the unreal side. Didn't look into it further, just using hardcoded things for now
  * We need that food for later #sc_foresight_-12
  ->ma_cooking_1(s1,m1)  
  * That's nice # asc_foresight_16
