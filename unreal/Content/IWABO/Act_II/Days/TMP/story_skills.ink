@@ -6,30 +6,43 @@ EXTERNAL ASC( skill, modifier )
 === ma_cooking ===
 I'm making two turkeys for dinner # ma
 I'm going to use up tons of our food # ma
-   ~temp s="foresight" 
-   ~temp m=-10
- * We need that food for later # sc_{s}_{m}
-   ~temp sc = SC(s, m)
+~temp s1="foresight"
+~temp m1=-12
+~temp s2="foresight"
+~temp m2=16
+~temp s3="authority"
+~temp m3=30
+ * We need that food for later # sc_{s1}_{m1}
+ ->ma_cooking_1(s1,m1)  
+ * That's nice # asc_{s2}_{m2}
+ ->ma_cooking_2(s2, m2)
+ * YOU BETTER NOT # sc_{s3}_{m3}
+ ->ma_cooking_3(s3,m3)
+
+=== ma_cooking_1(s, m) ===
+~temp sc = SC(s, m)
    But it's Christmas.. # ma
    { sc:
    SUCCESS
    We can't afford to splurge
    You're right, I'll cook less # ma
     - else:
-    FAIL
+   FAIL
    We've lost so much. We can't also lose Christmas # ma
     }
-    ->DONE
-  ~temp am=15
- * That's nice # asc_{s}_{am}
- ~temp asc = ASC(s, am)
- { asc:
+    ->END
+    
+=== ma_cooking_2(s, m) ===
+~temp sc = ASC(s, m)
+ { sc:
  SUCCESS
  I think so too # ma
  - else:
  FAIL
  I'm sorry Mary Ann but we can't justify cooking that much
  }
-    ->DONE
-
+ ->END
+ 
+=== ma_cooking_3(s, m) ===
+ ~temp sc=SC(s,m)
 ->END
