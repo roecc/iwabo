@@ -20,3 +20,14 @@ FString UIwaboBlueprintFunctionLibrary::IntArrayToString(const TArray<int32>& In
 	}
 	return Result;
 }
+
+bool UIwaboBlueprintFunctionLibrary::TryParseInt(const FString& InString, int32& OutValue)
+{
+	if (!InString.IsNumeric())
+	{
+		return false;
+	}
+
+	OutValue = FCString::Atoi(*InString);
+	return true;
+}

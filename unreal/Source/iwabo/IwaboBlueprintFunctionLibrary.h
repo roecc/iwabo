@@ -11,4 +11,7 @@ class IWABO_API UIwaboBlueprintFunctionLibrary : public UBlueprintFunctionLibrar
 public:
 	UFUNCTION(BlueprintPure, Category = "Utilities|String")
 	static FString IntArrayToString(const TArray<int32>& IntArray, bool bShowPlusSign);
+
+	UFUNCTION(BlueprintCallable, Category = "Utilities|Int")
+	static bool TryParseInt(const FString& InString, int32& OutValue);
 };
