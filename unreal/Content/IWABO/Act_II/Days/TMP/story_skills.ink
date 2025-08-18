@@ -22,7 +22,7 @@ M: Hello Daryl
      ->ma_cooking_2(s2, m2)
      ** We're already out of food this month # sc_paranoia
      ->ma_cooking_3(s3)
-     ** YOU BETTER NOT # sc_authority
+     ** YOU BETTER NOT # sc_authority_30
      ->ma_cooking_4(s4,m4)
  * Bye
 -> END
