@@ -5,6 +5,8 @@ EXTERNAL ASC( skill, modifier )
 
 === ma_cooking ===
 M: Hello Daryl
+Hello Mary Ann
+M: It's a lovely day
  * Hello Mary Ann what are you cooking? #ua_1
     M: I'm making two turkeys for dinner
     M:I'm going to use up tons of our food
