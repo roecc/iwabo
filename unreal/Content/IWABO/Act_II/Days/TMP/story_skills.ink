@@ -1,5 +1,4 @@
-EXTERNAL SC( skill, modifier )
-EXTERNAL ASC( skill, modifier )
+INCLUDE ../globals.ink
 
 -> ma_cooking
 
