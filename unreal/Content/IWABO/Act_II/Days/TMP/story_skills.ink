@@ -22,7 +22,7 @@ M: It's a lovely day
 
 
 === ma_cooking_1 ===
-   M: But it's Christmas.. # um_m_-5
+   M: But it's Christmas.. # um_d_10
    { outcome:
    SUCCESS
    We can't afford to splurge
