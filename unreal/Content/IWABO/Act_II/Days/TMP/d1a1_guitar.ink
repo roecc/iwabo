@@ -4,6 +4,7 @@ INCLUDE ../globals.ink
 
 === april_guitar ===
 A: _Playing_
+My foresight is toxic: {isTox("foresight")}
 { skill("reflection") >= 30:
  * _Quietly listen_ #ua_1
     A: _Continues playing for a bit_
