@@ -5,7 +5,7 @@ INCLUDE ../globals.ink
 === april_guitar ===
 A: _Playing_
  * _Quietly listen_ #ua_1
- A: _Continues playing for a bit_
+    A: _Continues playing for a bit_
     ** Sounds great
     A: Thanks Dad
     ->END
@@ -17,4 +17,3 @@ A: _Playing_
     ->END
  * _Leave_
     ->END
-
