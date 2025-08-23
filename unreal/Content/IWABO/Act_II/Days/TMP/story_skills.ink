@@ -26,7 +26,7 @@ M: It's a lovely day
    { outcome:
    SUCCESS
    We can't afford to splurge
-   M: You're right, I'll cook less
+   M: You're right, I'll cook less # um_m_-5
     - else:
    FAIL
    M: We've lost so much. We can't also lose Christmas
