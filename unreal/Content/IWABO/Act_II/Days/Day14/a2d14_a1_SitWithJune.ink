@@ -5,7 +5,7 @@ INCLUDE ../globals.ink
         Her small forehead squirms a little under your cool touch. 
         You're no doctor, but it doesn't feel much different from the other days.
         ->D14A1
-    **before.. ->D14A1
+    **leave ->D14A1
     **sit down next to your sleeping wife and daughter #ua_1
         ->D14_SittingByJune
 
@@ -34,12 +34,12 @@ There really isn't much to do but sit and
     You fold your hands and begin praying for your daughters swift recovery.
     Time flies in the presence of God.
     (Faith++)
-    "Thank you, for covering my shift."
+    M: Thank you, for covering my shift.
     ->D14_SittingByJune2
 
 = D14_SittingByJune2
 Mary-Ann looks at you
-"Good morning."
+M: Good morning.
 Tired eyes, gentle smile. #um_m_20
 ->D14A2
 
