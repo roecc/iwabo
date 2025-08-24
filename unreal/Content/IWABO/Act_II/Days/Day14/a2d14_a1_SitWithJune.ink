@@ -6,7 +6,7 @@ INCLUDE ../globals.ink
         You're no doctor, but it doesn't feel much different from the other days.
         ->D14A1
     **before.. ->D14A1
-    **(-1 Action Point) 
+    **sit down next to your sleeping wife and daughter #ua_1
         ->D14_SittingByJune
 
 
@@ -24,7 +24,7 @@ There really isn't much to do but sit and
     --
     There! June just turned her head a little!
     **...
-        ***wait #sc_foresight_-20
+        ***wait #sc_discipline_20
             ->wait
         ***"Yup, I'm Bored."
             ->D14_PaperBalls
@@ -40,8 +40,7 @@ There really isn't much to do but sit and
 = D14_SittingByJune2
 Mary-Ann looks at you
 "Good morning."
-Tired eyes, gentle smile.
-(Mary-Ann mood++)
+Tired eyes, gentle smile. #um_m_20
 ->D14A2
 
 = wait
