@@ -1,3 +1,7 @@
+INCLUDE ../globals.ink
+
+->D14Argument
+
 = D14Argument
 April knocks on the doorframe, a rolled up paper behind her back.
 Mary-Ann tries her best impression of an encouraging smile toward her.
