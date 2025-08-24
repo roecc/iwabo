@@ -1,3 +1,5 @@
+INCLUDE ../globals.ink
+
 *visit June at her sickbed
     **to take her temperature.
         Her small forehead squirms a little under your cool touch. 
@@ -22,15 +24,8 @@ There really isn't much to do but sit and
     --
     There! June just turned her head a little!
     **...
-        ***::Discipline Check, Medium
-            ****Success
-                *****...
-                    (Discipline++)
-                    After what feels like eons, 
-                    ->D14_SittingByJune2
-            ****Failure
-                (Discipline++)
-                ->D14_PaperBalls
+        ***wait #sc_foresight_-20
+            ->wait
         ***"Yup, I'm Bored."
             ->D14_PaperBalls
                         
@@ -49,6 +44,16 @@ Tired eyes, gentle smile.
 (Mary-Ann mood++)
 ->D14A2
 
+= wait
+{ outcome:
+    *...
+        (Discipline++)
+        After what feels like eons, 
+        ->D14_SittingByJune2  
+-else:
+    (Discipline++)
+    ->D14_PaperBalls
+}
 
 = D14_PaperBalls
 You start ripping the corners of the nearby notebook, bunching them up between your fingers and flicking them towards Mary-Anns open mouth.
