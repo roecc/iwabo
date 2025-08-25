@@ -8,7 +8,7 @@ My foresight is toxic: {isTox("foresight")}
  * {skill("reflection") >= 30} _Quietly listen_ #ua_1
     A: _Continues playing for a bit_
     ** Sounds great
-    A: Thanks Dad
+    A: Thanks Dad #us_reflection_2
     ->END
     ** Sloppy
     A: :0 #um_a_-20

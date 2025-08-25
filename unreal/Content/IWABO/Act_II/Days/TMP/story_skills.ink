@@ -6,7 +6,11 @@ INCLUDE ../globals.ink
 M: Hello Daryl
 D: Hello Mary Ann
 She looks busy chopping veg
-M: It's a lovely day
+D: My foresight is toxic: {isTox("foresight")}
+M: { mood("m") < 50: Every day sucks here| It's a lovely day}
+ * {skill("perception") >= 30} The steak looks overdone
+    M: Oh no you're right #us_perception_2
+    ->END
  * Hello Mary Ann what are you cooking? #ua_1
     M: I'm making two turkeys for dinner
     M:I'm going to use up tons of our food
