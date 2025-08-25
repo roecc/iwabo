@@ -5,8 +5,7 @@ INCLUDE ../globals.ink
 === april_guitar ===
 A: _Playing_
 My foresight is toxic: {isTox("foresight")}
-{ skill("reflection") >= 30:
- * _Quietly listen_ #ua_1
+ * {skill("reflection") >= 30} _Quietly listen_ #ua_1
     A: _Continues playing for a bit_
     ** Sounds great
     A: Thanks Dad
@@ -14,13 +13,8 @@ My foresight is toxic: {isTox("foresight")}
     ** Sloppy
     A: :0 #um_a_-20
     ->END
-}
  * Sounds great!
- { mood("a") < 50:
-    A: You interrupted me!
- - else:
-    A: Thanks, but I'm in the middle of playing
- }
+    A: { mood("a") < 50: You interrupted me!| Thanks, but I'm in the middle of playing}
     ->END
  * _Leave_
     ->END
