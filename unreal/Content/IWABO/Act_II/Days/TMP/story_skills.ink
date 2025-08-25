@@ -4,7 +4,8 @@ INCLUDE ../globals.ink
 
 === ma_cooking ===
 M: Hello Daryl
-Hello Mary Ann
+D: Hello Mary Ann
+She looks busy chopping veg
 M: It's a lovely day
  * Hello Mary Ann what are you cooking? #ua_1
     M: I'm making two turkeys for dinner
@@ -25,7 +26,7 @@ M: It's a lovely day
    M: But it's Christmas.. # um_d_10
    { outcome:
    SUCCESS
-   We can't afford to splurge
+   D: We can't afford to splurge
    M: You're right, I'll cook less 
     - else:
    FAIL
@@ -40,7 +41,7 @@ M: It's a lovely day
  M: I think so too
  - else:
  FAIL
- I'm sorry Mary Ann but we can't justify cooking that much
+ D: I'm sorry Mary Ann but we can't justify cooking that much
  }
  ->END
  
