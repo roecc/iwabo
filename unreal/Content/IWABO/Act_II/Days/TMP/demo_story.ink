@@ -3,14 +3,12 @@ INCLUDE ../globals.ink
 -> ma_cooking
 
 === ma_cooking ===
-M: Hello Daryl
-D: Hello Mary Ann
-She looks busy chopping veg
-D: My foresight is toxic: {isTox("foresight")}
-M: { rf("cookedForMA"):Thanks for helping cook last time|You never help cook }
-M: { mood("m") < 50:Every day sucks here|It's a lovely day}
- * {skill("perception") >= 30} The steak looks overdone
-    M: Oh no you're right #us_perception_2
+Mary Ann looks busy chopping veg
+Daryl's foresight is toxic: {isTox("foresight")}
+M: { mood("m") < 50:_muttering_ ...Every day sucks here|Mmm hmm what a lovely day}
+M: { rf("armchairChef"):Can you not breath over my neck while I cook?|What's up? }
+ * {skill("perception") >= 30 && not rf("armchairChef") } The steak looks overdone
+    M: Hmmm yes it is a bit #us_perception_2 #sf_armchairChef
     ->END
  * Hello Mary Ann what are you cooking? #ua_1
     M: I'm making two turkeys for dinner
