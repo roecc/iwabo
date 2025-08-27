@@ -14,4 +14,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Utilities|Int")
 	static bool TryParseInt(const FString& InString, int32& OutValue);
+
+	UFUNCTION(BlueprintCallable, Category = "Utilities|Int")
+	static FString GetIntWithSymbol(const int32& IntValue);
 };

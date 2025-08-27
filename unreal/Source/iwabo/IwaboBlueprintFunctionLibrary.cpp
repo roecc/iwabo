@@ -31,3 +31,16 @@ bool UIwaboBlueprintFunctionLibrary::TryParseInt(const FString& InString, int32&
 	OutValue = FCString::Atoi(*InString);
 	return true;
 }
+
+FString UIwaboBlueprintFunctionLibrary::GetIntWithSymbol(const int32& IntValue)
+{
+	FString intString = FString::FromInt(IntValue);
+	if (IntValue <= 0)
+	{
+		return intString;
+	}
+
+	FString symbol = TEXT("+");
+
+	return symbol.Append(intString);
+}
