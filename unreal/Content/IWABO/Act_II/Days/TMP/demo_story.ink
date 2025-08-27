@@ -7,7 +7,8 @@ M: Hello Daryl
 D: Hello Mary Ann
 She looks busy chopping veg
 D: My foresight is toxic: {isTox("foresight")}
-M: { mood("m") < 50: Every day sucks here| It's a lovely day}
+M: { rf("cookedForMA"):Thanks for helping cook last time|You never help cook }
+M: { mood("m") < 50:Every day sucks here|It's a lovely day}
  * {skill("perception") >= 30} The steak looks overdone
     M: Oh no you're right #us_perception_2
     ->END
