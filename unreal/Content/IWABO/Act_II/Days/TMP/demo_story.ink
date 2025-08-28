@@ -5,9 +5,11 @@ INCLUDE ../globals.ink
 === ma_cooking ===
 Mary Ann looks busy chopping veg
 Daryl's foresight is toxic: {isTox("foresight")}
-M: { mood("m") < 50:_muttering_ ...Every day sucks here|Mmm hmm what a lovely day}
+Daryl's foresight is: { foresight }
+Mary ann's mood is: { moodM }
+M: { moodM < 50:_muttering_ ...Every day sucks here|Mmm hmm what a lovely day}
 M: { rf("armchairChef"):Can you not breath over my neck while I cook?|What's up? }
- * {skill("perception") >= 30 && not rf("armchairChef") } The steak looks overdone
+ * {perception >= 30 && not rf("armchairChef") } The steak looks overdone
     M: Hmmm yes it is a bit #us_perception_2 #sf_armchairChef
     ->END
  * Hello Mary Ann what are you cooking? #ua_1
@@ -27,6 +29,8 @@ M: { rf("armchairChef"):Can you not breath over my neck while I cook?|What's up?
 
 === ma_cooking_1 ===
    M: But it's Christmas.. # um_d_10
+   Mary ann new mood: { moodM }
+   Daryl new foresight: { foresight }
    { outcome:
    SUCCESS
    D: We can't afford to splurge
