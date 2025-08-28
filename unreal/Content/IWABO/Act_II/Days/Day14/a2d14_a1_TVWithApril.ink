@@ -42,14 +42,14 @@ A: I thought you were Mom for a moment
         ->D14A2
 //Could consider having checks fail as a toxic version? would mean writing two versions for most checks though...
 //not working, not sure why
-* { skill("perception") >= 30} D: You seemed spooked there for a moment, everything alright?
+* { perception >= 30} D: You seemed spooked there for a moment, everything alright?
     (Perception++)
     A: I'm not sleeping well.
     A: Not since...
     //WIP
     A conversation about her insecurities and guilt over the paint thing follows...
     ->D14A2
-* { skill("perception") < 30} D: Erm. Hm? 
+* { perception < 30} D: Erm. Hm? 
     D: Nothing.
     ->D14A2
 
