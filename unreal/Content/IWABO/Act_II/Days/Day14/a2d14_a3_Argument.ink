@@ -62,9 +62,7 @@ M: To waste your talent on something so facile!
 Blank surprise in Aprils face.
 A: Waste-?
 M: After everything I've given up to make you achieve your potential!
-A: Who are you to judge!?
-A: When was the last time you even picked up anything but a red ball-pen?
-M: I've given everything for you!
+//M: I've given everything for you!
 M: Only for you to mock me!
 A: Mock-?!
 M: And to mock your sister!
@@ -85,9 +83,15 @@ M: As if her lungs weren't enough!
 A: Says the one practically sitting on her chest!
 M: My daughter needs me!
 M: I won't apologize for being there for her!
-
+A: And what am I doing?
+M: Please! With those.. doodles?
+A: Doodles?
+M: What would you call it then?
+A: Art!
+M: Hah! Art? Please, have a dignity!
+A: Who are you to judge, anyway?
+A: When was the last time you even picked up anything but a red ball-pen?
 April picks up the drawing again, tries to give it to June when Mary-Ann snatches it out of her hand, moving so abruptly the pot tilts and boils Junes legs.
-A: Are you sure it's for her?
 June cries out in pain. April tries to rush in and help her but is shoved back by Mary-Ann, tears in her eyes, surprised expression on her face.
 M: Get out!
 April tries again to help June

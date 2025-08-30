@@ -1,6 +1,6 @@
 She is hunched over a painting.
 *\[watch her work\] #ua_1
-    (Creativity++)
+    #us_creativity_1
     You watch for a while as her brush dances across the paper.
     April throws you an almost imperceptible smile as she notices your gaze. #um_a_20
     ->END

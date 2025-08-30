@@ -7,6 +7,7 @@ VAR reflection = 0
 VAR discipline = 0
 VAR patience = 0
 VAR perception = 0
+VAR nurturing = 0
 
 VAR moodD = 0
 VAR moodM = 0
