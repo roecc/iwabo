@@ -1,7 +1,7 @@
-April is noodling absentmindedly on her Guitar, watching TV
-    ->D14_WatchingNaruto
+->D14_WatchingNaruto
 
 === D14_WatchingNaruto ===
+April is noodling absentmindedly on her Guitar, watching TV
 Hearing footsteps behind her, April snaps out of her trance and whips around before quickly scambling for the remote, only to relax once she realises it's you.
 A: Good morning Dad
 A: I thought you were Mom for a moment
@@ -41,10 +41,8 @@ A: I thought you were Mom for a moment
 //Could consider having checks fail as a toxic version? would mean writing two versions for most checks though...
 //not working, not sure why
 * { perception >= 30} D: You seemed spooked there for a moment, everything alright?
-    (Perception++)
-    A: I'm not sleeping well.
+    A: I'm not sleeping well. #us_perception_1
     A: Not since...
-    //WIP
     A conversation about her insecurities and guilt over the paint thing follows...
     ->D14A2
 * { perception < 30} D: Erm. Hm? 

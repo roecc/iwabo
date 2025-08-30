@@ -1,6 +1,8 @@
 === a2d14_a4_mj_InShower ===
 Mary-Ann sits in the shower, desperately hosing June down, 
 trying to cool the red splotches on her thighs and arms,
-{skill(perception) > 30: ignoring or oblivious to the much bigger ones on her own.}
-
+{skill(perception) > 30: she is ignoring or oblivious to the much bigger ones on her own.}
+*{skill(nurturing) > 50} These look pretty gnarly. Better make sure.
+        You apply cold compresses against the burn wounds.
+        (-1 FirstAid)
 ->DONE
