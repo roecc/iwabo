@@ -1,3 +1,8 @@
+INCLUDE ../globals.ink
+
+->a2d14_a2_a_WatchPaint
+
+=== a2d14_a2_a_WatchPaint ===
 She is hunched over a painting.
 *\[watch her work\] #ua_1
     #us_creativity_1

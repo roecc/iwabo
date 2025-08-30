@@ -1,3 +1,5 @@
+INCLUDE ../globals.ink
+
 ->a2d14_a1_SitWithJune
 
 === a2d14_a1_SitWithJune ===

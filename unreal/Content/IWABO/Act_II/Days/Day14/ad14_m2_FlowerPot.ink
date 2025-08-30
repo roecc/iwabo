@@ -1,3 +1,8 @@
+INCLUDE ../globals.ink
+
+->a2d14_a2_m_FlowerPot
+
+=== a2d14_a2_m_FlowerPot ===
 You find Mary-Ann with a large pot between her legs.
 Steam rising from its boiling contents.
 She looks fully entranced by the flower blossoms she's nervously plucking apart 

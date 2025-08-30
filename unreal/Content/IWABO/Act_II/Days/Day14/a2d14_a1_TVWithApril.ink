@@ -1,3 +1,5 @@
+INCLUDE ../globals.ink
+
 ->D14_WatchingNaruto
 
 === D14_WatchingNaruto ===
@@ -7,7 +9,7 @@ A: Good morning Dad
 A: I thought you were Mom for a moment
 *hm? #ua_1
     ->D14_WatchingNaruto2
-*\[leave\]
+*[\[leave\]]
     ->END
 
 = D14_WatchingNaruto2
@@ -39,13 +41,14 @@ A: I thought you were Mom for a moment
         #um_d_20
         ->D14A2
 //Could consider having checks fail as a toxic version? would mean writing two versions for most checks though...
-//not working, not sure why
-* { perception >= 30} D: You seemed spooked there for a moment, everything alright?
+//not working, not sure why    {perception >= 30}
+* D: {perception >= 30} You seemed spooked there for a moment, everything alright?
     A: I'm not sleeping well. #us_perception_1
     A: Not since...
     A conversation about her insecurities and guilt over the paint thing follows...
     ->D14A2
-* { perception < 30} D: Erm. Hm? 
+// {perception < 30}
+* {perception < 30} D: Erm. Hm? 
     D: Nothing.
     ->D14A2
 
