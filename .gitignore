@@ -94,3 +94,6 @@ unreal/DerivedDataCache/*
 
 # Bought Asset Library
 unreal/Content/ThirdParty/TMPAssetPacks/*
+
+# Large .blend file
+Blender/Titan1 Blockout/Titan1Blockout.blend
