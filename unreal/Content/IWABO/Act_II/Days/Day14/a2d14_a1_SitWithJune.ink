@@ -1,3 +1,6 @@
+->a2d14_a1_SitWithJune
+
+=== a2d14_a1_SitWithJune ===
 *visit June at her sickbed
     **to take her temperature.
         Her small forehead squirms a little under your cool touch. 
