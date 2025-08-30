@@ -1,5 +1,3 @@
-INCLUDE ../globals.ink
-
 You find Mary-Ann with a large pot between her legs.
 Steam rising from its boiling contents.
 She looks fully entranced by the flower blossoms she's nervously plucking apart 

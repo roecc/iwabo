@@ -1,11 +1,9 @@
-INCLUDE ../globals.ink
-
 *visit June at her sickbed
     **to take her temperature.
         Her small forehead squirms a little under your cool touch. 
         You're no doctor, but it doesn't feel much different from the other days.
-        ->D14A1
-    **leave ->D14A1
+        ->END
+    **leave ->END
     **sit down next to your sleeping wife and daughter #ua_1
         ->D14_SittingByJune
 
@@ -41,7 +39,7 @@ There really isn't much to do but sit and
 Mary-Ann looks at you
 M: Good morning.
 Tired eyes, gentle smile. #um_m_20
-->D14A2
+->END
 
 = wait
 { outcome:
@@ -64,10 +62,5 @@ Inevitably, the law of large numbers holds:
     She takes a sharp breath, but before she can say anything, June gives a sigh, pause and loses herself in laughter.
     (June Mood++)
     Mary-Ann gives you a stern look, and begins brushing the paper balls down, oblivious to the ones in her hair.
-    ->D14A2
+    ->END
 
-=== D14A1 ===
-->END
-//And Mary-Ann, now surrounded by and completely covered in little paper balls, 
-=== D14A2 ===
-->END

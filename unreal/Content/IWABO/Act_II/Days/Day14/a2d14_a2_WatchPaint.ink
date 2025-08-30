@@ -1,5 +1,3 @@
-INCLUDE ../globals.ink
-
 She is hunched over a painting.
 *\[watch her work\] #ua_1
     (Creativity++)

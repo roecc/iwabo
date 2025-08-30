@@ -1,5 +1,3 @@
-INCLUDE ../globals.ink
-
 April is noodling absentmindedly on her Guitar, watching TV
     ->D14_WatchingNaruto
 

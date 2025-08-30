@@ -1,5 +1,3 @@
-INCLUDE ../globals.ink
-
 ->D14Argument
 
 = D14Argument
