@@ -1,7 +1,10 @@
 INCLUDE ../globals.ink
 
+->a2d14_a4_a_InRoom
+
 === a2d14_a4_a_InRoom ===
 *\[knock\]
+    A: Go away!
 *\[listen\] #sc_perception_0
     ->Listening
 *{perception > 60} \[enter her room\]
