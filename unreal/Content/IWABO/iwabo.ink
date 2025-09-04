@@ -13,5 +13,7 @@ INCLUDE Act_II/Days/Day14/a2d14_a4_a_InRoom.ink
 INCLUDE Act_II/Days/Day14/a2d14_a5_j_BedTime.ink
 INCLUDE Act_II/Days/Day14/a2d14_a5_m_Sharing.ink
 INCLUDE Act_II/Days/TMP/GeneratorBase.ink
+INCLUDE Act_II/Days/TMP/BedBase.ink
+INCLUDE Act_II/Days/TMP/BedBase.ink
 
 
