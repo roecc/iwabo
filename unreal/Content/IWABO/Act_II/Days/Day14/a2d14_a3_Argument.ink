@@ -12,7 +12,7 @@ She tries to look up, to greet April. As she moves the pot dangerously tilts, bu
 M: June! Please be careful with the pot!
 //the praying thing is getting a bit much, no?
 J: "I'm already *cough cought* much better!"
-*...
+*... #ua_1
 -
 J: "*cough*"
 A: "I'm.. glad to hear that."
