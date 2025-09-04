@@ -11,14 +11,15 @@ trying to cool the red splotches on her thighs and arms,
 -
 ->END
 
-= NurturedWounds
-*{nurturing > 50} These look pretty gnarly. 
-    ** [\[dress the wound\] #ua_1]
-        D: Better make sure. #us_nurturing_1
-        You apply cold compresses against the burn wounds.
-        (-1 FirstAid)
-    ** [I'm sure that will heal on it's own. #asc_nurturing_0]
-        ->ShouldBeFine
+= NurturedWounds 
+* [\[dress the wound\] #ua_1]
+    D: Better make sure. #us_nurturing_1
+    You apply cold compresses against the burn wounds.
+    (-1 FirstAid)
+* [I'm sure that will heal on it's own. #asc_nurturing_0]
+    ->ShouldBeFine
+-
+->END
         
 = ShouldBeFine  
 {outcome:
