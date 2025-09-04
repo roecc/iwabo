@@ -6,9 +6,9 @@ INCLUDE ../globals.ink
 The blinking lights intimidate you.
 But you must keep this heart beating.
 If you want those of your family to do the same.
-* \[maintenance\] #ua_1 #sc_tinkering_0
+* [maintenance] #ua_1 #sc_tinkering_0
     ->MaintainCheck
-* [leave]
+* [\[leave\]]
     ->END
 
 = MaintainCheck
