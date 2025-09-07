@@ -35,8 +35,7 @@ There really isn't much to do but sit and
     
 *pray.
     You fold your hands and begin praying for your daughters swift recovery.
-    Time flies in the presence of God.
-    (Faith++)
+    Time flies in the presence of God. #us_religion_1
     M: Thank you, for covering my shift.
     ->D14_SittingByJune2
 
