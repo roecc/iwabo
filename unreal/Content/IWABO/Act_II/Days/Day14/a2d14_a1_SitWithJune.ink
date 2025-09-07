@@ -27,7 +27,7 @@ There really isn't much to do but sit and
     --
     There! June just turned her head a little!
     **...
-        ***wait #sc_discipline_20
+        ***wait #sc_discipline_-60
             ->wait
         ***"Yup, I'm Bored."
             ->D14_PaperBalls
@@ -62,8 +62,7 @@ But you have time.
 Inevitably, the law of large numbers holds:
 *Bull's Eye!
     Mary-Ann chokes on and promptly spits out the little paper ball which joins the many, many others surrounding and completely covering her and the blanket of your bedridden daughter.
-    She takes a sharp breath, but before she can say anything, June gives a sigh, pause and loses herself in laughter.
-    (June Mood++)
+    She takes a sharp breath, but before she can say anything, June gives a sigh, pause and loses herself in laughter. #um_j_10
     Mary-Ann gives you a stern look, and begins brushing the paper balls down, oblivious to the ones in her hair.
     ->END
 
