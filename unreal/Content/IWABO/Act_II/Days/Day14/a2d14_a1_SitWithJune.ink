@@ -49,11 +49,9 @@ Tired eyes, gentle smile. #um_m_20
 = wait
 { outcome:
     *...
-        (Discipline++)
         After what feels like eons, 
         ->D14_SittingByJune2  
 -else:
-    (Discipline++)
     ->D14_PaperBalls
 }
 

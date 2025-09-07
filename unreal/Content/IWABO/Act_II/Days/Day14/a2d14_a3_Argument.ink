@@ -12,7 +12,9 @@ She tries to look up, to greet April. As she moves the pot dangerously tilts, bu
 M: June! Please be careful with the pot!
 //the praying thing is getting a bit much, no?
 J: "I'm already *cough cought* much better!"
-*... #ua_1
+*[leave]
+    ->END
+*[... #ua_1]
 -
 J: "*cough*"
 A: "I'm.. glad to hear that."
@@ -27,10 +29,10 @@ A: Oh yea?
 M: This can wait, June.
 June doesnt listen, grasping in ever stranger contortions before finally catching a corner with the tip of her finger and snagging it.
 J: Look! I made you something! 
-Its a crude childs drawing of April and June, and a guitar on a green floor. Little nametags float above them designating them so.
+It’s a crude child’s drawing of April and June, and a guitar on a green floor. Little nametags float above them designating them so.
 A: Wow! Is that us?
 J: Mom helped me label it! 
-A: I almost couln't tell!
+A: I almost couldn't tell!
 Mary-Ann frowns
 A brief pause, April's eyes darting to Mary-Ann, as if to confirm she is still there.
 *give April an encouraging nod
@@ -53,7 +55,8 @@ J: Is that-?
 Her head turns to April under the blanket. Then back to the page.
 J: ME!?
 
-She rips the blanket down, looking up at April. Mary-Ann looks on in jealousy. She pulls the towel back over her head a with a little too much force, spilling some of the hot water on Mary-Ann, burning the hand she held it in place with which she pulls back
+She rips the blanket down, looking up at April. Mary-Ann looks on in jealousy. 
+She pulls the towel back over her head a with a little too much force, spilling some of the hot water on Mary-Ann's hand.
 M: Aie! June!
 J: Sorry I-
 M: Okay, enough! April, leave. 
@@ -78,7 +81,7 @@ M: Exactly! When she needs to rest you rouse her!
 J: Stop, please-
 M: Selling her false hope!
 A: False hope?
-M: Of an an outside! Of an escape! Of her getting better!
+M: Of an outside! Of an escape! Of her getting better!
 M: Why do you insist on breaking her heart?
 J: STOP FIGHTING!
 M: As if her lungs weren't enough!
@@ -93,7 +96,7 @@ A: Art!
 M: Hah! Art? Please, have a dignity!
 A: Who are you to judge, anyway?
 A: When was the last time you even picked up anything but a red ball-pen?
-April picks up the drawing again, tries to give it to June when Mary-Ann snatches it out of her hand, moving so abruptly the pot tilts and boils Junes legs.
+April picks up the drawing again, tries to give it to June when Mary-Ann snatches it out of her hand, moving so abruptly the pot tilts and boils June's legs.
 June cries out in pain. April tries to rush in and help her but is shoved back by Mary-Ann, tears in her eyes, surprised expression on her face.
 M: Get out!
 April tries again to help June
