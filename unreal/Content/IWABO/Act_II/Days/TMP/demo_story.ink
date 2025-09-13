@@ -3,7 +3,7 @@ INCLUDE ../globals.ink
 -> ma_cooking
 
 === ma_cooking ===
-Mary Ann looks busy chopping veg
+Mary Ann looks busy chopping veg #sf_inventoryChecked
 Daryl's foresight is toxic: {isTox("foresight")}
 Daryl's foresight is: { foresight }
 Mary ann's mood is: { moodM }
