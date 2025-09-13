@@ -15,7 +15,7 @@ M: { rf("armchairChef"):Can you not breath over my neck while I cook?|What's up?
  * Hello Mary Ann what are you cooking? #ua_1
     M: I'm making two turkeys for dinner
     M:I'm going to use up tons of our food
-     ** We need that food for later #sc_foresight_-12 # um_m_-5
+     ** We need that food for later #sc_foresight #scm_Mary Ann is insistent_-10 #scm_You checked inventory_20_inventoryChecked # um_m_-5
      ->ma_cooking_1
      ** [That's nice # asc_foresight_16]
      ->ma_cooking_2
