@@ -16,7 +16,7 @@ trying to cool the red splotches on her thighs and arms,
     D: Better make sure. #us_nurturing_1
     You apply cold compresses against the burn wounds.
     (-1 FirstAid)
-* [I'm sure that will heal on it's own. #asc_nurturing_0]
+* [I'm sure that will heal on it's own. #asc_nurturing]
     ->ShouldBeFine
 -
 ->END

@@ -17,11 +17,11 @@ M: { rf("armchairChef"):Can you not breath over my neck while I cook?|What's up?
     M:I'm going to use up tons of our food
      ** We need that food for later #sc_foresight #scm_Mary Ann is insistent_-10 #scm_You checked inventory_20_inventoryChecked # um_m_-5
      ->ma_cooking_1
-     ** [That's nice # asc_foresight_16]
+     ** [That's nice # asc_foresight #scm_You really think it's nice_16]
      ->ma_cooking_2
      ** We're already out of food this month # sc_paranoia
      ->ma_cooking_3
-     ** YOU BETTER NOT # sc_authority_30
+     ** YOU BETTER NOT # sc_authority #scm_You are the boss_30
      ->ma_cooking_4
  * Bye
 -> END
