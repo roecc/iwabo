@@ -5,10 +5,11 @@ INCLUDE ../globals.ink
 === a2d14_a2_j_Bored ===
 June sits on her bed, wrapped in blankets, coughing occasionally. 
 She watches Mary-Ann prepare the steam bath for her.
-*\[try to cheer her up by playing something\] #ua_1
+*[\[Try to cheer her up by playing something\] #ua_1]
     J: You mean it?
     Eyes glowing! #um_j_20
-*Toughen up, kid.
-*\[leave\]
+*[Toughen up, kid.]
+Mary Ann glares at you for a brief moment before getting back to the bath.
+*[\[Leave\]]
 -
 ->END

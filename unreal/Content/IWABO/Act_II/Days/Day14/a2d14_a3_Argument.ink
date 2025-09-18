@@ -5,19 +5,19 @@ INCLUDE ../globals.ink
 = D14Argument
 April knocks on the doorframe, a rolled up paper behind her back.
 Mary-Ann tries her best impression of an encouraging smile toward her.
-A: "Hey June, how are you feeling today?"
+A: Hey June, how are you feeling today?
 You don't often hear your daughter speak with so much hesitation. You catch her shooting a glance at Mary-Ann.
 June, sitting on the bed, hunched over a massive pot, nestled between blankets and towels, one of which covering the steaming surface of the pot and Junes head.
 She tries to look up, to greet April. As she moves the pot dangerously tilts, but is caught by Mary-Ann, who shakes her hand after, as if to cool it,
 M: June! Please be careful with the pot!
 //the praying thing is getting a bit much, no?
-J: "I'm already *cough cought* much better!"
-*[leave]
+J: I'm already *cough cought* much better!
+*[\[Leave\]]
     ->END
 *[... #ua_1]
 -
-J: "*cough*"
-A: "I'm.. glad to hear that."
+J: *cough*
+A: I'm.. glad to hear that.
 M: Could you come back later? 
 M: I have enough trouble keeping June still as it is.
 April motions as if to protest but June is quicker:
@@ -35,8 +35,8 @@ J: Mom helped me label it!
 A: I almost couldn't tell!
 Mary-Ann frowns
 A brief pause, April's eyes darting to Mary-Ann, as if to confirm she is still there.
-*give April an encouraging nod
-*...
+*[\[Give April an encouraging nod\]]
+*[...]
 -
 A: I made you something, too.
 M: Oh great, another one..
@@ -102,12 +102,12 @@ M: Get out!
 April tries again to help June
 M: DÉGAGE!!
 April, genuinely surprised at the ferocity of her mothers anger, hesitates a moment, wipes away a tear and first walks, then runs out of the room.
-*help June
+*[\[Help June\]]
     as you approach, Mary-Ann whirls around and starts telling you off.
     June's crying gets louder and is punctuated by a scream which finally snaps Mary-Ann out of it.
 //    ~ JuneBurnt = true
 //*go after April
-*...
+*[...]
 -
 Mary-Ann whips around and lifts June out of her boiling hot coccoon, Mary-Ann's knees and forearms turning a blistering red.
 She rushes June to the shower and cools her down, crying, apologizing, trying to tell her it will be okay.
