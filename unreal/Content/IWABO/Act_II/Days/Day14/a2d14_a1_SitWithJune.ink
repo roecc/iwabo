@@ -27,7 +27,7 @@ There really isn't much to do but sit and
     --
     There! June just turned her head a little!
     **...
-        ***wait #sc_discipline #scm_PLACEHOLDER_-60
+        ***wait #sc_discipline #scm_You've been waiting way too long..._-60
             ->wait
         ***"Yup, I'm Bored."
             ->D14_PaperBalls
