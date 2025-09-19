@@ -10,7 +10,7 @@
 The blinking lights intimidate you.
 But you must keep this heart beating.
 If you want those of your family to do the same.
-* [\[Maintenance\] #ua_1 #sc_tinkering_-70]
++ [\[Maintenance\] #ua_1 #sc_tinkering_-70]
     ->MaintainCheck
 + [\[Leave\]]
     ->DONE
