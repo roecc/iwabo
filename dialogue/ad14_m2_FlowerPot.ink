@@ -1,4 +1,3 @@
-INCLUDE ../globals.ink
 
 == a2d14_a2_m_FlowerPot
 You find Mary-Ann with a large pot between her legs.

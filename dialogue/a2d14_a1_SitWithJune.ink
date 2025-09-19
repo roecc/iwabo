@@ -1,4 +1,3 @@
-INCLUDE ../globals.ink
 
 == a2d14_a1_SitWithJune
 +[\[Visit June at her sickbed\]]

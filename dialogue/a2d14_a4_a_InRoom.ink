@@ -1,4 +1,3 @@
-INCLUDE ../globals.ink
 
 == a2d14_a4_a_InRoom
 *[\[Knock\]]

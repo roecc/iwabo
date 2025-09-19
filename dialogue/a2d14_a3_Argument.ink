@@ -1,4 +1,3 @@
-INCLUDE ../globals.ink
 
 == D14Argument
 April knocks on the doorframe, a rolled up paper behind her back.

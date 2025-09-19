@@ -1,4 +1,3 @@
-INCLUDE ../globals.ink
 
 === a2d14_a1_MASleep ===
 You find Mary-Ann sleeping in her usual spot, on a chair next to Junes bed

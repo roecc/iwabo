@@ -1,4 +1,3 @@
-INCLUDE ../globals.ink
 
 == D14_WatchingNaruto
 { not rf("tvWithAprilCin"):

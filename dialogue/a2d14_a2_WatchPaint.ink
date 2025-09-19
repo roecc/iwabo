@@ -1,4 +1,3 @@
-INCLUDE ../globals.ink
 
 === a2d14_a2_a_WatchPaint ===
 She is hunched over a painting.

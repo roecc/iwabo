@@ -1,4 +1,3 @@
-INCLUDE ../globals.ink
 
 == a2d14_a4_mj_InShower
 Mary-Ann sits in the shower, desperately hosing June down, 
