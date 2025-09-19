@@ -6,5 +6,5 @@ June lies in bed, coughing, sobbing.
     June cries more quietly now, noticeably trying to listen.
     Eventually she falls into a restless sleep.
     ->DONE
-*[\[Leave\]]
++[\[Leave\]]
 ->DONE
