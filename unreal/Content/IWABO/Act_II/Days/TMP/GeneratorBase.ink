@@ -1,8 +1,6 @@
 INCLUDE ../globals.ink
 
-->BunkerMaintenance
-
-=== BunkerMaintenance ===
+== BunkerMaintenance
 { rf("fixedGenerator"):
 ->GeneratorFixed
 - else:
@@ -16,11 +14,11 @@ If you want those of your family to do the same.
 * [\[maintenance\] #ua_1 #sc_tinkering_-70]
     ->MaintainCheck
 * [\[leave\]]
-    ->END
+    ->DONE
 
 = GeneratorFixed
 The generator hums reassuringly. You'll be able to grow enough food to survive the next month.
-->END
+->DONE
 
 = MaintainCheck
 { outcome:
@@ -29,4 +27,4 @@ The generator hums reassuringly. You'll be able to grow enough food to survive t
     one hand firmly clasped before your eyes in horror of the fun surprises your finger, aimlessly jabbing at the ever more furiously blinking lights, might visit upon your unsuspecting family. 
     After roaring up as if in protest, the machine soon returns to its familiar hum the moment you stop "fixing" it. #um_d_-10
 }
-->END
+->DONE

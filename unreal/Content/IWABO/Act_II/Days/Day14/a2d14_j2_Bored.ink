@@ -1,8 +1,7 @@
 INCLUDE ../globals.ink
 
-->a2d14_a2_j_Bored
 //This would be a lovely place to have a wholesome scene between June and Mary-Ann that also establishes June getting on her nerves a little.
-=== a2d14_a2_j_Bored ===
+== a2d14_a2_j_Bored
 June sits on her bed, wrapped in blankets, coughing occasionally. 
 She watches Mary-Ann prepare the steam bath for her.
 *[\[Try to cheer her up by playing something\] #ua_1]
@@ -10,6 +9,6 @@ She watches Mary-Ann prepare the steam bath for her.
     Eyes glowing! #um_j_20
 *[Toughen up, kid.]
 Mary Ann glares at you for a brief moment before getting back to the bath.
-*[\[Leave\]]
++[\[Leave\]]
 -
-->END
+->DONE

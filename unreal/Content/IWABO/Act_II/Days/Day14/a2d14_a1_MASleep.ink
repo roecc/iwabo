@@ -1,7 +1,5 @@
 INCLUDE ../globals.ink
 
-->a2d14_a1_MASleep
-
 === a2d14_a1_MASleep ===
 You find Mary-Ann sleeping in her usual spot, on a chair next to Junes bed
 She looks descheveled, not surprising as she barely, if ever, leaves her daughters bedside. 
@@ -12,4 +10,4 @@ You don't often see her with her guard down like this, head in her neck, snoring
 *[\[Leave\]]->D14A1
     
 === D14A1 ===
-->END
+->DONE

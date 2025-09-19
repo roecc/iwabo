@@ -10,4 +10,4 @@ INCLUDE ../globals.ink
 Something
 -
 Test
-->END
+->DONE

@@ -1,8 +1,6 @@
 INCLUDE ../globals.ink
 
-->D14_WatchingNaruto
-
-=== D14_WatchingNaruto ===
+== D14_WatchingNaruto
 { not rf("tvWithAprilCin"):
 April is noodling absentmindedly on her Guitar, watching TV
 Hearing footsteps behind her, April snaps out of her trance and whips around before quickly scambling for the remote, only to relax once she realises it's you.
@@ -11,8 +9,8 @@ A: I thought you were Mom for a moment #sf_tvWithAprilCin
 }
 *[Hm? #ua_1]
     ->D14_WatchingNaruto2
-*[\[leave\]]
-    ->END
++[\[Leave\]]
+    ->DONE
 
 = D14_WatchingNaruto2
 *[Scootch,]
@@ -40,7 +38,7 @@ A: I thought you were Mom for a moment #sf_tvWithAprilCin
             #um_d_5
             ANCIENT ALIENS!
         --- Life is good.#um_d_20
-        ->END
+        ->DONE
         
         ->D14A2
 //Could consider having checks fail as a toxic version? would mean writing two versions for most checks though...
@@ -56,5 +54,5 @@ A: I thought you were Mom for a moment #sf_tvWithAprilCin
     ->D14A2
 
 
-=== D14A2 ===
-->END
+= D14A2
+->DONE

@@ -1,8 +1,6 @@
 INCLUDE ../globals.ink
 
-->BedBase
-
-=== BedBase ===
+= BedBase
 Are you sure you want to go to bed and end the day early?
 + [Yes]
     zzz #ua_5 
@@ -12,4 +10,4 @@ Are you sure you want to go to bed and end the day early?
     Zzz #ua_1
 + [No]
 -
-->END
+->DONE

@@ -1,8 +1,6 @@
 INCLUDE ../globals.ink
 
-->D14Argument
-
-= D14Argument
+== D14Argument
 April knocks on the doorframe, a rolled up paper behind her back.
 Mary-Ann tries her best impression of an encouraging smile toward her.
 A: Hey June, how are you feeling today?
@@ -12,8 +10,8 @@ She tries to look up, to greet April. As she moves the pot dangerously tilts, bu
 M: June! Please be careful with the pot!
 //the praying thing is getting a bit much, no?
 J: I'm already *cough cought* much better!
-*[\[Leave\]]
-    ->END
++[\[Leave\]]
+    ->DONE
 *[... #ua_1]
 -
 J: *cough*
@@ -111,4 +109,4 @@ April, genuinely surprised at the ferocity of her mothers anger, hesitates a mom
 -
 Mary-Ann whips around and lifts June out of her boiling hot coccoon, Mary-Ann's knees and forearms turning a blistering red.
 She rushes June to the shower and cools her down, crying, apologizing, trying to tell her it will be okay.
-->END
+->DONE

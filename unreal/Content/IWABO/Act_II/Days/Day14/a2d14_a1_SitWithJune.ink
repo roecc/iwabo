@@ -1,21 +1,18 @@
 INCLUDE ../globals.ink
 
-->a2d14_a1_SitWithJune
-
-=== a2d14_a1_SitWithJune ===
-*[\[Visit June at her sickbed\]]
-    **{not rf("takeTemp")} [\[To take her temperature\]]
-        #sf_takeTemp
+== a2d14_a1_SitWithJune
++[\[Visit June at her sickbed\]]
+    **[\[To take her temperature\]]
         Her small forehead squirms a little under your cool touch. 
         You're no doctor, but it doesn't feel much different from the other days.
-        ->END
-    **[\[Leave\]] ->END
+        ->DONE
+    ++[\[Leave\]] ->DONE
     **[\[Sit down next to your sleeping wife and daughter\] #ua_1]
         ->D14_SittingByJune
 
 
 
-=== D14_SittingByJune ===
+= D14_SittingByJune
 There really isn't much to do but sit and 
 *[\[Wait\]]
     //It's been a while since time felt tangible in any way, but now you truly feel it grinding to a screetching halt.
@@ -44,7 +41,7 @@ There really isn't much to do but sit and
 Mary-Ann looks at you
 M: Good morning.
 Tired eyes, gentle smile. #um_m_20
-->END
+->DONE
 
 = wait
 { outcome:
@@ -64,5 +61,5 @@ Inevitably, the law of large numbers holds:
     Mary-Ann chokes on and promptly spits out the little paper ball which joins the many, many others surrounding and completely covering her and the blanket of your bedridden daughter.
     She takes a sharp breath, but before she can say anything, June gives a sigh, pause and loses herself in laughter. #um_j_10
     Mary-Ann gives you a stern look, and begins brushing the paper balls down, oblivious to the ones in her hair.
-    ->END
+    ->DONE
 
