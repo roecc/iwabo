@@ -1,0 +1,8 @@
+{
+    "customInkSnippets": [
+        {
+            "name": "CustomTest",
+            "ink": "this was added using a custom snippet"
+        }
+    ]
+}
