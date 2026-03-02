@@ -3,12 +3,13 @@
 //[let it go]: counter surveillance
 
 LIST modFlags = (hit_april), (ate_dog), (burnt_books)
+LIST counterState = counter_roll
 
 === tst_the_note ===
 April is sitting at her desk when you come in.
 //percept check
-{passive_trait_check("perception", 40): <-noticed_note}
-{passive_trait_check("nurturing", 40): <-ask_how_doing}
+{roll_trait("perception", 40): <-noticed_note}
+{roll_trait("nurturing", 40): <-ask_how_doing}
 *\[slip back out\]
 -->DONE
 
@@ -22,6 +23,8 @@ April is sitting at her desk when you come in.
 You notice she's quickly pocketed a small piece of paper the moment she heard the door.
 -(options)
 * engage her
+    {lookup_trait("perception")}
+    {is_tox("perception")}
     <- demand_note
     <- demand_book
 *\[let it go\]
@@ -35,7 +38,7 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 - (mods) //add trait-check modifiers
 
 - (option)
-->trait_option("Give me the note.", "authority", mod_val, mod_text, ->pass, ->fail)
+->trait_option("Give me the note.", "authority", mod_val, mod_text, not counter_roll, ->pass, ->fail)
 - (pass) //on success
     She lowers her head in defeat and hands you the crumpled piece of paper.
     ->ERROR.loose_end
@@ -52,7 +55,7 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 {modFlags ? ate_dog: {add_mod("ate_the_dog", 10, mod_text, mod_val)}}
 {modFlags ? burnt_books: {add_mod("burnt books", -10, mod_text, mod_val)}}
 
-->trait_option("Give me the book.", "authority", mod_val, mod_text, ->pass, ->fail)
+->trait_option("Give me the book.", "authority", mod_val, mod_text, not counter_roll, ->pass, ->fail)
 - (pass)
     She tosses you the book.
     ->end_story
@@ -66,10 +69,13 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 - (mods) //add trait-check modifiers
 
 - (option)
-->trait_option("She's hiding something.", "perception", mod_val, mod_text, ->pass, ->fail)
+But she's hiding something.
+<-demand_note
+<-demand_book
+->trait_option("[let it go]", "perception", mod_val, mod_text, counter_roll, ->pass, ->fail)
 - (pass) //on success
-    ->noticed_note.options
+    Taking a deep breath, you re-center yourself and let go.
     ->ERROR.loose_end
 - (fail) //on fail
-    Taking a deep breath, you re-center yourself and let go.
+    ->noticed_note.options
 	->ERROR.loose_end

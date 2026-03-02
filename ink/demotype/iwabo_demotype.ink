@@ -11,6 +11,12 @@ IWABO DEMOTYPE DRAFT v0.5.260227
 //modify trait values
 //modifiers
 
+//LIST Lskills = agility, intelligence
+//VAR skill_levels = 0
+//~skill_levels = (strength: 40, agility: 10)
+//{LIST_VALUE(intelligence)}
+
+
 ->tst_the_note
 
 
@@ -22,5 +28,8 @@ ERROR: You forgot to edit the default divert!
 
 
 === end_story ===
+->tst_the_note.noticed_note.options
 ->END
+
+
 
