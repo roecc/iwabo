@@ -15,18 +15,7 @@ INCLUDE functions.ink
 INCLUDE tunnels.ink
 INCLUDE threads.ink
 INCLUDE lists.ink
-
-
-
-
-
-
-
-
-
-
-
-
+INCLUDE maps.ink
 
 
 The principles of Ink.
@@ -64,6 +53,8 @@ The principles of Ink.
     ->threads
 +lists
     ->lists
++maps
+    ->maps
 +Q/A
     ->Questions
 +done

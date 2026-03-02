@@ -1,12 +1,14 @@
+LIST traits = foresight, authority, perception, tinkering, integrity, faith, nurturing, strength
+LIST tox_traits = paranoia, dictator, surveillance, meddling, stubbornness, dogma, smothering, brutality
 //make all to list?
-VAR foresight   = 40 //paranoia
-VAR authority   = 10 //dictator
-VAR perception  = 70 //surveillance
-VAR tinkering   = 0 //meddling
-VAR integrity   = 0 //stubbornness
-VAR faith       = 0 //dogma
-VAR nurturing   = 0 //smothering
-VAR strength    = 0 //brutality
+VAR foresight_val   = 40 //paranoia
+VAR authority_val   = 10 //dictator
+VAR perception_val  = 70 //surveillance
+VAR tinkering_val   = 0 //meddling
+VAR integrity_val   = 0 //stubbornness
+VAR faith_val       = 0 //dogma //piety
+VAR nurturing_val  = 0 //smothering
+VAR strength_val    = 0 //brutality
 
 VAR tox_switch  = 50//tbd
 
@@ -14,43 +16,53 @@ VAR tox_switch  = 50//tbd
 === function lookup_trait(trait_name) ===
 ~temp trait_val = -1
 {
-    -trait_name == "foresight":
-        ~trait_val = foresight
-    -trait_name == "authority":
-        ~trait_val = authority
-    -trait_name == "perception":
-        ~trait_val = perception
-    -trait_name == "tinkering":
-        ~trait_val = tinkering
-    -trait_name == "integrity":
-        ~trait_val = integrity
-    -trait_name == "faith":
-        ~trait_val = faith
-    -trait_name == "nurturing":
-        ~trait_val = nurturing
-    -trait_name == "strength":
-        ~trait_val = strength
+    -trait_name == foresight:
+        ~trait_val = foresight_val
+    -trait_name == authority:
+        ~trait_val = authority_val
+    -trait_name == perception:
+        ~trait_val = perception_val
+    -trait_name == tinkering:
+        ~trait_val = tinkering_val
+    -trait_name == integrity:
+        ~trait_val = integrity_val
+    -trait_name == faith:
+        ~trait_val = faith_val
+    -trait_name == nurturing:
+        ~trait_val = nurturing_val
+    -trait_name == strength:
+        ~trait_val = strength_val
 }
 ~return trait_val
 
+=== function get_other_name(trait_name) ===
+{
+    -LIST_ALL(tox_traits) ? trait_name:
+        ~return traits(LIST_VALUE(trait_name))
+    -LIST_ALL(traits) ? trait_name:
+        ~return tox_traits(LIST_VALUE(trait_name))
+    -else:
+        ERROR: trait not found.
+}
+
 === function modify_trait(trait_name, amount) ===
 {
-    -trait_name == "foresight":
-        ~foresight  += amount
-    -trait_name == "authority":
-        ~authority  += amount
-    -trait_name == "perception":
-        ~perception += amount
-    -trait_name == "tinkering":
-        ~tinkering  += amount
-    -trait_name == "integrity":
-        ~integrity  += amount
-    -trait_name == "faith":
-        ~faith      += amount
-    -trait_name == "nurturing":
-        ~nurturing  += amount
-    -trait_name == "strength":
-        ~strength   += amount
+    -trait_name == foresight:
+        ~foresight_val  += amount
+    -trait_name == authority:
+        ~authority_val  += amount
+    -trait_name == perception:
+        ~perception_val += amount
+    -trait_name == tinkering:
+        ~tinkering_val  += amount
+    -trait_name == integrity:
+        ~integrity_val  += amount
+    -trait_name == faith:
+        ~faith_val      += amount
+    -trait_name == nurturing:
+        ~nurturing_val  += amount
+    -trait_name == strength:
+        ~strength_val   += amount
 }
 
 //=== function 
@@ -85,8 +97,6 @@ VAR tox_switch  = 50//tbd
 
 ~temp trait_val = lookup_trait(trait_name) + mod_val
 ~temp roll_val = roll_d(100)
-
-//~modify_trait(trait_name, 1)
 {
     -trait_val >= roll_val:
         {debug: [passed: {trait_val} >= {roll_val}]}

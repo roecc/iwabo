@@ -8,6 +8,8 @@ IWABO DEMOTYPE DRAFT v0.5.260227
 
 //write a short interaction with a character that uses trait checks and counter checks. - DONE
 
+{get_other_name(surveillance)}
+
 ->tst_the_note
 
 
