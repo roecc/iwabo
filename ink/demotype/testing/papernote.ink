@@ -8,11 +8,13 @@ LIST modFlags = (hit_april), (ate_dog), (burnt_books)
 April is sitting at her desk when you come in.
 //percept check
 You notice she's quickly pocketed a small piece of paper the moment she heard the door.
-<- demand_note
-<- demand_book
+* engage her
+    some nested text.
+    <- demand_note
+    <- demand_book
 *\[let it go\]
     //counter surveillance check
-->DONE
+-->DONE
 
 = demand_note
 ~temp mod_val = 0
