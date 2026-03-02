@@ -52,16 +52,35 @@ VAR strength    = 0 //brutality
 
 
 
+//{fill_condition: {add_mod("fill_mod_text", 0, mod_text, mod_val)}}
+
+=== test
+~temp mod_val = 0
+~temp mod_text = ""
+- (mods) //add trait-check modifiers
+
+- (option)
+//->trait_option("fill_option_text", "fill_trait_name", mod_val, mod_text, ->pass, ->fail)
+- (pass) //on success
+    ->ERROR.loose_end
+- (fail) //on fail
+    ->ERROR.loose_end
 
 
 
 
 
+=== test_snip
+~temp mod_val = 0
+~temp mod_text = ""
+- (mods) //add trait-check modifiers
 
-
-
-
-
+- (option)
+//->trait_option("fill_option_text", "fill_trait_name", mod_val, mod_text, ->pass, ->fail)
+- (pass) //on success
+	->ERROR.loose_end
+- (fail) //on fail
+	->ERROR.loose_end
 
 
 

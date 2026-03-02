@@ -38,7 +38,8 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 - (fail)
     She sets the book on fire.
     ->end_story
-    
+
+
 //add the mod_text and value to the display string
 === function add_mod (text, val, ref sum_text, ref sum_val) ===
  ~sum_text += " {text}: {val>=0:+}{val};"

@@ -1,8 +1,12 @@
 {
     "customInkSnippets": [
         {
-            "name": "CustomTest",
-            "ink": "this was added using a custom snippet"
+            "name": "Trait Check",
+            "ink": "~temp mod_val = 0\n~temp mod_text = \"\"\n- (mods) //add trait-check modifiers\n\n- (option)\n//->trait_option(\"fill_option_text\", \"fill_trait_name\", mod_val, mod_text, ->pass, ->fail)\n- (pass) //on success\n->ERROR.loose_end\n- (fail) //on fail\n\t->ERROR.loose_end"
+        },
+        {
+            "name": "Modifier",
+            "ink": "//{fill_condition: {add_mod(\"fill_mod_text\", 0, mod_text, mod_val)}}"
         }
     ]
 }
