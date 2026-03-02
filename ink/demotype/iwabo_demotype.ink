@@ -13,15 +13,14 @@ IWABO DEMOTYPE DRAFT v0.5.260227
 
 ->tst_the_note
 
-=== ERROR ===
 
+
+=== ERROR ===
 =loose_end
 ERROR: You forgot to edit the default divert!
 ->end_story
 
-=== function came_from(-> x) 
-    ~ return TURNS_SINCE(x) == 0
-
 
 === end_story ===
 ->END
+

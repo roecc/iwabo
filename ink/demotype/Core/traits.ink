@@ -8,9 +8,6 @@ VAR nurturing   = 0 //smothering
 VAR strength    = 0 //brutality
 
 
-=== function disp_trait(trait_name, mod_val, mod_text) ===
-<>\{ {trait_name}: {lookup_trait(trait_name) + mod_val}%; {mod_text} \}
-
 === function lookup_trait(trait_name) ===
 ~temp trait_val = -1
 {
@@ -33,6 +30,12 @@ VAR strength    = 0 //brutality
 }
 ~return trait_val
 
+
+
+=== trait_option(option_text, trait_name, mod_val, mod_text, ->pass, ->fail) ===
+*\ {option_text} {disp_trait(trait_name, mod_val, mod_text)} 
+    ->check_trait(trait_name, mod_val, pass, fail)
+    
 === check_trait(trait_name, mod_val, ->pass, ->fail) ===
 ~temp trait_val = lookup_trait(trait_name) + mod_val
 ~temp roll_val = roll_d(100) 
@@ -45,44 +48,18 @@ VAR strength    = 0 //brutality
         ->fail
 }
 
+=== function disp_trait(trait_name, mod_val, mod_text) ===
+<>\{ {trait_name}: {lookup_trait(trait_name) + mod_val}%; {mod_text} \}
+
+//add the mod_text and value to the display string
+=== function add_mod (text, val, ref sum_text, ref sum_val) ===
+ ~sum_text += " {text}: {val>=0:+}{val};"
+ ~sum_val += val
+
+
+
 === function roll_d(dx) ===
 ~return RANDOM(1, dx)
-
-
-
-
-
-//{fill_condition: {add_mod("fill_mod_text", 0, mod_text, mod_val)}}
-
-=== test
-~temp mod_val = 0
-~temp mod_text = ""
-- (mods) //add trait-check modifiers
-
-- (option)
-//->trait_option("fill_option_text", "fill_trait_name", mod_val, mod_text, ->pass, ->fail)
-- (pass) //on success
-    ->ERROR.loose_end
-- (fail) //on fail
-    ->ERROR.loose_end
-
-
-
-
-
-=== test_snip
-~temp mod_val = 0
-~temp mod_text = ""
-- (mods) //add trait-check modifiers
-
-- (option)
-//->trait_option("fill_option_text", "fill_trait_name", mod_val, mod_text, ->pass, ->fail)
-- (pass) //on success
-	->ERROR.loose_end
-- (fail) //on fail
-	->ERROR.loose_end
-
-
 
 
 

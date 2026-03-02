@@ -8,20 +8,26 @@ LIST modFlags = (hit_april), (ate_dog), (burnt_books)
 April is sitting at her desk when you come in.
 //percept check
 You notice she's quickly pocketed a small piece of paper the moment she heard the door.
-//<- demand_note
+<- demand_note
 <- demand_book
 *\[let it go\]
     //counter surveillance check
 ->DONE
 
 = demand_note
-//*Give me the note. {disp_trait("authority")} ->check_trait("authority", 0, ->pass, ->fail)
-- (pass)
+~temp mod_val = 0
+~temp mod_text = ""
+- (mods) //add trait-check modifiers
+
+- (option)
+->trait_option("Give me the note.", "authority", mod_val, mod_text, ->pass, ->fail)
+- (pass) //on success
     She lowers her head in defeat and hands you the crumpled piece of paper.
-    ->end_story
-- (fail)
-    She purses her lips defiantly, not moving another muscle.
-    ->end_story
+    ->ERROR.loose_end
+- (fail) //on fail
+     She purses her lips defiantly, not moving another muscle.
+	->ERROR.loose_end
+
 
 = demand_book
 ~temp mod_val = 0
@@ -38,14 +44,3 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 - (fail)
     She sets the book on fire.
     ->end_story
-
-
-//add the mod_text and value to the display string
-=== function add_mod (text, val, ref sum_text, ref sum_val) ===
- ~sum_text += " {text}: {val>=0:+}{val};"
- ~sum_val += val
- 
-=== trait_option(option_text, trait_name, mod_val, mod_text, ->pass, ->fail) ===
-//*\ {option_text} {disp_trait(trait_name)} 
-*\ {option_text} {disp_trait(trait_name, mod_val, mod_text)} 
-    ->check_trait(trait_name, mod_val, pass, fail)
