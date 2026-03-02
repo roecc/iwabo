@@ -14,6 +14,11 @@ VAR tox_switch  = 50//tbd
 
 
 === function lookup_trait(trait_name) ===
+//ensure non_tox name
+{
+    -LIST_ALL(tox_traits) ? trait_name:
+        ~trait_name = traits(LIST_VALUE(trait_name))
+}
 ~temp trait_val = -1
 {
     -trait_name == foresight:
@@ -77,7 +82,7 @@ VAR tox_switch  = 50//tbd
 
 //somehow these options expire if i loop back into the knot that forks to them. So they are + instead of * for now.
 === trait_option(option_text, trait_name, mod_val, mod_text, is_counter_roll, ->pass, ->fail) ===
-+\ {option_text} {disp_trait(trait_name, mod_val, mod_text)} 
++\ {option_text} {disp_trait(trait_name, mod_val, mod_text, is_counter_roll)} 
     ->fork_trait_check(trait_name, mod_val, is_counter_roll, pass, fail)
 
 === fork_trait_check(trait_name, mod_val, is_counter_roll, ->pass, ->fail) ===
@@ -121,8 +126,13 @@ VAR tox_switch  = 50//tbd
 }
 
 
-=== function disp_trait(trait_name, mod_val, mod_text) ===
-<>\[ {trait_name}: {lookup_trait(trait_name) + mod_val}%; {mod_text} \]
+=== function disp_trait(trait_name, mod_val, mod_text, is_counter_roll) ===
+~temp disp_name = trait_name
+{
+    -is_counter_roll: 
+        ~disp_name = get_other_name(disp_name)
+}
+<>\[ {disp_name}: {lookup_trait(trait_name) + mod_val}%; {mod_text} \]
 
 === function add_mod (text, val, ref sum_text, ref sum_val) ===
  ~sum_text += " {text}: {val>=0:+}{val};"
