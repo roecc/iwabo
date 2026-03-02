@@ -2,7 +2,7 @@ INCLUDE Core/traits.ink
 
 INCLUDE testing/papernote.ink
 
-~SEED_RANDOM(256)
+~SEED_RANDOM(256011)
 
 IWABO DEMOTYPE DRAFT v0.5.260227
 

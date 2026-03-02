@@ -7,14 +7,27 @@ LIST modFlags = (hit_april), (ate_dog), (burnt_books)
 === tst_the_note ===
 April is sitting at her desk when you come in.
 //percept check
+{passive_trait_check("perception", 40): <-noticed_note}
+{passive_trait_check("nurturing", 40): <-ask_how_doing}
+*\[slip back out\]
+-->DONE
+
+= ask_how_doing
+* I noticed you're a bit down lately, is everything alright?
+    Yea Dad, I'm okay.
+    Thanks for asking though.
+->DONE
+
+= noticed_note
 You notice she's quickly pocketed a small piece of paper the moment she heard the door.
+-(options)
 * engage her
-    some nested text.
     <- demand_note
     <- demand_book
 *\[let it go\]
     //counter surveillance check
--->DONE
+    {is_tox("perception"): <-cc_let_it_go}
+- ->DONE
 
 = demand_note
 ~temp mod_val = 0
@@ -46,3 +59,17 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 - (fail)
     She sets the book on fire.
     ->end_story
+
+= cc_let_it_go
+~temp mod_val = 0
+~temp mod_text = ""
+- (mods) //add trait-check modifiers
+
+- (option)
+->trait_option("She's hiding something.", "perception", mod_val, mod_text, ->pass, ->fail)
+- (pass) //on success
+    ->noticed_note.options
+    ->ERROR.loose_end
+- (fail) //on fail
+    Taking a deep breath, you re-center yourself and let go.
+	->ERROR.loose_end

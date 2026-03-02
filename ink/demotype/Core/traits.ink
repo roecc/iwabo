@@ -1,11 +1,13 @@
 VAR foresight   = 40 //paranoia
 VAR authority   = 10 //dictator
-VAR perception  = 40 //surveillance
+VAR perception  = 70 //surveillance
 VAR tinkering   = 0 //meddling
 VAR integrity   = 0 //stubbornness
 VAR faith       = 0 //dogma
 VAR nurturing   = 0 //smothering
 VAR strength    = 0 //brutality
+
+VAR tox_switch  = 50//tbd
 
 
 === function lookup_trait(trait_name) ===
@@ -30,12 +32,23 @@ VAR strength    = 0 //brutality
 }
 ~return trait_val
 
+=== function is_tox(trait_name) ===
+{
+    -tox_switch <= lookup_trait(trait_name):
+        ~return true
+    -else:
+        ~return false
+}
 
-
+//somehow these options expire if i loop back into the knot that forks to them. So they are + instead of * for now.
 === trait_option(option_text, trait_name, mod_val, mod_text, ->pass, ->fail) ===
-*\ {option_text} {disp_trait(trait_name, mod_val, mod_text)} 
++\ {option_text} {disp_trait(trait_name, mod_val, mod_text)} 
     ->check_trait(trait_name, mod_val, pass, fail)
-    
+
+
+
+
+//rename to trait fork? => checks could be inline booleans for checks.
 === check_trait(trait_name, mod_val, ->pass, ->fail) ===
 ~temp trait_val = lookup_trait(trait_name) + mod_val
 ~temp roll_val = roll_d(100) 
@@ -48,8 +61,25 @@ VAR strength    = 0 //brutality
         ->fail
 }
 
+=== function passive_trait_check(trait_name, mod_val) ===
+~temp debug = 1
+
+~temp trait_val = lookup_trait(trait_name) + mod_val
+~temp roll_val = roll_d(100) 
+{
+    -trait_val >= roll_val:
+        {debug: [passed passive: {trait_val} >= {roll_val}]}
+        ~return true
+    -else:
+        {debug: [failed passive: {trait_val} < {roll_val}]}
+        ~return false
+}
+
+
+
+
 === function disp_trait(trait_name, mod_val, mod_text) ===
-<>\{ {trait_name}: {lookup_trait(trait_name) + mod_val}%; {mod_text} \}
+<>\[ {trait_name}: {lookup_trait(trait_name) + mod_val}%; {mod_text} \]
 
 //add the mod_text and value to the display string
 === function add_mod (text, val, ref sum_text, ref sum_val) ===
