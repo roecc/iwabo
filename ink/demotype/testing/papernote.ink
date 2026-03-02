@@ -10,8 +10,12 @@ April is sitting at her desk when you come in.
 //percept check
 {roll_trait("perception", 40): <-noticed_note}
 {roll_trait("nurturing", 40): <-ask_how_doing}
-*\[slip back out\]
+*   ->nothing_to_say
 -->DONE
+
+= nothing_to_say
+*\[slip back out\]
+        ->end_story
 
 = ask_how_doing
 * I noticed you're a bit down lately, is everything alright?
@@ -22,14 +26,11 @@ April is sitting at her desk when you come in.
 = noticed_note
 You notice she's quickly pocketed a small piece of paper the moment she heard the door.
 -(options)
-* engage her
-    {lookup_trait("perception")}
-    {is_tox("perception")}
-    <- demand_note
-    <- demand_book
+<- demand_note
+<- demand_book
 *\[let it go\]
     //counter surveillance check
-    {is_tox("perception"): <-cc_let_it_go}
+    {is_tox("perception"): <-cr_let_it_go}
 - ->DONE
 
 = demand_note
@@ -63,7 +64,7 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
     She sets the book on fire.
     ->end_story
 
-= cc_let_it_go
+= cr_let_it_go
 ~temp mod_val = 0
 ~temp mod_text = ""
 - (mods) //add trait-check modifiers

@@ -66,24 +66,8 @@ VAR tox_switch  = 50//tbd
 //somehow these options expire if i loop back into the knot that forks to them. So they are + instead of * for now.
 === trait_option(option_text, trait_name, mod_val, mod_text, is_counter_roll, ->pass, ->fail) ===
 +\ {option_text} {disp_trait(trait_name, mod_val, mod_text)} 
-    //~modify_trait(trait_name, is_cunter_roll -1)
     ->fork_trait_check(trait_name, mod_val, is_counter_roll, pass, fail)
 
-
-
-
-//rename to trait fork? => checks could be inline booleans for checks.
-// === check_trait(trait_name, mod_val, ->pass, ->fail) ===
-// ~temp trait_val = lookup_trait(trait_name) + mod_val
-// ~temp roll_val = roll_d(100) 
-// {
-//     -trait_val >= roll_val:
-//         passed! {trait_val} >= {roll_val}
-//         ->pass
-//     -else:
-//         failed! {trait_val} < {roll_val}
-//         ->fail
-// }
 === fork_trait_check(trait_name, mod_val, is_counter_roll, ->pass, ->fail) ===
 ~temp has_passed = 0
 {
@@ -95,32 +79,6 @@ VAR tox_switch  = 50//tbd
         ~modify_trait(trait_name, 1)
 }
 {has_passed: ->pass|->fail}
-
-//=== function trait_check(trait_name, mod_val, is_counter_check) ===
-// ~temp debug = 1
-
-// ~temp trait_val = lookup_trait(trait_name) + mod_val
-// ~temp roll_val = roll_d(100) 
-// {
-//     -is_counter_check:
-//     {
-//         -trait_val < roll_val:
-//             {debug: [passed counter: {trait_val} < {roll_val}]}
-//             ~return true
-//         -else:
-//             {debug: [failed counter: {trait_val} >= {roll_val}]}
-//             ~return false
-//     }
-//     -else:
-//     {
-//         -trait_val >= roll_val:
-//             {debug: [passed: {trait_val} >= {roll_val}]}
-//             ~return true
-//         -else:
-//             {debug: [failed: {trait_val} < {roll_val}]}
-//             ~return false
-//     }
-// }
 
 === function roll_trait(trait_name, mod_val) ===
 ~temp debug = 1
@@ -143,8 +101,6 @@ VAR tox_switch  = 50//tbd
 
 ~temp trait_val = lookup_trait(trait_name) + mod_val
 ~temp roll_val = roll_d(100) 
-
-//~modify_trait(trait_name, -1)
 {
     -trait_val < roll_val:
         {debug: [passed counter: {trait_val} < {roll_val}]}
@@ -158,7 +114,6 @@ VAR tox_switch  = 50//tbd
 === function disp_trait(trait_name, mod_val, mod_text) ===
 <>\[ {trait_name}: {lookup_trait(trait_name) + mod_val}%; {mod_text} \]
 
-//add the mod_text and value to the display string
 === function add_mod (text, val, ref sum_text, ref sum_val) ===
  ~sum_text += " {text}: {val>=0:+}{val};"
  ~sum_val += val
