@@ -1,0 +1,285 @@
+{
+  "main": {
+    "id": "5518177c81bd4592",
+    "type": "split",
+    "children": [
+      {
+        "id": "7638ca1a2e2edc0a",
+        "type": "tabs",
+        "dimension": 36.72945205479452,
+        "children": [
+          {
+            "id": "3d31a609c207449f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Demotype/Scenes/Bad Art.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f1d99d399b44c81d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bedtime Story.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4153e8b90478a54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tone/Cozy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "06777a103c9c6bac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tone/Funny.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4346aeaaea044c94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tone/Sad.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "25ad541ce885bdde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tone/Cozy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "414c8c2bdad06c0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Demotype/Scenes/Synth-Head.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6a64861563f58e17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Demotype/Scenes/This one goes on the Fridge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 7
+      },
+      {
+        "id": "a1c3f7c1c2d44172",
+        "type": "tabs",
+        "dimension": 63.27054794520548,
+        "children": [
+          {
+            "id": "b0a64e65e3b824c7",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d0ef07883f4a5566",
+    "type": "split",
+    "children": [
+      {
+        "id": "719fb5c711a428e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5820fc23ecd6ef2a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "66d00a55234a7f5f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "hook",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d7302eaa45311ed1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bfaeed208999fda4",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfbd235ff116e36a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4489537a0dccd5ec",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5cfc88ebc8c5a0d7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "796d59d00a3c389f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a7c5346361e3ae14",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b0a64e65e3b824c7",
+  "lastOpenFiles": [
+    "Demotype/Mechanics/Resource Management/Day Structure.md",
+    "Themes/Stories as Control.md",
+    "Themes/Natural Order.md",
+    "Themes/Paternalism.md",
+    "Demotype/Scenes/This one goes on the Fridge.md",
+    "Demotype/Mechanics/Resource Management/Day Progression.md",
+    "Demotype/Mechanics/Resource Management/Action Points.md",
+    "Demotype/Hooks/Ludo-Narrative Resonance.md",
+    "Demotype/Mechanics/Resource Management/Resource Management.md",
+    "Demotype/Mechanics/Resource Management/Tasks.md",
+    "Demotype/Mechanics/Resource Management/Task Assignment.md",
+    "Demotype/Mechanics/Resource Management/Morale System.md",
+    "Demotype/Mechanics/Dialogue System/Linear branching Dialogue.md",
+    "Demotype/Mechanics/Dialogue System/Dialogue System.md",
+    "Demotype/Mechanics/Trait System/Character Creation.md",
+    "Demotype/Mechanics/Trait System/Council of Skills.md",
+    "Demotype/Hooks/USPs/Roll against Traits.md",
+    "Demotype/Hooks/USPs/Reactivity.md",
+    "Demotype/Hooks/Breaking Elysium.md",
+    "Demotype/Scenes/Bad Art.md",
+    "Demotype/Scenes/Can't make self Leave.md",
+    "Demotype/Scenes/Grooming April.md",
+    "Demotype/Scenes/Car Scene.md",
+    "Demotype/Scenes/June the Mechanic.md",
+    "Bedtime Story.md",
+    "Tone/Dramatic.md",
+    "Tone",
+    "References",
+    "Demotype/Mechanics/Dialogue System",
+    "Demotype/Mechanics/State Tracking",
+    "Demotype/Hooks/USPs",
+    "Demotype/Mechanics/UX",
+    "Demotype/Mechanics/Resource Management",
+    "Demotype/Mechanics/Trait System",
+    "Demotype/Scenes",
+    "Demotype/Mechanics"
+  ]
+}

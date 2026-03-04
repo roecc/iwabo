@@ -1,0 +1,58 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:theme",
+      "color": {
+        "a": 1,
+        "rgb": 6084253
+      }
+    },
+    {
+      "query": "tag:mechanic",
+      "color": {
+        "a": 1,
+        "rgb": 16755200
+      }
+    },
+    {
+      "query": "tag:hook ",
+      "color": {
+        "a": 1,
+        "rgb": 15468809
+      }
+    },
+    {
+      "query": "tag:#scene  ",
+      "color": {
+        "a": 1,
+        "rgb": 920319
+      }
+    },
+    {
+      "query": "tag:#usp  ",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.9099853515625,
+  "lineSizeMultiplier": 1.77021891276042,
+  "collapse-forces": false,
+  "centerStrength": 0.294148763020833,
+  "repelStrength": 11.7041015625,
+  "linkStrength": 0.7071533203125,
+  "linkDistance": 232,
+  "scale": 0.44246048164114954,
+  "close": true
+}

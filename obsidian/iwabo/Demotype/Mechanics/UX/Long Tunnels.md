@@ -1,0 +1,2 @@
+#mechanic
+[[Ludo-Narrative Resonance]]
