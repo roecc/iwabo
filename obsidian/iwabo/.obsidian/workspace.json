@@ -119,8 +119,33 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "c15b16ee5d79702e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OutGame/Research/Aquaponics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97e6b0d46a14ca9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OutGame/Research/Aquaponics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -186,6 +211,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "OutGame/Research/Aquaponics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,6 +228,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "OutGame/Research/Aquaponics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +250,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "OutGame/Research/Aquaponics.md"
+              }
             }
           }
         ]
@@ -243,8 +272,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b0a64e65e3b824c7",
+  "active": "97e6b0d46a14ca9b",
   "lastOpenFiles": [
+    "OutGame/People/Fritz Haber.md",
+    "OutGame/Research/Aquaponics.md",
+    "Themes/Religious Right.md",
+    "OutGame",
+    "OutGame/Research",
     "Demotype/Mechanics/Resource Management/Day Structure.md",
     "Themes/Stories as Control.md",
     "Themes/Natural Order.md",
@@ -268,18 +302,13 @@
     "Demotype/Scenes/Can't make self Leave.md",
     "Demotype/Scenes/Grooming April.md",
     "Demotype/Scenes/Car Scene.md",
-    "Demotype/Scenes/June the Mechanic.md",
-    "Bedtime Story.md",
-    "Tone/Dramatic.md",
     "Tone",
-    "References",
+    "OutGame/References",
     "Demotype/Mechanics/Dialogue System",
     "Demotype/Mechanics/State Tracking",
     "Demotype/Hooks/USPs",
     "Demotype/Mechanics/UX",
     "Demotype/Mechanics/Resource Management",
-    "Demotype/Mechanics/Trait System",
-    "Demotype/Scenes",
-    "Demotype/Mechanics"
+    "Demotype/Mechanics/Trait System"
   ]
 }

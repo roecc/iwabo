@@ -1,0 +1,49 @@
+#research
+
+##### [Rob Bob's Aquaponics & Backyard Farm](https://www.youtube.com/@RobsAquaponics)
+[Starting an Aquaponics System | How to Start & What You Need](https://www.youtube.com/watch?v=1q_MN4kZRlY)
+[Aquaponics For Beginners Playlist](fast growing rate -> bokchoi harvested in weeks)
+https://www.youtube.com/playlist?list=PLBcWprMIwYYj8zCdbSzPJOR3HRXpxuBwf
+
+
+nitrifying bacteria
+ammonia / nitrite -> nitrate
+
+growth media -> home for the bacteria
+
+nitrosomonas -> oxidise ammonia into nitrite
+nitrobacter & nitrospira -> oxidise nitrite into nitrate (NO3)
+nitrate absorbed by plant roots
+
+clay media light but expensive
+
+can feed fish with duckfeed/azola (supplementary)
+fish feed only lasts 6-12 months
+pot. alternative: freeze-dried whole foods
+bloodworms, krill, brine shrimp? -> fact check
+
+also: compost worms, black soldier fly larvae, meal worms
+depends on type of fish
+
+add a little salt to avoid
+brown blood disease
+nitrite combines with hemoglobin to form methemoglobin
+
+feed by satiation method
+->feed until stop feeding
+
+
+high Urea/Ammonia
+"The plants look hungry, and I found this bag of 'super plant food'"
+Most garden fertilizers contain **Urea** or Ammonium -> Ammonia spike.
+Ammonia toxic -> "burns" plant roots -> wilt and turn yellow almost overnight.
+bc biofilter (the bacteria) is already established
+system eventually process the ammonia into nitrates 
+The fish might gasp at the surface for a day, but harvest lost
+->fact check
+
+alternative: scrubbing the filters
+washing away the gunk with treated or chlorinated water
+killing the bacteria, crashing the cycle
+
+	xx
