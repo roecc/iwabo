@@ -32,7 +32,7 @@ nitrite combines with hemoglobin to form methemoglobin
 feed by satiation method
 ->feed until stop feeding
 
-
+diy setup:
 high Urea/Ammonia
 "The plants look hungry, and I found this bag of 'super plant food'"
 Most garden fertilizers contain **Urea** or Ammonium -> Ammonia spike.
@@ -42,8 +42,37 @@ system eventually process the ammonia into nitrates
 The fish might gasp at the surface for a day, but harvest lost
 ->fact check
 
+industrial setup:
 alternative: scrubbing the filters
 washing away the gunk with treated or chlorinated water
 killing the bacteria, crashing the cycle
 
-	xx
+regular pH check
+![[Pasted image 20260304134208.png]]
+
+
+iron can trigger explosive algea growth?
+
+
+high ammonia:
+osmotic shock -> moisture pulled from roots
+leaves of lettuce / herbs, translucent / "wet" at edges, as if lightly boiled
+sharp, metallic, or "stinging" smell
+
+bright red inflamed gills
+piping at surface (damaged gills, not enough oxy)
+wont grow for weeks
+
+could also do:
+ammonia overdose
+->nitrosomona spike / inhibiting nitrospira
+->lots of nitrite
+->brown blood disease (big fish die first, high oxy demand) - not safe to eat
+->can save fish adding salt, killing more plants
+->
+
+high nitrite
+"chlorosis" (yellowing between the veins).
+hardier crops (kale/chard) will survive
+crops (strawberries/lettuce) wilt
+
