@@ -4,96 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "7638ca1a2e2edc0a",
+        "id": "a1c3f7c1c2d44172",
         "type": "tabs",
-        "dimension": 36.72945205479452,
+        "dimension": 44.178082191780824,
         "children": [
           {
-            "id": "3d31a609c207449f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Demotype/Scenes/Bad Art.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f1d99d399b44c81d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bedtime Story.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4153e8b90478a54",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tone/Cozy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "06777a103c9c6bac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tone/Funny.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4346aeaaea044c94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tone/Sad.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "25ad541ce885bdde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tone/Cozy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "414c8c2bdad06c0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Demotype/Scenes/Synth-Head.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a64861563f58e17",
+            "id": "c15b16ee5d79702e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -103,49 +19,98 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ef4406ef2788f664",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motifs/Bunker - Dungeon - Cave.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1d02c3102b748adb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motifs/Daryl - Dragon - Leviathan.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "db73cbee8afaa771",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "8c4c63029c2969e4"
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       },
       {
-        "id": "a1c3f7c1c2d44172",
+        "id": "939794348e4bd711",
         "type": "tabs",
-        "dimension": 63.27054794520548,
+        "dimension": 55.821917808219176,
         "children": [
           {
-            "id": "b0a64e65e3b824c7",
+            "id": "fffb97bea1bd580b",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.5101709553922056,
+                  "close": false
+                }
+              }
+            },
+            "group": "8c4c63029c2969e4"
+          },
+          {
+            "id": "10fa9f03cb25b4b3",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
-          },
-          {
-            "id": "c15b16ee5d79702e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OutGame/Research/Aquaponics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97e6b0d46a14ca9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-03-05.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,7 +139,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hook",
+                "query": "wilting",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -211,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2026-03-05.md",
+                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,7 +193,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2026-03-05.md",
+                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -251,7 +216,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-03-05.md"
+                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md"
               }
             }
           }
@@ -272,44 +237,51 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97e6b0d46a14ca9b",
+  "active": "db73cbee8afaa771",
   "lastOpenFiles": [
-    "2026-03-04.md",
-    "2026-03-05.md",
-    "OutGame/Research/Aquaponics.md",
-    "Pasted image 20260304134208.png",
+    "Img/pH teshing kit.png",
+    "Demotype/Scenes/Synth-Head.md",
+    "Demotype/Scenes/Bad Art.md",
+    "Demotype/Scenes/Bedtime Story.md",
+    "Tone/Sad.md",
+    "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
+    "Demotype/Scenes/This one goes on the Fridge.md",
+    "Demotype/Scenes/June the Mechanic.md",
+    "Demotype/Scenes/Grooming April.md",
+    "Demotype/Scenes/Car Scene.md",
+    "Motifs/Walled Garden.md",
+    "Motifs/Daryl - Dragon - Leviathan.md",
+    "Motifs/Bunker - Dungeon - Cave.md",
+    "Motifs",
+    "OutGame/References/Games/The longest Journey.md",
+    "OutGame/People/John Milton.md",
+    "Img/UreaBottle1.png",
+    "Img/UreaBottle3.png",
+    "Img/Wood - American Gothic.png",
+    "OutGame/References/Art/American Gothic.md",
+    "Img/Goya - Saturn.png",
+    "Img/Rubens - Cronus.png",
+    "OutGame/References/Art/Saturn devouring his Son.md",
     "OutGame/People/Fritz Haber.md",
+    "OutGame/References/Books/Paradise Lost.md",
+    "1.md",
+    "OutGame/References/Games",
+    "OutGame/References/Books",
+    "OutGame/References/Art",
+    "2026-03-05.md",
+    "dt_d1.canvas",
+    "2026-03-04.md",
+    "Dailies",
+    "Img",
+    "OutGame/Research/Aquaponics.md",
+    "Pasted image 20260305171512.png",
+    "Pasted image 20260305171538.png",
     "Themes/Religious Right.md",
     "OutGame",
     "OutGame/Research",
     "Demotype/Mechanics/Resource Management/Day Structure.md",
     "Themes/Stories as Control.md",
-    "Themes/Natural Order.md",
-    "Themes/Paternalism.md",
-    "Demotype/Scenes/This one goes on the Fridge.md",
-    "Demotype/Mechanics/Resource Management/Day Progression.md",
-    "Demotype/Mechanics/Resource Management/Action Points.md",
-    "Demotype/Hooks/Ludo-Narrative Resonance.md",
-    "Demotype/Mechanics/Resource Management/Resource Management.md",
-    "Demotype/Mechanics/Resource Management/Tasks.md",
-    "Demotype/Mechanics/Resource Management/Task Assignment.md",
-    "Demotype/Mechanics/Resource Management/Morale System.md",
-    "Demotype/Mechanics/Dialogue System/Linear branching Dialogue.md",
-    "Demotype/Mechanics/Dialogue System/Dialogue System.md",
-    "Demotype/Mechanics/Trait System/Character Creation.md",
-    "Demotype/Mechanics/Trait System/Council of Skills.md",
-    "Demotype/Hooks/USPs/Roll against Traits.md",
-    "Demotype/Hooks/USPs/Reactivity.md",
-    "Demotype/Hooks/Breaking Elysium.md",
-    "Demotype/Scenes/Bad Art.md",
-    "Demotype/Scenes/Can't make self Leave.md",
     "Tone",
-    "OutGame/References",
-    "Demotype/Mechanics/Dialogue System",
-    "Demotype/Mechanics/State Tracking",
-    "Demotype/Hooks/USPs",
-    "Demotype/Mechanics/UX",
-    "Demotype/Mechanics/Resource Management",
-    "Demotype/Mechanics/Trait System"
+    "OutGame/References"
   ]
 }

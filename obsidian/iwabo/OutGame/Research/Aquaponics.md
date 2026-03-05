@@ -48,7 +48,7 @@ washing away the gunk with treated or chlorinated water
 killing the bacteria, crashing the cycle
 
 regular pH check
-![[Pasted image 20260304134208.png]]
+![[pH teshing kit.png]]
 
 
 iron can trigger explosive algea growth?
@@ -76,3 +76,9 @@ high nitrite
 hardier crops (kale/chard) will survive
 crops (strawberries/lettuce) wilt
 
+
+
+Urea
+[liquid urea](https://www.amazon.com/Purpose-Fertilizer-Mirconutrients-Release-Nitrogen/dp/B07V6K6DKL?crid=27UC1TPBDOZ&dib=eyJ2IjoiMSJ9.4DnjSkE-4TIAQOLAICOoUnnijIHoBOJJ-0hNAeCClrryyPT5UzOvWc2MIvJuyZMuJSsP5RWhFvD5OzPpt-i2giI9K57exIopxb4-d_Aj9CJIKz94ZEMcx-t9fyVyCQf4iByr0lERJwvBDmsTOyXVAOnYkXlJORriVM0tYpRsPjPokPZkJlGB8OSkrhq2OzCxZKLK3GSCxY4hlIkpWvmgLULlBUNPKfJT1U4NcM5aHWfa__z44QwJ6-mzEHN8nU4XYTzpmBo5JmxCUTaztQm088cVZ1Xd2rVklX91hbZGBcA.Kis_AjP8B-2q3Db30RxKGuXZW4_K--fmIZkfng6U-fg&dib_tag=se&keywords=urea%2Bfertilizer&qid=1772727191&sprefix=ure%2Bfertilizer%2Caps%2C213&sr=8-7&th=1)
+![[Pasted image 20260305171538.png]]
+![[Pasted image 20260305171512.png]]

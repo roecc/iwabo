@@ -8,5 +8,6 @@
             "name": "Modifier",
             "ink": "//{fill_condition: {add_mod(\"fill_mod_text\", 0, mod_text, mod_val)}}"
         }
-    ]
+    ],
+    "instructionPrefix": "::"
 }

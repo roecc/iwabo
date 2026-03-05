@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:theme",
@@ -49,10 +49,10 @@
   "nodeSizeMultiplier": 1.9099853515625,
   "lineSizeMultiplier": 1.77021891276042,
   "collapse-forces": false,
-  "centerStrength": 0.294148763020833,
+  "centerStrength": 0.593302408854167,
   "repelStrength": 11.7041015625,
   "linkStrength": 0.7071533203125,
   "linkDistance": 232,
-  "scale": 0.44246048164114954,
+  "scale": 0.9350004926508225,
   "close": true
 }
