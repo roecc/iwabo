@@ -1,9 +1,9 @@
 LIST traits = foresight, authority, perception, tinkering, integrity, faith, nurturing, strength
 LIST tox_traits = paranoia, dictator, surveillance, meddling, stubbornness, dogma, smothering, brutality
 //make all to list?
-VAR foresight_val   = 40 //paranoia
-VAR authority_val   = 10 //dictator
-VAR perception_val  = 70 //surveillance
+VAR foresight_val   = 10 //paranoia
+VAR authority_val   = 100 //dictator //domineering
+VAR perception_val  = 40 //surveillance
 VAR tinkering_val   = 0 //meddling
 VAR integrity_val   = 0 //stubbornness
 VAR faith_val       = 0 //dogma //piety
@@ -13,7 +13,7 @@ VAR strength_val    = 0 //brutality
 VAR tox_switch  = 50//tbd
 
 
-=== function lookup_trait(trait_name) ===
+=== function lookup_trait_val(trait_name) ===
 //ensure non_tox name
 {
     -LIST_ALL(tox_traits) ? trait_name:
@@ -38,7 +38,7 @@ VAR tox_switch  = 50//tbd
     -trait_name == strength:
         ~trait_val = strength_val
 }
-~return trait_val
+~return  trait_val
 
 === function get_other_name(trait_name) ===
 {
@@ -51,30 +51,58 @@ VAR tox_switch  = 50//tbd
 }
 
 === function modify_trait(trait_name, amount) ===
+~temp debug = 1
+~temp ret_val = -1
 {
     -trait_name == foresight:
-        ~foresight_val  += amount
+        ~modify_trait_helper(trait_name, foresight_val, amount)
+        ~ret_val = foresight_val
     -trait_name == authority:
-        ~authority_val  += amount
+        ~modify_trait_helper(trait_name, authority_val, amount)
+        ~ret_val = authority_val
     -trait_name == perception:
-        ~perception_val += amount
+        ~modify_trait_helper(trait_name, perception_val, amount)
+        ~ret_val = perception_val
     -trait_name == tinkering:
-        ~tinkering_val  += amount
+        ~modify_trait_helper(trait_name, tinkering_val, amount)
+        ~ret_val = tinkering_val
     -trait_name == integrity:
-        ~integrity_val  += amount
+        ~modify_trait_helper(trait_name, integrity_val, amount)
+        ~ret_val = integrity_val
     -trait_name == faith:
-        ~faith_val      += amount
+        ~modify_trait_helper(trait_name, faith_val, amount)
+        ~ret_val = faith_val
     -trait_name == nurturing:
-        ~nurturing_val  += amount
+        ~modify_trait_helper(trait_name, nurturing_val, amount)
+        ~ret_val = nurturing_val
     -trait_name == strength:
-        ~strength_val   += amount
+        ~modify_trait_helper(trait_name, strength_val, amount)
+        ~ret_val = strength_val
 }
+{debug:[{trait_name}{amount > 0:++|--} => {ret_val}]}
+~return ret_val
+
+=== function modify_trait_helper(trait_name, ref r_trait_val, amount) ===
+~temp debug = 1
+
+~r_trait_val += amount
+{
+    -r_trait_val < 0:
+        {debug: [{trait_name} underflowed: {r_trait_val}]}
+        ~r_trait_val = 0
+    -r_trait_val > 100:
+        {debug: [{trait_name} overflowed: {r_trait_val}]}
+        ~r_trait_val = 100
+}
+~return r_trait_val
+
+
 
 //=== function 
 
 === function is_tox(trait_name) ===
 {
-    -tox_switch <= lookup_trait(trait_name):
+    -tox_switch <= lookup_trait_val(trait_name):
         ~return true
     -else:
         ~return false
@@ -100,7 +128,7 @@ VAR tox_switch  = 50//tbd
 === function roll_trait(trait_name, mod_val) ===
 ~temp debug = 1
 
-~temp trait_val = lookup_trait(trait_name) + mod_val
+~temp trait_val = lookup_trait_val(trait_name) + mod_val
 ~temp roll_val = roll_d(100)
 {
     -trait_val >= roll_val:
@@ -114,7 +142,7 @@ VAR tox_switch  = 50//tbd
 === function roll_counter(trait_name, mod_val) ===
 ~temp debug = 1
 
-~temp trait_val = lookup_trait(trait_name) + mod_val
+~temp trait_val = lookup_trait_val(trait_name) + mod_val
 ~temp roll_val = roll_d(100) 
 {
     -trait_val < roll_val:
@@ -132,7 +160,7 @@ VAR tox_switch  = 50//tbd
     -is_counter_roll: 
         ~disp_name = get_other_name(disp_name)
 }
-<>\[ {disp_name}: {lookup_trait(trait_name) + mod_val}%; {mod_text} \]
+<>\[ {disp_name}: {lookup_trait_val(trait_name) + mod_val}%; {mod_text} \]
 
 === function add_mod (text, val, ref sum_text, ref sum_val) ===
  ~sum_text += " {text}: {val>=0:+}{val};"

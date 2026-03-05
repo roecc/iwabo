@@ -2,13 +2,16 @@ INCLUDE Core/traits.ink
 
 INCLUDE testing/papernote.ink
 
+INCLUDE Demotype/Day1/dt_d1_a1.ink
+INCLUDE Demotype/CharacterCreation/CarScene.ink
+
+
+
 ~SEED_RANDOM(256011)
 
 IWABO DEMOTYPE DRAFT v0.5.260227
 
 //write a short interaction with a character that uses trait checks and counter checks. - DONE
-
-{get_other_name(surveillance)}
 
 ->tst_the_note
 

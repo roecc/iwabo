@@ -138,7 +138,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-03-04.md",
+                "file": "2026-03-05.md",
                 "mode": "source",
                 "source": false
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2026-03-04.md",
+                "file": "2026-03-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,7 +228,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2026-03-04.md",
+                "file": "2026-03-05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -251,7 +251,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-03-04.md"
+                "file": "2026-03-05.md"
               }
             }
           }
@@ -274,8 +274,9 @@
   },
   "active": "97e6b0d46a14ca9b",
   "lastOpenFiles": [
-    "OutGame/Research/Aquaponics.md",
     "2026-03-04.md",
+    "2026-03-05.md",
+    "OutGame/Research/Aquaponics.md",
     "Pasted image 20260304134208.png",
     "OutGame/People/Fritz Haber.md",
     "Themes/Religious Right.md",
@@ -302,7 +303,6 @@
     "Demotype/Hooks/Breaking Elysium.md",
     "Demotype/Scenes/Bad Art.md",
     "Demotype/Scenes/Can't make self Leave.md",
-    "Demotype/Scenes/Grooming April.md",
     "Tone",
     "OutGame/References",
     "Demotype/Mechanics/Dialogue System",
