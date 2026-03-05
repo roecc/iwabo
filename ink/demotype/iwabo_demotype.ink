@@ -1,10 +1,11 @@
-INCLUDE Core/traits.ink
+INCLUDE Core/trait_settings.ink
+INCLUDE Core/trait_handlers.ink
+INCLUDE Core/trait_rolls.ink
 
 INCLUDE testing/papernote.ink
 
 INCLUDE Demotype/Day1/dt_d1_a1.ink
 INCLUDE Demotype/CharacterCreation/CarScene.ink
-
 
 
 ~SEED_RANDOM(256011)
@@ -13,7 +14,8 @@ IWABO DEMOTYPE DRAFT v0.5.260227
 
 //write a short interaction with a character that uses trait checks and counter checks. - DONE
 
-->tst_the_note
+->dt_d1_a1
+//->tst_the_note
 
 
 

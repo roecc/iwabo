@@ -78,5 +78,6 @@ But she's hiding something.
     Taking a deep breath, you re-center yourself and let go.
     ->ERROR.loose_end
 - (fail) //on fail
+    I can't have her not trust me.
     ->noticed_note.options
 	->ERROR.loose_end
