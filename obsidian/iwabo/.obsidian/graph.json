@@ -2,7 +2,7 @@
   "collapse-filter": false,
   "search": "",
   "showTags": false,
-  "showAttachments": false,
+  "showAttachments": true,
   "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
@@ -18,7 +18,7 @@
       "query": "tag:mechanic",
       "color": {
         "a": 1,
-        "rgb": 7626548
+        "rgb": 12493935
       }
     },
     {
@@ -63,10 +63,10 @@
   "nodeSizeMultiplier": 1.9099853515625,
   "lineSizeMultiplier": 1.77021891276042,
   "collapse-forces": false,
-  "centerStrength": 0.429524739583333,
-  "repelStrength": 13.6767578125,
-  "linkStrength": 0.774739583333333,
+  "centerStrength": 0,
+  "repelStrength": 12.7669270833333,
+  "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.7907301998532237,
+  "scale": 1.6295126558582644,
   "close": false
 }

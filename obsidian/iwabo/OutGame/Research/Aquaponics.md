@@ -1,12 +1,17 @@
 #research
 
+![[Aquapnonics - E1.png]]
+[source](https://www.aquaponicsforbeginners.com/the-role-of-ammonia-in-aquaponics-systems/)
 ##### [Rob Bob's Aquaponics & Backyard Farm](https://www.youtube.com/@RobsAquaponics)
 [Starting an Aquaponics System | How to Start & What You Need](https://www.youtube.com/watch?v=1q_MN4kZRlY)
 [Aquaponics For Beginners Playlist](fast growing rate -> bokchoi harvested in weeks)
 https://www.youtube.com/playlist?list=PLBcWprMIwYYj8zCdbSzPJOR3HRXpxuBwf
 
+#### This WW2 bunker is growing sustainable salad
+https://www.weforum.org/stories/2021/04/underground-vegetable-garden-sustainable-farming/
 
-nitrifying bacteria
+n
+itrifying bacteria
 ammonia / nitrite -> nitrate
 
 growth media -> home for the bacteria
@@ -80,5 +85,8 @@ crops (strawberries/lettuce) wilt
 
 Urea
 [liquid urea](https://www.amazon.com/Purpose-Fertilizer-Mirconutrients-Release-Nitrogen/dp/B07V6K6DKL?crid=27UC1TPBDOZ&dib=eyJ2IjoiMSJ9.4DnjSkE-4TIAQOLAICOoUnnijIHoBOJJ-0hNAeCClrryyPT5UzOvWc2MIvJuyZMuJSsP5RWhFvD5OzPpt-i2giI9K57exIopxb4-d_Aj9CJIKz94ZEMcx-t9fyVyCQf4iByr0lERJwvBDmsTOyXVAOnYkXlJORriVM0tYpRsPjPokPZkJlGB8OSkrhq2OzCxZKLK3GSCxY4hlIkpWvmgLULlBUNPKfJT1U4NcM5aHWfa__z44QwJ6-mzEHN8nU4XYTzpmBo5JmxCUTaztQm088cVZ1Xd2rVklX91hbZGBcA.Kis_AjP8B-2q3Db30RxKGuXZW4_K--fmIZkfng6U-fg&dib_tag=se&keywords=urea%2Bfertilizer&qid=1772727191&sprefix=ure%2Bfertilizer%2Caps%2C213&sr=8-7&th=1)
-![[Pasted image 20260305171538.png]]
-![[Pasted image 20260305171512.png]]
+![[UreaBottle1.png]]![[UreaBottle3.png]]
+
+raw ammonia lethal neurotoxin for fish
+
+plants usually need dark cycle

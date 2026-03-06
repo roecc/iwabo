@@ -15,3 +15,5 @@ This could go as far as the player with high speech/sophistry skill bending the 
 [[Create Doctrine]]
 [[Resource Management]]
 [[Trait Rolls]]
+[[Traits]]
+[[Faith - Dogma]]

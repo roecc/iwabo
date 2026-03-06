@@ -8,176 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0b73ae46d4bc4225",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Demotype/Scenes/Paradise Lost II - Wilting Garden.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "22af6cb4027b3921",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "dt_d1.canvas",
-                "viewState": {
-                  "x": 400.35748297397976,
-                  "y": -397.24726502994605,
-                  "zoom": -1.0750305940126528
-                }
-              }
-            }
-          },
-          {
-            "id": "1493cb3fdd70c547",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OutGame/References/Art/Lascaux Handprints.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a9ef92064ffc325",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OutGame/References/Art/Nuclear Shadows.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab9e4a030836e0de",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Img/iwabo pitch - nuclear family.png"
-              }
-            }
-          },
-          {
-            "id": "9c63b5746c101792",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Motifs/Apple.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f0b1ec2e5e79fa5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Motifs/Apocalypsis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "592f31decdf0f242",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OutGame/References/Art/Lascaux Handprints.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6cb56aae25921845",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Demotype/Scenes/Blow(d)Art.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "30ee6f6eedcea134",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OutGame/References/Music/Time in a Bottle.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a7e3cdc306532de3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Motifs/Mortality.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "992427c441ef4d31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Themes/Panopticon.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "cfef83a3e82cf25e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Themes/Panopticon.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc10a7a6264a22bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Motifs/Time.md",
+                "file": "Demotype/Mechanics/Trait System/Traits.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 13
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "time",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -223,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -244,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Walter Benjamin.md",
+                "file": "Demotype/Mechanics/Trait System/Traits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -261,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Walter Benjamin.md",
+                "file": "Demotype/Mechanics/Trait System/Traits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -284,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Walter Benjamin.md"
+                "file": "Demotype/Mechanics/Trait System/Traits.md"
               }
             }
           }
@@ -321,24 +162,8 @@
                 "id": "b83d9cf1e1d46de1",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Walter Benjamin.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "fcf0a8f18e0e1b6e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "OutGame/References/Art/Saturn devouring his Son.md",
-                    "mode": "source",
-                    "source": false
-                  }
+                  "type": "graph",
+                  "state": {}
                 }
               }
             ]
@@ -354,37 +179,39 @@
       }
     ]
   },
-  "active": "b83d9cf1e1d46de1",
+  "active": "cfef83a3e82cf25e",
   "lastOpenFiles": [
-    "Themes/Art as Shadow.md",
-    "Walter Benjamin.md",
-    "Demotype/Scenes/Blow(d)Art.md",
-    "OutGame/References/Art/Saturn devouring his Son.md",
-    "Motifs/Time.md",
-    "Themes/Plato's Cave.md",
-    "Motifs/Bunker - Dungeon - Cave.md",
-    "OutGame/References/Music/Time in a Bottle.md",
-    "Themes/Religion as Control.md",
-    "Demotype/Mechanics/Trait System/Quoting Scripture.md",
-    "Themes/Religion.md",
+    "Demotype/Mechanics/Trait System/Traits.md",
+    "dt_d1.canvas",
+    "Demotype/Mechanics/Trait System/Traits/Strength - Brutality.md",
+    "dt_d2.canvas",
+    "Demotype/Scenes/Paradise Lost I - Walled Garden.md",
     "Demotype/Scenes/Paradise Lost II - Wilting Garden.md",
-    "Motifs/Paradise.md",
-    "Demotype/Mechanics/Resource Management/Writing Doctrine.md",
+    "Demotype/Mechanics/Resource Management/Resource Management.md",
+    "Themes/Control.md",
+    "Demotype/Scenes/Blow(d)Art.md",
+    "Demotype/Mechanics/Resource Management/Action Points.md",
+    "Themes/High Control Groups.md",
+    "OutGame/Research/Aquaponics.md",
     "Themes/Panopticon.md",
     "Themes/Social Contract Theory.md",
-    "Motifs/Mortality.md",
-    "OutGame/References/Music/Maybe.md",
-    "OutGame/Research/Aquaponics.md",
-    "OutGame/References/Games/Fallout.md",
-    "OutGame/References/Books/Paradise Lost.md",
-    "OutGame/References/Art/Nuclear Shadows.md",
-    "OutGame/References/Art/Lascaux Handprints.md",
-    "OutGame/References/Art/American Gothic.md",
-    "OutGame/References/Games/The longest Journey.md",
-    "OutGame/References/Music",
-    "Motifs/Conservation.md",
-    "dt_d1.canvas",
+    "OutGame/References/Games/The Walking Dead.md",
+    "Themes/Language as Control.md",
+    "Demotype/Mechanics/Trait System/Quoting Scripture.md",
+    "Themes/Care through Violence.md",
+    "OutGame/References/Games/The Last of Us.md",
+    "Demotype/Mechanics/Trait System/Traits/Faith - Dogma.md",
+    "Demotype/Mechanics/Trait System/Traits/Authority - Dictator.md",
+    "Themes/Cost of Living.md",
+    "Demotype/Mechanics/Trait System/Traits/Nurturing - Smothering.md",
+    "Demotype/Mechanics/Trait System/Traits/Tinkering - Meddling.md",
+    "Demotype/Mechanics/Trait System/Traits/Integrity - Stubbornness.md",
+    "Demotype/Mechanics/Trait System/Traits/Perception - Surveillance.md",
+    "Demotype/Mechanics/Trait System/Traits/Foresight - Paranoia.md",
+    "Demotype/Mechanics/Trait System/Traits",
     "Img/iwabo pitch - nuclear family.png",
+    "Img/Aquapnonics - E1.png",
+    "OutGame/References/Music",
     "Img/Hiroshima - Nuclear Shadow.png",
     "Img/Art/Wood - American Gothic.png",
     "Img/Art/Rubens - Cronus.png",
@@ -400,8 +227,6 @@
     "Img/pH teshing kit.png",
     "Motifs",
     "Img/UreaBottle1.png",
-    "Img/UreaBottle3.png",
-    "OutGame/References/Games",
-    "OutGame/References/Books"
+    "OutGame/References/Games"
   ]
 }

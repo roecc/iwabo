@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"2883b0c590476fe3","x":273,"y":80,"width":400,"height":400,"type":"file","file":"dt_d1.canvas"},
+		{"id":"1a1f6ed3de039143","type":"text","text":"One thing","x":-200,"y":-320,"width":250,"height":60},
+		{"id":"644bca4001ef4c65","type":"text","text":"Another Thing","x":-125,"y":-30,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"8996e0669797bc3c","fromNode":"1a1f6ed3de039143","fromSide":"bottom","toNode":"644bca4001ef4c65","toSide":"top"}
+	]
+}
