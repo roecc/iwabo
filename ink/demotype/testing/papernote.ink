@@ -9,7 +9,7 @@ LIST counterState = counter_roll
 April is sitting at her desk when you come in.
 //percept check
 {roll_trait(perception, 40): <-noticed_note}
-{roll_trait(nurturing, 40): <-ask_how_doing}
+{roll_trait(nurturing, 20): <-ask_how_doing}
 *   ->nothing_to_say
 -->DONE
 

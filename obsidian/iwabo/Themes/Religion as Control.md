@@ -7,3 +7,5 @@ Could go as far as creating your own doctrine in the Bunker
 
 [[Religion]]
 [[Religious Right]]
+
+[[Natural Order]]

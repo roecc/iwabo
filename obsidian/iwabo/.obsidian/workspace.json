@@ -6,111 +6,178 @@
       {
         "id": "a1c3f7c1c2d44172",
         "type": "tabs",
-        "dimension": 44.178082191780824,
         "children": [
           {
-            "id": "c15b16ee5d79702e",
+            "id": "0b73ae46d4bc4225",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Demotype/Scenes/This one goes on the Fridge.md",
+                "file": "Demotype/Scenes/Paradise Lost II - Wilting Garden.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ef4406ef2788f664",
+            "id": "22af6cb4027b3921",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Motifs/Bunker - Dungeon - Cave.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1d02c3102b748adb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Motifs/Daryl - Dragon - Leviathan.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "db73cbee8afaa771",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "8c4c63029c2969e4"
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "939794348e4bd711",
-        "type": "tabs",
-        "dimension": 55.821917808219176,
-        "children": [
-          {
-            "id": "fffb97bea1bd580b",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1.5101709553922056,
-                  "close": false
+                "file": "dt_d1.canvas",
+                "viewState": {
+                  "x": 400.35748297397976,
+                  "y": -397.24726502994605,
+                  "zoom": -1.0750305940126528
                 }
               }
-            },
-            "group": "8c4c63029c2969e4"
+            }
           },
           {
-            "id": "10fa9f03cb25b4b3",
+            "id": "1493cb3fdd70c547",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "OutGame/References/Art/Lascaux Handprints.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a9ef92064ffc325",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OutGame/References/Art/Nuclear Shadows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ab9e4a030836e0de",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Img/iwabo pitch - nuclear family.png"
+              }
+            }
+          },
+          {
+            "id": "9c63b5746c101792",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motifs/Apple.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6f0b1ec2e5e79fa5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motifs/Apocalypsis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "592f31decdf0f242",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OutGame/References/Art/Lascaux Handprints.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6cb56aae25921845",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Demotype/Scenes/Blow(d)Art.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30ee6f6eedcea134",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OutGame/References/Music/Time in a Bottle.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a7e3cdc306532de3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motifs/Mortality.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "992427c441ef4d31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Themes/Panopticon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cfef83a3e82cf25e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Themes/Panopticon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dc10a7a6264a22bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motifs/Time.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -139,7 +206,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "wilting",
+                "query": "time",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -156,7 +223,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -176,7 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
+                "file": "Walter Benjamin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +261,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
+                "file": "Walter Benjamin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,7 +284,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Demotype/Scenes/Paradise Lost - Wilting Garden.md"
+                "file": "Walter Benjamin.md"
               }
             }
           }
@@ -237,51 +305,103 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db73cbee8afaa771",
+  "floating": {
+    "id": "f1de053957e50c4c",
+    "type": "floating",
+    "children": [
+      {
+        "id": "aa7b214df39267d4",
+        "type": "window",
+        "children": [
+          {
+            "id": "f5414a4c2f9b0a34",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b83d9cf1e1d46de1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Walter Benjamin.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "fcf0a8f18e0e1b6e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "OutGame/References/Art/Saturn devouring his Son.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 233,
+        "y": -1410,
+        "width": 760,
+        "height": 909,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "b83d9cf1e1d46de1",
   "lastOpenFiles": [
-    "Img/pH teshing kit.png",
-    "Demotype/Scenes/Synth-Head.md",
-    "Demotype/Scenes/Bad Art.md",
-    "Demotype/Scenes/Bedtime Story.md",
-    "Tone/Sad.md",
-    "Demotype/Scenes/Paradise Lost - Wilting Garden.md",
-    "Demotype/Scenes/This one goes on the Fridge.md",
-    "Demotype/Scenes/June the Mechanic.md",
-    "Demotype/Scenes/Grooming April.md",
-    "Demotype/Scenes/Car Scene.md",
-    "Motifs/Walled Garden.md",
-    "Motifs/Daryl - Dragon - Leviathan.md",
+    "Themes/Art as Shadow.md",
+    "Walter Benjamin.md",
+    "Demotype/Scenes/Blow(d)Art.md",
+    "OutGame/References/Art/Saturn devouring his Son.md",
+    "Motifs/Time.md",
+    "Themes/Plato's Cave.md",
     "Motifs/Bunker - Dungeon - Cave.md",
-    "Motifs",
+    "OutGame/References/Music/Time in a Bottle.md",
+    "Themes/Religion as Control.md",
+    "Demotype/Mechanics/Trait System/Quoting Scripture.md",
+    "Themes/Religion.md",
+    "Demotype/Scenes/Paradise Lost II - Wilting Garden.md",
+    "Motifs/Paradise.md",
+    "Demotype/Mechanics/Resource Management/Writing Doctrine.md",
+    "Themes/Panopticon.md",
+    "Themes/Social Contract Theory.md",
+    "Motifs/Mortality.md",
+    "OutGame/References/Music/Maybe.md",
+    "OutGame/Research/Aquaponics.md",
+    "OutGame/References/Games/Fallout.md",
+    "OutGame/References/Books/Paradise Lost.md",
+    "OutGame/References/Art/Nuclear Shadows.md",
+    "OutGame/References/Art/Lascaux Handprints.md",
+    "OutGame/References/Art/American Gothic.md",
     "OutGame/References/Games/The longest Journey.md",
-    "OutGame/People/John Milton.md",
+    "OutGame/References/Music",
+    "Motifs/Conservation.md",
+    "dt_d1.canvas",
+    "Img/iwabo pitch - nuclear family.png",
+    "Img/Hiroshima - Nuclear Shadow.png",
+    "Img/Art/Wood - American Gothic.png",
+    "Img/Art/Rubens - Cronus.png",
+    "Img/Art/Goya - Saturn.png",
+    "Img/Art/Lascaux - Handprints.png",
+    "Img/Art",
+    "Ink/SomeTest.ink",
+    "Ink",
+    "Img/ConceptArt/KeyArt_Garden_UI.jpg",
+    "Img/ConceptArt",
+    "Characters/TheFamily",
+    "Characters",
+    "Img/pH teshing kit.png",
+    "Motifs",
     "Img/UreaBottle1.png",
     "Img/UreaBottle3.png",
-    "Img/Wood - American Gothic.png",
-    "OutGame/References/Art/American Gothic.md",
-    "Img/Goya - Saturn.png",
-    "Img/Rubens - Cronus.png",
-    "OutGame/References/Art/Saturn devouring his Son.md",
-    "OutGame/People/Fritz Haber.md",
-    "OutGame/References/Books/Paradise Lost.md",
-    "1.md",
     "OutGame/References/Games",
-    "OutGame/References/Books",
-    "OutGame/References/Art",
-    "2026-03-05.md",
-    "dt_d1.canvas",
-    "2026-03-04.md",
-    "Dailies",
-    "Img",
-    "OutGame/Research/Aquaponics.md",
-    "Pasted image 20260305171512.png",
-    "Pasted image 20260305171538.png",
-    "Themes/Religious Right.md",
-    "OutGame",
-    "OutGame/Research",
-    "Demotype/Mechanics/Resource Management/Day Structure.md",
-    "Themes/Stories as Control.md",
-    "Tone",
-    "OutGame/References"
+    "OutGame/References/Books"
   ]
 }

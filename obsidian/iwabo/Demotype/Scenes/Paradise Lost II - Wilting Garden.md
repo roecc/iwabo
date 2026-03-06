@@ -2,30 +2,46 @@
 
 June, meaning to help, adds Ammonia to the Aquaponics, leading to massive damage to the crops and nearly killing the fish.
 
+![[KeyArt_Garden_UI.jpg]]
 ### Goals
 Allow player to characterize Daryl
 
 Reward character creation decisions early
 
-  
+
 
 Explain the bunker and game concept as a whole
+->careful balance
+->every part important/necessary
+->everything working together
+
+->petting the fish
 
 explain aquaponics
-
 Explain game mechanic
 
-Setup wilting garden / paradise lost
+Setup wilting garden
+->june in garden
+->june thinks ammonia ++ good
+->why garden matters
 
+
+
+[[Ludo-Narrative Resonance]]
+### Themes
+[[Walled Garden]]
+[[Paradise]]
+[[Apple]]
+[[Conservation]]
+
+### References
+\[\[Paradise Lost]]
 
 ### Needs
-[[Farming System]]
-[[Garden Maintenance]]
-[[Harvesting Crops]]
-[[Item Interactions]]
-
 ###### Characters
 [[Daryl]]
+[[Mary-Ann]]
+[[April]]
 [[June]]
 ###### Locations
 [[Power House]]
@@ -38,3 +54,5 @@ Setup wilting garden / paradise lost
 [[Dialogue System]]
 [[Trait System]]
 
+
+### Draft

@@ -1,4 +1,21 @@
 {
-	"nodes":[],
-	"edges":[]
+	"nodes":[
+		{"id":"ee9a218ae6a1ab48","type":"text","text":"**Do you think they're happy?**","x":194,"y":480,"width":250,"height":86},
+		{"id":"30f187042c90eaf8","type":"text","text":"**They have eachother**","x":553,"y":480,"width":250,"height":86},
+		{"id":"a91c881537c12a95","type":"text","text":"All they do is swim in circles.\nIt's such a small world?\nWhat if they want to leave?","x":223,"y":594,"width":261,"height":108},
+		{"id":"e6aedf94502a69fb","type":"text","text":"They are with family, have food and shelter, what more could they need?","x":573,"y":594,"width":250,"height":108},
+		{"id":"ae280a9f7dfe63b1","type":"text","text":"They are just fish, June.","x":553,"y":720,"width":250,"height":86},
+		{"id":"8190e8f3ea847d22","type":"text","text":"**pet the fish**","x":-7,"y":0,"width":250,"height":60},
+		{"id":"b0755081af38f065","type":"text","text":"**fish out of water**","x":353,"y":0,"width":250,"height":60},
+		{"id":"6aa74a19c5931479","type":"text","text":"ludo-narrative resonance\nset up food consequences","x":373,"y":80,"width":250,"height":80},
+		{"id":"3be4f7bcaecda74f","type":"text","text":"**Explain the Cycle**","x":-7,"y":200,"width":250,"height":60},
+		{"id":"0daa4f6b3a730e4b","type":"text","text":"set up bunker/aquaponics parallel","x":13,"y":280,"width":250,"height":80},
+		{"id":"1b5629cca1b50447","type":"file","file":"Img/ConceptArt/KeyArt_Garden_UI.jpg","x":-99,"y":-800,"width":959,"height":539},
+		{"id":"2aaa61896b345c5a","type":"file","file":"Demotype/Scenes/Paradise Lost I - Walled Garden.md","x":-160,"y":-1080,"width":475,"height":240},
+		{"id":"332b03ae4f59e6de","type":"file","file":"Demotype/Scenes/Paradise Lost II - Wilting Garden.md","x":440,"y":-1080,"width":475,"height":240}
+	],
+	"edges":[
+		{"id":"4823c9b611e1c1f3","fromNode":"8190e8f3ea847d22","fromSide":"right","toNode":"b0755081af38f065","toSide":"left"},
+		{"id":"2547c4742975759e","fromNode":"2aaa61896b345c5a","fromSide":"right","toNode":"332b03ae4f59e6de","toSide":"left"}
+	]
 }

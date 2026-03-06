@@ -11,3 +11,5 @@ June, wanting to be but being a terrible artist would make the player's life muc
 [[Sad]]
 
 [[Task Assignment]]
+
+[[June]]

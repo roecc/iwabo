@@ -11,3 +11,6 @@ April asks why she should cut her hair. There is no one to see her anyway.
 
 needs
 [[Dialogue System]]
+
+[[Mary-Ann]]
+[[April]]

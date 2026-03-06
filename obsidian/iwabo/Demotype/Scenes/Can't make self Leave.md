@@ -7,3 +7,5 @@ Daryl Stands before the door to the outside, unable to open it.
 
 [[Trait System]]
 [[Counter Rolls]]
+
+[[Daryl]]
