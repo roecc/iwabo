@@ -4,19 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "a1c3f7c1c2d44172",
+        "id": "63cbacb5ac15c450",
         "type": "tabs",
         "children": [
           {
-            "id": "cfef83a3e82cf25e",
+            "id": "ed6e5e57b4e37c25",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Demotype/Mechanics/Trait System/Traits.md",
-                "mode": "source",
-                "source": false
-              }
+                "file": "Ink/Untitled.canvas",
+                "viewState": {
+                  "x": 342.8816697796115,
+                  "y": 318.272439094688,
+                  "zoom": -1.276615526676178
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           }
         ]
@@ -38,8 +43,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +62,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +72,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Demotype/Mechanics/Trait System/Traits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +104,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -102,10 +115,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Demotype/Mechanics/Trait System/Traits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -115,8 +129,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +143,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Demotype/Mechanics/Trait System/Traits.md"
-              }
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ]
@@ -138,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -151,82 +174,108 @@
     "type": "floating",
     "children": [
       {
-        "id": "aa7b214df39267d4",
+        "id": "875a1c40e60533c8",
         "type": "window",
         "children": [
           {
-            "id": "f5414a4c2f9b0a34",
+            "id": "ab5684d62c54af9b",
             "type": "tabs",
             "children": [
               {
-                "id": "b83d9cf1e1d46de1",
+                "id": "cfef83a3e82cf25e",
                 "type": "leaf",
                 "state": {
-                  "type": "graph",
-                  "state": {}
+                  "type": "canvas",
+                  "state": {
+                    "file": "dt_d1.canvas",
+                    "viewState": {
+                      "x": -265,
+                      "y": -1446,
+                      "zoom": 0
+                    }
+                  },
+                  "icon": "lucide-layout-dashboard",
+                  "title": "dt_d1"
+                }
+              },
+              {
+                "id": "200fadddc8d19e88",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Ink/Other/SomeNewFile_ink.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SomeNewFile_ink"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical",
-        "x": 233,
+        "x": 285,
         "y": -1410,
-        "width": 760,
+        "width": 1168,
         "height": 909,
         "maximize": true,
         "zoom": 0
       }
     ]
   },
-  "active": "cfef83a3e82cf25e",
+  "active": "ed6e5e57b4e37c25",
   "lastOpenFiles": [
-    "Demotype/Mechanics/Trait System/Traits.md",
-    "dt_d1.canvas",
-    "Demotype/Mechanics/Trait System/Traits/Strength - Brutality.md",
-    "dt_d2.canvas",
-    "Demotype/Scenes/Paradise Lost I - Walled Garden.md",
-    "Demotype/Scenes/Paradise Lost II - Wilting Garden.md",
-    "Demotype/Mechanics/Resource Management/Resource Management.md",
-    "Themes/Control.md",
-    "Demotype/Scenes/Blow(d)Art.md",
-    "Demotype/Mechanics/Resource Management/Action Points.md",
-    "Themes/High Control Groups.md",
-    "OutGame/Research/Aquaponics.md",
-    "Themes/Panopticon.md",
-    "Themes/Social Contract Theory.md",
-    "OutGame/References/Games/The Walking Dead.md",
-    "Themes/Language as Control.md",
-    "Demotype/Mechanics/Trait System/Quoting Scripture.md",
-    "Themes/Care through Violence.md",
-    "OutGame/References/Games/The Last of Us.md",
-    "Demotype/Mechanics/Trait System/Traits/Faith - Dogma.md",
-    "Demotype/Mechanics/Trait System/Traits/Authority - Dictator.md",
-    "Themes/Cost of Living.md",
-    "Demotype/Mechanics/Trait System/Traits/Nurturing - Smothering.md",
+    "Ink/Other/SomeNewFile_ink.md",
+    "Ink/Untitled.canvas",
+    "Ink/SomeTest_ink.md",
+    "Ink/OtherOther/Other_ink.md",
+    "Ink/OpenInInky.app/Contents/Resources/description.rtfd/TXT.rtf",
+    "Ink/OpenInInky.app/Contents/Resources/Scripts/main.scpt",
+    "Ink/OpenInInky.app/Contents/MacOS/droplet",
+    "Ink/OpenInInky.app/Contents/_CodeSignature/CodeResources",
+    "Ink/OpenInInky.app/Contents/Resources/droplet.rsrc",
+    "Ink/OpenInInky.app/Contents/Resources/droplet.icns",
+    "Ink/OpenInInky.app/Contents/Resources/description.rtfd",
+    "Ink/OpenInInky.app/Contents/Resources/Scripts",
+    "Ink/OpenInInky.app/Contents/Resources/Assets.car",
+    "Ink/OpenInInky.app/Contents/_CodeSignature",
+    "Ink/SomeTest.ink.md",
+    "Ink/OtherOther/Other.ink.md",
+    "Ink/Other/SomeNewFile.ink.md",
     "Demotype/Mechanics/Trait System/Traits/Tinkering - Meddling.md",
-    "Demotype/Mechanics/Trait System/Traits/Integrity - Stubbornness.md",
-    "Demotype/Mechanics/Trait System/Traits/Perception - Surveillance.md",
-    "Demotype/Mechanics/Trait System/Traits/Foresight - Paranoia.md",
-    "Demotype/Mechanics/Trait System/Traits",
+    "Demotype/Mechanics/Trait System/Traits/Strength - Brutality.md",
+    "dt_d1.canvas",
+    "Ink/thisOther.ink.md",
+    "Ink/otherDeleteTest.ink.md",
+    "Ink/AbsoluteLatestTest.ink.md",
+    "Ink/Other/SomeOtherTest.ink.md",
+    "Ink/subFolderTest.ink.md",
+    "Ink/deleteTest.ink.md",
+    "Ink/ThisTest.ink.md",
+    "Ink/tjiofawjofaw.ink.md",
+    "Ink/SomeNewTest.ink.md",
+    "Ink/OrNot.ink.md",
+    "Ink/LatestTest.ink.md",
+    "Ink/DefinitivelyLastTest.ink.md",
+    "Ink/ActualLatestTest.ink.md",
+    "Ink/ButNot.ink.md",
+    "index/dt_d1.canvas.md",
+    "index/Untitled.canvas.md",
+    "dt_d2.canvas",
+    "index/dt_d2.canvas.md",
+    "Untitled.canvas",
     "Img/iwabo pitch - nuclear family.png",
     "Img/Aquapnonics - E1.png",
-    "OutGame/References/Music",
     "Img/Hiroshima - Nuclear Shadow.png",
     "Img/Art/Wood - American Gothic.png",
     "Img/Art/Rubens - Cronus.png",
     "Img/Art/Goya - Saturn.png",
     "Img/Art/Lascaux - Handprints.png",
-    "Img/Art",
-    "Ink/SomeTest.ink",
-    "Ink",
     "Img/ConceptArt/KeyArt_Garden_UI.jpg",
-    "Img/ConceptArt",
-    "Characters/TheFamily",
-    "Characters",
     "Img/pH teshing kit.png",
-    "Motifs",
-    "Img/UreaBottle1.png",
-    "OutGame/References/Games"
+    "Img/UreaBottle1.png"
   ]
 }

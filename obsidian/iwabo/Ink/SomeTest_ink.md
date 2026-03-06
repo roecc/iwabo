@@ -1,3 +1,10 @@
+---
+canvas:
+  - "[[Untitled.canvas]]"
+Untitled:
+  - "[[SomeNewFile_ink]]"
+  - "[[Other_ink]]"
+---
 INCLUDE Other/SomeNewFile.ink
 INCLUDE OtherOther/Other.ink
 

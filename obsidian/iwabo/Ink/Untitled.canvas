@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"2bc7ad691aa28825","type":"file","file":"Ink/OtherOther/Other_ink.md","x":321,"y":-153,"width":400,"height":400},
+		{"id":"9f68f1c0701e8c0b","type":"file","file":"Ink/Other/SomeNewFile_ink.md","x":-316,"y":-149,"width":400,"height":400},
+		{"id":"3896dbccc7d04d42","x":-79,"y":360,"width":400,"height":400,"type":"file","file":"Ink/SomeTest_ink.md"}
+	],
+	"edges":[
+		{"id":"212347d1796d340d","fromNode":"3896dbccc7d04d42","fromSide":"top","toNode":"9f68f1c0701e8c0b","toSide":"right"},
+		{"id":"280adb54eb105bb1","fromNode":"3896dbccc7d04d42","fromSide":"right","toNode":"2bc7ad691aa28825","toSide":"bottom"},
+		{"id":"a0124cfd1a72784d","fromNode":"2bc7ad691aa28825","fromSide":"left","toNode":"9f68f1c0701e8c0b","toSide":"right"}
+	]
+}

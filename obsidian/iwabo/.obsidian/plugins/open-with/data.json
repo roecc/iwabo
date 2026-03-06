@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "Inky",
+      "code": "/Users/admin/Documents/_judgmentplay/projects/_iwabo/_preproduction/prototype/iwabo/obsidian/iwabo/Ink/OpenInInky.app ",
+      "arguments": "",
+      "showInMenu": true
+    }
+  ],
+  "sysexpInFileMenu": false
+}

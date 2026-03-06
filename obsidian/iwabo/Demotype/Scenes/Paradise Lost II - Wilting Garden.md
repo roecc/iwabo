@@ -1,3 +1,8 @@
+---
+canvas:
+  - "[[dt_d1.canvas]]"
+dt_d1: []
+---
 #scene #demotype
 
 June, meaning to help, adds Ammonia to the Aquaponics, leading to massive damage to the crops and nearly killing the fish.
