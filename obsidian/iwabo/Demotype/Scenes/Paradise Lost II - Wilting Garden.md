@@ -1,7 +1,9 @@
 ---
 canvas:
   - "[[dt_d1.canvas]]"
+  - "[[dt_d2.canvas]]"
 dt_d1: []
+dt_d2: []
 ---
 #scene #demotype
 

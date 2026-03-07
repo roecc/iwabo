@@ -90,3 +90,7 @@ Urea
 raw ammonia lethal neurotoxin for fish
 
 plants usually need dark cycle
+
+
+Velvet (Gold Dust Disease)
+![[Velvet - Gold Dust Disease.png]]

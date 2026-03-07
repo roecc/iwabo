@@ -1,8 +1,10 @@
 ---
 canvas:
   - "[[dt_d1.canvas]]"
+  - "[[dt_d2.canvas]]"
 dt_d1:
   - "[[Paradise Lost II - Wilting Garden]]"
+dt_d2: []
 ---
 #scene #demotype 
 

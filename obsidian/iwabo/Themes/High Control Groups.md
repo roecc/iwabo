@@ -6,3 +6,5 @@ Cults
 [[Stories as Control]]
 [[Control]]
 [[Desire for Control]]
+
+[[Panopticon]]

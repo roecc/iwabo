@@ -24,13 +24,18 @@
 
 ### Ideas
 
-| Trait | Tox_Trait   |
-| ----- | ----------- |
-|       | Controlling |
-|       |             |
+| Trait        | Tox_Trait   |
+| ------------ | ----------- |
+|              | Controlling |
+| Intelligence | Arrogance   |
 
 
 
 //could use nurturing as "patience"?
 
 //could substitute Council_of_Skills with passive_roll based Trait_Mods
+
+Scientism
+Futurism
+Progressivism
+Scientific Racism
