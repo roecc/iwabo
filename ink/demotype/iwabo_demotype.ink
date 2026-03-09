@@ -10,6 +10,8 @@ INCLUDE Demotype/Day1/dt_d1_draft.ink
 INCLUDE ResourceManagement/rm_test.ink
 INCLUDE testing/option_tests.ink
 INCLUDE Core/ap_handlers.ink
+INCLUDE ResourceManagement/rm_test2.ink
+
 
 LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
 //~location = (none, living_room, garden, parent_bedroom, aprils_room, junes_room, pantry)
@@ -33,9 +35,10 @@ IWABO DEMOTYPE DRAFT v0.5.260227
 {mary_ann^location}
 
 ~location_update(mary_ann, location.garden)
-{mary_ann^location}
-{mary_ann^name}
-->main_day
+
+
+->next_day
+//->main_day
 //->tst_the_note
 //->tst_options
 

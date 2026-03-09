@@ -37,9 +37,26 @@
               "icon": "lucide-file",
               "title": "Diegesis"
             }
+          },
+          {
+            "id": "6951eaa18b79fe25",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
+                "viewState": {
+                  "x": 372.16336727620757,
+                  "y": 373.10142246387323,
+                  "zoom": -0.7836801903545642
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Resource Management Canvas"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -255,9 +272,9 @@
                   "state": {
                     "file": "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
                     "viewState": {
-                      "x": 100.51019986350116,
-                      "y": 336.12464630163544,
-                      "zoom": -0.03195777324407746
+                      "x": 828.7655048724612,
+                      "y": 26.268176875633458,
+                      "zoom": -0.18674614178706644
                     }
                   },
                   "icon": "lucide-layout-dashboard",
@@ -278,8 +295,9 @@
       }
     ]
   },
-  "active": "ea3965097cb39670",
+  "active": "6951eaa18b79fe25",
   "lastOpenFiles": [
+    "Demotype/Hooks/Diegesis.md",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
     "Img/Breaking Bad - Walt in Crawlspace.png",
     "Demotype/Architecture/Architecture.canvas",
@@ -299,7 +317,6 @@
     "Pasted image 20260307165921.png",
     "Pasted image 20260307170351.png",
     "2026-03-07.md",
-    "Demotype/Hooks/Diegesis.md",
     "Pasted image 20260307164229.png",
     "Ink/Other/SomeNewFile_ink.md",
     "Themes/High Control Groups.md",
