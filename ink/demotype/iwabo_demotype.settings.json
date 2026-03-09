@@ -15,6 +15,10 @@
         {
             "name": "AP Option",
             "ink": "*\\ {ap_option(\"text\", -1)}\n\t~ap_update(-1)"
+        },
+        {
+            "name": "Trait Roll",
+            "ink": "{trait_roll(_trait, _mod):pass|fail}"
         }
     ],
     "instructionPrefix": "::"

@@ -10,7 +10,8 @@ DAY {day}:
 
 
 === ap(option_text) ===
-+\ \[-1 ap\] {option_text}
+//+\ \[-1 ap\] {option_text}
++\ {ap_option(option_text, -1)}
     ~ap_update(-1)
     ->->
 
@@ -26,10 +27,14 @@ ap: {action_points}
 ->DONE
 
 === generator ===
-+\ {ap_text} check on generator
-    ++fix generator
-        all good.
-        ->main_day
++\ {ap_option("check on generator", -1)}
+	~ap_update(-1)
+    all good.
+    ->main_day
++\ {ap_option("generator maintenance", -1)}
+	~ap_update(-1)
+	{trait_roll(tinkering, 20):generator improved|didnt seem to help}
+	->main_day
 
 === farm ===
 <-check
@@ -37,13 +42,19 @@ ap: {action_points}
 ->DONE
 
 = check
-->ap("check on the farm")->
++\ {ap_option("check on farm", -1)}
+//->ap("check on the farm")->
 //+\ {ap_text}check on the farm
-    all good.
-    ->main_day
+all good.
+->main_day
 
 = tv
-->ap("watch tv")->
+//->ap("watch tv")->
++\ {ap_option("check on tv", -1)}
+    nothing good on. will watch anyway.
+    ->main_day
++\ {ap_option("zap channels", -1)}
+    all dead
     ->main_day
 
 === sleep ===

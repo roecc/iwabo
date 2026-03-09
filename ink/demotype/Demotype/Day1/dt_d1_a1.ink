@@ -6,9 +6,9 @@
 ::the man starts up, gathers himself and gets up.
 you promised your daughter you would show her the garden today.
 -
-*{roll_trait(strength,100)}about time she starts pulling her own weight
+*{trait_roll(strength,100)}about time she starts pulling her own weight
     ~trait_update(strength, 1)
-*{roll_trait(nurturing, 100)}hopefully this will make her feel more in control of her life
+*{trait_roll(nurturing, 100)}hopefully this will make her feel more in control of her life
     ~trait_update(nurturing, 1)
 *fetch her
     ->aquaponics_intro

@@ -13,22 +13,22 @@
         ~has_passed = roll_counter(trait_name, mod_val)
         ~trait_update(trait_name, -1)
     -else:
-        ~has_passed = roll_trait(trait_name, mod_val)
+        ~has_passed = trait_roll(trait_name, mod_val)
         ~trait_update(trait_name, 1)
 }
 {has_passed: ->pass|->fail}
 
-=== function roll_trait(trait_name, mod_val) ===
+=== function trait_roll(trait_name, mod_val) ===
 ~temp debug = 1
 
 ~temp trait_val = lookup_trait_val(trait_name) + mod_val
 ~temp roll_val = roll_d(100)
 {
     -trait_val >= roll_val:
-        {debug: [passed: {trait_val} >= {roll_val}]}
+        {debug: [passed: {trait_val} >= {roll_val}] }
         ~return true
     -else:
-        {debug: [failed: {trait_val} < {roll_val}]}
+        {debug: [failed: {trait_val} < {roll_val}] }
         ~return false
 }
 
