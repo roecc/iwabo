@@ -25,18 +25,6 @@
             }
           },
           {
-            "id": "ecef71498f05a922",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Img/Breaking Bad - Walt in Crawlspace.png"
-              },
-              "icon": "lucide-image",
-              "title": "Breaking Bad - Walt in Crawlspace"
-            }
-          },
-          {
             "id": "ea3965097cb39670",
             "type": "leaf",
             "state": {
@@ -50,7 +38,8 @@
               "title": "Diegesis"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -242,44 +231,66 @@
                 }
               },
               {
-                "id": "ed6e5e57b4e37c25",
+                "id": "9b55e495389a9ffe",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
+                  "type": "canvas",
                   "state": {
-                    "file": "Ink/OtherOther/Other_ink.md",
-                    "mode": "source",
-                    "source": false
+                    "file": "Demotype/Architecture/Architecture.canvas",
+                    "viewState": {
+                      "x": 527.5180022009826,
+                      "y": -286.42490284775835,
+                      "zoom": -0.402471234247357
+                    }
                   },
-                  "icon": "lucide-file",
-                  "title": "Other_ink"
+                  "icon": "lucide-layout-dashboard",
+                  "title": "Architecture"
+                }
+              },
+              {
+                "id": "ecef71498f05a922",
+                "type": "leaf",
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
+                    "viewState": {
+                      "x": 100.51019986350116,
+                      "y": 336.12464630163544,
+                      "zoom": -0.03195777324407746
+                    }
+                  },
+                  "icon": "lucide-layout-dashboard",
+                  "title": "Resource Management Canvas"
                 }
               }
-            ]
+            ],
+            "currentTab": 3
           }
         ],
         "direction": "vertical",
-        "x": 285,
+        "x": -248,
         "y": -1410,
-        "width": 1168,
-        "height": 909,
+        "width": 2027,
+        "height": 1176,
         "maximize": true,
         "zoom": 0
       }
     ]
   },
-  "active": "cf021fca6caffdea",
+  "active": "ea3965097cb39670",
   "lastOpenFiles": [
-    "dt_d1.canvas",
+    "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
+    "Img/Breaking Bad - Walt in Crawlspace.png",
     "Demotype/Architecture/Architecture.canvas",
+    "dt_d2.canvas",
+    "Ink/OtherOther/Other_ink.md",
+    "dt_d1.canvas",
     "Demotype/Architecture",
     "Demotype/Mechanics/Advanced State Tracking.md",
-    "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
     "Demotype/Mechanics/Resource Management/Resource Management.md",
     "OutGame/Research/Aquaponics.md",
     "Resource Management.canvas",
-    "dt_d2.canvas",
-    "Ink/OtherOther/Other_ink.md",
     "Pasted image 20260307164421.png",
     "Pasted image 20260307170115.png",
     "Pasted image 20260307164418.png",
@@ -289,7 +300,6 @@
     "Pasted image 20260307170351.png",
     "2026-03-07.md",
     "Demotype/Hooks/Diegesis.md",
-    "Img/Breaking Bad - Walt in Crawlspace.png",
     "Pasted image 20260307164229.png",
     "Ink/Other/SomeNewFile_ink.md",
     "Themes/High Control Groups.md",
