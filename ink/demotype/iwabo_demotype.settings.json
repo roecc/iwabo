@@ -2,15 +2,19 @@
     "customInkSnippets": [
         {
             "name": "Trait Check",
-            "ink": "~temp mod_val = 0\n~temp mod_text = \"\"\n- (mods) //add trait-check modifiers\n\n- (option)\n//->trait_option(\"fill_option_text\", \"fill_trait_name\", mod_val, mod_text, not counter_roll, ->pass, ->fail)\n- (pass) //on success\n\t->ERROR.loose_end\n- (fail) //on fail\n\t->ERROR.loose_end"
+            "ink": "~temp text = //\"option text\"\n~temp trait = //trait_name\"\n~temp ap_cost = 0\n\n~temp mod_val = 0\n~temp mod_text = \"\"\n- (mods) //add trait-check modifiers\n\n- (option)\n->trait_option(text, trait, mod_val, mod_text, not counter_roll, ap_cost,->pass, ->fail)\n- (pass) //on success\n\t->ERROR.loose_end\n- (fail) //on fail\n\t->ERROR.loose_end"
         },
         {
             "name": "Counter Check",
-            "ink": "~temp mod_val = 0\n~temp mod_text = \"\"\n- (mods) //add trait-check modifiers\n\n- (option)\n//->trait_option(\"fill_option_text\", \"fill_trait_name\", mod_val, mod_text, counter_roll, ->pass, ->fail)\n- (pass) //on success\n\t->ERROR.loose_end\n- (fail) //on fail\n\t->ERROR.loose_end"
+            "ink": "~temp text = //\"option text\"\n~temp trait = //trait_name\"\n~temp ap_cost = 0\n\n~temp mod_val = 0\n~temp mod_text = \"\"\n- (mods) //add trait-check modifiers\n\n- (option)\n->trait_option(text, trait, mod_val, mod_text, counter_roll, ap_cost, ->pass, ->fail)\n- (pass) //on success\n\t->ERROR.loose_end\n- (fail) //on fail\n\t->ERROR.loose_end"
         },
         {
             "name": "Modifier",
             "ink": "//{fill_condition: {add_mod(\"fill_mod_text\", 0, mod_text, mod_val)}}"
+        },
+        {
+            "name": "AP Option",
+            "ink": "*\\ {ap_option(\"text\", -1)}\n\t~update_ap(-1)"
         }
     ],
     "instructionPrefix": "::"
