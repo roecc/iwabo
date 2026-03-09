@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"1451042b180bc236","type":"text","text":"Generator","x":-460,"y":-300,"width":250,"height":60},
+		{"id":"d81f95970c9613c4","type":"text","text":"Maintaining","x":-422,"y":-224,"width":250,"height":60},
+		{"id":"40e21c1f09ad6ef6","type":"text","text":"Farm","x":-100,"y":-300,"width":250,"height":60},
+		{"id":"991b81f24569ad25","type":"text","text":"Maintaining","x":-60,"y":-224,"width":250,"height":60},
+		{"id":"5fce7f980da19aa9","type":"text","text":"Repairing","x":-422,"y":49,"width":250,"height":60},
+		{"id":"7387e0accbc2feb7","x":-24,"y":-63,"width":250,"height":60,"type":"text","text":"Feeding"},
+		{"id":"e557263bdf02df94","x":-24,"y":17,"width":250,"height":60,"type":"text","text":"Harvesting"},
+		{"id":"83af37063ae2305b","x":-24,"y":-143,"width":250,"height":60,"type":"text","text":"Checking"},
+		{"id":"bba12b3df01114ba","type":"text","text":"Extending?","x":-422,"y":-23,"width":250,"height":60},
+		{"id":"bbcb4716d39ae064","type":"text","text":"Fixing","x":-393,"y":-141,"width":250,"height":60},
+		{"id":"6700a8ae4b7c7091","type":"text","text":"Extending?","x":-64,"y":177,"width":250,"height":60},
+		{"id":"9a82cdfa25314d6f","x":-23,"y":96,"width":250,"height":60,"type":"text","text":"Adjusting"},
+		{"id":"c349ea7c2b347492","type":"text","text":"Pantry","x":615,"y":-294,"width":250,"height":60},
+		{"id":"cc64d711f7db21f0","x":648,"y":-220,"width":250,"height":60,"type":"text","text":"Maintaining"},
+		{"id":"1a306ace36fb6e2d","x":682,"y":-146,"width":250,"height":60,"type":"text","text":"Controlling"},
+		{"id":"f8da77bfc3ae2a23","type":"text","text":"Cooking","x":275,"y":-299,"width":250,"height":60}
+	],
+	"edges":[]
+}

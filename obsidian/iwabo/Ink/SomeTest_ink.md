@@ -1,6 +1,6 @@
 ---
 canvas:
-  - "[[Untitled.canvas]]"
+  - "[[Resource Management.canvas]]"
 Untitled:
   - "[[SomeNewFile_ink]]"
   - "[[Other_ink]]"
