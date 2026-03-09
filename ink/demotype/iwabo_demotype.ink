@@ -11,8 +11,10 @@ INCLUDE ResourceManagement/rm_test.ink
 INCLUDE testing/option_tests.ink
 INCLUDE Core/ap_handlers.ink
 
-LIST location = none, living_room, garden, parent_bedroom, aprils_room, junes_room, pantry
-LIST name = Daryl, Mary_Ann, April, June
+LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
+//~location = (none, living_room, garden, parent_bedroom, aprils_room, junes_room, pantry)
+LIST name = (Daryl), (Mary_Ann), (April), (June)
+//~name = (Daryl, Mary_Ann, April, June)
 
 VAR daryl = (name.Daryl, location.none)
 VAR mary_ann = (name.Mary_Ann, location.none)
@@ -28,27 +30,26 @@ IWABO DEMOTYPE DRAFT v0.5.260227
 
 //write a short interaction with a character that uses trait checks and counter checks. - DONE
 //->dt_d1_a1
-{LIST_ALL(location) ^ mary_ann}
+{mary_ann^location}
 
 ~location_update(mary_ann, location.garden)
-
+{mary_ann^location}
+{mary_ann^name}
 ->main_day
 //->tst_the_note
 //->tst_options
 
 
-=== function location_update(npc, new_location)
-~temp debug = 0
+=== function location_update(ref npc, new_location)
+~temp debug = 1
 {
     -debug:
-        ~temp old_loc = list_get(npc, location)
+        ~temp old_loc = npc^location
 }
 ~npc -= LIST_ALL(location) ^ mary_ann
 ~npc += new_location
-{debug: {list_get(npc, name)} moved from {old_loc} to {list_get(npc, location)}}
+{debug: {npc^name} moved from {old_loc} to {npc^location}}
 
-=== function list_get(target, list) ===
-~return LIST_ALL(list) ^ target
 
 === ERROR ===
 =loose_end

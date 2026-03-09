@@ -27,7 +27,8 @@ in this weave things happen.
         ***other
         ---
         ->fork_tunnel->
-        ***
+        ***ma
+            kakak
         ---
         exit tunnel
     --
