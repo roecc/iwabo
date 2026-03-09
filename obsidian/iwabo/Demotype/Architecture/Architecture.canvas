@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"3395c3c9faea9676","x":-100,"y":-840,"width":520,"height":200,"type":"group","label":"Opt_Echo"},
+		{"id":"73dc5f0aabd05e36","x":-371,"y":-543,"width":250,"height":60,"type":"text","text":"Ink"},
+		{"id":"10c41ea71f629896","type":"text","text":"Option Assembler","x":-200,"y":-300,"width":250,"height":60},
+		{"id":"cd51c221e82bd3f4","x":-180,"y":40,"width":250,"height":60,"type":"text","text":"tick AP"},
+		{"id":"28926bfb9fd018fa","x":-180,"y":-220,"width":250,"height":60,"type":"text","text":"opt_txt +=  \\[-1AP]"},
+		{"id":"2ac7e41ee12f7d3a","x":-180,"y":-140,"width":250,"height":60,"type":"text","text":"opt_txt += \\[trait: %] \\[trait:mods]"},
+		{"id":"0d6b3ffc00205c8e","type":"text","text":"Prefabs / Snippets","x":200,"y":-400,"width":250,"height":60},
+		{"id":"2da222d74e716ff8","x":240,"y":-320,"width":250,"height":60,"type":"text","text":"AP option"},
+		{"id":"1de9fda36436bc10","x":240,"y":-240,"width":250,"height":60,"type":"text","text":"Trait Roll Option"},
+		{"id":"c09e565a230f378c","x":240,"y":-160,"width":250,"height":60,"type":"text","text":"Passive Trait Roll"},
+		{"id":"c67178f21048f296","x":240,"y":-80,"width":250,"height":60,"type":"text","text":"Counter Roll"},
+		{"id":"e6680c13b0ff9ccb","x":-80,"y":-820,"width":480,"height":80,"color":"#d6d6d6","type":"text","text":"To have all info handled/displayed in one spot for easy changes and enable/disable"},
+		{"id":"833ef633ba17d6bb","x":-80,"y":-720,"width":140,"height":60,"type":"text","text":"Txt: AP Cost"},
+		{"id":"49618f62a1c085c8","x":80,"y":-720,"width":160,"height":60,"type":"text","text":"Txt: Option Text"},
+		{"id":"8015df0ff69232f1","x":260,"y":-720,"width":140,"height":60,"type":"text","text":"Txt: Skill Info"}
+	],
+	"edges":[]
+}

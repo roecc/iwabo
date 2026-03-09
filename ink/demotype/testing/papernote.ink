@@ -26,14 +26,16 @@ April is sitting at her desk when you come in.
 = noticed_note
 You notice she's quickly pocketed a small piece of paper the moment she heard the door.
 -(options)
-<- demand_note
+<- demand_note (->options)
 <- demand_book
+*demand nested note
 *\[let it go\]
     //counter surveillance check
     {is_tox(perception): <-cr_let_it_go}
 - ->DONE
 
-= demand_note
+//similar to tunnel?
+= demand_note (-> go_on)
 ~temp mod_val = 0
 ~temp mod_text = ""
 - (mods) //add trait-check modifiers
@@ -42,6 +44,7 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 ->trait_option("Give me the note.", authority, mod_val, mod_text, not counter_roll, ->pass, ->fail)
 - (pass) //on success
     She lowers her head in defeat and hands you the crumpled piece of paper.
+    ->go_on
     ->ERROR.loose_end
 - (fail) //on fail
      She purses her lips defiantly, not moving another muscle.
@@ -71,7 +74,7 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 
 - (option)
 But she's hiding something.
-<-demand_note
+<-demand_note(->ERROR.loose_end)
 <-demand_book
 ->trait_option("[let it go]", perception, mod_val, mod_text, counter_roll, ->pass, ->fail)
 - (pass) //on success

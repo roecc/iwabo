@@ -18,6 +18,9 @@ DAY {day}:
     ~tick_ap()
     ->->
 
+=== function ap_cond() ===
+~return "\[-1 AP\]"
+
 === main_day ===
 ap: {action_points}
 {action_points < 1: ->next_day}
@@ -27,7 +30,7 @@ ap: {action_points}
 ->DONE
 
 === generator ===
-+check on generator
++\ {ap_text} check on generator
     ++fix generator
         all good.
         ->main_day

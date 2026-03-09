@@ -7,7 +7,8 @@ You can also chain tunnels together.
 -> tunnel_in -> tunnel_mid -> tunnel_out ->
 
 Just make sure to end your tunnels with \->\-> !
-
++tunnels as options
+    ->tunnels_as_options
 +[done]
     ->INDEX
 
@@ -26,3 +27,50 @@ go through.
 === tunnel_out ===
 go out.
 ->->
+
+=== tunnels_as_options ===
+can you use tunnels in place of options and still maintain the weave?
+*test options
+    ->tao_1->
+    other test
+    ->tunnels_as_options
+*of course!
+    ->tunnels_as_options
+
+
+=== tao_1 ===
+*could be
+    something
+    ->->
+->DONE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

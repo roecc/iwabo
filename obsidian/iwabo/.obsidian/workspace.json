@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
+                "file": "Demotype/Architecture/Architecture.canvas",
                 "viewState": {
-                  "x": 213.66645521409873,
-                  "y": 289.2261736391836,
-                  "zoom": -0.7575149134794869
+                  "x": 292.5042648338267,
+                  "y": -454.94788479318896,
+                  "zoom": -0.20734471122423812
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Resource Management Canvas"
+              "title": "Architecture"
             }
           },
           {
@@ -271,6 +271,9 @@
   "active": "cf021fca6caffdea",
   "lastOpenFiles": [
     "dt_d1.canvas",
+    "Demotype/Architecture/Architecture.canvas",
+    "Demotype/Architecture",
+    "Demotype/Mechanics/Advanced State Tracking.md",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
     "Demotype/Mechanics/Resource Management/Resource Management.md",
     "OutGame/Research/Aquaponics.md",
@@ -317,8 +320,6 @@
     "Ink/OpenInInky.app/Contents/_CodeSignature/CodeResources",
     "Ink/OpenInInky.app/Contents/Resources/droplet.rsrc",
     "Ink/OpenInInky.app/Contents/Resources/droplet.icns",
-    "Ink/OpenInInky.app/Contents/Resources/description.rtfd",
-    "Ink/OpenInInky.app/Contents/Resources/Scripts",
-    "Ink/SomeTest.ink.md"
+    "Ink/OpenInInky.app/Contents/Resources/description.rtfd"
   ]
 }
