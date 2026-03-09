@@ -1,12 +1,12 @@
-
-
-
 //somehow these options expire if i loop back into the knot that forks to them. So they are + instead of * for now.
-=== trait_option(option_text, trait_name, mod_val, mod_text, is_counter_roll, ->pass, ->fail) ===
-+\ {option_text} {disp_trait(trait_name, mod_val, mod_text, is_counter_roll)} 
-    ->fork_trait_check(trait_name, mod_val, is_counter_roll, pass, fail)
+=== trait_option(option_text, trait_name, mod_val, mod_text, is_counter_roll, ap_cost, ->pass, ->fail) ===
+~temp tmp_txt = option_text + " {disp_trait(trait_name, mod_val, mod_text, is_counter_roll)}"
++\ {ap_option(tmp_txt, ap_cost)} 
+    //{ap_cost>0:{update_ap(ap_cost)}}
+    ~update_ap(ap_cost)
+    ->fork_trait_roll(trait_name, mod_val, is_counter_roll, pass, fail)
 
-=== fork_trait_check(trait_name, mod_val, is_counter_roll, ->pass, ->fail) ===
+=== fork_trait_roll(trait_name, mod_val, is_counter_roll, ->pass, ->fail) ===
 ~temp has_passed = 0
 {
     -is_counter_roll:

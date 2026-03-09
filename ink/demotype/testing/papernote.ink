@@ -41,7 +41,7 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 - (mods) //add trait-check modifiers
 
 - (option)
-->trait_option("Give me the note.", authority, mod_val, mod_text, not counter_roll, ->pass, ->fail)
+->trait_option("Give me the note.", authority, mod_val, mod_text, not counter_roll, 0, ->pass, ->fail)
 - (pass) //on success
     She lowers her head in defeat and hands you the crumpled piece of paper.
     ->go_on
@@ -59,7 +59,7 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 {modFlags ? ate_dog: {add_mod("ate_the_dog", 10, mod_text, mod_val)}}
 {modFlags ? burnt_books: {add_mod("burnt books", -10, mod_text, mod_val)}}
 
-->trait_option("Give me the book.", authority, mod_val, mod_text, not counter_roll, ->pass, ->fail)
+->trait_option("Give me the book.", authority, mod_val, mod_text, not counter_roll, 0, ->pass, ->fail)
 - (pass)
     She tosses you the book.
     ->end_story
@@ -76,7 +76,7 @@ You notice she's quickly pocketed a small piece of paper the moment she heard th
 But she's hiding something.
 <-demand_note(->ERROR.loose_end)
 <-demand_book
-->trait_option("[let it go]", perception, mod_val, mod_text, counter_roll, ->pass, ->fail)
+->trait_option("[let it go]", perception, mod_val, mod_text, counter_roll, 0, ->pass, ->fail)
 - (pass) //on success
     Taking a deep breath, you re-center yourself and let go.
     ->ERROR.loose_end

@@ -1,5 +1,4 @@
 VAR day = 0
-VAR action_points = 0
 VAR ap_text = "\[-1 AP\] "
 
 === next_day ===
@@ -8,14 +7,11 @@ VAR ap_text = "\[-1 AP\] "
 DAY {day}:
 ->main_day
 
-=== function tick_ap () ===
-~temp debug = 1
-~action_points--
-{debug:\[ap: {action_points}]}
+
 
 === ap(option_text) ===
 +\ \[-1 ap\] {option_text}
-    ~tick_ap()
+    ~update_ap(-1)
     ->->
 
 === function ap_cond() ===

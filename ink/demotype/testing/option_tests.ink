@@ -1,14 +1,8 @@
-=== function option_txt(text, ap_cost) ===
-~temp opt_txt = ""
-{
-    -ap_cost > 0:
-        ~opt_txt += "\[-{ap_cost} AP\] "
-}
-~opt_txt += text
-~return opt_txt
+
 
 === tst_options ===
 in this weave things happen.
+~action_points = 3
 *you say something
     which causes something else
     **and you do this
@@ -25,10 +19,16 @@ in this weave things happen.
         causing other things
         ->tst_options_traitroll_tunnel->
         and the tunnel is exited
-        ***\ {option_txt("this option costs AP", 1)}
-        ***\ {option_txt("this option doesnt", 0) + option_txt("this option costs AP", 1)}
+        ***\ {ap_option("this option costs AP", -1)}
+            ~update_ap(-1)
+        ***\ {ap_option("this option costs 2 AP", -2)}
+            ~update_ap(-2)
+        ***\ {ap_option("this option doesnt", -1) + ap_option("this option costs AP", -2)}
+        ***other
         ---
         ->fork_tunnel->
+        ***
+        ---
         exit tunnel
     --
 -
@@ -46,7 +46,7 @@ in this weave things happen.
 - (mods) //add trait-check modifiers
 
 - (option)
-->trait_option("some other option", perception, mod_val, mod_text, not counter_roll, ->pass, ->fail)
+->trait_option("some other option", perception, mod_val, mod_text, not counter_roll, 0, ->pass, ->fail)
 - (pass) //on success
     this passed
 	->->
@@ -60,15 +60,20 @@ in this weave things happen.
 - (mods) //add trait-check modifiers
 
 - (option)
-->trait_option(option_txt("you roll a AP trait", 1), authority, mod_val, mod_text, not counter_roll, pass, fail)
+->trait_option("you roll a AP trait", authority, mod_val, mod_text, not counter_roll, -1, pass, fail)
 
 === tst_options_traitroll_tunnel ===
+//settings
+~temp text = "you tunnel a trait roll"
+~temp trait = authority
+~temp ap_cost = -1
+
 ~temp mod_val = 0
 ~temp mod_text = ""
 - (mods) //add trait-check modifiers
 
 - (option)
-->trait_option("you tunnel a trait roll", authority, mod_val, mod_text, not counter_roll, ->pass, ->fail)
+->trait_option(text, trait, mod_val, mod_text, not counter_roll, ap_cost, ->pass, ->fail)
 - (pass) //on success
     you pass the roll.
     ->->

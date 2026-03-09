@@ -14,7 +14,10 @@
 		{"id":"e6680c13b0ff9ccb","x":-80,"y":-820,"width":480,"height":80,"color":"#d6d6d6","type":"text","text":"To have all info handled/displayed in one spot for easy changes and enable/disable"},
 		{"id":"833ef633ba17d6bb","x":-80,"y":-720,"width":140,"height":60,"type":"text","text":"Txt: AP Cost"},
 		{"id":"49618f62a1c085c8","x":80,"y":-720,"width":160,"height":60,"type":"text","text":"Txt: Option Text"},
-		{"id":"8015df0ff69232f1","x":260,"y":-720,"width":140,"height":60,"type":"text","text":"Txt: Skill Info"}
+		{"id":"8015df0ff69232f1","x":260,"y":-720,"width":140,"height":60,"type":"text","text":"Txt: Skill Info"},
+		{"id":"4ccd0505cf06d99f","x":560,"y":-522,"width":201,"height":60,"type":"text","text":"display but cant select"},
+		{"id":"f80ac649293826d1","x":561,"y":-600,"width":201,"height":60,"type":"text","text":"dont display"},
+		{"id":"d39fb3d280990b49","x":520,"y":-680,"width":250,"height":60,"type":"text","text":"if ap < 1 "}
 	],
 	"edges":[]
 }

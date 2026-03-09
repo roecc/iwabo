@@ -9,6 +9,8 @@ INCLUDE Demotype/CharacterCreation/CarScene.ink
 INCLUDE Demotype/Day1/dt_d1_draft.ink
 INCLUDE ResourceManagement/rm_test.ink
 INCLUDE testing/option_tests.ink
+INCLUDE Core/ap_handlers.ink
+
 
 
 
