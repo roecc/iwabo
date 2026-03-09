@@ -26,6 +26,6 @@ VAR reflection  = 0 //rumination/narcissism
 VAR discipline  = 0 //detachment / 
 VAR creativity  = 0 //escapism
 VAR strength    = 0 //brutality
-VAR cultiation  = 0 //exploitation
+VAR cultivation  = 0 //exploitation
 VAR tinkering   = 0 //meddling
 */

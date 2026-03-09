@@ -6,6 +6,8 @@ INCLUDE testing/papernote.ink
 
 INCLUDE Demotype/Day1/dt_d1_a1.ink
 INCLUDE Demotype/CharacterCreation/CarScene.ink
+INCLUDE Demotype/Day1/dt_d1_draft.ink
+
 
 
 ~SEED_RANDOM(256011)
