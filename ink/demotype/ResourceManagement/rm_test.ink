@@ -11,7 +11,7 @@ DAY {day}:
 
 === ap(option_text) ===
 +\ \[-1 ap\] {option_text}
-    ~update_ap(-1)
+    ~ap_update(-1)
     ->->
 
 === function ap_cond() ===

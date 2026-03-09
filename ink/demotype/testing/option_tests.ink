@@ -20,9 +20,9 @@ in this weave things happen.
         ->tst_options_traitroll_tunnel->
         and the tunnel is exited
         ***\ {ap_option("this option costs AP", -1)}
-            ~update_ap(-1)
+            ~ap_update(-1)
         ***\ {ap_option("this option costs 2 AP", -2)}
-            ~update_ap(-2)
+            ~ap_update(-2)
         ***\ {ap_option("this option doesnt", -1) + ap_option("this option costs AP", -2)}
         ***other
         ---

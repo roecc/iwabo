@@ -35,7 +35,7 @@
         ERROR: trait not found.
 }
 
-=== function modify_trait(trait_name, amount) ===
+=== function trait_update(trait_name, amount) ===
 ~temp debug = 1
 ~temp ret_val = -1
 {

@@ -3,7 +3,7 @@
 ~temp tmp_txt = option_text + " {disp_trait(trait_name, mod_val, mod_text, is_counter_roll)}"
 +\ {ap_option(tmp_txt, ap_cost)} 
     //{ap_cost>0:{update_ap(ap_cost)}}
-    ~update_ap(ap_cost)
+    ~ap_update(ap_cost)
     ->fork_trait_roll(trait_name, mod_val, is_counter_roll, pass, fail)
 
 === fork_trait_roll(trait_name, mod_val, is_counter_roll, ->pass, ->fail) ===
@@ -11,10 +11,10 @@
 {
     -is_counter_roll:
         ~has_passed = roll_counter(trait_name, mod_val)
-        ~modify_trait(trait_name, -1)
+        ~trait_update(trait_name, -1)
     -else:
         ~has_passed = roll_trait(trait_name, mod_val)
-        ~modify_trait(trait_name, 1)
+        ~trait_update(trait_name, 1)
 }
 {has_passed: ->pass|->fail}
 

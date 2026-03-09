@@ -10,7 +10,7 @@ VAR action_points = 0
 ~temp tmp_txt = "{action_points>=-ap_cost: {opt_txt}}"
 ~return tmp_txt
 
-=== function update_ap (amount) ===
+=== function ap_update (amount) ===
 ~temp debug = 1
 
 ~action_points += amount
