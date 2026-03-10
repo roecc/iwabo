@@ -1,4 +1,4 @@
-VAR action_points = 0
+VAR action_points = 1
 
 === function ap_option(text, ap_cost) ===
 ~temp opt_txt = ""

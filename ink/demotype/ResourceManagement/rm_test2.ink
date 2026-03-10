@@ -1,11 +1,17 @@
 VAR day = 0
-VAR ap_text = "\[-1 AP\] "
+//VAR ap_text = "\[-1 AP\] "
+VAR dif_ap = 0
 
 LIST repair_state = (broken), (damaged), (fine)
 //LIST maintain_state = neglected, maintained, well_maintained, loved
-VAR generator = (fine)
+VAR generator = (fine, garden)
+//VAR aquaponics = (fine, garden)
 
-=== next_day ===
+//controls npc locations and actions during the day
+VAR day_script = 0
+
+=== next_day(->day_scr) ===
+~day_script = day_scr
 {action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}
 ~day++
 ~action_points = 5
@@ -14,13 +20,17 @@ DAY {day}:
 ->main_day
 
 === main_day ===
+{dif_ap!=action_points:
+    ->day_script->
+    ~dif_ap=action_points
+}
 [action points: {action_points}]
-{action_points<1:->next_day}
+{action_points<1:->next_day(day_script)}
 //each loop, tunnel through day_script which defines character actions/updates with each stage?
 
 +go to 
     ->list_rooms->
-+do do 
++go do 
     ->list_chores->
 -
 ->main_day
@@ -28,47 +38,16 @@ DAY {day}:
 
 = list_rooms
 ~temp index = 2
-//->list->
-->list_all(index)->//main_day
-// <-room_option(location.garden)
-// <-room_option(location.living_room)
-// <-room_option(location.garden)
-
-// +[garden]
-//     <>garden
-//     ~location_update(daryl, location.garden)
-// +[parent's bedroom]
-//     <>bedroom
-//     ~location_update(daryl, location.parent_bedroom)
-// +[livingroom]
-//     <>livingroom
-//     ~location_update(daryl, location.living_room)
-
-// +[stay]
-//     ->->
-
-// -
- +   ->->
-//->DONE
-
-= list
-//<-list_all(2)
-+[stay]
-    ->->
+->list_all(index)->
++   ->-> //important part of the solution for double-stay
 
 = list_all (index)
-//~temp i = index
 {
     -index<=LIST_COUNT(location):
         <-room_option(location(index))
         ~index++
         ->list_all(index)->
 }
-// {
-//     -index==3:
-//         +[stay]
-//             ->->
-// }
 ->->
 
 = room_option (new_loc)
@@ -76,13 +55,11 @@ DAY {day}:
 +{new_loc != daryl^location}[{new_loc}]
     <>{new_loc}
     ~location_update(daryl, new_loc)
+    ->enter_room->
     ->->
 //solution to double-stay bug
 +{LIST_VALUE(new_loc)==LIST_VALUE(LIST_MAX(location))}[stay]
     ->->
-//works for some reason?
-// +{new_loc == daryl^location}[stay]
-//     ->->
 
 = list_chores
 <-chores_generator
@@ -93,6 +70,32 @@ DAY {day}:
 +[done]
     ->chores_done
 ->DONE
+
+=== enter_room ===
+//{daryl^name} enter {daryl^location}
+{daryl^location:
+    -living_room:
+        You enter the large domed living room.
+    -garden:
+        //{mary_ann?garden: mary ann is standing there.}
+        The enormous power house, your makeshift garden and vertical farm, covered in thick green and illuminated by countless grow-lamps.
+    -parent_bedroom:
+        Your well made bed is surrounded by overstuffed book shelves.
+    -aprils_room:
+        The floor of your daughters room is littered with paints, brushes, books, fabrics and little snippets of yarn.
+    -junes_room:
+        Toys half-heartedly thrown into the various boxes and half still posing mortal danger to any un-soled feet who dare enter.
+    -pantry:
+        Rows upon rows of conserves, dehydrated or freezedried, powdered or bottled, tightly stacked upon eachother from floor to ceiling.
+}
+->check_npc(daryl^location)->
+->->
+
+= check_npc (loc)
+{mary_ann?loc:Mary Ann is {mary_ann^action}}
+{april?loc:April is {april^action}}
+{june?loc:June is {june^action}}
+->->
 
 === chores_generator ===
 +generator
@@ -168,7 +171,7 @@ DAY {day}:
 	    ~ap_update(-1)
 	    ->chores_done
 	++sleep
-	    ->next_day
+	    ->next_day(day_script)
 	++[done]
         ->main_day.list_chores
 
@@ -178,7 +181,7 @@ DAY {day}:
 	    ~ap_update(-1)
 	    ->chores_done
 	++sleep
-	    ->next_day
+	    ->next_day(day_script)
 	++[done]
         ->main_day.list_chores
 
