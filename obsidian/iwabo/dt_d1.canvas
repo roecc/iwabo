@@ -84,7 +84,9 @@
 		{"id":"b583cf8d35130e6d","type":"text","text":"Not enough Fish","x":1640,"y":820,"width":250,"height":60},
 		{"id":"cb3db73bdb14e797","type":"file","file":"Img/UreaBottle3.png","x":2360,"y":960,"width":157,"height":200},
 		{"id":"286fa67447fe7761","type":"text","text":"Already too few","x":2000,"y":820,"width":250,"height":60},
-		{"id":"3f778cc79c3eddb6","type":"text","text":"Without food, the plants wilt","x":2340,"y":820,"width":250,"height":60}
+		{"id":"3f778cc79c3eddb6","type":"text","text":"Without food, the plants wilt","x":2340,"y":820,"width":250,"height":60},
+		{"id":"69a96be6fe4bb408","x":2060,"y":-1160,"width":250,"height":60,"type":"text","text":"you told us in class"},
+		{"id":"71ce6890fc25593c","x":2200,"y":-1100,"width":118,"height":60,"type":"text","text":"[[Nurturing - Smothering]]"}
 	],
 	"edges":[
 		{"id":"4823c9b611e1c1f3","fromNode":"8190e8f3ea847d22","fromSide":"right","toNode":"b0755081af38f065","toSide":"left"},

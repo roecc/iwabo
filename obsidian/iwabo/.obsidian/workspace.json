@@ -46,8 +46,8 @@
               "state": {
                 "file": "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
                 "viewState": {
-                  "x": 517.9172921786488,
-                  "y": 95.06333426661132,
+                  "x": 329.86020915830886,
+                  "y": 297.154527960111,
                   "zoom": -0.5936350233455286
                 }
               },
@@ -221,9 +221,9 @@
                   "state": {
                     "file": "dt_d1.canvas",
                     "viewState": {
-                      "x": 2652.7737994340814,
-                      "y": 333.9727474681857,
-                      "zoom": -1.3197638374567042
+                      "x": 2569.697495769533,
+                      "y": -198.52779622837323,
+                      "zoom": -0.9586271339654937
                     }
                   },
                   "icon": "lucide-layout-dashboard",
@@ -281,8 +281,7 @@
                   "title": "Resource Management Canvas"
                 }
               }
-            ],
-            "currentTab": 3
+            ]
           }
         ],
         "direction": "vertical",
@@ -297,13 +296,13 @@
   },
   "active": "6951eaa18b79fe25",
   "lastOpenFiles": [
-    "Demotype/Hooks/Diegesis.md",
+    "dt_d1.canvas",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
+    "Demotype/Hooks/Diegesis.md",
     "Img/Breaking Bad - Walt in Crawlspace.png",
     "Demotype/Architecture/Architecture.canvas",
     "dt_d2.canvas",
     "Ink/OtherOther/Other_ink.md",
-    "dt_d1.canvas",
     "Demotype/Architecture",
     "Demotype/Mechanics/Advanced State Tracking.md",
     "Demotype/Mechanics/Resource Management/Resource Management.md",

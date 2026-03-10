@@ -6,7 +6,7 @@ LIST repair_state = (broken), (damaged), (fine)
 VAR generator = (fine)
 
 === next_day ===
-{action_points<1:You wake up on the floor.|You wake up feeling well rested}
+{action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}
 ~day++
 ~action_points = 5
 DAY {day}:
@@ -17,8 +17,72 @@ DAY {day}:
 [action points: {action_points}]
 {action_points<1:->next_day}
 //each loop, tunnel through day_script which defines character actions/updates with each stage?
-+CHORES
-    ->list_chores->main_day
+
++go to 
+    ->list_rooms->
++do do 
+    ->list_chores->
+-
+->main_day
+
+
+= list_rooms
+~temp index = 2
+//->list->
+->list_all(index)->//main_day
+// <-room_option(location.garden)
+// <-room_option(location.living_room)
+// <-room_option(location.garden)
+
+// +[garden]
+//     <>garden
+//     ~location_update(daryl, location.garden)
+// +[parent's bedroom]
+//     <>bedroom
+//     ~location_update(daryl, location.parent_bedroom)
+// +[livingroom]
+//     <>livingroom
+//     ~location_update(daryl, location.living_room)
+
+// +[stay]
+//     ->->
+
+// -
+ +   ->->
+//->DONE
+
+= list
+//<-list_all(2)
++[stay]
+    ->->
+
+= list_all (index)
+//~temp i = index
+{
+    -index<=LIST_COUNT(location):
+        <-room_option(location(index))
+        ~index++
+        ->list_all(index)->
+}
+// {
+//     -index==3:
+//         +[stay]
+//             ->->
+// }
+->->
+
+= room_option (new_loc)
+{location !? new_loc:main_day.room_option: {new_loc} is not a location->ERROR}
++{new_loc != daryl^location}[{new_loc}]
+    <>{new_loc}
+    ~location_update(daryl, new_loc)
+    ->->
+//solution to double-stay bug
++{LIST_VALUE(new_loc)==LIST_VALUE(LIST_MAX(location))}[stay]
+    ->->
+//works for some reason?
+// +{new_loc == daryl^location}[stay]
+//     ->->
 
 = list_chores
 <-chores_generator
