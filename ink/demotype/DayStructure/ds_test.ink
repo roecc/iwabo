@@ -1,5 +1,4 @@
 VAR ap_updated = -1
-//VAR currentA = 0
 
 //write multiple generic descriptions of locations and tunnel through them here. otherwise write specific descriptions here.
 === ds_1 ===
@@ -17,7 +16,6 @@ VAR ap_updated = -1
     -1:->a5->
 }
 ->->
-->ERROR.loose_end
 
 = a1
 {ap_updated!=action_points:
@@ -29,13 +27,8 @@ VAR ap_updated = -1
     ~npc_update(june, location, junes_room)
     
     ~ap_updated = action_points
--else:
-    {daryl?garden:
-        +\ {ap_option("read bedtime story", -1)}
-            ~ap_update(-1)
-            bla bla bla
-            ->->
-    }
+//-else:
+    
 }
 ->->
 
@@ -49,8 +42,13 @@ VAR ap_updated = -1
     ~npc_update(june, location, living_room)
     
     ~ap_updated = action_points
-//-else:
-    
+-else:
+    {daryl?living_room:
+        +\ {ap_option("\[offer to cook\]", -1)}
+            M: that's so sweet of you to offer!
+            ~ap_update(-1)
+            ->->
+    }     
 }
 ->->
 
@@ -64,8 +62,9 @@ VAR ap_updated = -1
 -else:
     {daryl?living_room:
         +\ {ap_option("join family lunch", -1)}
-            ~ap_update(-1)
+            M: bon apetit!
             nom nom nom
+            ~ap_update(-1)
             ->->
     }    
 }
@@ -91,14 +90,26 @@ VAR ap_updated = -1
     
     ~ap_updated = action_points
 -else:
-    {daryl?junes_room:
-        +\ {ap_option("read bedtime story", -1)}
-            ~ap_update(-1)
-            bla bla bla
-            ->->
-    }
+    <-ds_test_bedtime_story
+    <-ds_test_marital_duty
 }
 ->->
+
+=== ds_test_bedtime_story ===
+{daryl?junes_room:
+    +\ {ap_option("read awesome bedtime story", -1)}
+        ~ap_update(-1)
+        bla bla bla
+        ->->
+}
+
+=== ds_test_marital_duty ===
+{daryl?parent_bedroom:
+    +\ {ap_option("perform your marital duties", -1)}
+        ~ap_update(-1)
+        ah ah ah
+        ->->
+}
 
 
 === function npc_set (ref npc, new_act, new_loc)

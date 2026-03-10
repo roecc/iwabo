@@ -13,7 +13,7 @@ VAR strength_val    = 0 //brutality
 VAR tox_switch  = 50//tbd
 
 
-
+//use mixed lists for traits? list traitnames, toxnames, 1-100 and use mixed list like obj?
 
 
 /*

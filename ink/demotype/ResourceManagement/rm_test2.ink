@@ -2,13 +2,26 @@ VAR day = 0
 //VAR ap_text = "\[-1 AP\] "
 VAR dif_ap = 0
 
-LIST repair_state = (broken), (damaged), (fine)
-//LIST maintain_state = neglected, maintained, well_maintained, loved
-VAR generator = (fine, garden)
-//VAR aquaponics = (fine, garden)
+LIST repair_state = (broken = 1), (damaged = 2), (fine = 3)
+LIST maintain_state = (forgotten), (neglected), (maintained), (well_maintained), (loved)
+LIST power_state = (off = 0), (on = 1)
+VAR generator = (fine, garden, maintained, on)
+VAR farm = (fine, garden, maintained, on)
 
 //controls npc locations and actions during the day
 VAR day_script = 0
+
+=== function daily_damage(ref target) ===
+~temp debug = 0
+// this works!
+// {target:
+//     -?loved:
+//         the target is loved.
+//     -?well_maintained:
+// }
+~temp d6 = roll_d(6)
+{d6>LIST_VALUE(target^maintain_state): {repair_update(target, -1)}}
+{debug: \[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}\]}
 
 === next_day(->day_scr) ===
 ~day_script = day_scr
@@ -17,7 +30,11 @@ VAR day_script = 0
 ~action_points = 5
 ~food--
 DAY {day}:
-~generator_repair_update(-1)
+//~generator_repair_update(-1)
+~daily_damage(farm)
+~daily_damage(generator)
+~maintain_update(farm, -1)
+~maintain_update(generator, -1)
 \[food--\] \[food left: {food}\]
 ->main_day
 
@@ -80,9 +97,9 @@ DAY {day}:
 {daryl?parent_bedroom:
     <-chores_bedroom
 }
-{daryl?junes_room:
-    {action_points<3:<-chores_evening}
-}
+// {daryl?junes_room:
+//     //{action_points<3:<-chores_evening}
+// }
 ->story_opts->
 + ->chores_done
 //+[done]
@@ -136,6 +153,7 @@ DAY {day}:
     {generator !? fine:<-tr_fix_generator}
     ++\ {ap_option("maintain generator", -1)}
 	~ap_update(-1)
+	
 	//nice place to experiment with loop tools of ink
     you fuck around with the machine keeping you alive ignoring its irritated rumbling any time you touch it.
     ->chores_done
@@ -224,6 +242,47 @@ DAY {day}:
 === chores_done ===
 ->->
 
+//generalizing this throws: Line 250: Tried to divert to a target from a variable, but the variable (list_type) didn't contain a divert target, it contained 'broken, damaged, fine'.
+=== function repair_update(ref target, value) === 
+~temp debug = 1
+
+{LIST_VALUE(target^repair_state)+value>=1:
+    {LIST_VALUE(target^repair_state)+value<=LIST_VALUE(LIST_MAX(repair_state)):
+        ~temp old_state = target^repair_state
+        ~target -= old_state
+        ~target += repair_state(LIST_VALUE(old_state)+value)
+        {debug: [target repair state is now {target^repair_state}]}
+    }
+// -else:
+//     OVERFLOWWWWW
+}
+{generator?broken:
+    ~power_update(generator, power_state.off)
+    ~power_update(farm, power_state.off)
+}
+
+=== function maintain_update(ref target, value) ===
+~temp debug = 1
+
+{LIST_VALUE(target^maintain_state)+value>=1:
+    {LIST_VALUE(target^maintain_state)+value<=LIST_VALUE(LIST_MAX(maintain_state)):
+        ~temp old_state = target^maintain_state
+        ~target -= old_state
+        ~target += maintain_state(LIST_VALUE(old_state)+value)
+        {debug: [target maintain state is now {target^maintain_state}]}
+    }
+// -else:
+//     OVERFLOWWWWW
+}
+
+=== function power_update(ref target, value) ===
+~temp debug = 1
+
+{target!?value:
+    ~target -= target^power_state
+    ~target += value
+    {debug: [target power state is now {target^power_state}]}   
+}
 
 //could be generalized
 === function generator_repair_update(value) ===
