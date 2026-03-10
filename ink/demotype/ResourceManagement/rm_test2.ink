@@ -149,6 +149,7 @@ DAY {day}:
 ->->
 
 === chores_generator ===
+//add inspect and turn on?
 +\[approach generator\]
     {generator !? fine:<-tr_fix_generator}
     ++\ {ap_option("maintain generator", -1)}
@@ -159,6 +160,9 @@ DAY {day}:
     ->chores_done
     ++\ {ap_option("upgrade generator", -1)}
         ~ap_update(-1)
+        ->chores_done
+    ++[inspect]
+        the generator is {generator^repair_state} and {generator^maintain_state}.
         ->chores_done
     ++[done]
         ->main_day.list_chores
@@ -188,8 +192,16 @@ DAY {day}:
         //could do passives with maintain chores for crit pos, crit fail?
         ~ap_update(-1)
         ->chores_done
+    ++ {farm^repair_state==fine && farm^power_state==on}\ {ap_option("harvest farm", -1)}
+        //could do passives with maintain chores for crit pos, crit fail?
+        ~ap_update(-1)
+        ~food++
+        ->chores_done
     ++\ {ap_option("extend farm", -1)}
         ~ap_update(-1)
+        ->chores_done
+    ++[inspect]
+        the farm is {farm^repair_state} and {farm^maintain_state}.
         ->chores_done
     ++[done]
         //->main_day.list_chores
@@ -259,6 +271,9 @@ DAY {day}:
 {generator?broken:
     ~power_update(generator, power_state.off)
     ~power_update(farm, power_state.off)
+-else:
+    ~power_update(generator, power_state.on)
+    ~power_update(farm, power_state.on)
 }
 
 === function maintain_update(ref target, value) ===
