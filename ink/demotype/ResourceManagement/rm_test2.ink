@@ -19,6 +19,7 @@ DAY {day}:
 ~generator_repair_update(-1)
 ->main_day
 
+//make day_script not a tunnel?
 === main_day ===
 {dif_ap!=action_points:
     ->day_script->

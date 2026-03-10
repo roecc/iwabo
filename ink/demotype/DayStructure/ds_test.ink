@@ -1,7 +1,7 @@
 VAR ap_updated = -1
 //VAR currentA = 0
 
-
+//write multiple generic descriptions of locations and tunnel through them here. otherwise write specific descriptions here.
 === ds_1 ===
 //each location should check here for unique actions?
 {action_points:
