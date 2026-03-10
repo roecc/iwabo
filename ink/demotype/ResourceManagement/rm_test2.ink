@@ -6,6 +6,7 @@ LIST repair_state = (broken), (damaged), (fine)
 VAR generator = (fine)
 
 === next_day ===
+{action_points<1:You wake up on the floor.|You wake up feeling well rested}
 ~day++
 ~action_points = 5
 DAY {day}:
@@ -15,24 +16,33 @@ DAY {day}:
 === main_day ===
 [action points: {action_points}]
 {action_points<1:->next_day}
-->list_chores->main_day
+//each loop, tunnel through day_script which defines character actions/updates with each stage?
++CHORES
+    ->list_chores->main_day
 
 = list_chores
 <-chores_generator
 <-chores_garden
+<-chores_livingroom
+<-chores_bedroom
+{action_points<3:<-chores_evening}
++[done]
+    ->chores_done
 ->DONE
 
 === chores_generator ===
-{generator !? fine:<-tr_fix_generator}
-+\ {ap_option("maintain generator", -1)}
++generator
+    {generator !? fine:<-tr_fix_generator}
+    ++\ {ap_option("maintain generator", -1)}
 	~ap_update(-1)
 	//nice place to experiment with loop tools of ink
     you fuck around with the machine keeping you alive ignoring its irritated rumbling any time you touch it.
     ->chores_done
-+\ {ap_option("upgrade generator", -1)}
-    ~ap_update(-1)
-    ->chores_done
-->DONE
+    ++\ {ap_option("upgrade generator", -1)}
+        ~ap_update(-1)
+        ->chores_done
+    ++[done]
+        ->main_day.list_chores
 
 = tr_fix_generator
 ~temp text = "fix generator"//"option text"
@@ -54,13 +64,59 @@ DAY {day}:
 	->chores_done
 
 === chores_garden ===
-+\ {ap_option("maintain farm", -1)}
-    //could do passives with maintain chores for crit pos, crit fail?
-    ~ap_update(-1)
++garden
+    ++\ {ap_option("maintain farm", -1)}
+        //could do passives with maintain chores for crit pos, crit fail?
+        ~ap_update(-1)
     ->chores_done
-+\ {ap_option("extend farm", -1)}
-    ~ap_update(-1)
-    ->chores_done
+    ++\ {ap_option("extend farm", -1)}
+        ~ap_update(-1)
+        ->chores_done
+    ++[done]
+        ->main_day.list_chores
+
+=== chores_livingroom ===
++livingroom
+    ++\ {ap_option("watch TV", -1)}
+	    ~ap_update(-1)
+	    ->chores_done
+	++\ {ap_option("exercise", -1)}
+	    ~ap_update(-1)
+	    ~trait_update(strength, 1)
+	    ->chores_done
+	++[done]
+        ->main_day.list_chores
+
+=== chores_kitchen ===
++kitchen
+    ++\ {ap_option("clean kitchen", -1)}
+	    ~ap_update(-1)
+	    ->chores_done
+	++\ {ap_option("cook", -1)}
+	    ~ap_update(-1)
+	    ->chores_done
+	++[done]
+        ->main_day.list_chores
+
+=== chores_bedroom ===
++bedroom
+    ++\ {ap_option("read", -1)}
+	    ~ap_update(-1)
+	    ->chores_done
+	++sleep
+	    ->next_day
+	++[done]
+        ->main_day.list_chores
+
+=== chores_evening ===
++bedtime
+    ++\ {ap_option("read bedtime story", -1)}
+	    ~ap_update(-1)
+	    ->chores_done
+	++sleep
+	    ->next_day
+	++[done]
+        ->main_day.list_chores
 
 === chores_done ===
 ->->

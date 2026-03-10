@@ -15,13 +15,14 @@ INCLUDE ResourceManagement/rm_test2.ink
 
 LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
 //~location = (none, living_room, garden, parent_bedroom, aprils_room, junes_room, pantry)
+LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing)
 LIST name = (Daryl), (Mary_Ann), (April), (June)
 //~name = (Daryl, Mary_Ann, April, June)
 
-VAR daryl = (name.Daryl, location.none)
-VAR mary_ann = (name.Mary_Ann, location.none)
-VAR april = (name.April, location.none)
-VAR june = (name.June, location.none)
+VAR daryl = (name.Daryl, location.none, action.none)
+VAR mary_ann = (name.Mary_Ann, location.none, action.none)
+VAR april = (name.April, location.none, action.none)
+VAR june = (name.June, location.none, action.none)
 
 
 

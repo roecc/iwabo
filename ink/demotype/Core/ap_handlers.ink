@@ -11,11 +11,8 @@ VAR action_points = 0
 ~return tmp_txt
 
 === function ap_update (amount) ===
-~temp debug = 1
+~temp debug = 0
 
 ~action_points += amount
 {debug && amount!=0:\[action points left: {action_points}]}
-{
-    -action_points < 1:
-        You collapse on the floor.
-}
+{debug && action_points<1:You collapse on the floor.}

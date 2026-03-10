@@ -14,7 +14,7 @@
         },
         {
             "name": "AP Option",
-            "ink": "*\\ {ap_option(\"text\", -1)}\n\t~ap_update(-1)"
+            "ink": "\\ {ap_option(\"text\", -1)}\n\t~ap_update(-1)"
         },
         {
             "name": "Passive Roll",
