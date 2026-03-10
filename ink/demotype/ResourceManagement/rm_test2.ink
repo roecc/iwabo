@@ -28,10 +28,8 @@ DAY {day}:
 {action_points<1:->next_day(day_script)}
 //each loop, tunnel through day_script which defines character actions/updates with each stage?
 
-+go to 
-    ->list_rooms->
-+go do 
-    ->list_chores->
+->list_chores->
+//+go do 
 -
 ->main_day
 
@@ -61,15 +59,48 @@ DAY {day}:
 +{LIST_VALUE(new_loc)==LIST_VALUE(LIST_MAX(location))}[stay]
     ->->
 
+= go_to
++go to 
+    ->list_rooms->
+->->
+
 = list_chores
-<-chores_generator
-<-chores_garden
-<-chores_livingroom
-<-chores_bedroom
-{action_points<3:<-chores_evening}
-+[done]
-    ->chores_done
+<-go_to
+{daryl?garden:
+    <-chores_generator
+    <-chores_garden
+}
+{daryl?living_room:
+    <-chores_livingroom
+    <-chores_kitchen
+}
+{daryl?parent_bedroom:
+    <-chores_bedroom
+}
+{daryl?junes_room:
+    {action_points<3:<-chores_evening}
+}
+->story_opts->
++ ->chores_done
+//+[done]
+//    ->chores_done
 ->DONE
+
+=== story_opts ===
+//go to day_script and get opts based on day_act, player location etc.
+->day_script->
+->->
+
+// === function get_dao_divert() ===
+// ~temp div = ->day_script
+// {action_points:
+//     -5: 
+//         ~div = div.a1.opts}
+//     -4:
+//     -3:
+//     -2:
+//     -1:
+// }
 
 === enter_room ===
 //{daryl^name} enter {daryl^location}
@@ -98,7 +129,7 @@ DAY {day}:
 ->->
 
 === chores_generator ===
-+generator
++\[approach generator\]
     {generator !? fine:<-tr_fix_generator}
     ++\ {ap_option("maintain generator", -1)}
 	~ap_update(-1)
@@ -131,59 +162,61 @@ DAY {day}:
 	->chores_done
 
 === chores_garden ===
-+garden
++\[approach garden\]
     ++\ {ap_option("maintain farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         ~ap_update(-1)
-    ->chores_done
+        ->chores_done
     ++\ {ap_option("extend farm", -1)}
         ~ap_update(-1)
         ->chores_done
     ++[done]
-        ->main_day.list_chores
+        //->main_day.list_chores
+        ->chores_done
 
 === chores_livingroom ===
-+livingroom
-    ++\ {ap_option("watch TV", -1)}
-	    ~ap_update(-1)
-	    ->chores_done
-	++\ {ap_option("exercise", -1)}
-	    ~ap_update(-1)
-	    ~trait_update(strength, 1)
-	    ->chores_done
-	++[done]
-        ->main_day.list_chores
+//+livingroom
++\ {ap_option("watch TV", -1)}
+    ~ap_update(-1)
+    ->chores_done
++\ {ap_option("exercise", -1)}
+    ~ap_update(-1)
+    ~trait_update(strength, 1)
+    ->chores_done
+//+[done]
+//   ->main_day.list_chores
 
 === chores_kitchen ===
-+kitchen
-    ++\ {ap_option("clean kitchen", -1)}
+//+kitchen
+    +\ {ap_option("clean kitchen", -1)}
 	    ~ap_update(-1)
 	    ->chores_done
-	++\ {ap_option("cook", -1)}
+	+\ {ap_option("cook", -1)}
 	    ~ap_update(-1)
 	    ->chores_done
-	++[done]
-        ->main_day.list_chores
+	//+[done]
+        //->main_day.list_chores
+    //    ->chores_done
 
 === chores_bedroom ===
-+bedroom
-    ++\ {ap_option("read", -1)}
+//+bedroom
+    +\ {ap_option("read", -1)}
 	    ~ap_update(-1)
 	    ->chores_done
-	++sleep
+	+sleep
 	    ->next_day(day_script)
-	++[done]
-        ->main_day.list_chores
+	//+[done]
+     //   ->main_day.list_chores
 
 === chores_evening ===
-+bedtime
-    ++\ {ap_option("read bedtime story", -1)}
+//+bedtime
+    +\ {ap_option("read bedtime story", -1)}
 	    ~ap_update(-1)
 	    ->chores_done
-	++sleep
+	+sleep
 	    ->next_day(day_script)
-	++[done]
-        ->main_day.list_chores
+	//++[done]
+    //    ->main_day.list_chores
 
 === chores_done ===
 ->->

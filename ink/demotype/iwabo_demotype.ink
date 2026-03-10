@@ -30,7 +30,7 @@ VAR mary_ann = (name.Mary_Ann, location.living_room, action.cooking)
 VAR april = (name.April, location.aprils_room, action.playing_guitar)
 VAR june = (name.June, location.living_room, action.drawing)
 
-
+VAR food = 40
 
 
 ~SEED_RANDOM(256011)

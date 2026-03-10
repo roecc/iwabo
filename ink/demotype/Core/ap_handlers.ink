@@ -14,5 +14,6 @@ VAR action_points = 1
 ~temp debug = 0
 
 ~action_points += amount
+//~ap_updated = true
 {debug && amount!=0:\[action points left: {action_points}]}
 {debug && action_points<1:You collapse on the floor.}

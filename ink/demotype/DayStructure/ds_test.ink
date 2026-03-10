@@ -1,3 +1,7 @@
+VAR ap_updated = -1
+//VAR currentA = 0
+
+
 === ds_1 ===
 //each location should check here for unique actions?
 {action_points:
@@ -16,36 +20,86 @@
 ->ERROR.loose_end
 
 = a1
-~npc_update(mary_ann, action, sleeping)
-~npc_update(april, action, sleeping)
-~npc_update(june, action, sleeping)
-~npc_update(mary_ann, location, parent_bedroom)
-~npc_update(april, location, aprils_room)
-~npc_update(june, location, junes_room)
+{ap_updated!=action_points:
+    ~npc_update(mary_ann, action, sleeping)
+    ~npc_update(april, action, sleeping)
+    ~npc_update(june, action, sleeping)
+    ~npc_update(mary_ann, location, parent_bedroom)
+    ~npc_update(april, location, aprils_room)
+    ~npc_update(june, location, junes_room)
+    
+    ~ap_updated = action_points
+-else:
+    {daryl?garden:
+        +\ {ap_option("read bedtime story", -1)}
+            ~ap_update(-1)
+            bla bla bla
+            ->->
+    }
+}
 ->->
+
 = a2
-~npc_update(mary_ann, action, cooking)
-~npc_update(mary_ann, location, living_room)
-~npc_update(april, action, playing_guitar)
-~npc_update(april, location, aprils_room)
-~npc_update(june, action, drawing)
-~npc_update(june, location, living_room)
+{ap_updated!=action_points:
+    ~npc_update(mary_ann, action, cooking)
+    ~npc_update(mary_ann, location, living_room)
+    ~npc_update(april, action, playing_guitar)
+    ~npc_update(april, location, aprils_room)
+    ~npc_update(june, action, drawing)
+    ~npc_update(june, location, living_room)
+    
+    ~ap_updated = action_points
+//-else:
+    
+}
 ->->
+
 = a3
-~npc_set(mary_ann, eating, living_room)
-~npc_set(april, eating, living_room)
-~npc_set(june, eating, living_room)
+{ap_updated!=action_points:
+    ~npc_set(mary_ann, eating, living_room)
+    ~npc_set(april, eating, living_room)
+    ~npc_set(june, eating, living_room)
+    
+    ~ap_updated = action_points
+-else:
+    {daryl?living_room:
+        +\ {ap_option("join family lunch", -1)}
+            ~ap_update(-1)
+            nom nom nom
+            ->->
+    }    
+}
 ->->
+
 = a4
-~npc_set(mary_ann, cleaning, living_room)
-~npc_set(april, playing_guitar, living_room)
-~npc_set(june, watching_tv, living_room)
+{ap_updated!=action_points:
+    ~npc_set(mary_ann, cleaning, living_room)
+    ~npc_set(april, playing_guitar, living_room)
+    ~npc_set(june, watching_tv, living_room)
+    
+    ~ap_updated = action_points
+//-else:
+    
+}
 ->->
+
 = a5
-~npc_set(mary_ann, sleeping, parent_bedroom)
-~npc_set(april, sleeping, aprils_room)
-~npc_set(june, sleeping, junes_room)
+{ap_updated!=action_points:
+    ~npc_set(mary_ann, sleeping, parent_bedroom)
+    ~npc_set(april, sleeping, aprils_room)
+    ~npc_set(june, sleeping, junes_room)
+    
+    ~ap_updated = action_points
+-else:
+    {daryl?junes_room:
+        +\ {ap_option("read bedtime story", -1)}
+            ~ap_update(-1)
+            bla bla bla
+            ->->
+    }
+}
 ->->
+
 
 === function npc_set (ref npc, new_act, new_loc)
 ~temp debug = 1
