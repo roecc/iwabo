@@ -15,8 +15,10 @@ VAR day_script = 0
 {action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}
 ~day++
 ~action_points = 5
+~food--
 DAY {day}:
 ~generator_repair_update(-1)
+\[food--\] \[food left: {food}\]
 ->main_day
 
 //make day_script not a tunnel?
