@@ -19,20 +19,27 @@ INCLUDE DayStructure/DayScripts/ds_test.ink
 INCLUDE Core/day_handlers.ink
 INCLUDE Core/state_handlers.ink
 INCLUDE Core/day_actions.ink
+INCLUDE DayStructure/DayScripts/june_sick.ink
+INCLUDE DayStructure/DayScripts/ds_prefab.ink
 
+
+VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
 IWABO DEMOTYPE DRAFT v0.5.260227
 
 //->dt_d1_a1
-->next_day(->ds_1)
 //->tst_the_note
 //->tst_options
+
+->next_day(->ds_1)
+//->end_story
 
 
 
 === ERROR ===
+ERROR
 ->end_story
 
 =loose_end

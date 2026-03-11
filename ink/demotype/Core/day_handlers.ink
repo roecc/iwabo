@@ -10,7 +10,7 @@ VAR day_script = 0
     ~dif_ap=action_points
 }
 [action points: {action_points}]
-{action_points<1:->next_day(day_script)}
+{action_points<1:->end_day}
 //each loop, tunnel through day_script which defines character actions/updates with each stage?
 ->list_actions->
 //- //may cause bug if removed, didnt see one yet
@@ -65,13 +65,25 @@ VAR day_script = 0
 ->DONE
 
 
+=== function random_day() ===
+::hi there
+{~{set_day_scr(->ds_1)}|{set_day_scr(->ds_june_sick)}}
+
+=== function set_day_scr(->scr) ===
+~day_script = scr
+
+=== end_day ===
+~random_day()
+->next_day(day_script)
+
 === next_day(->day_scr) ===
 ~day++
 +DAY {day}[]:
 -
 ~day_script = day_scr
+~ap_updated = -1
 {action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}
-~action_points = 5
+~action_points = set_ap_per_day
 ~food--
 ~daily_damage(farm)
 ~daily_damage(generator)

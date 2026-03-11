@@ -14,6 +14,7 @@ VAR ap_updated = -1
 
 = a1
 {ap_updated!=action_points:
+    ds test
     ~npc_update(mary_ann, action, sleeping)
     ~npc_update(april, action, sleeping)
     ~npc_update(june, action, sleeping)

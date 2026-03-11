@@ -81,7 +81,7 @@
     ~ap_update(-1)
     ->chores_done
 +[sleep]
-    ->next_day(day_script)
+    ->end_day
 
 === chores_done ===
 ->->
