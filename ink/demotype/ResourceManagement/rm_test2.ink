@@ -5,8 +5,8 @@ VAR dif_ap = 0
 LIST repair_state = (broken = 1), (damaged = 2), (fine = 3)
 LIST maintain_state = (forgotten), (neglected), (maintained), (well_maintained), (loved)
 LIST power_state = (off = 0), (on = 1)
-VAR generator = (fine, garden, maintained, on)
-VAR farm = (fine, garden, maintained, on)
+VAR generator = (name.Generator, fine, garden, maintained, on)
+VAR farm = (name.Aquaponics, fine, garden, maintained, on)
 
 //controls npc locations and actions during the day
 VAR day_script = 0
@@ -24,12 +24,12 @@ VAR day_script = 0
 {debug: \[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}\]}
 
 === next_day(->day_scr) ===
+~day++
+DAY {day}:
 ~day_script = day_scr
 {action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}
-~day++
 ~action_points = 5
 ~food--
-DAY {day}:
 //~generator_repair_update(-1)
 ~daily_damage(farm)
 ~daily_damage(generator)
@@ -111,16 +111,6 @@ DAY {day}:
 ->day_script->
 ->->
 
-// === function get_dao_divert() ===
-// ~temp div = ->day_script
-// {action_points:
-//     -5: 
-//         ~div = div.a1.opts}
-//     -4:
-//     -3:
-//     -2:
-//     -1:
-// }
 
 === enter_room ===
 //{daryl^name} enter {daryl^location}
@@ -153,10 +143,10 @@ DAY {day}:
 +\[approach generator\]
     {generator !? fine:<-tr_fix_generator}
     ++\ {ap_option("maintain generator", -1)}
-	~ap_update(-1)
-	
-	//nice place to experiment with loop tools of ink
-    you fuck around with the machine keeping you alive ignoring its irritated rumbling any time you touch it.
+	    ~ap_update(-1)
+	    ~maintain_update(farm, 1)
+	    //nice place to experiment with loop tools of ink
+        you fuck around with the machine keeping you alive ignoring its irritated rumbling any time you touch it.
     ->chores_done
     ++\ {ap_option("upgrade generator", -1)}
         ~ap_update(-1)
@@ -180,7 +170,7 @@ DAY {day}:
 ->trait_option(text, trait, mod_val, mod_text, not counter_roll, ap_cost,->pass, ->fail)
 - (pass) //on success
     the generator seems to calm a little
-    ~generator_repair_update(1)
+    ~repair_update(generator, 1)
 	->chores_done
 - (fail) //on fail
     nothing happens
@@ -191,9 +181,11 @@ DAY {day}:
     ++\ {ap_option("maintain farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         ~ap_update(-1)
+        ~maintain_update(farm, 1)
         ->chores_done
     ++ {farm^repair_state==fine && farm^power_state==on}\ {ap_option("harvest farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
+        //should really check if farm was on last cycle, too?
         ~ap_update(-1)
         ~food++
         ->chores_done
@@ -236,7 +228,7 @@ DAY {day}:
     +\ {ap_option("read", -1)}
 	    ~ap_update(-1)
 	    ->chores_done
-	+sleep
+	+[sleep]
 	    ->next_day(day_script)
 	//+[done]
      //   ->main_day.list_chores
@@ -263,7 +255,7 @@ DAY {day}:
         ~temp old_state = target^repair_state
         ~target -= old_state
         ~target += repair_state(LIST_VALUE(old_state)+value)
-        {debug: [target repair state is now {target^repair_state}]}
+        {debug: [{target^name} repair state is now {target^repair_state}]}
     }
 // -else:
 //     OVERFLOWWWWW
@@ -284,7 +276,9 @@ DAY {day}:
         ~temp old_state = target^maintain_state
         ~target -= old_state
         ~target += maintain_state(LIST_VALUE(old_state)+value)
-        {debug: [target maintain state is now {target^maintain_state}]}
+        {debug: [{target^name} maintain state is now {target^maintain_state}]}
+        -else:
+            ~trait_update(tinkering, 1)
     }
 // -else:
 //     OVERFLOWWWWW
@@ -296,14 +290,14 @@ DAY {day}:
 {target!?value:
     ~target -= target^power_state
     ~target += value
-    {debug: [target power state is now {target^power_state}]}   
+    {debug: [{target^name} power state is now {target^power_state}]}   
 }
 
 //could be generalized
-=== function generator_repair_update(value) ===
-~temp debug = 1
+// === function generator_repair_update(value) ===
+// ~temp debug = 1
 
-~temp old_state = generator^repair_state
-~generator -= old_state
-~generator += repair_state(LIST_VALUE(old_state)+value)
-{debug: [generator is now {generator^repair_state}]}
+// ~temp old_state = generator^repair_state
+// ~generator -= old_state
+// ~generator += repair_state(LIST_VALUE(old_state)+value)
+// {debug: [generator is now {generator^repair_state}]}

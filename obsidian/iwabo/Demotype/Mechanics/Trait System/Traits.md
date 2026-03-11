@@ -24,10 +24,11 @@
 
 ### Ideas
 
-| Trait        | Tox_Trait   |
-| ------------ | ----------- |
-|              | Controlling |
-| Intelligence | Arrogance   |
+| Trait        | Tox_Trait                         |
+| ------------ | --------------------------------- |
+|              | Controlling                       |
+| Intelligence | Arrogance                         |
+| Charisma     | Neuro Linguistic Programming, PUA |
 
 
 

@@ -42,17 +42,14 @@
             "id": "6951eaa18b79fe25",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
-                "viewState": {
-                  "x": 329.86020915830886,
-                  "y": 297.154527960111,
-                  "zoom": -0.5936350233455286
-                }
+                "file": "Demotype/Mechanics/Trait System/Traits.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Resource Management Canvas"
+              "icon": "lucide-file",
+              "title": "Traits"
             }
           }
         ],
@@ -296,8 +293,9 @@
   },
   "active": "6951eaa18b79fe25",
   "lastOpenFiles": [
-    "dt_d1.canvas",
+    "Demotype/Mechanics/Trait System/Trait System.md",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
+    "dt_d1.canvas",
     "Demotype/Hooks/Diegesis.md",
     "Img/Breaking Bad - Walt in Crawlspace.png",
     "Demotype/Architecture/Architecture.canvas",

@@ -20,7 +20,7 @@ INCLUDE Unreal/sockets.ink
 LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
 //~location = (none, living_room, garden, parent_bedroom, aprils_room, junes_room, pantry)
 LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping)
-LIST name = (you), (Mary_Ann), (April), (June)
+LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics)
 //~name = (Daryl, Mary_Ann, April, June)
 
 // VAR daryl = (name.you, location.none, action.none)
