@@ -2,17 +2,12 @@ VAR ap_updated = -1
 
 //write multiple generic descriptions of locations and tunnel through them here. otherwise write specific descriptions here.
 === ds_1 ===
-//each location should check here for unique actions?
+//each location checks here for unique actions, good?
 {action_points:
-    // -5:{a1==0:->a1->}
     -5:->a1->
-    // -4:{a2==0:->a2->}
     -4:->a2->
-    // -3:{a3==0:->a3->}
     -3:->a3->
-    // -2:{a4==0:->a4->}
     -2:->a4->
-    // -1:{a5==0:->a5->}
     -1:->a5->
 }
 ->->
@@ -110,20 +105,3 @@ VAR ap_updated = -1
         ah ah ah
         ->->
 }
-
-
-=== function npc_set (ref npc, new_act, new_loc)
-~temp debug = 1
-~npc_update(npc, action, new_act)
-~npc_update(npc, location, new_loc)
-{debug: {npc^name} now {npc^action} in {npc^location}}
-
-=== function npc_update(ref npc, list, new_state) ===
-~temp debug = 0
-{
-    -debug:
-        ~temp old_state = npc^list
-}
-~npc -= list^npc
-~npc += new_state
-{debug: {npc^name} updated from {old_state} to {npc^list}}

@@ -13,58 +13,23 @@ INCLUDE Core/ap_handlers.ink
 INCLUDE ResourceManagement/rm_test2.ink
 INCLUDE DayStructure/ds_test.ink
 INCLUDE Unreal/sockets.ink
-
-
-
-
-LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
-//~location = (none, living_room, garden, parent_bedroom, aprils_room, junes_room, pantry)
-LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping)
-LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics)
-//~name = (Daryl, Mary_Ann, April, June)
-
-// VAR daryl = (name.you, location.none, action.none)
-// VAR mary_ann = (name.Mary_Ann, location.none, action.none)
-// VAR april = (name.April, location.none, action.none)
-// VAR june = (name.June, location.none, action.none)
-VAR daryl = (name.you, location.parent_bedroom, action.none)
-VAR mary_ann = (name.Mary_Ann, location.living_room, action.cooking)
-VAR april = (name.April, location.aprils_room, action.playing_guitar)
-VAR june = (name.June, location.living_room, action.drawing)
-
-VAR food = 40
+INCLUDE DayStructure/DayScripts.ink
+INCLUDE DayStructure/DayScripts/ds_2.ink
+INCLUDE DayStructure/DayScripts/ds_test.ink
+INCLUDE Core/day_handlers.ink
+INCLUDE Core/state_handlers.ink
+INCLUDE Core/day_actions.ink
 
 
 ~SEED_RANDOM(256011)
 
 IWABO DEMOTYPE DRAFT v0.5.260227
 
-//write a short interaction with a character that uses trait checks and counter checks. - DONE
 //->dt_d1_a1
-///{mary_ann^location}
-//~location_update(daryl, location.garden)
-
-///~location_update(mary_ann, location.garden)
-
-//init
-///~location_update(daryl, location.parent_bedroom)
 ->next_day(->ds_1)
-//->main_day
 //->tst_the_note
 //->tst_options
 
-
-//could be generalized //could be knot, diverting to ->enter_room-> if daryl
-=== function location_update(ref npc, new_location)
-~temp debug = 0
-{
-    -debug:
-        ~temp old_loc = npc^location
-}
-~npc -= location^npc
-~npc += new_location
-{debug: {npc^name} moved from {old_loc} to {npc^location}}
-//->enter_room->
 
 
 === ERROR ===
