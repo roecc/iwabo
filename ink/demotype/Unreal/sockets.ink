@@ -9,4 +9,5 @@ VAR ue_june_div = ->ERROR
 VAR ue_generator_div = ->ERROR
 
 === ue_mary_ann ===
+mary ann sagt hallo.
 ->ue_maryann_div

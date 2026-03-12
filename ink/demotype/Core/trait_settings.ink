@@ -7,7 +7,7 @@ VAR perception_val  = 60 //surveillance
 VAR tinkering_val   = 0 //meddling
 VAR integrity_val   = 0 //stubbornness
 VAR faith_val       = 0 //dogma //piety
-VAR nurturing_val  = 0 //smothering
+VAR nurturing_val  = 30 //smothering
 VAR strength_val    = 0 //brutality
 
 VAR tox_switch  = 50//tbd
