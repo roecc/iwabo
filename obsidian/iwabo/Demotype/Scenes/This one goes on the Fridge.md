@@ -18,7 +18,7 @@ Encourage her to keep going?
 [[Funny]]
 
 requires
-[[Morale System]]
+[[Demotype/Mechanics/Resource Management/Morale System]]
 [[Dialogue System]]
 [[Passive Rolls]]?
 

@@ -11,7 +11,7 @@ This could go as far as the player with high speech/sophistry skill bending the 
 [[Religion as Self-Help]]
 [[Religion as Control]]
 [[Religion]]
-[[Morale System]]
+[[Demotype/Mechanics/Resource Management/Morale System]]
 [[Create Doctrine]]
 [[Resource Management]]
 [[Trait Rolls]]

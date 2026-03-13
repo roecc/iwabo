@@ -1,4 +1,4 @@
 #mechanic 
 [[Resource Management]]
 [[Task Assignment]]
-[[Morale System]]
+[[Demotype/Mechanics/Resource Management/Morale System]]

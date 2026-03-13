@@ -86,12 +86,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Demotype/Mechanics/Trait System/Traits.md",
+                "file": "Demotype/Mechanics/Advanced State Tracking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Traits"
+              "title": "Advanced State Tracking"
+            }
+          },
+          {
+            "id": "30382c428906dcb6",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Demotype/Mechanics/Resource Management/Morale Canvas.canvas",
+                "viewState": {
+                  "x": 702.3653758031836,
+                  "y": 218.96007948037527,
+                  "zoom": -0.38470778465271
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Morale Canvas"
             }
           },
           {
@@ -107,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -356,8 +373,15 @@
       }
     ]
   },
-  "active": "c09a5eee2c963c1e",
+  "active": "30382c428906dcb6",
   "lastOpenFiles": [
+    "Demotype/Mechanics/Mood Sys.md",
+    "Demotype/Mechanics/Resource Management/Morale Canvas.canvas",
+    "Demotype/Mechanics/Resource Management/Morale System.md",
+    "Demotype/Mechanics/Advanced State Tracking.md",
+    "Demotype/Mechanics/Trait System/Counter Rolls.md",
+    "Demotype/Mechanics/Trait System/Traits.md",
+    "Demotype/Mechanics/Trait System/Untitled.base",
     "OutGame/People/Contacts/Genetically Modified Skeptic.md",
     "Img/Art/Lascaux - Handprints.png",
     "Img/Hiroshima - Nuclear Shadow.png",
@@ -374,7 +398,6 @@
     "Themes/Latter day Saints.md",
     "Themes/Mormons.md",
     "Themes/Quiverful Movement.md",
-    "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Trait System/Trait System.md",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
     "Demotype/Hooks/Diegesis.md",
@@ -382,7 +405,6 @@
     "dt_d2.canvas",
     "Ink/OtherOther/Other_ink.md",
     "Demotype/Architecture",
-    "Demotype/Mechanics/Advanced State Tracking.md",
     "Demotype/Mechanics/Resource Management/Resource Management.md",
     "OutGame/Research/Aquaponics.md",
     "Resource Management.canvas",
@@ -398,16 +420,12 @@
     "Themes/Judgment Day.md",
     "Themes/Last Judgment.md",
     "OutGame/Research/Religion",
-    "OutGame/Research/Bunker Videos.md",
-    "Themes/Great Tribulation.md",
-    "Themes/Fetishisation of \"Hard Choices\".md",
     "Themes/Untitled.base",
     "Ink/Untitled.canvas",
     "Ink/OpenInInky.app/Contents/Resources/description.rtfd/TXT.rtf",
     "Ink/OpenInInky.app/Contents/Resources/Scripts/main.scpt",
     "Ink/OpenInInky.app/Contents/MacOS/droplet",
     "Ink/OpenInInky.app/Contents/_CodeSignature/CodeResources",
-    "Ink/OpenInInky.app/Contents/Resources/droplet.rsrc",
-    "Ink/OpenInInky.app/Contents/Resources/droplet.icns"
+    "Ink/OpenInInky.app/Contents/Resources/droplet.rsrc"
   ]
 }

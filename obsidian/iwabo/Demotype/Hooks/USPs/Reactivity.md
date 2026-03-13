@@ -3,7 +3,7 @@
 
 [[Ludo-Narrative Resonance]]
 [[Dialogue System]]
-[[Morale System]]
+[[Demotype/Mechanics/Resource Management/Morale System]]
 [[Advanced State Tracking]]
 
 
