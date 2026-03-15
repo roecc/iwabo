@@ -30,7 +30,7 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.42
+IWABO DEMOTYPE DRAFT v0.5.260227.43
 // # ue_debug mary_ann: {mary_ann}
 // # ue_debug daryl: {daryl}
 

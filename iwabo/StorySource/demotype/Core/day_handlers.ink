@@ -11,10 +11,17 @@ VAR day_script = 0
 }
 {debug_log("[action points: {action_points}]")}
 {action_points<1:->end_day}
-//each loop, tunnel through day_script which defines character actions/updates with each stage?
-->list_actions->
-//- //may cause bug if removed, didnt see one yet
-->main_day
+
+{game^mode:
+    -unreal:->DONE
+    -ink:
+        //each loop, tunnel through day_script which defines character actions/updates with each stage?
+        ->list_actions->
+        //- 
+        //may cause bug if removed, didnt see one yet
+        ->main_day
+}
+
 
 = list_rooms
 ~temp index = 2
