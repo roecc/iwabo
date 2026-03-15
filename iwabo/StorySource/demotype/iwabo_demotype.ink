@@ -30,25 +30,12 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.43
-// # ue_debug mary_ann: {mary_ann}
-// # ue_debug daryl: {daryl}
-
-// ~debug_log("daryl: {daryl}")
-// ~debug_log("mary_ann: {mary_ann}")
-
+IWABO DEMOTYPE DRAFT v0.5.260227.47
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options
-// loooong line # Linetime: 10
-// ~morale_up date(mary_ann, 12)
-// ~morale_update(mary_ann, 120)
-// ~morale_update(mary_ann, -1242)
-// ~morale_update(mary_ann, 12)
-// // ~skill_update(mary_ann, 1)
-// test
-// ~skill_update(mary_ann, 0)
-
++[start]
+-
 ->next_day(->ds_1)
 
 //->end_story

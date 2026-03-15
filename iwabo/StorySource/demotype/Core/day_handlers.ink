@@ -85,18 +85,24 @@ VAR day_script = 0
 
 === next_day(->day_scr) ===
 ~day++
-+DAY {day}[]:
++{game^mode==ink}DAY {day}[]:
++{game^mode==unreal}[DAY {day}]
 -
 ~day_script = day_scr
 ~ap_updated = -1
-{action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}
+
+~temp _txt = "{action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}"
+{game^mode:
+    -unreal: {debug_log(_txt)}
+    -ink: {_txt}
+}
 ~action_points = set_ap_per_day
 ~food--
+{debug_log("[food--] [food left: {food}]")}
 ~daily_damage(farm)
 ~daily_damage(generator)
 ~maintain_update(farm, -1)
 ~maintain_update(generator, -1)
-{debug_log("[food--] [food left: {food}]")}
 ->main_day
 
 
