@@ -24,7 +24,9 @@ VAR food = 40
 ~temp debug = 1
 ~npc_update(npc, action, new_act)
 ~npc_update(npc, location, new_loc)
-{debug: {npc^name} now {npc^action} in {npc^location}}
+{debug: 
+    ~debug_log("[{npc^name} now {npc^action} in {npc^location}]")
+}
 
 === function npc_update(ref npc, list, new_state) ===
 ~temp debug = 0
@@ -34,7 +36,9 @@ VAR food = 40
 }
 ~npc -= list^npc
 ~npc += new_state
-{debug: {npc^name} updated from {old_state} to {npc^list}}
+{debug: 
+    ~debug_log("[{npc^name} updated from {old_state} to {npc^list}]")
+}
 
 
 
@@ -49,9 +53,9 @@ VAR food = 40
         ~temp old_state = target^repair_state
         ~target -= old_state
         ~target += repair_state(LIST_VALUE(old_state)+value)
-        {debug: [{target^name} repair state is now {target^repair_state}] # ue_debug [{target^name} repair state is now {target^repair_state}]}
+        // {debug: [{target^name} repair state is now {target^repair_state}]}
         {debug:
-            ~debug_message = ("[{target^name} repair state is now {target^repair_state}]")
+            ~debug_log("[{target^name} repair state is now {target^repair_state}]")
         }
     }
 }
@@ -71,9 +75,9 @@ VAR food = 40
         ~temp old_state = target^maintain_state
         ~target -= old_state
         ~target += maintain_state(LIST_VALUE(old_state)+value)
-        {debug: [{target^name} maintain state is now {target^maintain_state}]}
+        // {debug: [{target^name} maintain state is now {target^maintain_state}]}
         {debug:
-            ~debug_message = "[{target^name} maintain state is now {target^maintain_state}]"
+            ~debug_log("[{target^name} maintain state is now {target^maintain_state}]")
         }
         -else:
             ~trait_update(tinkering, 1)
@@ -86,9 +90,10 @@ VAR food = 40
 {target!?value:
     ~target -= target^power_state
     ~target += value
-    {debug: [{target^name} power state is now {target^power_state}]}
+    // {debug: [{target^name} power state is now {target^power_state}]}
     {debug: 
-        ~debug_message = "[{target^name} power state is now {target^power_state}]"
+        // ~debug_message = "[{target^name} power state is now {target^power_state}]"
+        ~debug_log("[{target^name} power state is now {target^power_state}]")
     }
 }
 
@@ -127,5 +132,7 @@ VAR food = 40
 }
 ~npc -= location^npc
 ~npc += new_location
-{debug: {npc^name} moved from {old_loc} to {npc^location}}
+{debug: 
+    ~debug_log("{npc^name} moved from {old_loc} to {npc^location}")
+}
 //->enter_room->

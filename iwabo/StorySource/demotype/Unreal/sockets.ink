@@ -11,7 +11,16 @@ VAR ue_generator_div = ->ERROR
 === ue_mary_ann ===
 ->ue_maryann_div
 
-=== function ue_debug (msg) ===
-# ue_debug {msg} # Linetime: .001
+=== function debug_log (msg) ===
+~temp debug = 1
+
+{debug: 
+    {game^mode:
+        -unreal:
+            # ue_debug {msg} # Linetime: .001
+        -ink:
+            ::{msg}
+    }
+}
 // ~debug_message = msg
 // ->->

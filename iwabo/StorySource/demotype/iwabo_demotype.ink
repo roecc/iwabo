@@ -21,7 +21,8 @@ INCLUDE Core/morale_handlers.ink
 
 
 
-
+LIST mode = (ink), (unreal)
+VAR game = (mode.ink)
 
 VAR debug_message = ""  
 
@@ -29,12 +30,12 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.42 # Linetime: 0.01
+IWABO DEMOTYPE DRAFT v0.5.260227.42
 // # ue_debug mary_ann: {mary_ann}
 // # ue_debug daryl: {daryl}
 
-~ue_debug("daryl: {daryl}")
-~ue_debug("mary_ann: {mary_ann}")
+// ~debug_log("daryl: {daryl}")
+// ~debug_log("mary_ann: {mary_ann}")
 
 //->dt_d1_a1
 //->tst_the_note

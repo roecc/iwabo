@@ -25,10 +25,10 @@
 ~temp roll_val = roll_d(100)
 {
     -trait_val >= roll_val:
-        {debug: [passed: {trait_val} >= {roll_val}] }
+        {debug: {debug_log("[passed: {trait_val} >= {roll_val}]")}}
         ~return true
     -else:
-        {debug: [failed: {trait_val} < {roll_val}] }
+        {debug: {debug_log("[failed: {trait_val} < {roll_val}]")}}
         ~return false
 }
 
@@ -39,10 +39,10 @@
 ~temp roll_val = roll_d(100) 
 {
     -trait_val < roll_val:
-        {debug: [passed counter: {trait_val} < {roll_val}]}
+        {debug: {debug_log("[passed counter: {trait_val} < {roll_val}]")}}
         ~return true
     -else:
-        {debug: [failed counter: {trait_val} >= {roll_val}]}
+        {debug: {debug_log("[failed counter: {trait_val} >= {roll_val}]")}}
         ~return false
 }
 

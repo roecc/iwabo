@@ -15,5 +15,5 @@ VAR action_points = 1
 
 ~action_points += amount
 //~ap_updated = true
-{debug && amount!=0:\[action points left: {action_points}]}
-{debug && action_points<1:You collapse on the floor.}
+{debug && amount!=0: {debug_log("[action points left: {action_points}]")}}
+{debug && action_points<1: {debug_log("You collapse on the floor.")}}

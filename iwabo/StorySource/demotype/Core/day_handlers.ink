@@ -11,7 +11,7 @@ VAR day_script = 0
     ->day_script->
     ~dif_ap=action_points
 }
-[action points: {action_points}]
+{debug_log("[action points: {action_points}]")}
 {action_points<1:->end_day}
 //each loop, tunnel through day_script which defines character actions/updates with each stage?
 ->list_actions->
@@ -79,22 +79,22 @@ VAR day_script = 0
 ->next_day(day_script)
 
 === next_day(->day_scr) ===
-~debug_message = "first!" 
+// ~debug_message = "first!" 
 // # ue_debug {debug_message}
-~ue_debug(debug_message)
-~debug_message = "second!" 
+// ~debug_log(debug_message)
+// ~debug_message = "second!" 
 // # ue_debug {debug_message}
-~ue_debug(debug_message)
+// ~debug_log(debug_message)
 
-~ue_debug("first!")
-~ue_debug("second!")
+// ~debug_log("first!")
+// ~debug_log("second!")
 
 // # ue_debug quick succession
 ~day++
 +DAY {day}[]:
 -
-~ue_debug("at the very beginning")
-~ue_debug("another message")
+// ~debug_log("at the very beginning")
+// ~debug_log("another message")
 ~day_script = day_scr
 ~ap_updated = -1
 {action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}
@@ -104,7 +104,7 @@ VAR day_script = 0
 ~daily_damage(generator)
 ~maintain_update(farm, -1)
 ~maintain_update(generator, -1)
-\[food--\] \[food left: {food}\]
+{debug_log("[food--] [food left: {food}]")}
 ->main_day
 
 
@@ -113,4 +113,4 @@ VAR day_script = 0
 
 ~temp d6 = roll_d(6)
 {d6>LIST_VALUE(target^maintain_state): {repair_update(target, -1)}}
-{debug: \[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}\]}
+{debug: {debug_log("[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}]")}}

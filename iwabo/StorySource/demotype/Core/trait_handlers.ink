@@ -64,7 +64,7 @@
         ~modify_trait_helper(trait_name, strength_val, amount)
         ~ret_val = strength_val
 }
-{debug:[{trait_name}{amount > 0:++|--} => {ret_val}]}
+{debug: {debug_log("[{trait_name}{amount > 0:++|--} => {ret_val}]")}}
 ~return ret_val
 
 === function modify_trait_helper(trait_name, ref r_trait_val, amount) ===
@@ -73,10 +73,10 @@
 ~r_trait_val += amount
 {
     -r_trait_val < 0:
-        {debug: [{trait_name} underflowed: {r_trait_val}]}
+        {debug: {debug_log("[{trait_name} underflowed: {r_trait_val}]")}}
         ~r_trait_val = 0
     -r_trait_val > 100:
-        {debug: [{trait_name} overflowed: {r_trait_val}]}
+        {debug: {debug_log("[{trait_name} overflowed: {r_trait_val}]")}}
         ~r_trait_val = 100
 }
 ~return r_trait_val

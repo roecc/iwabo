@@ -14,7 +14,7 @@ VAR ap_updated = -1
 
 = a1
 {ap_updated!=action_points:
-    ds test
+    {debug_log("[day script: ds test]")}
     ~npc_update(mary_ann, action, sleeping)
     ~npc_update(april, action, sleeping)
     ~npc_update(june, action, sleeping)
@@ -108,7 +108,7 @@ something else happens?
     +\ {ap_option("perform your marital duties", -1)}
         
         ~ap_update(-1)
-        ~debug_message = "ap left: {action_points}"
+        {debug_log("ap left: {action_points}")}
         ah ah ah
         //->DONE
         ->chores_done
