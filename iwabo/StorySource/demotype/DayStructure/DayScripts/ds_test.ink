@@ -87,20 +87,26 @@ VAR ap_updated = -1
     
     ~ap_updated = action_points
 -else:
-    ~ue_maryann_div = ->ds_test_marital_duty
+    {game^mode:
+        -unreal: 
+            ~ue_maryann_div = ->ds_test_marital_duty
+        -ink:
+            {daryl?junes_room:<-ds_test_bedtime_story}
+            {daryl?parent_bedroom:<-ds_test_marital_duty}
+    }
     //<-ds_test_bedtime_story
     //<-ds_test_marital_duty
 }
 ->chores_done
 
 === ds_test_bedtime_story ===
-{daryl?junes_room:
+// {daryl?junes_room:
     +\ {ap_option("read awesome bedtime story", -1)}
         ~ap_update(-1)
         bla bla bla
         //->DONE
         ->chores_done
-}
+// }
 
 === ds_test_marital_duty ===
 something else happens?

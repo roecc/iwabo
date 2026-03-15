@@ -85,6 +85,6 @@
     
     ~ap_updated = action_points
 -else:
-    <-ds_test_bedtime_story
+    {daryl?junes_room:<-ds_test_bedtime_story}
 }
 ->->
