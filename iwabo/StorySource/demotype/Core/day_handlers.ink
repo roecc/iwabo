@@ -5,8 +5,6 @@ VAR day_script = 0
 //pretty much the core game loop
 //make day_script not a tunnel?
 === main_day ===
-//~ext_debug("first")
-//~ext_debug("second")
 {dif_ap!=action_points:
     ->day_script->
     ~dif_ap=action_points
@@ -79,22 +77,9 @@ VAR day_script = 0
 ->next_day(day_script)
 
 === next_day(->day_scr) ===
-// ~debug_message = "first!" 
-// # ue_debug {debug_message}
-// ~debug_log(debug_message)
-// ~debug_message = "second!" 
-// # ue_debug {debug_message}
-// ~debug_log(debug_message)
-
-// ~debug_log("first!")
-// ~debug_log("second!")
-
-// # ue_debug quick succession
 ~day++
 +DAY {day}[]:
 -
-// ~debug_log("at the very beginning")
-// ~debug_log("another message")
 ~day_script = day_scr
 ~ap_updated = -1
 {action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}
