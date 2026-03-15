@@ -1,0 +1,1 @@
+EXTERNAL ext_debug( Message )

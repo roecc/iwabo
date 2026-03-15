@@ -53,7 +53,7 @@ LIST Items = cone, cube, sphere, watch
     VAR shapes = (cone, cube, sphere)
 
 === Main ===
-
+//remember this pattern!
 {!Welcome! This demo provides some examples for how to set up dialogue, quests, and a journal in InkPot. # Linetime: 2.5} 
 
 {

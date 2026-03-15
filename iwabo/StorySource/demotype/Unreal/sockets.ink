@@ -10,3 +10,8 @@ VAR ue_generator_div = ->ERROR
 
 === ue_mary_ann ===
 ->ue_maryann_div
+
+=== function ue_debug (msg) ===
+# ue_debug {msg} # Linetime: .001
+// ~debug_message = msg
+// ->->

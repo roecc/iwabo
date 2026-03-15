@@ -17,6 +17,8 @@ INCLUDE Core/day_actions.ink
 INCLUDE DayStructure/DayScripts/june_sick.ink
 INCLUDE DayStructure/DayScripts/ds_prefab.ink
 INCLUDE Core/morale_handlers.ink
+//INCLUDE Unreal/external.ink
+
 
 
 
@@ -27,12 +29,17 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.13
+IWABO DEMOTYPE DRAFT v0.5.260227.42 # Linetime: 0.01
+// # ue_debug mary_ann: {mary_ann}
+// # ue_debug daryl: {daryl}
+
+~ue_debug("daryl: {daryl}")
+~ue_debug("mary_ann: {mary_ann}")
 
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options
-
+// loooong line # Linetime: 10
 // ~morale_up date(mary_ann, 12)
 // ~morale_update(mary_ann, 120)
 // ~morale_update(mary_ann, -1242)
@@ -46,7 +53,7 @@ IWABO DEMOTYPE DRAFT v0.5.260227.13
 //->end_story
 // ->tst_the_note
 
-->END
+//->END
 
 
 === ERROR ===

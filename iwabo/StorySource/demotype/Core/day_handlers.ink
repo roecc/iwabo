@@ -5,6 +5,8 @@ VAR day_script = 0
 //pretty much the core game loop
 //make day_script not a tunnel?
 === main_day ===
+//~ext_debug("first")
+//~ext_debug("second")
 {dif_ap!=action_points:
     ->day_script->
     ~dif_ap=action_points
@@ -66,7 +68,7 @@ VAR day_script = 0
 
 
 === function random_day() ===
-::hi there
+::random day
 {~{set_day_scr(->ds_1)}|{set_day_scr(->ds_june_sick)}}
 
 === function set_day_scr(->scr) ===
@@ -77,12 +79,22 @@ VAR day_script = 0
 ->next_day(day_script)
 
 === next_day(->day_scr) ===
-~debug_message = "it's day {day}!"
-//~temp tmp = debug_message 
-//~debug_message = tmp
+~debug_message = "first!" 
+// # ue_debug {debug_message}
+~ue_debug(debug_message)
+~debug_message = "second!" 
+// # ue_debug {debug_message}
+~ue_debug(debug_message)
+
+~ue_debug("first!")
+~ue_debug("second!")
+
+// # ue_debug quick succession
 ~day++
 +DAY {day}[]:
 -
+~ue_debug("at the very beginning")
+~ue_debug("another message")
 ~day_script = day_scr
 ~ap_updated = -1
 {action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}

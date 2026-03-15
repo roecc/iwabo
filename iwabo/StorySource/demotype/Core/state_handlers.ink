@@ -49,9 +49,9 @@ VAR food = 40
         ~temp old_state = target^repair_state
         ~target -= old_state
         ~target += repair_state(LIST_VALUE(old_state)+value)
-        {debug: [{target^name} repair state is now {target^repair_state}]}
+        {debug: [{target^name} repair state is now {target^repair_state}] # ue_debug [{target^name} repair state is now {target^repair_state}]}
         {debug:
-            ~debug_message = "[{target^name} repair state is now {target^repair_state}] "
+            ~debug_message = ("[{target^name} repair state is now {target^repair_state}]")
         }
     }
 }
@@ -86,7 +86,10 @@ VAR food = 40
 {target!?value:
     ~target -= target^power_state
     ~target += value
-    {debug: [{target^name} power state is now {target^power_state}]}   
+    {debug: [{target^name} power state is now {target^power_state}]}
+    {debug: 
+        ~debug_message = "[{target^name} power state is now {target^power_state}]"
+    }
 }
 
 //LOCATIONS

@@ -98,8 +98,8 @@ VAR ap_updated = -1
     +\ {ap_option("read awesome bedtime story", -1)}
         ~ap_update(-1)
         bla bla bla
-        ->DONE
-        //->chores_done
+        //->DONE
+        ->chores_done
 }
 
 === ds_test_marital_duty ===
@@ -110,5 +110,6 @@ something else happens?
         ~ap_update(-1)
         ~debug_message = "ap left: {action_points}"
         ah ah ah
-        ->DONE
+        //->DONE
+        ->chores_done
 }
