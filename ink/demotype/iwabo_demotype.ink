@@ -16,7 +16,6 @@ INCLUDE Core/state_handlers.ink
 INCLUDE Core/day_actions.ink
 INCLUDE DayStructure/DayScripts/june_sick.ink
 INCLUDE DayStructure/DayScripts/ds_prefab.ink
-INCLUDE DayStructure/DayScripts.ink
 INCLUDE Core/morale_handlers.ink
 
 
