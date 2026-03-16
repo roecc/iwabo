@@ -23,8 +23,12 @@ VAR ap_updated = -1
     ~npc_update(june, location, junes_room)
     
     ~ap_updated = action_points
--else:
+    
     ~ue_maryann_div = ->ds_test_marital_duty
+//   -else:  
+    
+//
+    
 }
 ->->
 
@@ -38,8 +42,9 @@ VAR ap_updated = -1
     ~npc_update(june, location, living_room)
     
     ~ap_updated = action_points
+    
+    ~ue_maryann_div = ->ds_help_cook
 -else:
-    ~ue_maryann_div = ERROR.ue_socket_empty
     {daryl?living_room:
         +\ {ap_option("\[offer to cook\]", -1)}
             M: that's so sweet of you to offer!
@@ -56,6 +61,8 @@ VAR ap_updated = -1
     ~npc_set(june, eating, living_room)
     
     ~ap_updated = action_points
+    
+    ~ue_maryann_div = ->ds_eat_with_fam
 -else:
     {daryl?living_room:
         +\ {ap_option("join family lunch", -1)}
@@ -74,8 +81,9 @@ VAR ap_updated = -1
     ~npc_set(june, watching_tv, living_room)
     
     ~ap_updated = action_points
-//-else:
     
+    ~ue_maryann_div = ->ds_help_clean
+// -else:
 }
 ->->
 
@@ -86,10 +94,12 @@ VAR ap_updated = -1
     ~npc_set(june, sleeping, junes_room)
     
     ~ap_updated = action_points
+    
+    ~ue_maryann_div = ->ds_test_marital_duty
 -else:
     {game^mode:
-        -unreal: 
-            ~ue_maryann_div = ->ds_test_marital_duty
+        // -unreal: 
+        //     ~ue_maryann_div = ->ds_test_marital_duty
         -ink:
             {daryl?junes_room:<-ds_test_bedtime_story}
             {daryl?parent_bedroom:<-ds_test_marital_duty}
@@ -97,7 +107,26 @@ VAR ap_updated = -1
     //<-ds_test_bedtime_story
     //<-ds_test_marital_duty
 }
-->chores_done
+->->
+
+=== ds_eat_with_fam ===
++\ {ap_option("join family lunch", -1)}
+    M: bon apetit!
+    nom nom nom
+    ~ap_update(-1)
+    ->chores_done
+
+=== ds_help_cook ===
++\ {ap_option("\[offer to cook\]", -1)}
+    M: that's so sweet of you to offer!
+    ~ap_update(-1)
+    ->chores_done
+            
+=== ds_help_clean ===
++\ {ap_option("\[offer to clean\]", -1)}
+    M: that's too sweet of you to offer you silly goose!
+    ~ap_update(-1)
+    ->chores_done
 
 === ds_test_bedtime_story ===
 // {daryl?junes_room:
@@ -108,11 +137,9 @@ VAR ap_updated = -1
         ->chores_done
 // }
 
+// {daryl?parent_bedroom:
 === ds_test_marital_duty ===
-something else happens?
-{daryl?parent_bedroom:
     +\ {ap_option("perform your marital duties", -1)}
-        
         ~ap_update(-1)
         {debug_log("ap left: {action_points}")}
         ah ah ah

@@ -30,7 +30,7 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.51
+IWABO DEMOTYPE DRAFT v0.5.260227.62
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options
@@ -52,8 +52,10 @@ ERROR
 ERROR: You forgot to edit the default divert!
 ->end_story
 
+//but that means it will still be considered interactable. should find a way to disable interaction on empty.
 =ue_socket_empty
 this socket lead nowhere.
++ok
 ->DONE
 
 === end_story ===

@@ -10,6 +10,9 @@ VAR ue_generator_div = ->ERROR
 
 === ue_mary_ann ===
 ->ue_maryann_div
+->DONE
+//could also have a default list of <-{location:}/{action:} gated options //if shes cleaning you have the option to offer to help (maybe if youre not used to it only when you have few actions left to make player feel like they dont have the "energy" to do it or that they have something better to do?)
+
 
 === function debug_log (msg) ===
 ~temp debug = 1

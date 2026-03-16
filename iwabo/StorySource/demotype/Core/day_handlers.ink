@@ -2,9 +2,13 @@ VAR day = 0
 VAR dif_ap = 0
 VAR day_script = 0
 
+=== function wipe_sockets() ===
+~ue_maryann_div = ERROR.ue_socket_empty
+
 //pretty much the core game loop
 //make day_script not a tunnel?
 === main_day ===
+//~wipe_sockets()
 {dif_ap!=action_points:
     ->day_script->
     ~dif_ap=action_points
