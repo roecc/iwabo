@@ -26,7 +26,11 @@ snif.
 +keep it up.
 ->DONE
 
+=== ue_generator ===
+->ue_sys.s_generator
 
+=== ue_farm ===
+->ue_sys.s_farm
 
 === function debug_log (msg) ===
 ~temp debug = 1
