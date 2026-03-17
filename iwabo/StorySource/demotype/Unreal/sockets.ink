@@ -9,9 +9,23 @@ VAR ue_june_div = ->ERROR
 VAR ue_generator_div = ->ERROR
 
 === ue_mary_ann ===
+//could consider making the div a tunnel. if it should exclude defaults, make the tunnel go ->DONE ?
 ->ue_maryann_div
 ->DONE
 //could also have a default list of <-{location:}/{action:} gated options //if shes cleaning you have the option to offer to help (maybe if youre not used to it only when you have few actions left to make player feel like they dont have the "energy" to do it or that they have something better to do?)
+
+=== ue_april ===
+strum strum strum.
+oh, hey dad.
++hey.
+->DONE
+
+=== ue_june ===
+draw draw draw.
+snif.
++keep it up.
+->DONE
+
 
 
 === function debug_log (msg) ===
@@ -36,6 +50,10 @@ VAR ue_generator_div = ->ERROR
 <-chores_generator.options
 ->DONE
 
+=== ue_bed ===
+your bed taunts you with its plushed coushions and inviting promise of warmth.
++ok.
+->DONE
 
 === ue_room ===
 
