@@ -27,10 +27,14 @@ snif.
 ->DONE
 
 === ue_generator ===
+~location_update(daryl, garden)
 ->ue_sys.s_generator
+<-ue_interact_done
 
 === ue_farm ===
+~location_update(daryl, garden)
 ->ue_sys.s_farm
+<-ue_interact_done
 
 === function debug_log (msg) ===
 ~temp _debug = unreal_debug
@@ -54,10 +58,58 @@ snif.
 <-chores_generator.options
 ->DONE
 
+=== ue_interact_done ===
+->day_script->
++[\[done\]]
+    ->DONE
+
 === ue_bed ===
+~location_update(daryl, parent_bedroom)
 your bed taunts you with its plushed coushions and inviting promise of warmth.
-+ok.
+<-chores_bedroom
+<-ue_interact_done
 ->DONE
+
+
+
+=== ue_tv ===
+~location_update(daryl, living_room)
+<-ue_interact_done
++\ {ap_option("watch TV", -1)}
+    ~ap_update(-1)
+    ->chores_done
+    
+=== ue_kitchen ===
+~location_update(daryl, living_room)
+<-chores_kitchen
+<-ue_interact_done
+->DONE
+
+=== ue_kitchen_table
+~location_update(daryl, living_room)
+//sit/getup
+<-ue_interact_done
+->DONE
+
+=== ue_gym ===
+~location_update(daryl, living_room)
++\ {ap_option("exercise", -1)}
+    ~ap_update(-1)
+    ~trait_update(strength, 1)
+    ->chores_done
+<-ue_interact_done
+->DONE
+
+=== ue_pantry ===
+<-ue_interact_done
+->DONE
+
+=== ue_junes_bed ===
+~location_update(daryl, junes_room)
+some text
+<-ue_interact_done
+->DONE
+
 
 === ue_room ===
 

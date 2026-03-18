@@ -100,8 +100,8 @@
     ->chores_done
 
 === chores_bedroom ===
-+\ {ap_option("read", -4)}
-    ~ap_update(-4)
++\ {ap_option("read", -2)}
+    ~ap_update(-2)
     ->chores_done
 +[sleep]
     ->end_day

@@ -97,6 +97,7 @@ VAR ap_updated = -1
     
     ~ue_maryann_div = ->ds_test_marital_duty
 -else:
+    {daryl?junes_room:<-ds_sleep_junes}
     {game^mode:
         // -unreal: 
         //     ~ue_maryann_div = ->ds_test_marital_duty
@@ -145,4 +146,10 @@ VAR ap_updated = -1
         ah ah ah
         //->DONE
         ->chores_done
-}
+
+
+=== ds_sleep_junes ===
++\ {ap_option("sleep in your daughters bed.", -1)}
+    ~ap_update(-1)
+    Zzz
+    ->chores_done
