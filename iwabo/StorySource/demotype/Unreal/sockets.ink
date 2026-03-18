@@ -33,9 +33,9 @@ snif.
 ->ue_sys.s_farm
 
 === function debug_log (msg) ===
-~temp debug = 1
+~temp _debug = unreal_debug
 
-{debug: 
+{_debug: 
     {game^mode:
         -unreal:
             # ue_debug {msg} # Linetime: .01

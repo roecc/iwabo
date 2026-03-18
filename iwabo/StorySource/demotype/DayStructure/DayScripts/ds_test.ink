@@ -77,7 +77,7 @@ VAR ap_updated = -1
 = a4
 {ap_updated!=action_points:
     ~npc_set(mary_ann, cleaning, living_room)
-    ~npc_set(april, playing_guitar, living_room)
+    ~npc_set(april, playing_guitar, parent_bedroom)
     ~npc_set(june, watching_tv, living_room)
     
     ~ap_updated = action_points
@@ -90,7 +90,7 @@ VAR ap_updated = -1
 = a5
 {ap_updated!=action_points:
     ~npc_set(mary_ann, sleeping, parent_bedroom)
-    ~npc_set(april, sleeping, aprils_room)
+    ~npc_set(april, watching_tv, living_room)
     ~npc_set(june, sleeping, junes_room)
     
     ~ap_updated = action_points
