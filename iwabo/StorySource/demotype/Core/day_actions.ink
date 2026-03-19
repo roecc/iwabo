@@ -104,6 +104,7 @@
     ~ap_update(-2)
     ->chores_done
 +[sleep]
+    {game?unreal:{npc_update(daryl, action, sleeping)}}
     ->end_day
 
 === chores_done ===

@@ -34,7 +34,7 @@ VAR food = 40
     -debug:
         ~temp old_state = npc^list
 }
-~npc -= list^npc
+~npc -= npc^list//list^npc
 ~npc += new_state
 {debug: 
     ~debug_log("[{npc^name} updated from {old_state} to {npc^list}]")

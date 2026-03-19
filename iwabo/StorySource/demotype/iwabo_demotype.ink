@@ -22,7 +22,7 @@ INCLUDE Core/morale_handlers.ink
 
 LIST mode = (ink), (unreal)
 VAR game = (mode.ink)
-VAR unreal_debug = 0
+VAR unreal_debug = 1
 
 VAR debug_message = ""  
 
@@ -30,7 +30,7 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.71
+IWABO DEMOTYPE DRAFT v0.5.260227.87
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options
