@@ -123,26 +123,26 @@ look it's dians beautiful planta maranta!
 ->ue_interact_done
 ->DONE
 
-=== ue_room ===
+// === ue_room ===
 
-= r_garden
-// {daryl?garden:
-    <-chores_generator
-    <-chores_garden
-    ->DONE
-// }
+// = r_garden
+// // {daryl?garden:
+//     <-chores_generator
+//     <-chores_garden
+//     ->DONE
+// // }
 
-= r_living_room
-// {daryl?living_room:
-    <-chores_livingroom
-    <-chores_kitchen
-    ->DONE
-// }
+// = r_living_room
+// // {daryl?living_room:
+//     <-chores_livingroom
+//     <-chores_kitchen
+//     ->DONE
+// // }
 
-= r_parent_bedroom
-// {daryl?parent_bedroom:
-    <-chores_bedroom
-    ->DONE
-// }
-//get special day actions from day_script
+// = r_parent_bedroom
+// // {daryl?parent_bedroom:
+//     <-chores_bedroom
+//     ->DONE
+// // }
+// //get special day actions from day_script
 // ->day_script->

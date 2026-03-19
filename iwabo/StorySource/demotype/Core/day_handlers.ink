@@ -84,10 +84,13 @@ VAR day_script = 0
 ~day_script = scr
 
 === end_day ===
+//needed to be before random day for some fucking reason?!
+~npc_update(daryl, action, action.sleeping)
+
 ~random_day()
 //not working for some reason 
 //{game^mode==unreal:{
-//~npc_update(daryl, action, action.sleeping)
+
 //}}
 ->next_day(day_script)
 
@@ -98,8 +101,8 @@ VAR day_script = 0
 -
 ~day_script = day_scr
 ~ap_updated = -1
-
-//~npc_update(daryl, action, action.eating)
+buffer
+~npc_update(daryl, action, action.none)
 
 ~temp _txt = "{action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}"
 {game^mode:

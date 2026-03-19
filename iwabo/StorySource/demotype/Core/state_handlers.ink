@@ -3,10 +3,10 @@ LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room)
 LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping)
 LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics)
 
-VAR daryl = (name.you, location.parent_bedroom, action.none, morale.50m)
-VAR mary_ann = (name.Mary_Ann, location.living_room, action.cooking, morale.40m, skill.40m)
-VAR april = (name.April, location.aprils_room, action.playing_guitar, morale.30m)
-VAR june = (name.June, location.living_room, action.drawing, morale.70m)
+VAR daryl = (name.you, location.parent_bedroom, action.sleeping, morale.50m)
+VAR mary_ann = (name.Mary_Ann, location.living_room, action.none, morale.40m, skill.40m)
+VAR april = (name.April, location.aprils_room, action.none, morale.30m)
+VAR june = (name.June, location.living_room, action.none, morale.70m)
 
 
 //RESOURCE MANAGEMENT
