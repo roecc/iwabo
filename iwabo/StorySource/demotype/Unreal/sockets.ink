@@ -111,6 +111,18 @@ some text
 ->DONE
 
 
+=== ue_plant ===
+look it's dians beautiful planta maranta!
++\ {ap_option("water the plant", -1)}
+	~ap_update(-1)
+	   the plant is thirsty.
++\ {ap_option("kiss the pot", -1)}
+	~ap_update(-1)
+	the pot is flattered.
+-
+->ue_interact_done
+->DONE
+
 === ue_room ===
 
 = r_garden
