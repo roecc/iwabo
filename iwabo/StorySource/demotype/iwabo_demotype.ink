@@ -22,7 +22,7 @@ INCLUDE Core/morale_handlers.ink
 
 LIST mode = (ink), (unreal)
 VAR game = (mode.ink)
-VAR unreal_debug = 1
+VAR debug = 1
 
 VAR debug_message = ""  
 

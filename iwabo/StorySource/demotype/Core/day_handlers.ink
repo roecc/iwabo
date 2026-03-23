@@ -120,8 +120,8 @@ buffer
 
 
 === function daily_damage(ref target) ===
-~temp debug = 0
+~temp _debug = 0
 
 ~temp d6 = roll_d(6)
 {d6>LIST_VALUE(target^maintain_state): {repair_update(target, -1)}}
-{debug: {debug_log("[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}]")}}
+{_debug: {debug_log("[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}]")}}

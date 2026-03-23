@@ -21,22 +21,22 @@ VAR food = 40
 
 //NPC
 === function npc_set (ref npc, new_act, new_loc)
-~temp debug = 1
+~temp _debug = 1
 ~npc_update(npc, action, new_act)
 ~npc_update(npc, location, new_loc)
-{debug: 
+{_debug: 
     ~debug_log("[{npc^name} now {npc^action} in {npc^location}]")
 }
 
 === function npc_update(ref npc, list, new_state) ===
-~temp debug = 0
+~temp _debug = 0
 {
-    -debug:
+    -_debug:
         ~temp old_state = npc^list
 }
 ~npc -= npc^list//list^npc
 ~npc += new_state
-{debug: 
+{_debug: 
     ~debug_log("[{npc^name} updated from {old_state} to {npc^list}]")
 }
 
@@ -46,15 +46,15 @@ VAR food = 40
 //SYSTEMS
 //generalizing this throws: Line 250: Tried to divert to a target from a variable, but the variable (list_type) didn't contain a divert target, it contained 'broken, damaged, fine'.
 === function repair_update(ref target, value) === 
-~temp debug = 1
+~temp _debug = 1
 
 {LIST_VALUE(target^repair_state)+value>=1:
     {LIST_VALUE(target^repair_state)+value<=LIST_VALUE(LIST_MAX(repair_state)):
         ~temp old_state = target^repair_state
         ~target -= old_state
         ~target += repair_state(LIST_VALUE(old_state)+value)
-        // {debug: [{target^name} repair state is now {target^repair_state}]}
-        {debug:
+        // {_debug: [{target^name} repair state is now {target^repair_state}]}
+        {_debug:
             ~debug_log("[{target^name} repair state is now {target^repair_state}]")
         }
     }
@@ -68,15 +68,15 @@ VAR food = 40
 }
 
 === function maintain_update(ref target, value) ===
-~temp debug = 1
+~temp _debug = 1
 
 {LIST_VALUE(target^maintain_state)+value>=1:
     {LIST_VALUE(target^maintain_state)+value<=LIST_VALUE(LIST_MAX(maintain_state)):
         ~temp old_state = target^maintain_state
         ~target -= old_state
         ~target += maintain_state(LIST_VALUE(old_state)+value)
-        // {debug: [{target^name} maintain state is now {target^maintain_state}]}
-        {debug:
+        // {_debug: [{target^name} maintain state is now {target^maintain_state}]}
+        {_debug:
             ~debug_log("[{target^name} maintain state is now {target^maintain_state}]")
         }
         -else:
@@ -85,13 +85,13 @@ VAR food = 40
 }
 
 === function power_update(ref target, value) ===
-~temp debug = 1
+~temp _debug = 1
 
 {target!?value:
     ~target -= target^power_state
     ~target += value
-    // {debug: [{target^name} power state is now {target^power_state}]}
-    {debug: 
+    // {_debug: [{target^name} power state is now {target^power_state}]}
+    {_debug: 
         // ~debug_message = "[{target^name} power state is now {target^power_state}]"
         ~debug_log("[{target^name} power state is now {target^power_state}]")
     }
@@ -125,14 +125,14 @@ VAR food = 40
 
 //could be generalized //could be knot, diverting to ->enter_room-> if daryl
 === function location_update(ref npc, new_location)
-~temp debug = 0
+~temp _debug = 0
 {
-    -debug:
+    -_debug:
         ~temp old_loc = npc^location
 }
 ~npc -= location^npc
 ~npc += new_location
-{debug: 
+{_debug: 
     ~debug_log("{npc^name} moved from {old_loc} to {npc^location}")
 }
 //->enter_room->

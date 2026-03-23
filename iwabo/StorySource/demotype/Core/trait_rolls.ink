@@ -19,30 +19,30 @@
 {has_passed: ->pass|->fail}
 
 === function trait_roll(trait_name, mod_val) ===
-~temp debug = 1
+~temp _debug = 1
 
 ~temp trait_val = lookup_trait_val(trait_name) + mod_val
 ~temp roll_val = roll_d(100)
 {
     -trait_val >= roll_val:
-        {debug: {debug_log("[passed: {trait_val} >= {roll_val}]")}}
+        {_debug: {debug_log("[passed: {trait_val} >= {roll_val}]")}}
         ~return true
     -else:
-        {debug: {debug_log("[failed: {trait_val} < {roll_val}]")}}
+        {_debug: {debug_log("[failed: {trait_val} < {roll_val}]")}}
         ~return false
 }
 
 === function roll_counter(trait_name, mod_val) ===
-~temp debug = 1
+~temp _debug = 1
 
 ~temp trait_val = lookup_trait_val(trait_name) + mod_val
 ~temp roll_val = roll_d(100) 
 {
     -trait_val < roll_val:
-        {debug: {debug_log("[passed counter: {trait_val} < {roll_val}]")}}
+        {_debug: {debug_log("[passed counter: {trait_val} < {roll_val}]")}}
         ~return true
     -else:
-        {debug: {debug_log("[failed counter: {trait_val} >= {roll_val}]")}}
+        {_debug: {debug_log("[failed counter: {trait_val} >= {roll_val}]")}}
         ~return false
 }
 

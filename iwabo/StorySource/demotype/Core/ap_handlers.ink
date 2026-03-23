@@ -11,9 +11,9 @@ VAR action_points = 1
 ~return tmp_txt
 
 === function ap_update (amount) ===
-~temp debug = 0
+~temp _debug = 0
 
 ~action_points += amount
 //~ap_updated = true
-{debug && amount!=0: {debug_log("[action points left: {action_points}]")}}
-{debug && action_points<1: {debug_log("You collapse on the floor.")}}
+{_debug && amount!=0: {debug_log("[action points left: {action_points}]")}}
+{_debug && action_points<1: {debug_log("You collapse on the floor.")}}

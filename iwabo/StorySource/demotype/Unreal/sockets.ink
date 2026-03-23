@@ -37,9 +37,9 @@ snif.
 <-ue_interact_done
 
 === function debug_log (msg) ===
-~temp _debug = unreal_debug
+//~temp _debug = debug
 
-{_debug: 
+{debug: 
     {game^mode:
         -unreal:
             # ue_debug {msg} # Linetime: .01
