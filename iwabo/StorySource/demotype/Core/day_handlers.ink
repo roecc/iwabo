@@ -7,6 +7,7 @@ VAR day_script = 0
 
 //pretty much the core game loop
 //make day_script not a tunnel?
+
 === main_day ===
 //~wipe_sockets()
 {dif_ap!=action_points:
@@ -20,60 +21,11 @@ VAR day_script = 0
     -unreal:->DONE
     -ink:
         //each loop, tunnel through day_script which defines character actions/updates with each stage?
-        ->list_actions->
+        ->ink_nav.list_actions//->
         //- 
         //may cause bug if removed, didnt see one yet
         ->main_day
 }
-
-
-= list_rooms
-~temp index = 2
-->list_all_room_options(index)->
-+   ->-> //important part of the solution for double-stay
-
-= list_all_room_options (index)
-{
-    -index<=LIST_COUNT(location):
-        <-room_option(location(index))
-        ~index++
-        ->list_all_room_options(index)->
-}
-->->
-
-= room_option (new_loc)
-{location !? new_loc:main_day.room_option: {new_loc} is not a location->ERROR}
-+{new_loc != daryl^location}[{new_loc}]
-    <>{new_loc}
-    ~location_update(daryl, new_loc)
-    ->enter_room->
-    ->->
-//solution to double-stay bug
-+{LIST_VALUE(new_loc)==LIST_VALUE(LIST_MAX(location))}[stay]
-    ->->
-
-= go_to
-+go to 
-    ->list_rooms->
-->->
-
-= list_actions
-<-go_to
-{daryl?garden:
-    <-chores_generator
-    <-chores_garden
-}
-{daryl?living_room:
-    <-chores_livingroom
-    <-chores_kitchen
-}
-{daryl?parent_bedroom:
-    <-chores_bedroom
-}
-//get special day actions from day_script
-->day_script->//->story_opts->
-+ ->chores_done
-->DONE
 
 
 === function random_day() ===
@@ -88,10 +40,6 @@ VAR day_script = 0
 ~npc_update(daryl, action, action.sleeping)
 
 ~random_day()
-//not working for some reason 
-//{game^mode==unreal:{
-
-//}}
 ->next_day(day_script)
 
 === next_day(->day_scr) ===

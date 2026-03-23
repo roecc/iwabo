@@ -17,12 +17,14 @@ INCLUDE Core/day_actions.ink
 INCLUDE DayStructure/DayScripts/june_sick.ink
 INCLUDE DayStructure/DayScripts/ds_prefab.ink
 INCLUDE Core/morale_handlers.ink
+INCLUDE Ink/navigation.ink
+
 //INCLUDE Unreal/external.ink
 
 
 LIST mode = (ink), (unreal)
 VAR game = (mode.ink)
-VAR debug = 1
+VAR debug = false
 
 VAR debug_message = ""  
 
@@ -30,7 +32,7 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.92
+IWABO DEMOTYPE DRAFT v0.5.260227.98
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options

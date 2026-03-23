@@ -44,13 +44,13 @@ VAR ap_updated = -1
     ~ap_updated = action_points
     
     ~ue_maryann_div = ->ds_help_cook
--else:
-    {daryl?living_room:
-        +\ {ap_option("\[offer to cook\]", -1)}
-            M: that's so sweet of you to offer!
-            ~ap_update(-1)
-            ->->
-    }     
+// -else:
+//     {daryl?living_room:
+//         +\ {ap_option("\[offer to cook\]", -1)}
+//             M: that's so sweet of you to offer!
+//             ~ap_update(-1)
+//             ->->
+//     }     
 }
 ->->
 
@@ -63,14 +63,14 @@ VAR ap_updated = -1
     ~ap_updated = action_points
     
     ~ue_maryann_div = ->ds_eat_with_fam
--else:
-    {daryl?living_room:
-        +\ {ap_option("join family lunch", -1)}
-            M: bon apetit!
-            nom nom nom
-            ~ap_update(-1)
-            ->->
-    }    
+// -else:
+//     {daryl?living_room:
+//         +\ {ap_option("join family lunch", -1)}
+//             M: bon apetit!
+//             nom nom nom
+//             ~ap_update(-1)
+//             ->->
+//     }    
 }
 ->->
 
@@ -96,17 +96,18 @@ VAR ap_updated = -1
     ~ap_updated = action_points
     
     ~ue_maryann_div = ->ds_test_marital_duty
--else:
-    {daryl?junes_room:<-ds_sleep_junes}
-    {game^mode:
-        // -unreal: 
-        //     ~ue_maryann_div = ->ds_test_marital_duty
-        -ink:
-            {daryl?junes_room:<-ds_test_bedtime_story}
-            {daryl?parent_bedroom:<-ds_test_marital_duty}
-    }
-    //<-ds_test_bedtime_story
-    //<-ds_test_marital_duty
+    ~ue_june_div = ->ds_test_bedtime_story
+// -else:
+//     {daryl?junes_room:<-ds_sleep_junes}
+//     {game^mode:
+//         // -unreal: 
+//         //     ~ue_maryann_div = ->ds_test_marital_duty
+//         -ink:
+//             {daryl?junes_room:<-ds_test_bedtime_story}
+//             //{daryl?parent_bedroom:<-ds_test_marital_duty}
+//     }
+//     //<-ds_test_bedtime_story
+//     //<-ds_test_marital_duty
 }
 ->->
 
@@ -115,19 +116,19 @@ VAR ap_updated = -1
     M: bon apetit!
     nom nom nom
     ~ap_update(-1)
-    ->chores_done
+    ->interaction_done
 
 === ds_help_cook ===
 +\ {ap_option("\[offer to cook\]", -1)}
     M: that's so sweet of you to offer!
     ~ap_update(-1)
-    ->chores_done
+    ->interaction_done
             
 === ds_help_clean ===
 +\ {ap_option("\[offer to clean\]", -1)}
     M: that's too sweet of you to offer you silly goose!
     ~ap_update(-1)
-    ->chores_done
+    ->interaction_done
 
 === ds_test_bedtime_story ===
 // {daryl?junes_room:
@@ -135,7 +136,7 @@ VAR ap_updated = -1
         ~ap_update(-1)
         bla bla bla
         //->DONE
-        ->chores_done
+        ->interaction_done
 // }
 
 // {daryl?parent_bedroom:
@@ -145,11 +146,11 @@ VAR ap_updated = -1
         {debug_log("ap left: {action_points}")}
         ah ah ah
         //->DONE
-        ->chores_done
+        ->interaction_done
 
 
 === ds_sleep_junes ===
 +\ {ap_option("sleep in your daughters bed.", -1)}
     ~ap_update(-1)
     Zzz
-    ->chores_done
+    ->interaction_done
