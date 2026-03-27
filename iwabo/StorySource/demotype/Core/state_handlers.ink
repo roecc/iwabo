@@ -34,7 +34,7 @@ VAR food = 40
     -_debug:
         ~temp old_state = npc^list
 }
-~npc -= npc^list//list^npc
+~npc -= npc^list
 ~npc += new_state
 {_debug: 
     ~debug_log("[{npc^name} updated from {old_state} to {npc^list}]")
@@ -53,7 +53,6 @@ VAR food = 40
         ~temp old_state = target^repair_state
         ~target -= old_state
         ~target += repair_state(LIST_VALUE(old_state)+value)
-        // {_debug: [{target^name} repair state is now {target^repair_state}]}
         {_debug:
             ~debug_log("[{target^name} repair state is now {target^repair_state}]")
         }
@@ -75,7 +74,6 @@ VAR food = 40
         ~temp old_state = target^maintain_state
         ~target -= old_state
         ~target += maintain_state(LIST_VALUE(old_state)+value)
-        // {_debug: [{target^name} maintain state is now {target^maintain_state}]}
         {_debug:
             ~debug_log("[{target^name} maintain state is now {target^maintain_state}]")
         }
@@ -90,9 +88,7 @@ VAR food = 40
 {target!?value:
     ~target -= target^power_state
     ~target += value
-    // {_debug: [{target^name} power state is now {target^power_state}]}
     {_debug: 
-        // ~debug_message = "[{target^name} power state is now {target^power_state}]"
         ~debug_log("[{target^name} power state is now {target^power_state}]")
     }
 }

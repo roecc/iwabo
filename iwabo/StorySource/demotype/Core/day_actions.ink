@@ -120,7 +120,9 @@
 
 === interaction_done ===
 {game^mode:
-    -unreal:->DONE
+    -unreal:
+        buffer # Linetime: {buffer_time}
+        ->DONE
     -ink:->main_day//->->
 }
 //->DONE
