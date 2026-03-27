@@ -32,7 +32,7 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.98
+IWABO DEMOTYPE DRAFT v0.5.260227.99
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options

@@ -157,12 +157,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Themes/Salvation.md",
+                "file": "2026-03-27.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Salvation"
+              "title": "2026-03-27"
             }
           }
         ],
@@ -415,9 +415,10 @@
       }
     ]
   },
-  "active": "db173759fd182210",
+  "active": "6a6afdcf8b1497b5",
   "lastOpenFiles": [
     "Themes/Salvation.md",
+    "2026-03-27.md",
     "Themes/Catholicism.md",
     "Themes/Absolution.md",
     "Themes/Absolutism.md",
@@ -460,7 +461,6 @@
     "OutGame/People/Fritz Haber.md",
     "Themes/Latter day Saints.md",
     "Themes/Mormons.md",
-    "Themes/Quiverful Movement.md",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
     "Demotype/Architecture/Architecture.canvas",
     "dt_d2.canvas",
