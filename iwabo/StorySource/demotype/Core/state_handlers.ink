@@ -1,6 +1,6 @@
 //NPC
 LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
-LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping)
+LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping), (waiting)
 LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics)
 
 VAR daryl = (name.you, location.parent_bedroom, action.sleeping, morale.50m)
@@ -14,7 +14,7 @@ LIST repair_state = (broken = 1), (damaged = 2), (fine = 3)
 LIST maintain_state = (forgotten), (neglected), (maintained), (well_maintained), (loved)
 LIST power_state = (off = 0), (on = 1)
 
-VAR generator = (name.Generator, fine, garden, maintained, on)
+VAR generator = (name.Generator, broken, garden, maintained, on)
 VAR farm = (name.Aquaponics, fine, garden, maintained, on)
 
 VAR food = 40

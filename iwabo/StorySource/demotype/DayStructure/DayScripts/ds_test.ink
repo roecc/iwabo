@@ -143,8 +143,9 @@ VAR ap_updated = -1
 === ds_test_marital_duty ===
     +\ {ap_option("perform your marital duties", -1)}
         ~ap_update(-1)
-        {debug_log("ap left: {action_points}")}
+        //{debug_log("ap left: {action_points}")}
         ah ah ah
+        ~morale_update(mary_ann, 1)
         //->DONE
         ->interaction_done
 

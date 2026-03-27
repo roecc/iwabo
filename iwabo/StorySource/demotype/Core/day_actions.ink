@@ -109,6 +109,7 @@
 === chores_tv ===
 +\ {ap_option("watch TV", -1)}
     ~ap_update(-1)
+    ~morale_update(daryl, 1)
     ->interaction_done
 
 === chores_gym ===

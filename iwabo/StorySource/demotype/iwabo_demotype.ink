@@ -18,13 +18,15 @@ INCLUDE DayStructure/DayScripts/june_sick.ink
 INCLUDE DayStructure/DayScripts/ds_prefab.ink
 INCLUDE Core/morale_handlers.ink
 INCLUDE Ink/navigation.ink
+INCLUDE DayStructure/DayScripts/walled_garden.ink
+
 
 //INCLUDE Unreal/external.ink
 
 
 LIST mode = (ink), (unreal)
 VAR game = (mode.ink)
-VAR debug = false
+VAR debug = true
 VAR buffer_time = 0.01
 
 VAR debug_message = ""  
@@ -39,7 +41,7 @@ IWABO DEMOTYPE DRAFT v0.5.260227.106
 //->tst_options
 +[start]
 -
-->next_day(->ds_1)
+->next_day(->ds_walled_garden)
 
 //->end_story
 // ->tst_the_note

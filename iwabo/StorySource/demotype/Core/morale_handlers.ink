@@ -5,7 +5,7 @@ LIST skill = (1m), (2m), (3m), (4m), (5m), (6m), (7m), (8m), (9m), (10m), (11m),
 ~temp _debug = 1
 {npc^morale:
     ~temp old_val = LIST_VALUE(npc^morale)
-    {npc^name}'s morale is {LIST_VALUE(npc^morale)}
+    // ~debug_log("{npc^name}'s morale is {LIST_VALUE(npc^morale)}")
     ~npc -= morale
     {
         -old_val+val>100:
@@ -16,11 +16,12 @@ LIST skill = (1m), (2m), (3m), (4m), (5m), (6m), (7m), (8m), (9m), (10m), (11m),
             ~npc += morale(old_val + val)
             
     }
-    {_debug: {debug_log("{npc^name}'s morale is {LIST_VALUE(npc^morale)}")}}
+    {_debug: {debug_log("{npc^name}'s morale now is {LIST_VALUE(npc^morale)}")}}
 -else:
     {debug_log("ERROR: no morale assigned")}
 }
 
+//for test only (pretty sure)
 === function skill_update (ref npc, val) ===
 {npc^skill:
     ~temp old_val = LIST_VALUE(npc^skill)

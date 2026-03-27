@@ -2,7 +2,7 @@ LIST traits = foresight, authority, perception, tinkering, integrity, faith, nur
 LIST tox_traits = paranoia, dictator, surveillance, meddling, stubbornness, dogma, smothering, brutality
 //make all to list?
 VAR foresight_val   = 10 //paranoia
-VAR authority_val   = 100 //dictator //domineering
+VAR authority_val   = 20 //dictator //domineering
 VAR perception_val  = 60 //surveillance
 VAR tinkering_val   = 0 //meddling
 VAR integrity_val   = 0 //stubbornness

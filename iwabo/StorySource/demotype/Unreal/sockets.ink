@@ -45,8 +45,8 @@ oh, hey dad.
 ->DONE
 
 === ue_june ===
-draw draw draw.
-snif.
+// draw draw draw.
+// snif.
 <-ue_june_div
 <-ue_done_option
 // +keep it up.

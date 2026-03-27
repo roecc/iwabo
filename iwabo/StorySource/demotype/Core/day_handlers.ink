@@ -49,7 +49,7 @@ VAR day_script = 0
 -
 ~day_script = day_scr
 ~ap_updated = -1
-::buffer # Linetime: {buffer_time}
+{game?unreal:::buffer # Linetime: {buffer_time}}
 ~npc_update(daryl, action, action.none)
 
 ~temp _txt = "{action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}"
@@ -64,7 +64,7 @@ VAR day_script = 0
 ~daily_damage(generator)
 ~maintain_update(farm, -1)
 ~maintain_update(generator, -1)
-::buffer # Linetime: {buffer_time}
+{game?unreal:::buffer # Linetime: {buffer_time}}
 ->main_day
 
 
