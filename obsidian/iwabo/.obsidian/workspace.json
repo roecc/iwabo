@@ -368,9 +368,9 @@
                   "state": {
                     "file": "dt_d1 1.canvas",
                     "viewState": {
-                      "x": 2391.074113925402,
-                      "y": 213.59374651158907,
-                      "zoom": -0.3434169863159281
+                      "x": 2332.735512429851,
+                      "y": 966.3011880995111,
+                      "zoom": 1
                     }
                   },
                   "icon": "lucide-layout-dashboard",
@@ -391,15 +391,15 @@
       }
     ]
   },
-  "active": "a78afabc473d3ca1",
+  "active": "6a6afdcf8b1497b5",
   "lastOpenFiles": [
+    "Demotype/Mechanics/Trait System/Traits.md",
+    "dt_d1 1.canvas",
     "Demotype/Mechanics/Trait System/Untitled.base",
     "Themes/Absolutism.md",
-    "dt_d1 1.canvas",
     "dt_d1.canvas",
     "Untitled.base",
     "Motifs/Time.md",
-    "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
     "OutGame/Research/InkPot/Inkpot Adventure Demo.md",
     "Demotype/Architecture/Architecture.canvas",

@@ -31,7 +31,7 @@
 | Charisma     | Neuro Linguistic Programming, PUA |                                                                                  |
 | Reflection   | Narcissism                        | //Allow the player to reflect on past actions and reinforce or unlearn that way? |
 
-
+//Some kind of “trust” mechanic either as a skill or as a bond would be nice
 
 //could use nurturing as "patience"?
 

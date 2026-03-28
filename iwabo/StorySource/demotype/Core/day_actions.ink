@@ -41,6 +41,8 @@
 === chores_garden ===
 //+\[approach garden\]
 -(options)
+    //should potentially not even be an action but happen over time if well maintained?
+    //offer double maintain for trait roll?
     {farm !? fine:<-tr_fix_farm}
     +\ {ap_option("maintain farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?

@@ -5,6 +5,8 @@ VAR ue_maryann_div = ->empt //->ERROR.ue_socket_empty
 VAR ue_april_div = ->empt //->ERROR.ue_socket_empty
 VAR ue_june_div = ->empt //->ERROR.ue_socket_empty
 
+VAR ue_june_override = ->empt
+
 VAR ue_farm_override = ->empt
 VAR ue_general_override = ->empt
 
@@ -57,6 +59,7 @@ VAR ue_generator_div = ->ERROR
 === ue_june ===
 // draw draw draw.
 // snif.
+{ue_june_override!=->empt:->ue_june_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-ue_june_div
 <-ue_done_option

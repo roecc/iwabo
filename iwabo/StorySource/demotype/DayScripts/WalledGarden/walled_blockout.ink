@@ -1,15 +1,3 @@
-=== wg1_blockout ===
-=explain_aquaponics
-
-->DONE
-=check_tanks
-->DONE
-=not_enough_fish
-->DONE
-=add_ammonia
-->DONE
-
-
 === wg1_scratch ===
 the garden is what keeps us alive.
 it's where we get all of our fresh produce and meat.
@@ -57,33 +45,16 @@ The better we maintain them, the less likely they are to break down over time.
     ~ue_general_override = ->wg1_override
     ->interaction_done
 -
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ->DONE
 
 === wg1_override ===
-<-wg1_june_complains
+<-june_complains
 ->interaction_done
 
-=== wg1_june_complains ===
+= june_complains
 J:<>
 {~Dad! You said you would show me how to inspect the farm!|Are you okay?|Where are you going?}
-{wg1_june_complains>3:{morale_update(june, -1)}}
+{june_complains>3:{morale_update(june, -1)}}
 ->DONE
 
 === wg1_farm_reroute ===
@@ -94,13 +65,13 @@ J:<>
 = options
 {farm !? fine:<-chores_garden.tr_fix_farm}
     +\ {ap_option("maintain farm", -1)}
-        <-wg1_june_complains
+        <-wg1_override.june_complains
         ->wg1_farm_reroute
     + {farm^repair_state==fine && farm^power_state==on}\ {ap_option("harvest farm", -1)}
-        <-wg1_june_complains
+        <-wg1_override.june_complains
         ->wg1_farm_reroute
     +\ {ap_option("extend farm", -1)}
-        <-wg1_june_complains
+        <-wg1_override.june_complains
         ->wg1_farm_reroute
     +[inspect]
         the farm is {farm^repair_state} and {farm^maintain_state}.
@@ -145,7 +116,7 @@ Aquaponics are complex systems, there is a lot that can go wrong.
 -(three)
 // this means its a delicate balance where many things can go wrong and even small problems can create big ones.
 // for today, let's check the tanks for any dirt or left over food.
-you spot a dead fish in the tank.
+->walled_garden_inspect_3.look_how_pretty
 -
 ->DONE
 
