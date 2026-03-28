@@ -312,4 +312,4 @@ J:<>
 The vast tank empties as you find one fish after another covered in gold.
 It is frightening to say the least.
 ~ue_farm_override = ->empt
-->wg1_not_enough_fish.done_for_today
+->interaction_done
