@@ -1,7 +1,7 @@
 
 === chores_generator ===
 //add turn on?
-+\[approach generator\]
+//+\[approach generator\]
 -(options)
     {generator !? fine:<-tr_fix_generator}
     +\ {ap_option("maintain generator", -1)}
@@ -16,8 +16,8 @@
     +[inspect]
         the generator is {generator^repair_state} and {generator^maintain_state}.
         ->interaction_done
-    +[done]
-        ->interaction_done
+    //+[done]
+    //    ->interaction_done
 
 = tr_fix_generator
 ~temp text = "fix generator"//"option text"
@@ -39,7 +39,7 @@
 	->interaction_done
 
 === chores_garden ===
-+\[approach garden\]
+//+\[approach garden\]
 -(options)
     {farm !? fine:<-tr_fix_farm}
     +\ {ap_option("maintain farm", -1)}
@@ -59,8 +59,8 @@
     +[inspect]
         the farm is {farm^repair_state} and {farm^maintain_state}.
         ->interaction_done
-    +[done]
-        ->interaction_done
+    //+[done]
+    //    ->interaction_done
 
 = tr_fix_farm
 ~temp text = "fix farm"//"option text"

@@ -86,7 +86,14 @@
 		{"id":"286fa67447fe7761","type":"text","text":"Already too few","x":2000,"y":820,"width":250,"height":60},
 		{"id":"3f778cc79c3eddb6","type":"text","text":"Without food, the plants wilt","x":2340,"y":820,"width":250,"height":60},
 		{"id":"69a96be6fe4bb408","type":"text","text":"you told us in class","x":2060,"y":-1160,"width":250,"height":60},
-		{"id":"71ce6890fc25593c","type":"text","text":"[[Nurturing - Smothering]]","x":2200,"y":-1100,"width":118,"height":60}
+		{"id":"71ce6890fc25593c","type":"text","text":"[[Nurturing - Smothering]]","x":2200,"y":-1100,"width":118,"height":60},
+		{"id":"e45d2fb22ca96462","type":"text","text":"Mechanics","x":1520,"y":-1600,"width":250,"height":60},
+		{"id":"2b09582a9f2f2c9c","type":"text","text":"Action Points","x":1540,"y":-1520,"width":250,"height":60},
+		{"id":"3077ac7930ea1b36","type":"text","text":"Constant Maintenance","x":1540,"y":-1440,"width":250,"height":60},
+		{"id":"cd3e1511fa033e31","type":"text","text":"Repair","x":1540,"y":-1360,"width":250,"height":60},
+		{"id":"bbdadeeb621e874c","type":"text","text":"Inspect","x":1860,"y":-1540,"width":250,"height":60},
+		{"id":"56208d622638c563","type":"text","text":"Off too long, Fish die","x":1860,"y":-1420,"width":250,"height":60},
+		{"id":"7b22ade0257ccabf","type":"text","text":"Generator, Beating heart","x":1860,"y":-1340,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"4823c9b611e1c1f3","fromNode":"8190e8f3ea847d22","fromSide":"right","toNode":"b0755081af38f065","toSide":"left"},

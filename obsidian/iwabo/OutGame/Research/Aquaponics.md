@@ -10,6 +10,9 @@ https://www.youtube.com/playlist?list=PLBcWprMIwYYj8zCdbSzPJOR3HRXpxuBwf
 #### This WW2 bunker is growing sustainable salad
 https://www.weforum.org/stories/2021/04/underground-vegetable-garden-sustainable-farming/
 
+Seems like a good reference for what can be grown etc:
+https://gogreenaquaponics.com/blogs/news/what-are-the-best-plants-for-aquaponics
+
 n
 itrifying bacteria
 ammonia / nitrite -> nitrate

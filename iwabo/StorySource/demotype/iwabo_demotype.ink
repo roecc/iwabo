@@ -10,15 +10,18 @@ INCLUDE Demotype/Day1/dt_d1_draft.ink
 INCLUDE testing/option_tests.ink
 INCLUDE Core/ap_handlers.ink
 INCLUDE Unreal/sockets.ink
-INCLUDE DayStructure/DayScripts/ds_test.ink
+INCLUDE DayScripts/ds_test.ink
 INCLUDE Core/day_handlers.ink
 INCLUDE Core/state_handlers.ink
 INCLUDE Core/day_actions.ink
-INCLUDE DayStructure/DayScripts/june_sick.ink
-INCLUDE DayStructure/DayScripts/ds_prefab.ink
+INCLUDE DayScripts/june_sick.ink
+INCLUDE DayScripts/ds_prefab.ink
 INCLUDE Core/morale_handlers.ink
 INCLUDE Ink/navigation.ink
-INCLUDE DayStructure/DayScripts/walled_garden.ink
+INCLUDE DayScripts/walled_garden.ink
+INCLUDE DayScripts/WalledGarden/walled_blockout.ink
+
+
 
 
 //INCLUDE Unreal/external.ink

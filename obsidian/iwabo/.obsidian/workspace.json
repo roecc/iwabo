@@ -157,12 +157,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-03-27.md",
+                "file": "Demotype/Mechanics/Trait System/Traits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-27"
+              "title": "Traits"
             }
           }
         ],
@@ -324,23 +324,6 @@
             "type": "tabs",
             "children": [
               {
-                "id": "cfef83a3e82cf25e",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "dt_d1.canvas",
-                    "viewState": {
-                      "x": 2569.697495769533,
-                      "y": -198.52779622837323,
-                      "zoom": -0.9586271339654937
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "dt_d1"
-                }
-              },
-              {
                 "id": "75def5e9152e7165",
                 "type": "leaf",
                 "state": {
@@ -348,9 +331,9 @@
                   "state": {
                     "file": "dt_d1.canvas",
                     "viewState": {
-                      "x": 2593.510881060169,
-                      "y": 138.09450185720786,
-                      "zoom": -0.4275135810041649
+                      "x": 2773.35201866633,
+                      "y": -160.17163421566443,
+                      "zoom": -0.5950717739129289
                     }
                   },
                   "icon": "lucide-layout-dashboard",
@@ -382,31 +365,16 @@
                   "state": {
                     "file": "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
                     "viewState": {
-                      "x": 334.31653798943444,
-                      "y": 254.02200001196036,
-                      "zoom": -0.3924102444208606
+                      "x": 104.46301700823958,
+                      "y": 508.555103083105,
+                      "zoom": -0.41883764403630724
                     }
                   },
                   "icon": "lucide-layout-dashboard",
                   "title": "Resource Management Canvas"
                 }
-              },
-              {
-                "id": "db173759fd182210",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "OutGame/Research/InkPot/Inkpot Adventure Demo.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Inkpot Adventure Demo"
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical",
@@ -419,14 +387,19 @@
       }
     ]
   },
-  "active": "6a6afdcf8b1497b5",
+  "active": "75def5e9152e7165",
   "lastOpenFiles": [
-    "dt_d1.canvas",
-    "dt_d2.canvas",
-    "Demotype/Architecture/Architecture.canvas",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
+    "Demotype/Mechanics/Trait System/Traits.md",
     "OutGame/Research/InkPot/Inkpot Adventure Demo.md",
+    "Demotype/Architecture/Architecture.canvas",
+    "dt_d1.canvas",
+    "Core/It would all be Over.md",
+    "OutGame/Research/Untitled 1.base",
+    "OutGame/Research/Untitled.base",
+    "OutGame/Research/Aquaponics.md",
     "2026-03-27.md",
+    "dt_d2.canvas",
     "Themes/Salvation.md",
     "Themes/Catholicism.md",
     "Themes/Absolution.md",
@@ -456,7 +429,6 @@
     "Demotype/Mechanics/Resource Management/Morale System.md",
     "Demotype/Mechanics/Advanced State Tracking.md",
     "Demotype/Mechanics/Trait System/Counter Rolls.md",
-    "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Trait System/Untitled.base",
     "OutGame/People/Contacts/Genetically Modified Skeptic.md",
     "Themes/Apocalypse.md",
@@ -465,13 +437,9 @@
     "Themes/Care through Violence.md",
     "OutGame/People/Contacts/Alyssa Grenfell.md",
     "OutGame/People/Contacts",
-    "OutGame/People/Fritz Haber.md",
-    "Themes/Latter day Saints.md",
     "Demotype/Architecture",
     "Resource Management.canvas",
     "OutGame/Research/Religion",
-    "Themes/Untitled.base",
-    "Ink/Untitled.canvas",
-    "Ink/OpenInInky.app/Contents/Resources/description.rtfd/TXT.rtf"
+    "Ink/Untitled.canvas"
   ]
 }

@@ -5,8 +5,13 @@ VAR ue_maryann_div = ->empt //->ERROR.ue_socket_empty
 VAR ue_april_div = ->empt //->ERROR.ue_socket_empty
 VAR ue_june_div = ->empt //->ERROR.ue_socket_empty
 
+VAR ue_farm_override = ->empt
+VAR ue_general_override = ->empt
+
 === empt ===
 ->DONE //super useful to make ->div VARs optional!
+
+//=== force_knot === //would allow to disable all default sockets for unique interaction
 
 //interactibles
 VAR ue_generator_div = ->ERROR
@@ -32,6 +37,7 @@ VAR ue_generator_div = ->ERROR
     ->interaction_done
 
 === ue_mary_ann ===
+{ue_general_override!=->empt:->ue_general_override}
 //could consider making the div a tunnel. if it should exclude defaults, make the tunnel go ->DONE ?
 <-ue_maryann_div
 <-ue_done_option
@@ -39,8 +45,9 @@ VAR ue_generator_div = ->ERROR
 //could also have a default list of <-{location:}/{action:} gated options //if shes cleaning you have the option to offer to help (maybe if youre not used to it only when you have few actions left to make player feel like they dont have the "energy" to do it or that they have something better to do?)
 
 === ue_april ===
-strum strum strum.
-oh, hey dad.
+// strum strum strum.
+// oh, hey dad.
+{ue_general_override!=->empt:->ue_general_override}
 <-ue_april_div
 <-ue_done_option
 // +hey.
@@ -50,6 +57,7 @@ oh, hey dad.
 === ue_june ===
 // draw draw draw.
 // snif.
+{ue_general_override!=->empt:->ue_general_override}
 <-ue_june_div
 <-ue_done_option
 // +keep it up.
@@ -58,6 +66,7 @@ oh, hey dad.
 
 === ue_generator ===
 ~location_update(daryl, garden)
+{ue_general_override!=->empt:->ue_general_override}
 <-chores_generator.options
 //->ue_sys.s_generator
 <-ue_done_option
@@ -65,8 +74,10 @@ oh, hey dad.
 
 === ue_farm ===
 ~location_update(daryl, garden)
+{ue_farm_override!=->empt:->ue_farm_override}
+{ue_general_override!=->empt:->ue_general_override}
 <-chores_garden.options
-//->ue_sys.s_farm
+// ->ue_sys.s_farm
 <-ue_done_option
 ->DONE
 

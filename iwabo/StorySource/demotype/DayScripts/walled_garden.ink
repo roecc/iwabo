@@ -143,7 +143,8 @@ June slides off your chest and lands on the floor with a disatisfied thud, then 
 = june_runs_off
 June pushes off your chest with a violent jerk and runs down the corridor.
 ~npc_set(june, waiting, garden)
-~ue_june_div = ->explain_aquaponics
+// ~ue_june_div = ->explain_aquaponics
+~ue_june_div = ->wg1_scratch
 ~buffer()
 ->end
 

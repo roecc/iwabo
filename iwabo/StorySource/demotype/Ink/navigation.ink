@@ -3,8 +3,10 @@
 //ad a "location" divert target here?
 <-go_to
 {daryl?garden:
-    <-chores_generator
-    <-chores_garden
+    //<-chores_generator
+    <-approach(->ue_farm, "garden", false)
+    <-approach(->ue_generator, "generator", false)
+    //<-chores_garden
 }
 {daryl?living_room:
     <-chores_livingroom
@@ -41,7 +43,8 @@
     ->list_actions
 
 = go_to
-+go to 
++go to
+    {ue_general_override!=->empt:->ue_general_override}
     ->list_rooms->
 //->day_script
 //->-> (used to be)
