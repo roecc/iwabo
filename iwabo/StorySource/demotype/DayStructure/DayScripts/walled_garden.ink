@@ -82,6 +82,9 @@
 = wake_up
 You wake up to June perched on your chest, breathing down your face with an excited grin.
 J:Good morning dad!
+A:I'm not here! Spooky!!!
+M:And I am watching tv! 
+M:French laughter
 *Good morning June-Bug
 *Hello Sunshine //could be paranoia check?
 *Can't breathe! //strength check?
@@ -133,13 +136,15 @@ FIN
 = june_disappointed
 J:*sigh* alright.
 June slides off your chest and lands on the floor with a disatisfied thud, then drags herself toward the kitchen head hanging between her shoulders.
-{npc_set(june, eating, living_room)}
+~npc_set(june, eating, living_room)
+~buffer()
 ->end
 
 = june_runs_off
 June pushes off your chest with a violent jerk and runs down the corridor.
-{npc_set(june, waiting, garden)}
+~npc_set(june, waiting, garden)
 ~ue_june_div = ->explain_aquaponics
+~buffer()
 ->end
 
 = end
@@ -149,8 +154,8 @@ June pushes off your chest with a violent jerk and runs down the corridor.
 *\[sigh\]
     ->end
 +\[get up\]
--
-->->
+    ~npc_update(daryl, action, action.none)
+    ->->
 
 
 = walk_to_garden

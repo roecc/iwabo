@@ -14,6 +14,8 @@
 //set unreal sockets here
 = a1
 {ap_updated!=action_points:
+    ~npc_update(daryl, action, action.none)
+    
     {debug_log("[day script: june sick]")}
     ~npc_set(mary_ann, sleeping, junes_room)
     ~npc_set(april, watching_tv, living_room)

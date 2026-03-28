@@ -9,7 +9,7 @@ VAR day_script = 0
 //make day_script not a tunnel?
 
 === main_day ===
-//~wipe_sockets()
+//~wipe_sockets() //why is this here and not in next_day? //bc it runs on every ap update
 {dif_ap!=action_points:
     ->day_script->
     ~dif_ap=action_points
@@ -50,7 +50,7 @@ VAR day_script = 0
 ~day_script = day_scr
 ~ap_updated = -1
 {game?unreal:::buffer # Linetime: {buffer_time}}
-~npc_update(daryl, action, action.none)
+// ~npc_update(daryl, action, action.none)
 
 ~temp _txt = "{action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}"
 {game^mode:

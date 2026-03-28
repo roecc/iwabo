@@ -22,6 +22,9 @@ VAR ue_generator_div = ->ERROR
     }
 }
 
+=== function buffer() ===
+{game?unreal:::buffer # Linetime: {buffer_time}}
+
 === ue_done_option ===
 //why is it tunneling through day_script?
 //->day_script-> i think it was for aX interactions

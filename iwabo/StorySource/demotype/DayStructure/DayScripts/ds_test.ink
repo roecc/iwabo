@@ -14,6 +14,8 @@ VAR ap_updated = -1
 
 = a1
 {ap_updated!=action_points:
+    ~npc_update(daryl, action, action.none)
+
     {debug_log("[day script: ds test]")}
     ~npc_update(mary_ann, action, sleeping)
     ~npc_update(april, action, sleeping)
