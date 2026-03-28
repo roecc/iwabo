@@ -109,11 +109,17 @@ J:<>
 
 
 === wg1_scratch2 ===
+{wg1_scratch2:
+    -0:->one
+    -1:->two
+    -2:->three
+}
+-(one)
 *as you can see, this unit is {farm^repair_state} and {farm^maintain_state}.
     **let's move on to the next one.
         ->interaction_done
 * ->
--
+-(two)
 Aquaponics are complex systems, there is a lot that can go wrong.
 *Do you remember how they work? //conditional on prev event? ->did we cover this in class?
     J:The fish feed the plants and the plants clean the water for the fish.
@@ -134,18 +140,41 @@ Aquaponics are complex systems, there is a lot that can go wrong.
 *\[explain the nitrite cycle\] //tinkering passive //meddling counter 
     ->full_explanation
 *\[explain the basics\]
-    The fish feed the plants and the plants clean the water for the fish.
-    
+    ->simple_explanation
+* ->
+-(three)
+// this means its a delicate balance where many things can go wrong and even small problems can create big ones.
+// for today, let's check the tanks for any dirt or left over food.
+you spot a dead fish in the tank.
 -
 ->DONE
 
 = full_explanation
-    We feed the fish.
-    Their waste is naturally rich in ammonia.
+We feed the fish.
+Their waste is naturally rich in ammonia.
+*some more stuff
+    (While the player talks, June goes places.)
+-
+*and more again
+    (the player might notice)
+    //should play custom LS here for June
+-
+*where'd she go?
+->interaction_done
 ->DONE
 
 = simple_explanation
     The fish feed the plants and the plants clean the water for the fish.
+    This one seems fine.
+    *Let's check the next one.
+        ->interaction_done
+->DONE
+
+= look_how_pretty
+->DONE
+
+= dead_fish
+you spot a dead fish in the tank.
 ->DONE
 
 === cr_close_enough(->_pass, ->_fail) ===

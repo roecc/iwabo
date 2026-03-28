@@ -20,6 +20,8 @@ INCLUDE Core/morale_handlers.ink
 INCLUDE Ink/navigation.ink
 INCLUDE DayScripts/walled_garden.ink
 INCLUDE DayScripts/WalledGarden/walled_blockout.ink
+INCLUDE DayScripts/WalledGarden/walled_fast.ink
+
 
 
 
