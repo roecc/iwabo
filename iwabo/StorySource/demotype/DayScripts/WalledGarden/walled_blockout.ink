@@ -150,31 +150,41 @@ you spot a dead fish in the tank.
 ->DONE
 
 = full_explanation
+~temp _june_gone = false
 We feed the fish.
 Their waste is naturally rich in ammonia.
 *some more stuff
     (While the player talks, June goes places.)
+    ~_june_gone = true
 -
 *and more again
     (the player might notice)
     //should play custom LS here for June
 -
-*where'd she go?
-->interaction_done
+J:look how pretty!
+*and yet more
+*{trait_roll(perception, 0)}notice June's gone
+    **June, stay here
+        June trotts back.
+        ~_june_gone = false
+    **follow June
+        ->walled_garden_inspect_3.look_how_pretty
+    --
+-
+*and more still
+-
+//where'd she go?
+{_june_gone:->walled_garden_inspect_3.june_finds_dead_fish}
+*let's go to the next tank.
+    ->interaction_done
 ->DONE
+
 
 = simple_explanation
     The fish feed the plants and the plants clean the water for the fish.
     This one seems fine.
     *Let's check the next one.
         ->interaction_done
-->DONE
-
-= look_how_pretty
-->DONE
-
-= dead_fish
-you spot a dead fish in the tank.
 ->DONE
 
 === cr_close_enough(->_pass, ->_fail) ===

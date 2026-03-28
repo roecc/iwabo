@@ -24,11 +24,12 @@
 
 ### Ideas
 
-| Trait        | Tox_Trait                         |
-| ------------ | --------------------------------- |
-|              | Controlling                       |
-| Intelligence | Arrogance                         |
-| Charisma     | Neuro Linguistic Programming, PUA |
+| Trait        | Tox_Trait                         | Notes                                                                            |
+| ------------ | --------------------------------- | -------------------------------------------------------------------------------- |
+|              | Controlling                       |                                                                                  |
+| Intelligence | Arrogance                         |                                                                                  |
+| Charisma     | Neuro Linguistic Programming, PUA |                                                                                  |
+| Reflection   | Narcissism                        | //Allow the player to reflect on past actions and reinforce or unlearn that way? |
 
 
 
