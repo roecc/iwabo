@@ -18,7 +18,7 @@ VAR day_script = 0
 {action_points<1:->end_day}
 
 {game^mode:
-    -unreal:->DONE
+    -unreal:->DONE //kills the flow instead of switching, might be worth reworking
     -ink:
         //each loop, tunnel through day_script which defines character actions/updates with each stage?
         ->ink_nav.list_actions//->
