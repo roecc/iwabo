@@ -1,8 +1,8 @@
 ---
 canvas:
-  - "[[dt_d1.canvas]]"
+  - "[[ds_wilting_garden_combined.canvas]]"
   - "[[dt_d2.canvas]]"
-dt_d1:
+ds_wilting_garden_combined:
   - "[[Paradise Lost II - Wilting Garden]]"
 dt_d2: []
 ---

@@ -1,7 +1,6 @@
 ---
 canvas:
   - "[[Resource Management.canvas]]"
-Untitled: []
 ---
 THis
 hurray

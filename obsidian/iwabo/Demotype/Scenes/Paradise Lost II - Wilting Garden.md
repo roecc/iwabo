@@ -1,8 +1,8 @@
 ---
 canvas:
-  - "[[dt_d1.canvas]]"
+  - "[[ds_wilting_garden_combined.canvas]]"
   - "[[dt_d2.canvas]]"
-dt_d1: []
+ds_wilting_garden_combined: []
 dt_d2: []
 ---
 #scene #demotype

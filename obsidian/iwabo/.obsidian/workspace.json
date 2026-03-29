@@ -4,21 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "63cbacb5ac15c450",
+        "id": "cb7b42ff047097b5",
         "type": "tabs",
         "children": [
           {
-            "id": "cf021fca6caffdea",
+            "id": "bc61fa70cf6a1ee6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Demotype/Mechanics/Trait System/Traits.md",
-                "mode": "source",
-                "source": false
+                "file": "ds_wilting_garden_combined.canvas",
+                "viewState": {
+                  "x": 4999.173697518807,
+                  "y": 1177.235572678493,
+                  "zoom": -0.9855969536671848
+                }
               },
-              "icon": "lucide-file",
-              "title": "Traits"
+              "icon": "lucide-layout-dashboard",
+              "title": "ds_wilting_garden_combined"
+            }
+          },
+          {
+            "id": "a78afabc473d3ca1",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "dt_d2.canvas",
+                "viewState": {
+                  "x": 682.9630734375124,
+                  "y": 2030.8900187659456,
+                  "zoom": -1.5172403160646377
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "dt_d2"
             }
           }
         ]
@@ -235,36 +255,19 @@
                 "state": {
                   "type": "canvas",
                   "state": {
-                    "file": "dt_d1 1.canvas",
+                    "file": "ds_wilting_garden_combined.canvas",
                     "viewState": {
-                      "x": 2640.4937906921878,
-                      "y": 225.31394889864148,
-                      "zoom": -0.3479834191004434
+                      "x": 2868.0056836299163,
+                      "y": 607.6852677978483,
+                      "zoom": -0.7935460066795348
                     }
                   },
                   "icon": "lucide-layout-dashboard",
-                  "title": "dt_d1 1"
-                }
-              },
-              {
-                "id": "a78afabc473d3ca1",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "dt_d2.canvas",
-                    "viewState": {
-                      "x": 878.2859228514044,
-                      "y": 2317.773753529702,
-                      "zoom": -0.1534365537678023
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "dt_d2"
+                  "title": "ds_wilting_garden_combined"
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 3
           }
         ],
         "direction": "vertical",
@@ -277,8 +280,12 @@
       }
     ]
   },
-  "active": "cf021fca6caffdea",
+  "active": "bc61fa70cf6a1ee6",
   "lastOpenFiles": [
+    "dt_d2.canvas",
+    "ds_wilting_garden_combined.canvas",
+    "dt_d1 1 1.canvas",
+    "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Trait System/Trait System.md",
     "Demotype/Mechanics/Trait System/Trait Rolls.md",
     "Themes/\"Strength\".md",
@@ -291,9 +298,6 @@
     "Demotype/Hooks/Diegesis.md",
     "Demotype/Mechanics/Resource Management/Morale Canvas.canvas",
     "Img/Art/Rubens - Cronus.png",
-    "dt_d2.canvas",
-    "Demotype/Mechanics/Trait System/Traits.md",
-    "dt_d1 1.canvas",
     "Demotype/Mechanics/Trait System/Untitled.base",
     "Themes/Absolutism.md",
     "dt_d1.canvas",
@@ -328,7 +332,6 @@
     "Img/Art/Untitled 1.base",
     "Demotype/Mechanics/Resource Management/Untitled.md",
     "Demotype/Mechanics/Mood Sys.md",
-    "Demotype/Mechanics/Resource Management/Morale System.md",
     "OutGame/People/Contacts",
     "Demotype/Architecture",
     "Resource Management.canvas",
