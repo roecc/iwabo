@@ -245,6 +245,10 @@ J:yay!
     ~morale_update(june, 2)
 *just like that.
 -
+*if we keep the unit well maintained like this, the fish fed, the balance.. balanced, it will eventually re-stabilize and grow food again.
+    **but if we neglect it, it raises the chance it crashes completely.
+    --
+-
 *that's it for today.
     June gives you a hasty hug before running off.
     ->done_for_today
@@ -254,9 +258,13 @@ J:yay!
 = done_for_today
 ~ue_general_override = ->empt
 ~ue_june_override = ->empt
-~ue_farm_override = ->wg1_farm_reroute3
-{trait_roll(foresight, 0)&&not walled_garden_inspect_3.cull_with_june&&not wg1_farm_reroute3.cull_alone:
-Do not forget to take care of the sick fish!
+~ue_farm_override = ->empt
+
+~next_day_script = ->ds_wilting_garden
+
+{not walled_garden_inspect_3.cull_with_june&&not wg1_farm_reroute3.cull_alone:
+    {trait_roll(foresight, 0):Do not forget to take care of the sick fish!}
+    ~ue_farm_override = ->wg1_farm_reroute3
 }
 ->interaction_done
 

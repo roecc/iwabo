@@ -1,6 +1,6 @@
 //NPC
 LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
-LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping), (waiting)
+LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping), (waiting), (working), (exercising)
 LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics)
 
 VAR daryl = (name.you, location.parent_bedroom, action.sleeping, morale.50m)

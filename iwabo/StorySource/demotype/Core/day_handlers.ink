@@ -1,6 +1,7 @@
 VAR day = 0
 VAR dif_ap = 0
 VAR day_script = 0
+VAR next_day_script = ->empt
 
 === function wipe_sockets() ===
 ~ue_maryann_div = ERROR.ue_socket_empty
@@ -10,6 +11,7 @@ VAR day_script = 0
 
 === main_day ===
 //~wipe_sockets() //why is this here and not in next_day? //bc it runs on every ap update
+//dif ap might be redundant?
 {dif_ap!=action_points:
     ->day_script->
     ~dif_ap=action_points
@@ -36,27 +38,41 @@ VAR day_script = 0
 ~day_script = scr
 
 === end_day ===
-//needed to be before random day for some fucking reason?!
-~npc_update(daryl, action, action.sleeping)
+//needed to be before random day for some fucking reason?! //could be buffer issue //put into next_day to read last action?
 
-~random_day()
+//~npc_update(daryl, action, action.sleeping)
+
+{next_day_script!=->empt:
+    ~day_script = next_day_script
+    ~next_day_script = ->empt
+-else:
+    ~random_day()
+}
+~day_script = ->ds_1
 ->next_day(day_script)
 
 === next_day(->day_scr) ===
 ~day++
+~temp _txt = wakeup_gag()
+~npc_update(daryl, action, action.sleeping)
+~buffer()
+
 +{game^mode==ink}DAY {day}[]:
 +{game^mode==unreal}[DAY {day}]
 -
 ~day_script = day_scr
 ~ap_updated = -1
-{game?unreal:::buffer # Linetime: {buffer_time}}
-// ~npc_update(daryl, action, action.none)
+~dif_ap = -1
+~buffer()
+//moved to day_script
+//~npc_update(daryl, action, action.none)
 
-~temp _txt = "{action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}"
+//~temp _txt = wakeup_gag()
 {game^mode:
     -unreal: {debug_log(_txt)}
     -ink: {_txt}
 }
+
 ~action_points = set_ap_per_day
 ~food--
 {debug_log("[food--] [food left: {food}]")}
@@ -64,9 +80,35 @@ VAR day_script = 0
 ~daily_damage(generator)
 ~maintain_update(farm, -1)
 ~maintain_update(generator, -1)
-{game?unreal:::buffer # Linetime: {buffer_time}}
+~buffer()
+//{game?unreal:::buffer # Linetime: {buffer_time}}
 ->main_day
 
+=== function wakeup_gag() ===
+~temp _txt = "{daryl^name} wake up"
+//_txt = "{action_points<1:{daryl^name} wake up on the floor of the {daryl^location}.|You wake up feeling well rested}"
+
+{daryl^location:
+    -parent_bedroom:
+        ~_txt += " in your bed"
+    -junes_room:
+        ~_txt += " in your daughters bed"
+}
+{action_points>=1:
+    ~_txt += " feeling well rested."
+    ~_txt += "."
+    ~return _txt
+}
+{daryl^action:
+    -watching_tv:
+        ~_txt += "{~ on the couch|on the floor| behind the couch| sprawled over the backrest of the couch} in front of the TV"
+    -reading:
+        ~_txt += " with a book on your face"
+    -working:
+         ~_txt += " on the floor, wrench in hand"
+}
+ ~_txt += "."
+~return _txt
 
 === function daily_damage(ref target) ===
 ~temp _debug = 0

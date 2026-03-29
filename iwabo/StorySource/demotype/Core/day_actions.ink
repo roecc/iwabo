@@ -9,9 +9,11 @@
 	    ~maintain_update(generator, 1)
 	    //nice place to experiment with loop tools of ink
         you fuck around with the machine keeping you alive ignoring its irritated rumbling any time you touch it.
+        {npc_set(daryl, working, garden)}
         ->interaction_done
     +\ {ap_option("upgrade generator", -1)}
         ~ap_update(-1)
+        {npc_set(daryl, working, garden)}
         ->interaction_done
     +[inspect]
         the generator is {generator^repair_state} and {generator^maintain_state}.
@@ -33,9 +35,11 @@
 - (pass) //on success
     the generator seems to calm a little
     ~repair_update(generator, 1)
+    {npc_set(daryl, working, garden)}
 	->interaction_done
 - (fail) //on fail
     nothing happens
+    {npc_set(daryl, working, garden)}
 	->interaction_done
 
 === chores_garden ===
@@ -47,16 +51,22 @@
     +\ {ap_option("maintain farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         ~ap_update(-1)
+        {npc_set(daryl, working, garden)}
+        
         ~maintain_update(farm, 1)
         ->interaction_done
     + {farm^repair_state==fine && farm^power_state==on}\ {ap_option("harvest farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         //should really check if farm was on last cycle, too?
         ~ap_update(-1)
+        {npc_set(daryl, working, garden)}
+        
         ~food++
         ->interaction_done
     +\ {ap_option("extend farm", -1)}
         ~ap_update(-1)
+        
+        {npc_set(daryl, working, garden)}
         ->interaction_done
     +[inspect]
         the farm is {farm^repair_state} and {farm^maintain_state}.
@@ -78,9 +88,11 @@
 - (pass) //on success
     the fish seems to be eating again.
     ~repair_update(farm, 1)
+    {npc_set(daryl, working, garden)}
 	->interaction_done
 - (fail) //on fail
     the fish shake their heads at you disapprovingly.
+    {npc_set(daryl, working, garden)}
 	->interaction_done
 
 
@@ -95,29 +107,37 @@
 === chores_kitchen ===
 +\ {ap_option("clean kitchen", -1)}
     ~ap_update(-1)
+    {npc_set(daryl, cleaning, living_room)}
     ->interaction_done
 +\ {ap_option("cook", -1)}
     ~ap_update(-1)
+    {npc_set(daryl, cooking, living_room)}
     ->interaction_done
 
 === chores_bedroom ===
 +\ {ap_option("read", -2)}
     ~ap_update(-2)
+    {npc_set(daryl, reading, parent_bedroom)}
     ->interaction_done
 +[sleep]
-    {game?unreal:{npc_update(daryl, action, sleeping)}}
+    //{game?unreal:{npc_update(daryl, action, sleeping)}}
+    {npc_set(daryl, sleeping, parent_bedroom)}
+    //fix for strange getup behaviour?
+    ~action_points = 1
     ->end_day
 
 === chores_tv ===
 +\ {ap_option("watch TV", -1)}
     ~ap_update(-1)
     ~morale_update(daryl, 1)
+    {npc_set(daryl, watching_tv, living_room)}
     ->interaction_done
 
 === chores_gym ===
 +\ {ap_option("exercise", -1)}
     ~ap_update(-1)
     ~trait_update(strength, 1)
+    {npc_set(daryl, exercising, living_room)}
     ->interaction_done
 
 

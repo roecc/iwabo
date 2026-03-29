@@ -13,6 +13,8 @@
 //set unreal sockets here
 = a1
 {ap_updated!=action_points:
+    {debug_log("[day script: walled garden]")}
+
     //npc, action, location
     ~npc_set(mary_ann, cooking, living_room)
     // ~npc_set(april, watching_tv, living_room)

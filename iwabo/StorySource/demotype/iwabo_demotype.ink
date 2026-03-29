@@ -21,7 +21,8 @@ INCLUDE Ink/navigation.ink
 INCLUDE DayScripts/walled_garden.ink
 INCLUDE DayScripts/WalledGarden/walled_blockout.ink
 INCLUDE DayScripts/WalledGarden/walled_fast.ink
-
+INCLUDE DayScripts/WiltingGarden/wilting_fast.ink
+INCLUDE DayScripts/wilting_garden.ink
 
 
 
@@ -40,14 +41,14 @@ VAR set_ap_per_day = 5
 
 ~SEED_RANDOM(256011)
 
-IWABO DEMOTYPE DRAFT v0.5.260227.118
+IWABO DEMOTYPE DRAFT v0.5.260227.128
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options
 +[start]
 -
-->next_day(->ds_walled_garden)
-
+// ->next_day(->ds_walled_garden)
+->next_day(->ds_1)
 //->end_story
 // ->tst_the_note
 

@@ -14,6 +14,7 @@ VAR ap_updated = -1
 
 = a1
 {ap_updated!=action_points:
+    daryl should be up now
     ~npc_update(daryl, action, action.none)
 
     {debug_log("[day script: ds test]")}
@@ -24,9 +25,10 @@ VAR ap_updated = -1
     ~npc_update(april, location, aprils_room)
     ~npc_update(june, location, junes_room)
     
-    ~ap_updated = action_points
-    
     ~ue_maryann_div = ->ds_test_marital_duty
+    
+    ~ap_updated = action_points
+    ~buffer()
 //   -else:  
     
 //
@@ -138,6 +140,7 @@ VAR ap_updated = -1
         ~ap_update(-1)
         bla bla bla
         //->DONE
+        {npc_set(daryl, reading, junes_room)}
         ->interaction_done
 // }
 

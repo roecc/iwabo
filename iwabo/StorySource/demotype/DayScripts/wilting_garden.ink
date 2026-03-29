@@ -1,5 +1,5 @@
 //write multiple generic descriptions of locations and tunnel through them here. otherwise write specific descriptions here.
-=== ds_prefab ===
+=== ds_wilting_garden ===
 //each location checks here for unique actions, good?
 {action_points:
     -5:->a1->
@@ -14,7 +14,8 @@
 = a1
 {ap_updated!=action_points:
     ~npc_update(daryl, action, action.none)
-    {debug_log("[day script: ds name]")}
+    
+    {debug_log("[day script: wilting garden]")}
     //npc, action, location
     // ~npc_set(mary_ann, sleeping, junes_room)
     // ~npc_set(april, watching_tv, living_room)
