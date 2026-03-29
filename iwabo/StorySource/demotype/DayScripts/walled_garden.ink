@@ -146,7 +146,7 @@ June slides off your chest and lands on the floor with a disatisfied thud, then 
 ~ue_june_div = ->wg1_scratch
 ~buffer() //needs to be before text bc otherwise the buffer stays on choice
 June pushes off your chest with a violent jerk and runs down the corridor.
-//~buffer()
+~buffer()
 ->end
 
 = end
