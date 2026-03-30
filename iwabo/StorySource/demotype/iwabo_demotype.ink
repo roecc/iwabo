@@ -23,6 +23,8 @@ INCLUDE DayScripts/WalledGarden/walled_blockout.ink
 INCLUDE DayScripts/WalledGarden/walled_fast.ink
 INCLUDE DayScripts/WiltingGarden/wilting_fast.ink
 INCLUDE DayScripts/wilting_garden.ink
+INCLUDE DayScripts/Tutorial/tut_draft1.ink
+
 
 
 

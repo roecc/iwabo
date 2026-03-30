@@ -497,7 +497,8 @@
 			"x":8680,
 			"y":400,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"#f5f5f5"
 		},
 		{
 			"id":"464541ce3eec2ae3",
@@ -680,91 +681,11 @@
 			"height":60
 		},
 		{
-			"id":"8e9e03f64faaa8ea",
-			"type":"text",
-			"text":"First, let's take a look at our generator.\n(inspect)\nthe maintenance will always wear down over time, the longer we neglect it the more work it will take to make it run smoothly again, and the more likely it is to be first damaged and eventually break completely.\n",
-			"styleAttributes":{},
-			"x":7640,
-			"y":120,
-			"width":440,
-			"height":200
-		},
-		{
-			"id":"173b2c8fcbe68071",
-			"type":"text",
-			"text":"each unit is made of two parts, a fish tank and a growing vat\nthe fish feed the plants, the plants clean the water",
-			"styleAttributes":{},
-			"x":7640,
-			"y":340,
-			"width":440,
-			"height":120
-		},
-		{
-			"id":"fb30a574005792d2",
-			"type":"text",
-			"text":"Every day we eat some of it. And eventually it will run out.\nWe have a lot of food stocked up, but that will run out eventually. Growing our own will stretch our reserves and who knows? We might even manage to become self-sufficient.",
-			"styleAttributes":{},
-			"x":7640,
-			"y":460,
-			"width":440,
-			"height":160
-		},
-		{
-			"id":"9c03df5e930e7afc",
-			"type":"text",
-			"text":"why grow",
-			"styleAttributes":{},
-			"x":7480,
-			"y":460,
-			"width":160,
-			"height":60
-		},
-		{
-			"id":"007057fd6290a145",
-			"type":"text",
-			"text":"J:the farm is where we get all our fresh food.\nJ:but erm- why not just canned?\n",
-			"styleAttributes":{},
-			"x":7640,
-			"y":620,
-			"width":440,
-			"height":80
-		},
-		{
-			"id":"d3bb9ca4fbf09d4f",
-			"type":"text",
-			"text":"we need to maintain that balance.",
-			"styleAttributes":{},
-			"x":7640,
-			"y":720,
-			"width":440,
-			"height":60
-		},
-		{
-			"id":"abeb6ca1df3a9a22",
-			"type":"text",
-			"text":"maintain",
-			"styleAttributes":{},
-			"x":7480,
-			"y":720,
-			"width":160,
-			"height":60
-		},
-		{
-			"id":"2d4178f0da33c38d",
-			"type":"text",
-			"text":"two parts",
-			"styleAttributes":{},
-			"x":7480,
-			"y":340,
-			"width":160,
-			"height":60
-		},
-		{
 			"id":"fd34474dbd2f6d7e",
 			"type":"text",
 			"text":"if a unit breaks or isn't on, the fish and plants will die.\nsince we can't  go out to get more, if we lose all fish (by all every unit being either off or broken) we lose the farm.\nso at least one unit has to be kept running at all times.",
 			"styleAttributes":{},
-			"x":7640,
+			"x":7880,
 			"y":1000,
 			"width":440,
 			"height":160
@@ -774,7 +695,7 @@
 			"type":"text",
 			"text":"this is a living system. so we can't just fasten some bolts and call it fixed. but it will heal if we keep it at least maintained for a while.",
 			"styleAttributes":{},
-			"x":7640,
+			"x":7880,
 			"y":1180,
 			"width":440,
 			"height":120
@@ -784,7 +705,7 @@
 			"type":"text",
 			"text":"we also can't turn it off without killing the fish and plants.",
 			"styleAttributes":{},
-			"x":7640,
+			"x":7880,
 			"y":1340,
 			"width":440,
 			"height":60
@@ -794,7 +715,7 @@
 			"type":"text",
 			"text":"the better shape a unit is in, the more food it will produce.",
 			"styleAttributes":{},
-			"x":7640,
+			"x":7880,
 			"y":1420,
 			"width":440,
 			"height":80
@@ -804,8 +725,78 @@
 			"type":"text",
 			"text":"healing",
 			"styleAttributes":{},
-			"x":7480,
+			"x":7720,
 			"y":1180,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"8e9e03f64faaa8ea",
+			"type":"text",
+			"text":"First, let's take a look at our generator.\n(inspect)\nthe maintenance will always wear down over time, the longer we neglect it the more work it will take to make it run smoothly again, and the more likely it is to be first damaged and eventually break completely.\n",
+			"styleAttributes":{},
+			"x":7880,
+			"y":120,
+			"width":440,
+			"height":200
+		},
+		{
+			"id":"2d4178f0da33c38d",
+			"type":"text",
+			"text":"two parts",
+			"styleAttributes":{},
+			"x":7720,
+			"y":340,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"173b2c8fcbe68071",
+			"type":"text",
+			"text":"each unit is made of two parts, a fish tank and a growing vat\nthe fish feed the plants, the plants clean the water",
+			"styleAttributes":{},
+			"x":7880,
+			"y":340,
+			"width":440,
+			"height":120
+		},
+		{
+			"id":"9c03df5e930e7afc",
+			"type":"text",
+			"text":"why grow",
+			"styleAttributes":{},
+			"x":7720,
+			"y":460,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"fb30a574005792d2",
+			"type":"text",
+			"text":"Every day we eat some of it. And eventually it will run out.\nWe have a lot of food stocked up, but that will run out eventually. Growing our own will stretch our reserves and who knows? We might even manage to become self-sufficient.",
+			"styleAttributes":{},
+			"x":7880,
+			"y":460,
+			"width":440,
+			"height":160
+		},
+		{
+			"id":"d3bb9ca4fbf09d4f",
+			"type":"text",
+			"text":"we need to maintain that balance.",
+			"styleAttributes":{},
+			"x":7880,
+			"y":720,
+			"width":440,
+			"height":60
+		},
+		{
+			"id":"abeb6ca1df3a9a22",
+			"type":"text",
+			"text":"maintain",
+			"styleAttributes":{},
+			"x":7720,
+			"y":720,
 			"width":160,
 			"height":60
 		},
@@ -814,10 +805,820 @@
 			"type":"text",
 			"text":"aquapnics are complex mini eco-systems.\nthey need to be closely watched and controlled.\n(inspect)",
 			"styleAttributes":{},
-			"x":7640,
+			"x":7880,
 			"y":780,
 			"width":440,
 			"height":120
+		},
+		{
+			"id":"0dd0b05dd403ae77",
+			"type":"text",
+			"text":"every lesson with example",
+			"styleAttributes":{},
+			"x":8280,
+			"y":-100,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"007057fd6290a145",
+			"type":"text",
+			"text":"J:the farm is where we get all our fresh food.\nJ:but erm- why not just canned?\n",
+			"styleAttributes":{},
+			"x":7920,
+			"y":620,
+			"width":440,
+			"height":80
+		},
+		{
+			"id":"47eeff5392e145be",
+			"type":"text",
+			"text":"They need power for the water pumps and grow-lights. ",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7040,
+			"y":480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3fa073e2f8646240",
+			"type":"text",
+			"text":"Without them the system collapses.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7080,
+			"y":540,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9e2bfe632b1a35af",
+			"type":"text",
+			"text":"The plants and fish would die.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7080,
+			"y":600,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"27d01450a5a370ee",
+			"type":"text",
+			"text":"Look here, this unit didn't have enough power.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":6880,
+			"y":920,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1070c4a81a8ef79c",
+			"type":"text",
+			"text":"Only as long as we have at least one active unit somewhere.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":6940,
+			"y":1060,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"fb0252a33a5c7db2",
+			"type":"text",
+			"text":"Yes, but it takes time.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":6940,
+			"y":1120,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"045c7fb8d6df1dac",
+			"type":"text",
+			"text":"Can we fix it?",
+			"styleAttributes":{},
+			"x":7100,
+			"y":1000,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"eba15b7ae5dc5c55",
+			"type":"text",
+			"text":"We can only restart it.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":6940,
+			"y":1240,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"dc6932eee03331d7",
+			"type":"text",
+			"text":"You can't fix death.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":6940,
+			"y":1300,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"9154d0c5e3ae12db",
+			"type":"text",
+			"text":"Because we need to take the fish from somewhere before we can breed them.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7000,
+			"y":1440,
+			"width":320,
+			"height":60
+		},
+		{
+			"id":"3c45d134a9ec1726",
+			"type":"text",
+			"text":"Why?",
+			"styleAttributes":{},
+			"x":7140,
+			"y":1380,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"326018dfa8656c1c",
+			"type":"text",
+			"text":"And Fish",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7000,
+			"y":1180,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"170b62cea21f1174",
+			"type":"text",
+			"text":"So it's extremely important we keep at least one unit alive and running at all times.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7040,
+			"y":1500,
+			"width":360,
+			"height":60
+		},
+		{
+			"id":"94a438e64cf989d5",
+			"type":"text",
+			"text":"Generator I",
+			"styleAttributes":{},
+			"x":6680,
+			"y":-280,
+			"width":180,
+			"height":360
+		},
+		{
+			"id":"990e849b94ee102b",
+			"type":"text",
+			"text":"Generator II",
+			"styleAttributes":{},
+			"x":6900,
+			"y":-280,
+			"width":180,
+			"height":360
+		},
+		{
+			"id":"e1afc058c540ce67",
+			"type":"text",
+			"text":"Aquaponics I",
+			"styleAttributes":{"shape":"document"},
+			"x":7160,
+			"y":-280,
+			"width":260,
+			"height":320
+		},
+		{
+			"id":"cb7a6237c92e0d1b",
+			"type":"text",
+			"text":"Aquaponics II",
+			"styleAttributes":{"shape":"document"},
+			"x":7440,
+			"y":-280,
+			"width":260,
+			"height":320
+		},
+		{
+			"id":"e1daeebfc4dc267f",
+			"type":"text",
+			"text":"Aquaponics III",
+			"styleAttributes":{"shape":"document"},
+			"x":7720,
+			"y":-280,
+			"width":260,
+			"height":320
+		},
+		{
+			"id":"33966e0c76667d1a",
+			"type":"text",
+			"text":"fine",
+			"styleAttributes":{},
+			"x":7180,
+			"y":-220,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"708b11593aced9b6",
+			"type":"text",
+			"text":"maintained",
+			"styleAttributes":{},
+			"x":7180,
+			"y":-140,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"8f461f16c07cef92",
+			"type":"text",
+			"text":"off",
+			"styleAttributes":{},
+			"x":7180,
+			"y":-60,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"259c96d12579bebb",
+			"type":"text",
+			"text":"damaged",
+			"styleAttributes":{},
+			"x":7460,
+			"y":-220,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"401ed9d348449ff8",
+			"type":"text",
+			"text":"neglected",
+			"styleAttributes":{},
+			"x":7460,
+			"y":-140,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"62e3d36893169082",
+			"type":"text",
+			"text":"on",
+			"styleAttributes":{},
+			"x":7460,
+			"y":-60,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"ddd52f9930974617",
+			"type":"text",
+			"text":"fine",
+			"styleAttributes":{},
+			"x":7740,
+			"y":-220,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"22ac2cb819eb2046",
+			"type":"text",
+			"text":"well_maintained",
+			"styleAttributes":{},
+			"x":7740,
+			"y":-140,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"b33f89e18160e7d3",
+			"type":"text",
+			"text":"on",
+			"styleAttributes":{},
+			"x":7740,
+			"y":-60,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"d60615d547a9f0ab",
+			"type":"text",
+			"text":"can farm",
+			"styleAttributes":{},
+			"x":7740,
+			"y":20,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"e2d4458a36a6f011",
+			"type":"text",
+			"text":"this unit seems fine, and was growing well last time.",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":6980,
+			"y":-780,
+			"width":300,
+			"height":60
+		},
+		{
+			"id":"53bfcf760f944bcf",
+			"type":"text",
+			"text":"can we fix it?",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":6980,
+			"y":-540,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"72b89614da158a2b",
+			"type":"text",
+			"text":"why do you think this unit died?",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7020,
+			"y":-720,
+			"width":300,
+			"height":60
+		},
+		{
+			"id":"db77d9a7e1908299",
+			"type":"text",
+			"text":"because it had no power!",
+			"styleAttributes":{},
+			"x":7060,
+			"y":-660,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"38ee7561b07a0ccc",
+			"type":"text",
+			"text":"no lights for the plants or pumps for the water!",
+			"styleAttributes":{},
+			"x":7060,
+			"y":-600,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4f50391c483217e4",
+			"type":"text",
+			"text":"only as long as we have fish left somewhere else.",
+			"styleAttributes":{},
+			"x":7060,
+			"y":-480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"00fefbece0e4657f",
+			"type":"text",
+			"text":"inspect",
+			"styleAttributes":{},
+			"x":7420,
+			"y":-780,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2dd950c57a7bdb2e",
+			"type":"text",
+			"text":"why is it so important that we keep at least one unit alive at all times?",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7460,
+			"y":-680,
+			"width":300,
+			"height":60
+		},
+		{
+			"id":"f283f634eda7b274",
+			"type":"text",
+			"text":"because if they're all out, we would have no fish",
+			"styleAttributes":{},
+			"x":7500,
+			"y":-620,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"be703fdf38cd4f2b",
+			"type":"text",
+			"text":"and why does that matter?",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":7520,
+			"y":-560,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"cc5704573458708f",
+			"type":"text",
+			"text":"because if they're all out, we would have no fish",
+			"styleAttributes":{},
+			"x":7560,
+			"y":-500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6ef6d453ee912e6f",
+			"type":"text",
+			"text":"if two damaged aqua, can combine into one?",
+			"styleAttributes":{},
+			"x":9220,
+			"y":1220,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"9506dccab60b8c78",
+			"type":"text",
+			"text":"Inspect",
+			"styleAttributes":{},
+			"x":9090,
+			"y":1860,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"822092e005741d7b",
+			"type":"text",
+			"text":"Repair",
+			"styleAttributes":{},
+			"x":9110,
+			"y":1920,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0f22722eb1c1cdd8",
+			"type":"text",
+			"text":"Maintain",
+			"styleAttributes":{},
+			"x":9130,
+			"y":1980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"43b5e2869789b646",
+			"type":"text",
+			"text":"garden has state (inspect)",
+			"styleAttributes":{},
+			"x":9070,
+			"y":2500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"96018cbf912bf56e",
+			"type":"text",
+			"text":"garden needs regular maintain",
+			"styleAttributes":{},
+			"x":9090,
+			"y":2560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"050cf4253de880a1",
+			"type":"text",
+			"text":"if >=maintained, garden damaged -> fine",
+			"styleAttributes":{},
+			"x":9130,
+			"y":2680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1019d2cc5cd417e5",
+			"type":"text",
+			"text":"need at least 1 garden >=damaged at any time (fish)",
+			"styleAttributes":{},
+			"x":9150,
+			"y":2740,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0a82416b946dac89",
+			"type":"text",
+			"text":"Food important",
+			"styleAttributes":{},
+			"x":9050,
+			"y":2220,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"eadea23b5c0bcbab",
+			"type":"text",
+			"text":"Food always --",
+			"styleAttributes":{
+				"shape":null
+			},
+			"x":9070,
+			"y":2280,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"83b5f2c0eaf722ff",
+			"type":"text",
+			"text":"Conserves / Fresh morale",
+			"styleAttributes":{},
+			"x":9090,
+			"y":2340,
+			"width":260,
+			"height":60,
+			"color":"#f5f5f5"
+		},
+		{
+			"id":"69a92a8205045021",
+			"type":"text",
+			"text":"garden food++",
+			"styleAttributes":{},
+			"x":9110,
+			"y":2400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b3cac62ade7efc84",
+			"type":"text",
+			"text":"high maintain = low chance break",
+			"styleAttributes":{},
+			"x":9150,
+			"y":2040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"af7b6d2b8ed0f45d",
+			"type":"text",
+			"text":"redundancy",
+			"styleAttributes":{},
+			"x":9170,
+			"y":2100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b8e265300ce7d7e6",
+			"type":"text",
+			"text":"Generator First?",
+			"styleAttributes":{},
+			"x":9050,
+			"y":1740,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d5c8dc33ead10329",
+			"type":"text",
+			"text":"Tutorial",
+			"styleAttributes":{},
+			"x":9070,
+			"y":1640,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"01c86a232836155d",
+			"type":"text",
+			"text":"Heart of Bunker",
+			"styleAttributes":{},
+			"x":9070,
+			"y":1800,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ed7c529bfe80d51d",
+			"type":"text",
+			"text":"repair",
+			"styleAttributes":{},
+			"x":9780,
+			"y":1820,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"32a96803db298409",
+			"type":"text",
+			"text":"everything powered by gen",
+			"styleAttributes":{},
+			"x":10060,
+			"y":1420,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9250935959a7fcc1",
+			"type":"text",
+			"text":"less power",
+			"styleAttributes":{},
+			"x":9780,
+			"y":1640,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a436ad652510b0e6",
+			"type":"text",
+			"text":"might break completely",
+			"styleAttributes":{},
+			"x":9780,
+			"y":1700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c555698b408afd94",
+			"type":"text",
+			"text":"turn off",
+			"styleAttributes":{},
+			"x":9740,
+			"y":1760,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4f4475262586c9ba",
+			"type":"text",
+			"text":"inspect gen",
+			"styleAttributes":{},
+			"x":9740,
+			"y":1520,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"866e66c421f6fc24",
+			"type":"text",
+			"text":"gen damaged",
+			"styleAttributes":{},
+			"x":9740,
+			"y":1580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a641278d958d36d3",
+			"type":"text",
+			"text":"on/off matters",
+			"styleAttributes":{},
+			"x":9460,
+			"y":2300,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7696ccbf90f74262",
+			"type":"text",
+			"text":"only \"on\" systems wear/break",
+			"styleAttributes":{},
+			"x":9460,
+			"y":2360,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"953a63967687e43d",
+			"type":"text",
+			"text":"fail",
+			"styleAttributes":{},
+			"x":9820,
+			"y":1880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a67cc1c73affe51a",
+			"type":"text",
+			"text":"turn it on?",
+			"styleAttributes":{},
+			"x":9780,
+			"y":2240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2f5f3192f8065935",
+			"type":"text",
+			"text":"more power",
+			"styleAttributes":{},
+			"x":9820,
+			"y":2300,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a041a79cabd64952",
+			"type":"text",
+			"text":"safer (off systems dont wear)",
+			"styleAttributes":{},
+			"x":9820,
+			"y":2360,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"edcd6cf64f73d971",
+			"type":"text",
+			"text":"make sure doesnt break again",
+			"styleAttributes":{},
+			"x":9740,
+			"y":2000,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a5f1227b2ab6b51d",
+			"type":"text",
+			"text":"maintain",
+			"styleAttributes":{},
+			"x":9780,
+			"y":2060,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1fa8fe9f13368bfe",
+			"type":"text",
+			"text":"wear",
+			"styleAttributes":{},
+			"x":9820,
+			"y":2120,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"76922bfd07fd5c6c",
+			"type":"text",
+			"text":"redundancy",
+			"styleAttributes":{},
+			"x":9740,
+			"y":2180,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0c00228d103942ca",
+			"type":"text",
+			"text":"again",
+			"styleAttributes":{},
+			"x":9860,
+			"y":1940,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"08a87069879b8235",
+			"type":"text",
+			"text":"ap",
+			"styleAttributes":{},
+			"x":10260,
+			"y":1820,
+			"width":60,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"3f789faaa657d40c",
+			"type":"text",
+			"text":"ap",
+			"styleAttributes":{},
+			"x":10260,
+			"y":2060,
+			"width":60,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"fb12ed9f2540f85c",
+			"type":"text",
+			"text":"ap",
+			"styleAttributes":{},
+			"x":10260,
+			"y":1940,
+			"width":60,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"f6f36afe22839fe7",
+			"type":"text",
+			"text":"ap",
+			"styleAttributes":{},
+			"x":10240,
+			"y":1280,
+			"width":60,
+			"height":60,
+			"color":"3"
 		}
 	],
 	"edges":[
@@ -1264,6 +2065,69 @@
 			"fromSide":"left",
 			"toNode":"007057fd6290a145",
 			"toSide":"right"
+		},
+		{
+			"id":"a5748515b3dfdf91",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dc6932eee03331d7",
+			"fromSide":"right",
+			"toNode":"eba15b7ae5dc5c55",
+			"toSide":"right"
+		},
+		{
+			"id":"e11b9170b5749d24",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1070c4a81a8ef79c",
+			"fromSide":"right",
+			"toNode":"3c45d134a9ec1726",
+			"toSide":"right"
+		},
+		{
+			"id":"5670112d8b6011e8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"326018dfa8656c1c",
+			"fromSide":"right",
+			"toNode":"3c45d134a9ec1726",
+			"toSide":"right"
+		},
+		{
+			"id":"bfc51eb538d0d2a9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"eba15b7ae5dc5c55",
+			"fromSide":"left",
+			"toNode":"1070c4a81a8ef79c",
+			"toSide":"left"
+		},
+		{
+			"id":"0ae989fb117b7338",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7696ccbf90f74262",
+			"fromSide":"right",
+			"toNode":"a041a79cabd64952",
+			"toSide":"left"
+		},
+		{
+			"id":"7fedbd46d584ff17",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"b3cac62ade7efc84",
+			"fromSide":"right",
+			"toNode":"1fa8fe9f13368bfe",
+			"toSide":"left"
+		},
+		{
+			"id":"47b17df6915eb069",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"822092e005741d7b",
+			"fromSide":"right",
+			"toNode":"ed7c529bfe80d51d",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
