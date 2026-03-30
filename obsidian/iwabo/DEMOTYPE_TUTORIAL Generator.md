@@ -8,24 +8,24 @@ June wakes up daryl, you promised to start her training today.
 let's see what you learned:
 
 What is this actually called?
-J: the powerhouse
+	J: the powerhouse
 
 why is it important?
-J: without it we would have no food, no light, no power.
+	J: without it we would have no food, no light, no power.
 
 what is the most important part?
-J: the generators have to always keep running.
+	J: the generators have to always keep running.
 
 brutality/paranoia what would happen if they break?
 we would die
-~~J:they keep us alive!~~
+	~~J:they keep us alive!~~
 
 lets take a look at the generator
 (inspect)
-it looks like it got damaged, so we will have to repair it or risk it breaking down completely.
+	it looks like it got damaged, so we will have to repair it or risk it breaking down completely.
 
 (repair)
-there, that should do it. let's inspect it again to make sure.
+	there, that should do it. let's inspect it again to make sure.
 ~~now we can turn it back on.~~
 ~~(on)~~
 

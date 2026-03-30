@@ -15,9 +15,9 @@
               "state": {
                 "file": "ds_wilting_garden_combined.canvas",
                 "viewState": {
-                  "x": 8452.641727839542,
-                  "y": 319.8211766134736,
-                  "zoom": -0.31506406674782667
+                  "x": 7992.759309820828,
+                  "y": 659.2445063898467,
+                  "zoom": -0.672946011986125
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -30,12 +30,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WalledWilting Second Draft.md",
+                "file": "DEMOTYPE_TUTORIAL Generator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WalledWilting Second Draft"
+              "title": "DEMOTYPE_TUTORIAL Generator"
             }
           },
           {
@@ -46,8 +46,8 @@
               "state": {
                 "file": "dt_d2.canvas",
                 "viewState": {
-                  "x": 682.9630734375124,
-                  "y": 2030.8900187659456,
+                  "x": 2213.6474131967593,
+                  "y": 1876.4905549293587,
                   "zoom": -1.5172403160646377
                 }
               },
@@ -200,105 +200,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "f1de053957e50c4c",
-    "type": "floating",
-    "children": [
-      {
-        "id": "875a1c40e60533c8",
-        "type": "window",
-        "children": [
-          {
-            "id": "ab5684d62c54af9b",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "75def5e9152e7165",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "dt_d1.canvas",
-                    "viewState": {
-                      "x": 2602.349206861579,
-                      "y": -190.6422105422956,
-                      "zoom": -0.6963288088504697
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "dt_d1"
-                }
-              },
-              {
-                "id": "9b55e495389a9ffe",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "Demotype/Architecture/Architecture.canvas",
-                    "viewState": {
-                      "x": 527.5180022009826,
-                      "y": -286.42490284775835,
-                      "zoom": -0.402471234247357
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "Architecture"
-                }
-              },
-              {
-                "id": "ecef71498f05a922",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
-                    "viewState": {
-                      "x": 104.46301700823958,
-                      "y": 508.555103083105,
-                      "zoom": -0.41883764403630724
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "Resource Management Canvas"
-                }
-              },
-              {
-                "id": "6a6afdcf8b1497b5",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "ds_wilting_garden_combined.canvas",
-                    "viewState": {
-                      "x": 4602.795632158349,
-                      "y": 50.859560285311176,
-                      "zoom": -1.1023142472902934
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "ds_wilting_garden_combined"
-                }
-              }
-            ],
-            "currentTab": 3
-          }
-        ],
-        "direction": "vertical",
-        "x": -248,
-        "y": -1410,
-        "width": 2027,
-        "height": 1176,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "bc61fa70cf6a1ee6",
   "lastOpenFiles": [
-    "ds_wilting_garden_combined.canvas",
+    "DEMOTYPE_TUTORIAL Generator.md",
+    "DEMOTYPE_TUTORIAL Aquaponics.md",
     "dt_d2.canvas",
-    "WalledWilting Second Draft.md",
+    "ds_wilting_garden_combined.canvas",
     "dt_d1 1 1.canvas",
     "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Trait System/Trait System.md",
@@ -345,7 +252,6 @@
     "OutGame/Research/InkPot",
     "Img/Art/Untitled.base",
     "Img/Art/Untitled 1.base",
-    "Demotype/Mechanics/Resource Management/Untitled.md",
     "OutGame/People/Contacts",
     "Demotype/Architecture",
     "Resource Management.canvas",

@@ -320,98 +320,6 @@
 			"height":60
 		},
 		{
-			"id":"40868d7a5f5684af",
-			"type":"text",
-			"text":"Conserves / Fresh morale",
-			"styleAttributes":{},
-			"x":7160,
-			"y":280,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"464541ce3eec2ae3",
-			"type":"text",
-			"text":"garden food++",
-			"styleAttributes":{},
-			"x":7180,
-			"y":340,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"b24bbb921e79d2d2",
-			"type":"text",
-			"text":"garden has state (inspect)",
-			"styleAttributes":{},
-			"x":7140,
-			"y":440,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"e8db7340daf34180",
-			"type":"text",
-			"text":"garden needs regular maintain",
-			"styleAttributes":{},
-			"x":7160,
-			"y":500,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"240fedc0d481d1ab",
-			"type":"text",
-			"text":"high maintain = low chance break",
-			"styleAttributes":{},
-			"x":7180,
-			"y":560,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"9d28a79e32b76924",
-			"type":"text",
-			"text":"if >=maintained, garden damaged -> fine",
-			"styleAttributes":{},
-			"x":7200,
-			"y":620,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"06c5c7342dd141e2",
-			"type":"text",
-			"text":"need at least 1 garden >=damaged at any time (fish)",
-			"styleAttributes":{},
-			"x":7220,
-			"y":680,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"7fa74349ca9462ea",
-			"type":"text",
-			"text":"Food important",
-			"styleAttributes":{},
-			"x":7120,
-			"y":160,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"25d63b00356c9b14",
-			"type":"text",
-			"text":"Food always --",
-			"styleAttributes":{
-				"shape":null
-			},
-			"x":7140,
-			"y":220,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"f2f32ab4a0e46919",
 			"type":"text",
 			"text":"Day 1",
@@ -464,18 +372,6 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"2e2f740f0bf75522","type":"file","file":"WalledWilting Second Draft.md","x":8140,"y":-160,"width":400,"height":900},
-		{
-			"id":"13b0473a5e8a951d",
-			"type":"text",
-			"text":"write as you testing her",
-			"styleAttributes":{},
-			"x":8060,
-			"y":-260,
-			"width":260,
-			"height":60,
-			"color":"6"
-		},
 		{
 			"id":"f47a161eace76d63",
 			"type":"text",
@@ -516,10 +412,136 @@
 			"width":260,
 			"height":60
 		},
+		{"id":"2e2f740f0bf75522","type":"file","file":"DEMOTYPE_TUTORIAL Generator.md","x":7920,"y":-140,"width":400,"height":900},
 		{
-			"id":"233eaf1dd09594d9",
+			"id":"13b0473a5e8a951d",
 			"type":"text",
-			"text":"redundancy",
+			"text":"write as you testing her",
+			"styleAttributes":{},
+			"x":7900,
+			"y":-240,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"62e4fa217900cbed",
+			"type":"text",
+			"text":"only \"on\" systems wear/break",
+			"styleAttributes":{},
+			"x":7700,
+			"y":820,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{"id":"c374687e5c72f6b5","type":"file","file":"DEMOTYPE_TUTORIAL Aquaponics.md","x":8360,"y":-140,"width":400,"height":900},
+		{
+			"id":"3f7b1a2dd9b38936",
+			"type":"text",
+			"text":"reinforce maintenance",
+			"styleAttributes":{},
+			"x":8780,
+			"y":0,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0dfed6298cc3bf74",
+			"type":"text",
+			"text":"high maintain = low chance break",
+			"styleAttributes":{},
+			"x":8780,
+			"y":60,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"464541ce3eec2ae3",
+			"type":"text",
+			"text":"garden food++",
+			"styleAttributes":{},
+			"x":7180,
+			"y":460,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9d28a79e32b76924",
+			"type":"text",
+			"text":"if >=maintained, garden damaged -> fine",
+			"styleAttributes":{},
+			"x":7200,
+			"y":740,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"06c5c7342dd141e2",
+			"type":"text",
+			"text":"need at least 1 garden >=damaged at any time (fish)",
+			"styleAttributes":{},
+			"x":7220,
+			"y":800,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"25d63b00356c9b14",
+			"type":"text",
+			"text":"Food always --",
+			"styleAttributes":{
+				"shape":null
+			},
+			"x":7140,
+			"y":340,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b24bbb921e79d2d2",
+			"type":"text",
+			"text":"garden has state (inspect)",
+			"styleAttributes":{},
+			"x":7140,
+			"y":560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"40868d7a5f5684af",
+			"type":"text",
+			"text":"Conserves / Fresh morale",
+			"styleAttributes":{},
+			"x":7160,
+			"y":400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e8db7340daf34180",
+			"type":"text",
+			"text":"garden needs regular maintain",
+			"styleAttributes":{},
+			"x":7160,
+			"y":620,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7fa74349ca9462ea",
+			"type":"text",
+			"text":"Food important",
+			"styleAttributes":{},
+			"x":7120,
+			"y":280,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"240fedc0d481d1ab",
+			"type":"text",
+			"text":"high maintain = low chance break",
 			"styleAttributes":{},
 			"x":7220,
 			"y":100,
@@ -527,12 +549,53 @@
 			"height":60
 		},
 		{
-			"id":"62e4fa217900cbed",
+			"id":"233eaf1dd09594d9",
 			"type":"text",
-			"text":"only \"on\" systems wear/break",
+			"text":"redundancy",
 			"styleAttributes":{},
-			"x":7660,
-			"y":640,
+			"x":7240,
+			"y":160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7bdd26d261d7e3cd",
+			"type":"text",
+			"text":"need at least 1 garden >=damaged at any time (fish)",
+			"styleAttributes":{},
+			"x":8800,
+			"y":340,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b9037008fbcad730",
+			"type":"text",
+			"text":"if >=maintained, garden damaged -> fine",
+			"styleAttributes":{},
+			"x":8800,
+			"y":440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4b0fd1d350fd5f66",
+			"type":"text",
+			"text":"Unnecessary exposition as options",
+			"styleAttributes":{},
+			"x":8340,
+			"y":-240,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"e7aaef1d49ce8dc9",
+			"type":"text",
+			"text":"Conserves / Fresh morale",
+			"styleAttributes":{},
+			"x":8780,
+			"y":140,
 			"width":260,
 			"height":60
 		}
@@ -815,6 +878,47 @@
 			"toNode":"3126b9995a6b3952",
 			"toSide":"top",
 			"color":"1"
+		},
+		{
+			"id":"bcc5637c4e92b0ef",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"06c5c7342dd141e2",
+			"fromSide":"right",
+			"toNode":"7bdd26d261d7e3cd",
+			"toSide":"left",
+			"toEnd":"none"
+		},
+		{
+			"id":"2c5d1cb6bf9714c8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"9d28a79e32b76924",
+			"fromSide":"right",
+			"toNode":"b9037008fbcad730",
+			"toSide":"left",
+			"toEnd":"none"
+		},
+		{
+			"id":"6c8a0d21193961ad",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0dfed6298cc3bf74",
+			"fromSide":"left",
+			"toNode":"240fedc0d481d1ab",
+			"toSide":"right",
+			"toEnd":"none"
+		},
+		{
+			"id":"68a56e66aef60b89",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e7aaef1d49ce8dc9",
+			"fromSide":"left",
+			"toNode":"40868d7a5f5684af",
+			"toSide":"right",
+			"toEnd":"none"
 		}
 	],
 	"metadata":{
