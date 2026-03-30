@@ -15,13 +15,27 @@
               "state": {
                 "file": "ds_wilting_garden_combined.canvas",
                 "viewState": {
-                  "x": 5061.606812148277,
-                  "y": 89.48342227908077,
-                  "zoom": -0.9153545453151093
+                  "x": 8452.641727839542,
+                  "y": 319.8211766134736,
+                  "zoom": -0.31506406674782667
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "ds_wilting_garden_combined"
+            }
+          },
+          {
+            "id": "a841555c95793528",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WalledWilting Second Draft.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WalledWilting Second Draft"
             }
           },
           {
@@ -257,9 +271,9 @@
                   "state": {
                     "file": "ds_wilting_garden_combined.canvas",
                     "viewState": {
-                      "x": 2868.0056836299163,
-                      "y": 607.6852677978483,
-                      "zoom": -0.7935460066795348
+                      "x": 4602.795632158349,
+                      "y": 50.859560285311176,
+                      "zoom": -1.1023142472902934
                     }
                   },
                   "icon": "lucide-layout-dashboard",
@@ -282,8 +296,9 @@
   },
   "active": "bc61fa70cf6a1ee6",
   "lastOpenFiles": [
-    "dt_d2.canvas",
     "ds_wilting_garden_combined.canvas",
+    "dt_d2.canvas",
+    "WalledWilting Second Draft.md",
     "dt_d1 1 1.canvas",
     "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Trait System/Trait System.md",
@@ -331,7 +346,6 @@
     "Img/Art/Untitled.base",
     "Img/Art/Untitled 1.base",
     "Demotype/Mechanics/Resource Management/Untitled.md",
-    "Demotype/Mechanics/Mood Sys.md",
     "OutGame/People/Contacts",
     "Demotype/Architecture",
     "Resource Management.canvas",

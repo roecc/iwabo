@@ -258,7 +258,284 @@
 		{"id":"059e888476701f7d","type":"text","text":"**\\[-20 Morale]**\nFamily Separation","x":6360,"y":474,"width":187,"height":80,"color":"1"},
 		{"id":"c5fe82503f3d3b06","type":"text","text":"**\\[-1 food]**  \nFragile Ecosystem","x":6360,"y":300,"width":187,"height":74,"color":"1"},
 		{"id":"2a218179c3d7b227","type":"text","text":"**\\[-20 Morale]**\nFish out of Water","x":6360,"y":384,"width":187,"height":80,"color":"1"},
-		{"id":"3126b9995a6b3952","type":"text","text":"Fish out of Water","x":6200,"y":580,"width":250,"height":60}
+		{"id":"3126b9995a6b3952","type":"text","text":"Fish out of Water","x":6200,"y":580,"width":250,"height":60},
+		{
+			"id":"a9badbbde0bdd312",
+			"type":"text",
+			"text":"Tutorial",
+			"styleAttributes":{},
+			"x":7140,
+			"y":-300,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"65de65fa841ce7e2",
+			"type":"text",
+			"text":"Generator First?",
+			"styleAttributes":{},
+			"x":7120,
+			"y":-200,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c957f5bb589dc329",
+			"type":"text",
+			"text":"Heart of Bunker",
+			"styleAttributes":{},
+			"x":7140,
+			"y":-140,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8b16e2462fde9998",
+			"type":"text",
+			"text":"Inspect",
+			"styleAttributes":{},
+			"x":7160,
+			"y":-80,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"058ec9e6e70186ca",
+			"type":"text",
+			"text":"Repair",
+			"styleAttributes":{},
+			"x":7180,
+			"y":-20,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"aa41646806cbc6f6",
+			"type":"text",
+			"text":"Maintain",
+			"styleAttributes":{},
+			"x":7200,
+			"y":40,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"40868d7a5f5684af",
+			"type":"text",
+			"text":"Conserves / Fresh morale",
+			"styleAttributes":{},
+			"x":7160,
+			"y":280,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"464541ce3eec2ae3",
+			"type":"text",
+			"text":"garden food++",
+			"styleAttributes":{},
+			"x":7180,
+			"y":340,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b24bbb921e79d2d2",
+			"type":"text",
+			"text":"garden has state (inspect)",
+			"styleAttributes":{},
+			"x":7140,
+			"y":440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e8db7340daf34180",
+			"type":"text",
+			"text":"garden needs regular maintain",
+			"styleAttributes":{},
+			"x":7160,
+			"y":500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"240fedc0d481d1ab",
+			"type":"text",
+			"text":"high maintain = low chance break",
+			"styleAttributes":{},
+			"x":7180,
+			"y":560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9d28a79e32b76924",
+			"type":"text",
+			"text":"if >=maintained, garden damaged -> fine",
+			"styleAttributes":{},
+			"x":7200,
+			"y":620,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"06c5c7342dd141e2",
+			"type":"text",
+			"text":"need at least 1 garden >=damaged at any time (fish)",
+			"styleAttributes":{},
+			"x":7220,
+			"y":680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7fa74349ca9462ea",
+			"type":"text",
+			"text":"Food important",
+			"styleAttributes":{},
+			"x":7120,
+			"y":160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"25d63b00356c9b14",
+			"type":"text",
+			"text":"Food always --",
+			"styleAttributes":{
+				"shape":null
+			},
+			"x":7140,
+			"y":220,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f2f32ab4a0e46919",
+			"type":"text",
+			"text":"Day 1",
+			"styleAttributes":{},
+			"x":7580,
+			"y":-260,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fbfbdccc26ac227d",
+			"type":"text",
+			"text":"June wakes Daryl",
+			"styleAttributes":{},
+			"x":7600,
+			"y":-180,
+			"width":260,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"1aa79a8531b5112a",
+			"type":"text",
+			"text":"Training starts today",
+			"styleAttributes":{},
+			"x":7620,
+			"y":-100,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"1b5a74de54a54792",
+			"type":"text",
+			"text":"Two main Systems",
+			"styleAttributes":{},
+			"x":7620,
+			"y":-40,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"1c11c6661ef7c274",
+			"type":"text",
+			"text":"Generator",
+			"styleAttributes":{},
+			"x":7620,
+			"y":20,
+			"width":260,
+			"height":60
+		},
+		{"id":"2e2f740f0bf75522","type":"file","file":"WalledWilting Second Draft.md","x":8140,"y":-160,"width":400,"height":900},
+		{
+			"id":"13b0473a5e8a951d",
+			"type":"text",
+			"text":"write as you testing her",
+			"styleAttributes":{},
+			"x":8060,
+			"y":-260,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"f47a161eace76d63",
+			"type":"text",
+			"text":"actions/action points",
+			"styleAttributes":{},
+			"x":7540,
+			"y":260,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"730b5b9c3613e878",
+			"type":"text",
+			"text":"trait rolls",
+			"styleAttributes":{},
+			"x":7800,
+			"y":-560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"db69bacee27ef258",
+			"type":"text",
+			"text":"april dnd game as reason?",
+			"styleAttributes":{},
+			"x":7820,
+			"y":-500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"29a5b33625646e39",
+			"type":"text",
+			"text":"or no tutorial, let players learn themselves?",
+			"styleAttributes":{},
+			"x":7820,
+			"y":-440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"233eaf1dd09594d9",
+			"type":"text",
+			"text":"redundancy",
+			"styleAttributes":{},
+			"x":7220,
+			"y":100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"62e4fa217900cbed",
+			"type":"text",
+			"text":"only \"on\" systems wear/break",
+			"styleAttributes":{},
+			"x":7660,
+			"y":640,
+			"width":260,
+			"height":60
+		}
 	],
 	"edges":[
 		{"id":"4823c9b611e1c1f3","fromNode":"8190e8f3ea847d22","fromSide":"right","toNode":"b0755081af38f065","toSide":"left"},
