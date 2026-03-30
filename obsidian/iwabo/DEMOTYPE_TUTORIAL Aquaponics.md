@@ -11,6 +11,7 @@ the maintenance will always wear down over time, the longer we neglect it the mo
 J:the farm is where we get all our fresh food.
 J:but erm- why not just canned?
 
+Every day we eat some of it. And eventually it will run out.
 We have a lot of food stocked up, but that will run out eventually. Growing our own will stretch our reserves and who knows? We might even manage to become self-sufficient.
 
 each unit is made of two parts, a fish tank and a growing vat
@@ -23,3 +24,11 @@ since we can't  go out to get more, if we lose all fish we lose the farm.
 so at least one unit has to be kept running at all times.
 
 this is a living system. so we can't just fasten some bolts and call it fixed. but it will heal if we keep it at least maintained for a while.
+
+
+
+
+
+aquapnics are complex mini eco-systems.
+they need to be closely watched and controlled.
+(inspect)

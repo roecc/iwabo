@@ -260,134 +260,11 @@
 		{"id":"2a218179c3d7b227","type":"text","text":"**\\[-20 Morale]**\nFish out of Water","x":6360,"y":384,"width":187,"height":80,"color":"1"},
 		{"id":"3126b9995a6b3952","type":"text","text":"Fish out of Water","x":6200,"y":580,"width":250,"height":60},
 		{
-			"id":"a9badbbde0bdd312",
-			"type":"text",
-			"text":"Tutorial",
-			"styleAttributes":{},
-			"x":7140,
-			"y":-300,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"65de65fa841ce7e2",
-			"type":"text",
-			"text":"Generator First?",
-			"styleAttributes":{},
-			"x":7120,
-			"y":-200,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c957f5bb589dc329",
-			"type":"text",
-			"text":"Heart of Bunker",
-			"styleAttributes":{},
-			"x":7140,
-			"y":-140,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"8b16e2462fde9998",
-			"type":"text",
-			"text":"Inspect",
-			"styleAttributes":{},
-			"x":7160,
-			"y":-80,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"058ec9e6e70186ca",
-			"type":"text",
-			"text":"Repair",
-			"styleAttributes":{},
-			"x":7180,
-			"y":-20,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"aa41646806cbc6f6",
-			"type":"text",
-			"text":"Maintain",
-			"styleAttributes":{},
-			"x":7200,
-			"y":40,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"f2f32ab4a0e46919",
-			"type":"text",
-			"text":"Day 1",
-			"styleAttributes":{},
-			"x":7580,
-			"y":-260,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"fbfbdccc26ac227d",
-			"type":"text",
-			"text":"June wakes Daryl",
-			"styleAttributes":{},
-			"x":7600,
-			"y":-180,
-			"width":260,
-			"height":60,
-			"color":"3"
-		},
-		{
-			"id":"1aa79a8531b5112a",
-			"type":"text",
-			"text":"Training starts today",
-			"styleAttributes":{},
-			"x":7620,
-			"y":-100,
-			"width":260,
-			"height":60,
-			"color":"2"
-		},
-		{
-			"id":"1b5a74de54a54792",
-			"type":"text",
-			"text":"Two main Systems",
-			"styleAttributes":{},
-			"x":7620,
-			"y":-40,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"1c11c6661ef7c274",
-			"type":"text",
-			"text":"Generator",
-			"styleAttributes":{},
-			"x":7620,
-			"y":20,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"f47a161eace76d63",
-			"type":"text",
-			"text":"actions/action points",
-			"styleAttributes":{},
-			"x":7540,
-			"y":260,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"730b5b9c3613e878",
 			"type":"text",
 			"text":"trait rolls",
 			"styleAttributes":{},
-			"x":7800,
+			"x":9320,
 			"y":-560,
 			"width":260,
 			"height":60
@@ -397,72 +274,176 @@
 			"type":"text",
 			"text":"april dnd game as reason?",
 			"styleAttributes":{},
-			"x":7820,
+			"x":9340,
 			"y":-500,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"f2f32ab4a0e46919",
+			"type":"text",
+			"text":"Day 1",
+			"styleAttributes":{},
+			"x":9100,
+			"y":-260,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fbfbdccc26ac227d",
+			"type":"text",
+			"text":"June wakes Daryl",
+			"styleAttributes":{},
+			"x":9120,
+			"y":-180,
+			"width":260,
+			"height":60,
+			"color":"3"
 		},
 		{
 			"id":"29a5b33625646e39",
 			"type":"text",
 			"text":"or no tutorial, let players learn themselves?",
 			"styleAttributes":{},
-			"x":7820,
+			"x":9340,
 			"y":-440,
 			"width":260,
 			"height":60
 		},
-		{"id":"2e2f740f0bf75522","type":"file","file":"DEMOTYPE_TUTORIAL Generator.md","x":7920,"y":-140,"width":400,"height":900},
 		{
 			"id":"13b0473a5e8a951d",
 			"type":"text",
 			"text":"write as you testing her",
 			"styleAttributes":{},
-			"x":7900,
+			"x":9420,
 			"y":-240,
 			"width":260,
 			"height":60,
 			"color":"6"
 		},
 		{
+			"id":"f47a161eace76d63",
+			"type":"text",
+			"text":"actions/action points",
+			"styleAttributes":{},
+			"x":9060,
+			"y":260,
+			"width":260,
+			"height":60
+		},
+		{
 			"id":"62e4fa217900cbed",
 			"type":"text",
 			"text":"only \"on\" systems wear/break",
 			"styleAttributes":{},
-			"x":7700,
+			"x":9220,
 			"y":820,
 			"width":260,
 			"height":60,
 			"color":"6"
 		},
-		{"id":"c374687e5c72f6b5","type":"file","file":"DEMOTYPE_TUTORIAL Aquaponics.md","x":8360,"y":-140,"width":400,"height":900},
+		{"id":"2e2f740f0bf75522","type":"file","file":"DEMOTYPE_TUTORIAL Generator.md","x":9440,"y":-140,"width":400,"height":900},
+		{
+			"id":"4b0fd1d350fd5f66",
+			"type":"text",
+			"text":"Unnecessary exposition as options",
+			"styleAttributes":{},
+			"x":9860,
+			"y":-240,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{"id":"c374687e5c72f6b5","type":"file","file":"DEMOTYPE_TUTORIAL Aquaponics.md","x":9880,"y":-140,"width":400,"height":1300},
+		{
+			"id":"1aa79a8531b5112a",
+			"type":"text",
+			"text":"Training starts today",
+			"styleAttributes":{},
+			"x":9140,
+			"y":-100,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"8b16e2462fde9998",
+			"type":"text",
+			"text":"Inspect",
+			"styleAttributes":{},
+			"x":8680,
+			"y":-80,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1b5a74de54a54792",
+			"type":"text",
+			"text":"Two main Systems",
+			"styleAttributes":{},
+			"x":9140,
+			"y":-40,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"058ec9e6e70186ca",
+			"type":"text",
+			"text":"Repair",
+			"styleAttributes":{},
+			"x":8700,
+			"y":-20,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1c11c6661ef7c274",
+			"type":"text",
+			"text":"Generator",
+			"styleAttributes":{},
+			"x":9140,
+			"y":20,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"aa41646806cbc6f6",
+			"type":"text",
+			"text":"Maintain",
+			"styleAttributes":{},
+			"x":8720,
+			"y":40,
+			"width":260,
+			"height":60
+		},
 		{
 			"id":"3f7b1a2dd9b38936",
 			"type":"text",
 			"text":"reinforce maintenance",
 			"styleAttributes":{},
-			"x":8780,
+			"x":10300,
 			"y":0,
 			"width":260,
 			"height":60
 		},
 		{
-			"id":"0dfed6298cc3bf74",
+			"id":"b24bbb921e79d2d2",
 			"type":"text",
-			"text":"high maintain = low chance break",
+			"text":"garden has state (inspect)",
 			"styleAttributes":{},
-			"x":8780,
-			"y":60,
+			"x":8660,
+			"y":560,
 			"width":260,
 			"height":60
 		},
 		{
-			"id":"464541ce3eec2ae3",
+			"id":"e8db7340daf34180",
 			"type":"text",
-			"text":"garden food++",
+			"text":"garden needs regular maintain",
 			"styleAttributes":{},
-			"x":7180,
-			"y":460,
+			"x":8680,
+			"y":620,
 			"width":260,
 			"height":60
 		},
@@ -471,7 +452,7 @@
 			"type":"text",
 			"text":"if >=maintained, garden damaged -> fine",
 			"styleAttributes":{},
-			"x":7200,
+			"x":8720,
 			"y":740,
 			"width":260,
 			"height":60
@@ -481,8 +462,18 @@
 			"type":"text",
 			"text":"need at least 1 garden >=damaged at any time (fish)",
 			"styleAttributes":{},
-			"x":7220,
+			"x":8740,
 			"y":800,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7fa74349ca9462ea",
+			"type":"text",
+			"text":"Food important",
+			"styleAttributes":{},
+			"x":8640,
+			"y":280,
 			"width":260,
 			"height":60
 		},
@@ -493,18 +484,8 @@
 			"styleAttributes":{
 				"shape":null
 			},
-			"x":7140,
+			"x":8660,
 			"y":340,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"b24bbb921e79d2d2",
-			"type":"text",
-			"text":"garden has state (inspect)",
-			"styleAttributes":{},
-			"x":7140,
-			"y":560,
 			"width":260,
 			"height":60
 		},
@@ -513,28 +494,18 @@
 			"type":"text",
 			"text":"Conserves / Fresh morale",
 			"styleAttributes":{},
-			"x":7160,
+			"x":8680,
 			"y":400,
 			"width":260,
 			"height":60
 		},
 		{
-			"id":"e8db7340daf34180",
+			"id":"464541ce3eec2ae3",
 			"type":"text",
-			"text":"garden needs regular maintain",
+			"text":"garden food++",
 			"styleAttributes":{},
-			"x":7160,
-			"y":620,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"7fa74349ca9462ea",
-			"type":"text",
-			"text":"Food important",
-			"styleAttributes":{},
-			"x":7120,
-			"y":280,
+			"x":8700,
+			"y":460,
 			"width":260,
 			"height":60
 		},
@@ -543,7 +514,7 @@
 			"type":"text",
 			"text":"high maintain = low chance break",
 			"styleAttributes":{},
-			"x":7220,
+			"x":8740,
 			"y":100,
 			"width":260,
 			"height":60
@@ -553,8 +524,138 @@
 			"type":"text",
 			"text":"redundancy",
 			"styleAttributes":{},
-			"x":7240,
+			"x":8760,
 			"y":160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"65de65fa841ce7e2",
+			"type":"text",
+			"text":"Generator First?",
+			"styleAttributes":{},
+			"x":8640,
+			"y":-200,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a9badbbde0bdd312",
+			"type":"text",
+			"text":"Tutorial",
+			"styleAttributes":{},
+			"x":8660,
+			"y":-300,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c957f5bb589dc329",
+			"type":"text",
+			"text":"Heart of Bunker",
+			"styleAttributes":{},
+			"x":8660,
+			"y":-140,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6716fe9b310f8888",
+			"type":"text",
+			"text":"reinforce maintenance",
+			"styleAttributes":{},
+			"x":12120,
+			"y":140,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0b9b1af6cb5e4f1c",
+			"type":"text",
+			"text":"high maintain = low chance break",
+			"styleAttributes":{},
+			"x":12120,
+			"y":200,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6029fb58b97b93e4",
+			"type":"text",
+			"text":"Conserves / Fresh morale",
+			"styleAttributes":{},
+			"x":12120,
+			"y":280,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"043d2860536a3a45",
+			"type":"text",
+			"text":"if the generator is our heart",
+			"styleAttributes":{},
+			"x":10680,
+			"y":260,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b0e24fed11b3a73e",
+			"type":"text",
+			"text":"the farm is our lung",
+			"styleAttributes":{},
+			"x":10680,
+			"y":340,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"153a440f84c20df3",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{"shape":"parallelogram"},
+			"x":11000,
+			"y":100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"557d19fa73e21f24",
+			"type":"text",
+			"text":"need at least 1 garden >=damaged at any time (fish)",
+			"styleAttributes":{},
+			"x":10760,
+			"y":960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d461d3749e9c2665",
+			"type":"text",
+			"text":"if >=maintained, garden damaged -> fine",
+			"styleAttributes":{},
+			"x":10780,
+			"y":740,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0dfed6298cc3bf74",
+			"type":"text",
+			"text":"high maintain = low chance break",
+			"styleAttributes":{},
+			"x":10300,
+			"y":60,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e7aaef1d49ce8dc9",
+			"type":"text",
+			"text":"Conserves / Fresh morale",
+			"styleAttributes":{},
+			"x":10300,
+			"y":140,
 			"width":260,
 			"height":60
 		},
@@ -563,8 +664,8 @@
 			"type":"text",
 			"text":"need at least 1 garden >=damaged at any time (fish)",
 			"styleAttributes":{},
-			"x":8800,
-			"y":340,
+			"x":10300,
+			"y":380,
 			"width":260,
 			"height":60
 		},
@@ -573,31 +674,150 @@
 			"type":"text",
 			"text":"if >=maintained, garden damaged -> fine",
 			"styleAttributes":{},
-			"x":8800,
-			"y":440,
+			"x":10300,
+			"y":500,
 			"width":260,
 			"height":60
 		},
 		{
-			"id":"4b0fd1d350fd5f66",
+			"id":"8e9e03f64faaa8ea",
 			"type":"text",
-			"text":"Unnecessary exposition as options",
+			"text":"First, let's take a look at our generator.\n(inspect)\nthe maintenance will always wear down over time, the longer we neglect it the more work it will take to make it run smoothly again, and the more likely it is to be first damaged and eventually break completely.\n",
 			"styleAttributes":{},
-			"x":8340,
-			"y":-240,
-			"width":260,
-			"height":60,
-			"color":"6"
+			"x":7640,
+			"y":120,
+			"width":440,
+			"height":200
 		},
 		{
-			"id":"e7aaef1d49ce8dc9",
+			"id":"173b2c8fcbe68071",
 			"type":"text",
-			"text":"Conserves / Fresh morale",
+			"text":"each unit is made of two parts, a fish tank and a growing vat\nthe fish feed the plants, the plants clean the water",
 			"styleAttributes":{},
-			"x":8780,
-			"y":140,
-			"width":260,
+			"x":7640,
+			"y":340,
+			"width":440,
+			"height":120
+		},
+		{
+			"id":"fb30a574005792d2",
+			"type":"text",
+			"text":"Every day we eat some of it. And eventually it will run out.\nWe have a lot of food stocked up, but that will run out eventually. Growing our own will stretch our reserves and who knows? We might even manage to become self-sufficient.",
+			"styleAttributes":{},
+			"x":7640,
+			"y":460,
+			"width":440,
+			"height":160
+		},
+		{
+			"id":"9c03df5e930e7afc",
+			"type":"text",
+			"text":"why grow",
+			"styleAttributes":{},
+			"x":7480,
+			"y":460,
+			"width":160,
 			"height":60
+		},
+		{
+			"id":"007057fd6290a145",
+			"type":"text",
+			"text":"J:the farm is where we get all our fresh food.\nJ:but erm- why not just canned?\n",
+			"styleAttributes":{},
+			"x":7640,
+			"y":620,
+			"width":440,
+			"height":80
+		},
+		{
+			"id":"d3bb9ca4fbf09d4f",
+			"type":"text",
+			"text":"we need to maintain that balance.",
+			"styleAttributes":{},
+			"x":7640,
+			"y":720,
+			"width":440,
+			"height":60
+		},
+		{
+			"id":"abeb6ca1df3a9a22",
+			"type":"text",
+			"text":"maintain",
+			"styleAttributes":{},
+			"x":7480,
+			"y":720,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"2d4178f0da33c38d",
+			"type":"text",
+			"text":"two parts",
+			"styleAttributes":{},
+			"x":7480,
+			"y":340,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"fd34474dbd2f6d7e",
+			"type":"text",
+			"text":"if a unit breaks or isn't on, the fish and plants will die.\nsince we can't  go out to get more, if we lose all fish (by all every unit being either off or broken) we lose the farm.\nso at least one unit has to be kept running at all times.",
+			"styleAttributes":{},
+			"x":7640,
+			"y":1000,
+			"width":440,
+			"height":160
+		},
+		{
+			"id":"944ef8f1799b64a2",
+			"type":"text",
+			"text":"this is a living system. so we can't just fasten some bolts and call it fixed. but it will heal if we keep it at least maintained for a while.",
+			"styleAttributes":{},
+			"x":7640,
+			"y":1180,
+			"width":440,
+			"height":120
+		},
+		{
+			"id":"496c90e4bfbb682e",
+			"type":"text",
+			"text":"we also can't turn it off without killing the fish and plants.",
+			"styleAttributes":{},
+			"x":7640,
+			"y":1340,
+			"width":440,
+			"height":60
+		},
+		{
+			"id":"4714c66f39e510fb",
+			"type":"text",
+			"text":"the better shape a unit is in, the more food it will produce.",
+			"styleAttributes":{},
+			"x":7640,
+			"y":1420,
+			"width":440,
+			"height":80
+		},
+		{
+			"id":"2d77dc2d6363cb12",
+			"type":"text",
+			"text":"healing",
+			"styleAttributes":{},
+			"x":7480,
+			"y":1180,
+			"width":160,
+			"height":60
+		},
+		{
+			"id":"6e6d340596a75e63",
+			"type":"text",
+			"text":"aquapnics are complex mini eco-systems.\nthey need to be closely watched and controlled.\n(inspect)",
+			"styleAttributes":{},
+			"x":7640,
+			"y":780,
+			"width":440,
+			"height":120
 		}
 	],
 	"edges":[
@@ -919,6 +1139,131 @@
 			"toNode":"40868d7a5f5684af",
 			"toSide":"right",
 			"toEnd":"none"
+		},
+		{
+			"id":"2ae4506c134afc62",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0dfed6298cc3bf74",
+			"fromSide":"right",
+			"toNode":"0b9b1af6cb5e4f1c",
+			"toSide":"left"
+		},
+		{
+			"id":"049ebda119a6a139",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e7aaef1d49ce8dc9",
+			"fromSide":"right",
+			"toNode":"6029fb58b97b93e4",
+			"toSide":"left"
+		},
+		{
+			"id":"31a3cd9d2eb649b8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3f7b1a2dd9b38936",
+			"fromSide":"right",
+			"toNode":"6716fe9b310f8888",
+			"toSide":"left"
+		},
+		{
+			"id":"48a06c8ea0b5d5ca",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7bdd26d261d7e3cd",
+			"fromSide":"right",
+			"toNode":"557d19fa73e21f24",
+			"toSide":"left"
+		},
+		{
+			"id":"a9d7ab1706c8fd52",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"b9037008fbcad730",
+			"fromSide":"right",
+			"toNode":"d461d3749e9c2665",
+			"toSide":"left"
+		},
+		{
+			"id":"c9e89a5e398588a4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"06c5c7342dd141e2",
+			"fromSide":"left",
+			"toNode":"496c90e4bfbb682e",
+			"toSide":"right"
+		},
+		{
+			"id":"1ad43dcba8bad2da",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"06c5c7342dd141e2",
+			"fromSide":"left",
+			"toNode":"fd34474dbd2f6d7e",
+			"toSide":"right"
+		},
+		{
+			"id":"80a129fbbb0f8d03",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9d28a79e32b76924",
+			"fromSide":"left",
+			"toNode":"944ef8f1799b64a2",
+			"toSide":"right"
+		},
+		{
+			"id":"ce80ac38b4a149e8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e8db7340daf34180",
+			"fromSide":"left",
+			"toNode":"d3bb9ca4fbf09d4f",
+			"toSide":"right"
+		},
+		{
+			"id":"648e400e44bddde0",
+			"styleAttributes":{},
+			"fromNode":"b24bbb921e79d2d2",
+			"fromSide":"left",
+			"toNode":"6e6d340596a75e63",
+			"toSide":"right"
+		},
+		{
+			"id":"4d0c60cd59440568",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"464541ce3eec2ae3",
+			"fromSide":"left",
+			"toNode":"fb30a574005792d2",
+			"toSide":"right"
+		},
+		{
+			"id":"da4121d52a33fee3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"464541ce3eec2ae3",
+			"fromSide":"left",
+			"toNode":"4714c66f39e510fb",
+			"toSide":"right"
+		},
+		{
+			"id":"6be249af0756d20d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"25d63b00356c9b14",
+			"fromSide":"left",
+			"toNode":"fb30a574005792d2",
+			"toSide":"right"
+		},
+		{
+			"id":"ba667ce10e5c255b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"40868d7a5f5684af",
+			"fromSide":"left",
+			"toNode":"007057fd6290a145",
+			"toSide":"right"
 		}
 	],
 	"metadata":{
