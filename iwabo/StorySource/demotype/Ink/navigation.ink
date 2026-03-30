@@ -5,7 +5,15 @@
 {daryl?garden:
     //<-chores_generator
     <-approach(->ue_farm, "garden", false)
+    <-approach(->ue_farm_unit1, "aquaponics unit 1", false)
+    <-approach(->ue_farm_unit2, "aquaponics unit 2", false)
+    <-approach(->ue_farm_unit3, "aquaponics unit 2", false)
+    <-approach(->ue_farm_unit4, "aquaponics unit 2", false)
     <-approach(->ue_generator, "generator", false)
+    <-approach(->ue_generator1, "generator1", false)
+    <-approach(->ue_generator2, "generator2", false)
+    <-approach(->ue_generator3, "generator3", false)
+    <-approach(->ue_generator4, "generator4", false)
     //<-chores_garden
 }
 {daryl?living_room:

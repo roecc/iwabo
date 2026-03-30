@@ -76,13 +76,32 @@ VAR next_day_script = ->empt
 ~action_points = set_ap_per_day
 ~food--
 {debug_log("[food--] [food left: {food}]")}
-~daily_damage(farm)
-~daily_damage(generator)
-~maintain_update(farm, -1)
-~maintain_update(generator, -1)
-~buffer()
+~wear_and_tear()
 //{game?unreal:::buffer # Linetime: {buffer_time}}
 ->main_day
+
+=== function wear_and_tear() ===
+~daily_damage(farm)
+~daily_damage(farm_unit1)
+~daily_damage(farm_unit2)
+~daily_damage(farm_unit3)
+~daily_damage(farm_unit4)
+~daily_damage(generator)
+~daily_damage(generator1)
+~daily_damage(generator2)
+~daily_damage(generator3)
+~daily_damage(generator4)
+~maintain_update(farm, -1)
+~maintain_update(farm_unit1, -1)
+~maintain_update(farm_unit2, -1)
+~maintain_update(farm_unit3, -1)
+~maintain_update(farm_unit4, -1)
+~maintain_update(generator, -1)
+~maintain_update(generator1, -1)
+~maintain_update(generator2, -1)
+~maintain_update(generator3, -1)
+~maintain_update(generator4, -1)
+~buffer()
 
 === function wakeup_gag() ===
 ~temp _txt = "{daryl^name} wake up"

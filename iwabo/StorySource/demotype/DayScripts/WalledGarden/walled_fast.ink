@@ -163,7 +163,7 @@ a long conversation about doing bad things for good reasons, the needs of the ma
 *\ {walled_garden_inspect_3.cull_with_june:now that that's done} we should maintain the tank to try and stabilise it.
     ~ue_general_override = ->wg1_override2
     ~ue_june_override = ->empt
-    ~ue_farm_override = ->wg1_farm_reroute2
+    ~ue_farm_override = ->wg1_farm_reroute2_param
     ->interaction_done
 ->DONE
 
@@ -279,24 +279,27 @@ J:<>
 {june_complains>3:{morale_update(june, -1)}}
 ->DONE
 
-=== wg1_farm_reroute2 ===
-<-options
+=== wg1_farm_reroute2_param ===
+->wg1_farm_reroute2(farm)
+
+=== wg1_farm_reroute2(ref _farm) ===
+<-options(_farm)
 <-ue_done_option
 ->DONE
 
-= options
-{farm !? fine:<-chores_garden.tr_fix_farm}
+= options(ref _farm)
+{farm !? fine:<-chores_garden.tr_fix_farm(_farm)}
     +\ {ap_option("maintain farm", -1)}
         ->wg1_not_enough_fish
     + {farm^repair_state==fine && farm^power_state==on}\ {ap_option("harvest farm", -1)}
         <-wg1_override2.june_complains
-        ->wg1_farm_reroute2
+        ->wg1_farm_reroute2(_farm)
     +\ {ap_option("extend farm", -1)}
         <-wg1_override2.june_complains
-        ->wg1_farm_reroute2
+        ->wg1_farm_reroute2(_farm)
     +[inspect]
         <-wg1_override2.june_complains
-        ->wg1_farm_reroute2
+        ->wg1_farm_reroute2(_farm)
 
 === wg1_farm_reroute3 ===
 <-options

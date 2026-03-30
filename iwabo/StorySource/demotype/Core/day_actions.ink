@@ -1,12 +1,12 @@
 
-=== chores_generator ===
+=== chores_generator(ref _gen) ===
 //add turn on?
 //+\[approach generator\]
--(options)
-    {generator !? fine:<-tr_fix_generator}
+// -(options)
+    {_gen !? fine:<-tr_fix_generator(_gen)}
     +\ {ap_option("maintain generator", -1)}
 	    ~ap_update(-1)
-	    ~maintain_update(generator, 1)
+	    ~maintain_update(_gen, 1)
 	    //nice place to experiment with loop tools of ink
         you fuck around with the machine keeping you alive ignoring its irritated rumbling any time you touch it.
         {npc_set(daryl, working, garden)}
@@ -16,12 +16,12 @@
         {npc_set(daryl, working, garden)}
         ->interaction_done
     +[inspect]
-        the generator is {generator^repair_state} and {generator^maintain_state}.
+        the generator is {_gen^repair_state} and {_gen^maintain_state}.
         ->interaction_done
     //+[done]
     //    ->interaction_done
 
-= tr_fix_generator
+= tr_fix_generator(ref _gen)
 ~temp text = "fix generator"//"option text"
 ~temp trait = tinkering//trait_name"
 ~temp ap_cost = -1
@@ -34,7 +34,7 @@
 ->trait_option(text, trait, mod_val, mod_text, not counter_roll, ap_cost,->pass, ->fail)
 - (pass) //on success
     the generator seems to calm a little
-    ~repair_update(generator, 1)
+    ~repair_update(_gen, 1)
     {npc_set(daryl, working, garden)}
 	->interaction_done
 - (fail) //on fail
@@ -42,20 +42,20 @@
     {npc_set(daryl, working, garden)}
 	->interaction_done
 
-=== chores_garden ===
+=== chores_garden(ref _farm) ===
 //+\[approach garden\]
--(options)
+//-(options)
     //should potentially not even be an action but happen over time if well maintained?
     //offer double maintain for trait roll?
-    {farm !? fine:<-tr_fix_farm}
+    {_farm !? fine:<-tr_fix_farm(_farm)}
     +\ {ap_option("maintain farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         ~ap_update(-1)
         {npc_set(daryl, working, garden)}
         
-        ~maintain_update(farm, 1)
+        ~maintain_update(_farm, 1)
         ->interaction_done
-    + {farm^repair_state==fine && farm^power_state==on}\ {ap_option("harvest farm", -1)}
+    + {_farm^repair_state==fine && _farm^power_state==on}\ {ap_option("harvest farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         //should really check if farm was on last cycle, too?
         ~ap_update(-1)
@@ -69,12 +69,12 @@
         {npc_set(daryl, working, garden)}
         ->interaction_done
     +[inspect]
-        the farm is {farm^repair_state} and {farm^maintain_state}.
+        the farm is {_farm^repair_state} and {_farm^maintain_state}.
         ->interaction_done
     //+[done]
     //    ->interaction_done
 
-= tr_fix_farm
+= tr_fix_farm(ref _farm)
 ~temp text = "fix farm"//"option text"
 ~temp trait = tinkering//trait_name"
 ~temp ap_cost = -1
@@ -87,7 +87,7 @@
 ->trait_option(text, trait, mod_val, mod_text, not counter_roll, ap_cost,->pass, ->fail)
 - (pass) //on success
     the fish seems to be eating again.
-    ~repair_update(farm, 1)
+    ~repair_update(_farm, 1)
     {npc_set(daryl, working, garden)}
 	->interaction_done
 - (fail) //on fail

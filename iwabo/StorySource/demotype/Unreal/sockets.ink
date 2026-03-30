@@ -70,8 +70,35 @@ VAR ue_generator_div = ->ERROR
 === ue_generator ===
 ~location_update(daryl, garden)
 {ue_general_override!=->empt:->ue_general_override}
-<-chores_generator.options
-//->ue_sys.s_generator
+<-chores_generator(generator)
+<-ue_done_option
+->DONE
+
+=== ue_generator1 ===
+~location_update(daryl, garden)
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_generator(generator1)
+<-ue_done_option
+->DONE
+
+=== ue_generator2 ===
+~location_update(daryl, garden)
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_generator(generator2)
+<-ue_done_option
+->DONE
+
+=== ue_generator3 ===
+~location_update(daryl, garden)
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_generator(generator3)
+<-ue_done_option
+->DONE
+
+=== ue_generator4 ===
+~location_update(daryl, garden)
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_generator(generator4)
 <-ue_done_option
 ->DONE
 
@@ -79,21 +106,52 @@ VAR ue_generator_div = ->ERROR
 ~location_update(daryl, garden)
 {ue_farm_override!=->empt:->ue_farm_override}
 {ue_general_override!=->empt:->ue_general_override}
-<-chores_garden.options
-// ->ue_sys.s_farm
+<-chores_garden(farm)
+<-ue_done_option
+->DONE
+
+=== ue_farm_unit1 ===
+~location_update(daryl, garden)
+//{ue_farm_override!=->empt:->ue_farm_override}
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_garden(farm_unit1)
+<-ue_done_option
+->DONE
+
+=== ue_farm_unit2 ===
+~location_update(daryl, garden)
+//{ue_farm_override!=->empt:->ue_farm_override}
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_garden(farm_unit2)
+<-ue_done_option
+->DONE
+
+=== ue_farm_unit3 ===
+~location_update(daryl, garden)
+//{ue_farm_override!=->empt:->ue_farm_override}
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_garden(farm_unit3)
+<-ue_done_option
+->DONE
+
+=== ue_farm_unit4 ===
+~location_update(daryl, garden)
+//{ue_farm_override!=->empt:->ue_farm_override}
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_garden(farm_unit4)
 <-ue_done_option
 ->DONE
 
 
-=== ue_sys ===
+// === ue_sys ===
 
-= s_farm
-<-chores_garden.options
-->DONE
+// = s_farm
+// <-chores_garden.options
+// ->DONE
 
-= s_generator
-<-chores_generator.options
-->DONE
+// = s_generator
+// <-chores_generator.options
+// ->DONE
 
 
 === ue_bed ===

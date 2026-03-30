@@ -1,7 +1,7 @@
 //NPC
 LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
 LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping), (waiting), (working), (exercising)
-LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics)
+LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics), (Generator1), (Generator2), (Generator3), (Generator4), (Aquaponics1), (Aquaponics2), (Aquaponics3), (Aquaponics4)
 
 VAR daryl = (name.you, location.parent_bedroom, action.sleeping, morale.50m)
 VAR mary_ann = (name.Mary_Ann, location.living_room, action.none, morale.40m, skill.40m)
@@ -16,6 +16,16 @@ LIST power_state = (off = 0), (on = 1)
 
 VAR generator = (name.Generator, broken, garden, maintained, on)
 VAR farm = (name.Aquaponics, fine, garden, maintained, on)
+
+VAR generator1 = (name.Generator1, fine, garden, maintained, on)
+VAR generator2 = (name.Generator2, fine, garden, maintained, on)
+VAR generator3 = (name.Generator3, fine, garden, maintained, on)
+VAR generator4 = (name.Generator4, fine, garden, maintained, on)
+
+VAR farm_unit1 = (name.Aquaponics1, fine, garden, maintained, on)
+VAR farm_unit2 = (name.Aquaponics2, broken, garden, maintained, on)
+VAR farm_unit3 = (name.Aquaponics3, fine, garden, maintained, on)
+VAR farm_unit4 = (name.Aquaponics4, fine, garden, maintained, off)
 
 VAR food = 40
 

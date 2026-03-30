@@ -41,7 +41,7 @@ And why it's so important you learn to {brutality:pull your weight.|help out.}
 The better we maintain them, the less likely they are to break down over time.
 
 *Let's go Inspect out that aquaponics unit over there.
-    ~ue_farm_override = ->wg1_farm_reroute
+    ~ue_farm_override = ->wg1_farm_reroute_param
     ~ue_general_override = ->wg1_override
     ->interaction_done
 -
@@ -57,22 +57,26 @@ J:<>
 {june_complains>3:{morale_update(june, -1)}}
 ->DONE
 
-=== wg1_farm_reroute ===
-<-options
+//only here to act as a stored parameter
+=== wg1_farm_reroute_param ===
+->wg1_farm_reroute(farm)
+
+=== wg1_farm_reroute(ref _farm) ===
+<-options(_farm)
 <-ue_done_option
 ->DONE
 
-= options
-{farm !? fine:<-chores_garden.tr_fix_farm}
+= options(ref _farm)
+{farm !? fine:<-chores_garden.tr_fix_farm(_farm)}
     +\ {ap_option("maintain farm", -1)}
         <-wg1_override.june_complains
-        ->wg1_farm_reroute
+        ->wg1_farm_reroute(_farm)
     + {farm^repair_state==fine && farm^power_state==on}\ {ap_option("harvest farm", -1)}
         <-wg1_override.june_complains
-        ->wg1_farm_reroute
+        ->wg1_farm_reroute(_farm)
     +\ {ap_option("extend farm", -1)}
         <-wg1_override.june_complains
-        ->wg1_farm_reroute
+        ->wg1_farm_reroute(_farm)
     +[inspect]
         the farm is {farm^repair_state} and {farm^maintain_state}.
         ->wg1_scratch2
