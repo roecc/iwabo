@@ -44,7 +44,7 @@ VAR test_pwr = p4
 ~SEED_RANDOM(256011)
 ~conf_init()
 
-IWABO DEMOTYPE DRAFT v0.5.260227.138
+IWABO DEMOTYPE DRAFT v0.5.260227.140
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options

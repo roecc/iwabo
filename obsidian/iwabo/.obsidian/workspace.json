@@ -11,14 +11,17 @@
             "id": "bc61fa70cf6a1ee6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "2026-03-31.md",
-                "mode": "source",
-                "source": false
+                "file": "ds_wilting_garden_combined.canvas",
+                "viewState": {
+                  "x": 9640,
+                  "y": 310,
+                  "zoom": -0.07170146535418892
+                }
               },
-              "icon": "lucide-file",
-              "title": "2026-03-31"
+              "icon": "lucide-layout-dashboard",
+              "title": "ds_wilting_garden_combined"
             }
           },
           {
@@ -199,8 +202,8 @@
   },
   "active": "bc61fa70cf6a1ee6",
   "lastOpenFiles": [
-    "ds_wilting_garden_combined.canvas",
     "2026-03-31.md",
+    "ds_wilting_garden_combined.canvas",
     "DEMOTYPE_TUTORIAL Generator.md",
     "DEMOTYPE_TUTORIAL Aquaponics.md",
     "dt_d2.canvas",

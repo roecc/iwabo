@@ -2,7 +2,6 @@
 LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
 LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping), (waiting), (working), (exercising)
 LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics), (Generator1), (Generator2), (Generator3), (Generator4), (Aquaponics1), (Aquaponics2), (Aquaponics3), (Aquaponics4)
-LIST class = (Generator), (Farm), (NPC)
 
 VAR daryl = (name.you, location.parent_bedroom, action.sleeping, morale.50m)
 VAR mary_ann = (name.Mary_Ann, location.living_room, action.none, morale.40m, skill.40m)
@@ -18,19 +17,19 @@ LIST power_state = (off = 0), (on = 1)
 //the amount of power each generator produces when fine
 LIST pwr_cost = (n4 = -4), (n3 = -3), (n2 = -2), (n1 = -1), (p0 = 0), (p1 = 1), (p2 = 2), (p3 = 3), (p4 = 4)
 
-VAR generator = (name.Generator, class.Generator, fine, garden, maintained, on)
-VAR farm = (name.Aquaponics, class.Farm, fine, garden, maintained, on)
+VAR generator = (name.Generator, fine, garden, maintained, on)
+VAR farm = (name.Aquaponics, fine, garden, maintained, on)
 
 //when adding here, also add pwr_check
-VAR generator1 = (name.Generator1, class.Generator, fine, garden, maintained, on)
-VAR generator2 = (name.Generator2, class.Generator, fine, garden, maintained, on)
-VAR generator3 = (name.Generator3, class.Generator, fine, garden, maintained, off)
-VAR generator4 = (name.Generator4, class.Generator, fine, garden, maintained, off)
+VAR generator1 = (name.Generator1, fine, garden, maintained, on)
+VAR generator2 = (name.Generator2, fine, garden, maintained, on)
+VAR generator3 = (name.Generator3, fine, garden, maintained, off)
+VAR generator4 = (name.Generator4, fine, garden, maintained, off)
 
-VAR farm_unit1 = (name.Aquaponics1, class.Farm, fine, garden, maintained, on)
-VAR farm_unit2 = (name.Aquaponics2, class.Farm, fine, garden, maintained, on)
-VAR farm_unit3 = (name.Aquaponics3, class.Farm, fine, garden, maintained, on)
-VAR farm_unit4 = (name.Aquaponics4, class.Farm, fine, garden, maintained, on)
+VAR farm_unit1 = (name.Aquaponics1, fine, garden, maintained, on)
+VAR farm_unit2 = (name.Aquaponics2, fine, garden, maintained, on)
+VAR farm_unit3 = (name.Aquaponics3, fine, garden, maintained, on)
+VAR farm_unit4 = (name.Aquaponics4, fine, garden, maintained, on)
 
 VAR food = 40
 
