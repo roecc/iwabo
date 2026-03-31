@@ -49,6 +49,7 @@ IWABO DEMOTYPE DRAFT v0.5.260227.130
 //->tst_options
 +[start]
 -
+
 // ->next_day(->ds_walled_garden)
 ->next_day(->ds_1)
 //->end_story

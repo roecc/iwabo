@@ -3,19 +3,13 @@
 //ad a "location" divert target here?
 <-go_to
 {daryl?garden:
-    //<-chores_generator
-    <-approach(->ue_farm, "garden", false)
+    //<-approach(->ue_farm, "garden", false)
     <-approach(->farm_cluster, "farm cluster", true)
-    // <-approach(->ue_farm_unit1, "aquaponics unit 1", false)
-    // <-approach(->ue_farm_unit2, "aquaponics unit 2", false)
-    // <-approach(->ue_farm_unit3, "aquaponics unit 2", false)
-    // <-approach(->ue_farm_unit4, "aquaponics unit 2", false)
+    
+    //<-approach(->ue_generator, "generator", false)
     <-approach(->generator_cluster, "generator cluster", true)
-    <-approach(->ue_generator, "generator", false)
-    // <-approach(->ue_generator1, "generator1", false)
-    // <-approach(->ue_generator2, "generator2", false)
-    // <-approach(->ue_generator3, "generator3", false)
-    // <-approach(->ue_generator4, "generator4", false)
+
+    <-approach(->ue_breakerbox, "breaker box", false)
 }
 {daryl?living_room:
     <-chores_livingroom

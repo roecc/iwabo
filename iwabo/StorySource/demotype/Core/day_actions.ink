@@ -1,4 +1,3 @@
-
 === chores_generator(ref _gen) ===
 //add turn on?
 //+\[approach generator\]
@@ -95,6 +94,42 @@
     {npc_set(daryl, working, garden)}
 	->interaction_done
 
+
+=== chores_breakerbox ===
+Generators: {generator1^power_state},   {generator2^power_state}, {generator3^power_state}, {generator4^power_state}
+Farm Units: {farm_unit1^power_state},   {farm_unit2^power_state}, {farm_unit3^power_state}, {farm_unit4^power_state}
++switch
+    -(breaker_switch)
+    ->switches()
+    
+->DONE
+
+= switches()
+<-switch(generator1)
+<-switch(generator2)
+<-switch(generator3)
+<-switch(generator4)
+<-switch(farm_unit1)
+<-switch(farm_unit2)
+<-switch(farm_unit3)
+<-switch(farm_unit4)
+<-done
+
+->DONE
+
+= switch(ref _target)
+++\ turn {_target^name} {_target?on:off|on}
+    ~temp _inverse = power_state.off
+    {_target?off:
+        ~_inverse=power_state.on
+    }
+    ~power_update(_target, _inverse)
+    //this really should be done in the check power loop
+    {_target^power_state!=_inverse: not enough power.}
+    ->chores_breakerbox.breaker_switch
+= done
++\[done\]
+    ->interaction_done
 
 === chores_livingroom ===
 // +\ {ap_option("watch TV", -1)}

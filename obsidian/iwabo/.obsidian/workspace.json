@@ -11,17 +11,14 @@
             "id": "bc61fa70cf6a1ee6",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "ds_wilting_garden_combined.canvas",
-                "viewState": {
-                  "x": 9637.880861158748,
-                  "y": 1939.1093143309577,
-                  "zoom": -0.4358320431568125
-                }
+                "file": "2026-03-31.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "ds_wilting_garden_combined"
+              "icon": "lucide-file",
+              "title": "2026-03-31"
             }
           },
           {
@@ -202,10 +199,11 @@
   },
   "active": "bc61fa70cf6a1ee6",
   "lastOpenFiles": [
+    "ds_wilting_garden_combined.canvas",
+    "2026-03-31.md",
     "DEMOTYPE_TUTORIAL Generator.md",
     "DEMOTYPE_TUTORIAL Aquaponics.md",
     "dt_d2.canvas",
-    "ds_wilting_garden_combined.canvas",
     "dt_d1 1 1.canvas",
     "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Trait System/Trait System.md",
@@ -238,7 +236,6 @@
     "Themes/God of the Gaps.md",
     "Themes/Conservatism.md",
     "Themes/Conspiracy Theorists.md",
-    "Themes/No Coincidences.md",
     "OutGame/Research/InkPot/Documentation/VariableExistence.png",
     "OutGame/Research/InkPot/Documentation/UIEventGraph.png",
     "OutGame/Research/InkPot/Documentation/TagsGTFunctions.png",

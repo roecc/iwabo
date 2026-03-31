@@ -17,21 +17,23 @@ LIST power_state = (off = 0), (on = 1)
 
 //the amount of power each generator produces when fine
 VAR gen_default_pwr = 4
-VAR gen_total_pwr = -1
+VAR gen_total_pwr = 0
 VAR gen_free_pwr = -1
+LIST pwr_cost = (n4 = -4), (n3 = -3), (n2 = -2), (n1 = -1), (p0 = 0), (p1 = 1), (p2 = 2), (p3 = 3), (p4 = 4)
 
-VAR generator = (name.Generator, class.Generator, broken, garden, maintained, on)
+VAR generator = (name.Generator, class.Generator, fine, garden, maintained, on)
 VAR farm = (name.Aquaponics, class.Farm, fine, garden, maintained, on)
 
-VAR generator1 = (name.Generator1, class.Generator, fine, garden, maintained, on)
-VAR generator2 = (name.Generator2, class.Generator, fine, garden, maintained, on)
-VAR generator3 = (name.Generator3, class.Generator, fine, garden, maintained, on)
-VAR generator4 = (name.Generator4, class.Generator, fine, garden, maintained, on)
+//when adding here, also add pwr_check
+VAR generator1 = (name.Generator1, class.Generator, fine, garden, maintained, on, pwr_cost.p4)
+VAR generator2 = (name.Generator2, class.Generator, fine, garden, maintained, on, pwr_cost.p4)
+VAR generator3 = (name.Generator3, class.Generator, fine, garden, maintained, off, pwr_cost.p4)
+VAR generator4 = (name.Generator4, class.Generator, fine, garden, maintained, off, pwr_cost.p4)
 
-VAR farm_unit1 = (name.Aquaponics1, class.Farm, fine, garden, maintained, on)
-VAR farm_unit2 = (name.Aquaponics2, class.Farm, broken, garden, maintained, on)
-VAR farm_unit3 = (name.Aquaponics3, class.Farm, fine, garden, maintained, on)
-VAR farm_unit4 = (name.Aquaponics4, class.Farm, fine, garden, maintained, off)
+VAR farm_unit1 = (name.Aquaponics1, class.Farm, fine, garden, maintained, on, pwr_cost.n3)
+VAR farm_unit2 = (name.Aquaponics2, class.Farm, fine, garden, maintained, on, pwr_cost.n3)
+VAR farm_unit3 = (name.Aquaponics3, class.Farm, fine, garden, maintained, on, pwr_cost.n3)
+VAR farm_unit4 = (name.Aquaponics4, class.Farm, fine, garden, maintained, on, pwr_cost.n3)
 
 VAR food = 40
 
@@ -74,13 +76,13 @@ VAR food = 40
         }
     }
 }
-{generator?broken:
-    ~power_update(generator, power_state.off)
-    ~power_update(farm, power_state.off)
--else:
-    ~power_update(generator, power_state.on)
-    ~power_update(farm, power_state.on)
-}
+// {generator?broken:
+//     ~power_update(generator, power_state.off)
+//     ~power_update(farm, power_state.off)
+// -else:
+//     ~power_update(generator, power_state.on)
+//     ~power_update(farm, power_state.on)
+// }
 
 === function maintain_update(ref target, value) ===
 ~temp _debug = 1
@@ -98,17 +100,49 @@ VAR food = 40
     }
 }
 
-=== function power_update(ref target, value) ===
-~temp _debug = 1
+//this will turn something random or the same thing off as soon as something is turned on, should really prevent you from turning on maybe?
+=== function power_update(ref _target, value) ===
+~power_update_loop(_target, value)
 
-{target!?value:
-    ~target -= target^power_state
-    ~target += value
+=== function power_update_loop(ref _target, value) ===
+~temp _debug = 1
+//if not already on/off?
+{_target!?value:
+    ~_target -= _target^power_state
+    ~_target += value
     {_debug: 
-        ~debug_log("[{target^name} power state is now {target^power_state}]")
+        ~debug_log("[{_target^name} power state is now {_target^power_state}]")
     }
 }
+~power_check()
 
+=== function power_check() ===
+~temp _total = 0
+~power_add_if_on(generator1, _total)
+~power_add_if_on(generator2, _total)
+~power_add_if_on(generator3, _total)
+~power_add_if_on(generator4, _total)
+//reverse for shutdown order
+~power_add_if_on(farm_unit1, _total)
+~power_add_if_on(farm_unit2, _total)
+~power_add_if_on(farm_unit3, _total)
+~power_add_if_on(farm_unit4, _total)
+//total power in system = {_total}
+
+=== function power_add_if_on (ref _target, ref _total) ===
+{_target^pwr_cost&&_target^power_state:
+    ~temp _cost = LIST_VALUE(_target^pwr_cost)
+    //power in system = {_total}
+    {_target?power_state.on:
+        {_total+_cost<0:
+            ~power_update_loop(_target, power_state.off)
+        -else:
+            ~_total += _cost
+        }
+    }
+-else:
+    ~debug_log("ERROR: power_add_if_on() => _target not pwr")
+}
 
 //LOCATIONS
 === enter_room ===

@@ -100,6 +100,7 @@ VAR next_day_script = ->empt
 ~maintain_update(generator2, -1)
 ~maintain_update(generator3, -1)
 ~maintain_update(generator4, -1)
+~power_check()
 ~buffer()
 
 === function wakeup_gag() ===

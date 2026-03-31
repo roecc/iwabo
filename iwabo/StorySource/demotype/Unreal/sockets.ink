@@ -67,6 +67,13 @@ VAR ue_generator_div = ->ERROR
 //     ->interaction_done
 ->DONE
 
+=== ue_breakerbox ===
+~location_update(daryl, garden)
+{ue_general_override!=->empt:->ue_general_override}
+<-chores_breakerbox
+<-ue_done_option
+->DONE
+
 === ue_generator ===
 ~location_update(daryl, garden)
 {ue_general_override!=->empt:->ue_general_override}
