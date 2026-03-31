@@ -1,11 +1,16 @@
-=== chores_generator(ref _gen) ===
+=== chores_generator(ref _target) ===
 //add turn on?
 //+\[approach generator\]
 // -(options)
-    {_gen !? fine:<-tr_fix_generator(_gen)}
+    <-chores_inspect(_target)
+    +\ turn {_target^name} {_target?on:off|on}
+        ~chores_switch_power(_target)
+        //really should just divert back, but since the socket adds the done, it locks you in.
+        ->interaction_done
+    {_target !? fine:<-tr_fix_generator(_target)}
     +\ {ap_option("maintain generator", -1)}
 	    ~ap_update(-1)
-	    ~maintain_update(_gen, 1)
+	    ~maintain_update(_target, 1)
 	    //nice place to experiment with loop tools of ink
         you fuck around with the machine keeping you alive ignoring its irritated rumbling any time you touch it.
         {npc_set(daryl, working, garden)}
@@ -14,11 +19,12 @@
         ~ap_update(-1)
         {npc_set(daryl, working, garden)}
         ->interaction_done
-    +[inspect]
-        the generator is {_gen^repair_state} and {_gen^maintain_state}.
-        ->interaction_done
+    // +[inspect]
+    //     the generator is {_gen^repair_state} and {_gen^maintain_state}.
+    //     ->interaction_done
     //+[done]
     //    ->interaction_done
+
 
 = tr_fix_generator(ref _gen)
 ~temp text = "fix generator"//"option text"
@@ -41,20 +47,25 @@
     {npc_set(daryl, working, garden)}
 	->interaction_done
 
-=== chores_garden(ref _farm) ===
+=== chores_garden(ref _target) ===
 //+\[approach garden\]
 //-(options)
     //should potentially not even be an action but happen over time if well maintained?
     //offer double maintain for trait roll?
-    {_farm !? fine:<-tr_fix_farm(_farm)}
+    <-chores_inspect(_target)
+    +\ turn {_target^name} {_target?on:off|on}
+        ~chores_switch_power(_target)
+        ->interaction_done
+        //->chores_generator(_target)
+    {_target !? fine:<-tr_fix_farm(_target)}
     +\ {ap_option("maintain farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         ~ap_update(-1)
         {npc_set(daryl, working, garden)}
         
-        ~maintain_update(_farm, 1)
+        ~maintain_update(_target, 1)
         ->interaction_done
-    + {_farm^repair_state==fine && _farm^power_state==on}\ {ap_option("harvest farm", -1)}
+    + {_target^repair_state==fine && _target^power_state==on}\ {ap_option("harvest farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         //should really check if farm was on last cycle, too?
         ~ap_update(-1)
@@ -67,9 +78,10 @@
         
         {npc_set(daryl, working, garden)}
         ->interaction_done
-    +[inspect]
-        the farm is {_farm^repair_state} and {_farm^maintain_state}.
-        ->interaction_done
+    // +[inspect]
+    //     {_farm^name} is {_farm^repair_state} and {_farm^maintain_state}.
+    //     ->interaction_done
+        
     //+[done]
     //    ->interaction_done
 
@@ -118,18 +130,22 @@ Farm Units: {farm_unit1^power_state},   {farm_unit2^power_state}, {farm_unit3^po
 ->DONE
 
 = switch(ref _target)
-++\ turn {_target^name} {_target?on:off|on}
-    ~temp _inverse = power_state.off
-    {_target?off:
-        ~_inverse=power_state.on
-    }
-    ~power_update(_target, _inverse)
-    //this really should be done in the check power loop
-    {_target^power_state!=_inverse: not enough power.}
+// ++\ turn {_target^name} {_target?on:off|on}
+//     ~temp _inverse = power_state.off
+//     {_target?off:
+//         ~_inverse=power_state.on
+//     }
+//     ~power_update(_target, _inverse)
+//     //this really should be done in the check power loop
+//     {_target^power_state!=_inverse: not enough power.}
++\ turn {_target^name} {_target?on:off|on}
+    ~chores_switch_power(_target)
     ->chores_breakerbox.breaker_switch
+    
 = done
-+\[done\]
++[\[done\]]
     ->interaction_done
+
 
 === chores_livingroom ===
 // +\ {ap_option("watch TV", -1)}
@@ -175,6 +191,21 @@ Farm Units: {farm_unit1^power_state},   {farm_unit2^power_state}, {farm_unit3^po
     {npc_set(daryl, exercising, living_room)}
     ->interaction_done
 
+=== chores_inspect(_target) ===
++[inspect]
+    {_target^name} is {_target^power_state}, {_target^repair_state} and {_target^maintain_state}.
+    ->interaction_done
+->DONE
+
+=== function chores_switch_power(ref _target) ===
+~temp _inverse = power_state.off
+{_target?off:
+    ~_inverse=power_state.on
+}
+~power_update(_target, _inverse)
+//this really should be done in the check power loop
+{_target^power_state!=_inverse: not enough power.}
+~buffer()
 
 === interaction_done ===
 {game^mode:

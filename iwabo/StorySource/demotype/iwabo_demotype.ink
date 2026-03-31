@@ -24,6 +24,8 @@ INCLUDE DayScripts/WalledGarden/walled_fast.ink
 INCLUDE DayScripts/WiltingGarden/wilting_fast.ink
 INCLUDE DayScripts/wilting_garden.ink
 INCLUDE DayScripts/Tutorial/tut_draft1.ink
+INCLUDE Core/config.ink
+
 
 
 
@@ -31,17 +33,8 @@ INCLUDE DayScripts/Tutorial/tut_draft1.ink
 
 //INCLUDE Unreal/external.ink
 
-
-LIST mode = (ink), (unreal)
-VAR game = (mode.ink)
-VAR debug = true
-VAR buffer_time = 0.01
-
-VAR debug_message = ""  
-
-VAR set_ap_per_day = 5
-
 ~SEED_RANDOM(256011)
+~conf_init()
 
 IWABO DEMOTYPE DRAFT v0.5.260227.130
 //->dt_d1_a1

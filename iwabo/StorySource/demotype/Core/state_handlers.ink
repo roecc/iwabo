@@ -16,24 +16,21 @@ LIST maintain_state = (forgotten), (neglected), (maintained), (well_maintained),
 LIST power_state = (off = 0), (on = 1)
 
 //the amount of power each generator produces when fine
-VAR gen_default_pwr = 4
-VAR gen_total_pwr = 0
-VAR gen_free_pwr = -1
 LIST pwr_cost = (n4 = -4), (n3 = -3), (n2 = -2), (n1 = -1), (p0 = 0), (p1 = 1), (p2 = 2), (p3 = 3), (p4 = 4)
 
 VAR generator = (name.Generator, class.Generator, fine, garden, maintained, on)
 VAR farm = (name.Aquaponics, class.Farm, fine, garden, maintained, on)
 
 //when adding here, also add pwr_check
-VAR generator1 = (name.Generator1, class.Generator, fine, garden, maintained, on, pwr_cost.p4)
-VAR generator2 = (name.Generator2, class.Generator, fine, garden, maintained, on, pwr_cost.p4)
-VAR generator3 = (name.Generator3, class.Generator, fine, garden, maintained, off, pwr_cost.p4)
-VAR generator4 = (name.Generator4, class.Generator, fine, garden, maintained, off, pwr_cost.p4)
+VAR generator1 = (name.Generator1, class.Generator, fine, garden, maintained, on)
+VAR generator2 = (name.Generator2, class.Generator, fine, garden, maintained, on)
+VAR generator3 = (name.Generator3, class.Generator, fine, garden, maintained, off)
+VAR generator4 = (name.Generator4, class.Generator, fine, garden, maintained, off)
 
-VAR farm_unit1 = (name.Aquaponics1, class.Farm, fine, garden, maintained, on, pwr_cost.n3)
-VAR farm_unit2 = (name.Aquaponics2, class.Farm, fine, garden, maintained, on, pwr_cost.n3)
-VAR farm_unit3 = (name.Aquaponics3, class.Farm, fine, garden, maintained, on, pwr_cost.n3)
-VAR farm_unit4 = (name.Aquaponics4, class.Farm, fine, garden, maintained, on, pwr_cost.n3)
+VAR farm_unit1 = (name.Aquaponics1, class.Farm, fine, garden, maintained, on)
+VAR farm_unit2 = (name.Aquaponics2, class.Farm, fine, garden, maintained, on)
+VAR farm_unit3 = (name.Aquaponics3, class.Farm, fine, garden, maintained, on)
+VAR farm_unit4 = (name.Aquaponics4, class.Farm, fine, garden, maintained, on)
 
 VAR food = 40
 
