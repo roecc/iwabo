@@ -14,7 +14,6 @@ VAR ap_updated = -1
 
 = a1
 {ap_updated!=action_points:
-    daryl should be up now
     ~npc_update(daryl, action, action.none)
 
     {debug_log("[day script: ds test]")}

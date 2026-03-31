@@ -31,7 +31,6 @@ VAR next_day_script = ->empt
 
 
 === function random_day() ===
-::random day
 {~{set_day_scr(->ds_1)}|{set_day_scr(->ds_june_sick)}}
 
 === function set_day_scr(->scr) ===

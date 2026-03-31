@@ -5,10 +5,12 @@
 {daryl?garden:
     //<-chores_generator
     <-approach(->ue_farm, "garden", false)
+    <-approach(->farm_cluster, "farm cluster", true)
     // <-approach(->ue_farm_unit1, "aquaponics unit 1", false)
     // <-approach(->ue_farm_unit2, "aquaponics unit 2", false)
     // <-approach(->ue_farm_unit3, "aquaponics unit 2", false)
     // <-approach(->ue_farm_unit4, "aquaponics unit 2", false)
+    <-approach(->generator_cluster, "generator cluster", true)
     <-approach(->ue_generator, "generator", false)
     // <-approach(->ue_generator1, "generator1", false)
     // <-approach(->ue_generator2, "generator2", false)
@@ -28,7 +30,7 @@
     //     <-ue_bed
     //     ->DONE
 }
-//get special day actions from day_script
+//get special day actions from day_script //is this necessary? 260331
 ->day_script->//->story_opts->
 +{daryl^location==mary_ann^location}\[approach Mary Ann\]
     <-ue_mary_ann
