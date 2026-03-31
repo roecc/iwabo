@@ -44,7 +44,7 @@ VAR food = 40
 }
 
 === function npc_update(ref npc, list, new_state) ===
-~temp _debug = 0
+~temp _debug = 1
 {
     -_debug:
         ~temp old_state = npc^list

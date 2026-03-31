@@ -126,7 +126,7 @@ VAR next_day_script = ->empt
     -working:
          ~_txt += " on the floor, wrench in hand"
 }
- ~_txt += "."
+~_txt += "."
 ~return _txt
 
 === function daily_damage(ref target) ===

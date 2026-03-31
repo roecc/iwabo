@@ -1,12 +1,4 @@
-LIST mode = (ink), (unreal)
-VAR game = (mode.ink)
-VAR debug = true
-VAR buffer_time = 0.01
 
-VAR debug_message = ""  
-VAR set_ap_per_day = 5
-
-VAR test_pwr = p4
 
 === function conf_init () ===
 ~temp _gen_pwr_cost = p4
@@ -14,7 +6,7 @@ VAR test_pwr = p4
 
 ~conf_gens(_gen_pwr_cost)
 ~conf_farms(_farm_pwr_cost)
-
+~buffer()
 
 === function conf_gens (_pwr_cost) ===
 ~generator1 += _pwr_cost
