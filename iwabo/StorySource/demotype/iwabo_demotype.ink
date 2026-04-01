@@ -25,6 +25,8 @@ INCLUDE DayScripts/WiltingGarden/wilting_fast.ink
 INCLUDE DayScripts/wilting_garden.ink
 INCLUDE DayScripts/Tutorial/tut_draft1.ink
 INCLUDE Core/config.ink
+INCLUDE Core/list_functions.ink
+
 
 
 LIST mode = (ink), (unreal)
@@ -54,6 +56,7 @@ IWABO DEMOTYPE DRAFT v0.5.260227.140
 
 {farm_unit1^life_time}
 ~ListStep(farm_unit1, life_time, -1275895)
+~ListSetMin(farm_unit1, repair_state)
 {farm_unit1^life_time}
 // ->next_day(->ds_walled_garden)
 ->next_day(->ds_1)
