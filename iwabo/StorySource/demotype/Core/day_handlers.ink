@@ -98,7 +98,6 @@ VAR next_day_script = ->empt
 {_debug:
     ~debug_log("{_target^name} life time: {_target^life_time}")
 }
-~debug_log("{_target^name} life time: {_target^life_time}")
 
 === function wear_and_tear() ===
 ~daily_damage(farm)
@@ -157,8 +156,9 @@ VAR next_day_script = ->empt
 ~temp d6 = roll_d(6)
 {d6>LIST_VALUE(target^maintain_state): {repair_update(target, -1)}}
 {_debug: {debug_log("[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}]")}}
-{target?sys_type.Farm&&target?power_state.off:
-    //see if can use generalised functions
-    ~repair_update(target, -1000)
-    ~ListSetMin(target, life_time)
+{target?sys_type.Farm:
+    -target?power_state.off:
+        //see if can use generalised functions
+        ~repair_update(target, -1000)
+        ~ListSetMin(target, life_time)
 }

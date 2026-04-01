@@ -39,7 +39,8 @@ VAR food = 40
 
 //NPC
 === function npc_set (ref npc, new_act, new_loc)
-~temp _debug = 1
+~temp _debug = debug_flags?d_npc
+
 ~npc_update(npc, action, new_act)
 ~npc_update(npc, location, new_loc)
 {_debug: 
@@ -47,7 +48,7 @@ VAR food = 40
 }
 
 === function npc_update(ref npc, list, new_state) ===
-~temp _debug = 1
+~temp _debug = debug_flags?d_npc
 {
     -_debug:
         ~temp old_state = npc^list
@@ -64,7 +65,7 @@ VAR food = 40
 //SYSTEMS
 //generalizing this throws: Line 250: Tried to divert to a target from a variable, but the variable (list_type) didn't contain a divert target, it contained 'broken, damaged, fine'.
 === function repair_update(ref target, value) === 
-~temp _debug = 1
+~temp _debug = debug_flags?d_repair
 
 ~temp old_state = target^repair_state
 {LIST_VALUE(target^repair_state)+value>=1:
@@ -83,6 +84,11 @@ VAR food = 40
 {target^repair_state==repair_state.broken:
     ~power_update(target, power_state.off)
 }
+// {target?sys_type.Farm:
+//     -target?repair_state.damaged:
+//         ~ListSetTo(target, life_time, LIST_VALUE(target^life_time))
+//         {debug_flags?d_life_time: {debug_log("{target^name} lifetime halved to {target^life_time}")}}
+// }
 ~power_check()
 //~pwr_cost_update(target)
 
@@ -112,7 +118,7 @@ VAR food = 40
 // }
 
 === function maintain_update(ref target, value) ===
-~temp _debug = 1
+~temp _debug = debug_flags?d_maintain
 
 {LIST_VALUE(target^maintain_state)+value>=1:
     {LIST_VALUE(target^maintain_state)+value<=LIST_VALUE(LIST_MAX(maintain_state)):
@@ -147,7 +153,7 @@ VAR food = 40
 ~power_update_loop(_target, value)
 
 === function power_update_loop(ref _target, value) ===
-~temp _debug = 1
+~temp _debug = debug_flags?d_power
 //if not already on/off?
 {_target!?value:
     ~_target -= _target^power_state
@@ -159,6 +165,8 @@ VAR food = 40
 ~power_check()
 
 === function power_check() ===
+~temp _debug = debug_flags?d_power
+
 ~temp _total = 0
 ~power_add_if_on(generator1, _total)
 ~power_add_if_on(generator2, _total)
@@ -169,7 +177,7 @@ VAR food = 40
 ~power_add_if_on(farm_unit2, _total)
 ~power_add_if_on(farm_unit3, _total)
 ~power_add_if_on(farm_unit4, _total)
-//total power in system = {_total}
+{_debug:{debug_log("total power in system = {_total}")}}
 
 === function power_add_if_on (ref _target, ref _total) ===
 {_target^pwr_cost&&_target^power_state:
@@ -217,7 +225,7 @@ VAR food = 40
 
 //could be generalized //could be knot, diverting to ->enter_room-> if daryl
 === function location_update(ref npc, new_location)
-~temp _debug = 0
+~temp _debug = debug_flags?d_npc
 {
     -_debug:
         ~temp old_loc = npc^location

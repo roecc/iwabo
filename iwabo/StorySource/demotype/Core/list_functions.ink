@@ -24,3 +24,11 @@
 === function ListSetMin (ref _target, _list) ===
 ~_target -= _target^_list
 ~_target += ItemByValue(_list, LIST_VALUE(LIST_MIN(_list)))
+
+=== function ListSetTo (ref _target, _list, _val) ===
+~_target -= _target^_list
+~_target += ItemByValue(_list, _val)
+
+// === function ListUpdate (ref _target, _list, _val) ===
+// ~_target -= _target^_list
+// ~_target += _val
