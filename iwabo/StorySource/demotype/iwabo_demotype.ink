@@ -51,6 +51,10 @@ IWABO DEMOTYPE DRAFT v0.5.260227.140
 +[start]
 -
 {ItemByValue(name, -10)}
+
+{farm_unit1^life_time}
+~ListStep(farm_unit1, life_time, -1275895)
+{farm_unit1^life_time}
 // ->next_day(->ds_walled_garden)
 ->next_day(->ds_1)
 //->end_story

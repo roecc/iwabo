@@ -75,7 +75,11 @@ VAR next_day_script = ->empt
 ~action_points = set_ap_per_day
 ~food--
 {debug_log("[food--] [food left: {food}]")}
+
+//farm growth
+
 ~wear_and_tear()
+
 //{game?unreal:::buffer # Linetime: {buffer_time}}
 ->main_day
 

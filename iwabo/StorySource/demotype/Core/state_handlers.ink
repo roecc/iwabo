@@ -18,6 +18,8 @@ LIST power_state = (off = 0), (on = 1)
 LIST pwr_cost = (n6 = -6), (n5 = -5), (n4 = -4), (n3 = -3), (n2 = -2), (n1 = -1), (p0 = 0), (p1 = 1), (p2 = 2), (p3 = 3), (p4 = 4), (p5 = 5), (p6 = 6)
 //instead of class (DO NOT USE CLASS)
 LIST sys_type = (Generator), (Farm)
+//time since seed/harvest
+LIST life_time = (0d = 0), (1d = 1), (2d = 2), (3d = 3), (4d = 4), (5d = 5)
 
 VAR generator = (name.Generator, sys_type.Generator, fine, garden, maintained, on)
 VAR farm = (name.Aquaponics, fine, garden, maintained, on)
@@ -28,7 +30,7 @@ VAR generator2 = (name.Generator2, sys_type.Generator, fine, garden, maintained,
 VAR generator3 = (name.Generator3, sys_type.Generator, fine, garden, maintained, on)
 VAR generator4 = (name.Generator4, sys_type.Generator, fine, garden, maintained, on)
 
-VAR farm_unit1 = (name.Aquaponics1, sys_type.Farm, fine, garden, loved, on)
+VAR farm_unit1 = (name.Aquaponics1, sys_type.Farm, fine, garden, loved, on, life_time.2d)
 VAR farm_unit2 = (name.Aquaponics2, sys_type.Farm, fine, garden, loved, on)
 VAR farm_unit3 = (name.Aquaponics3, sys_type.Farm, fine, garden, loved, on)
 VAR farm_unit4 = (name.Aquaponics4, sys_type.Farm, fine, garden, loved, on)
@@ -230,3 +232,17 @@ total power in system = {_total}
 //test with mixList!
 === function ItemByValue(_list, _value) ===
 ~return LIST_RANGE(LIST_ALL(_list), _value, _value)
+
+=== function ListStep (ref _target, _list, _step) ===
+~temp old_state = _target^_list
+~temp _new_val = LIST_VALUE(_target^_list)+_step
+
+{ //overflow handling
+-_new_val<LIST_VALUE(LIST_MIN(_list)):
+    ~_new_val = LIST_VALUE(LIST_MIN(_list))
+-_new_val>LIST_VALUE(LIST_MAX(_list)):
+    ~_new_val = LIST_VALUE(LIST_MAX(_list))
+}
+~_target -= old_state
+~_target += ItemByValue(_list, _new_val)
+//~_target += _list(_new_val)
