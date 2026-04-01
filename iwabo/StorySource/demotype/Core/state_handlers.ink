@@ -25,13 +25,13 @@ VAR farm = (name.Aquaponics, fine, garden, maintained, on)
 //when adding here, also add pwr_check
 VAR generator1 = (name.Generator1, sys_type.Generator, fine, garden, maintained, on)
 VAR generator2 = (name.Generator2, sys_type.Generator, fine, garden, maintained, on)
-VAR generator3 = (name.Generator3, sys_type.Generator, fine, garden, maintained, off)
-VAR generator4 = (name.Generator4, sys_type.Generator, fine, garden, maintained, off)
+VAR generator3 = (name.Generator3, sys_type.Generator, fine, garden, maintained, on)
+VAR generator4 = (name.Generator4, sys_type.Generator, fine, garden, maintained, on)
 
-VAR farm_unit1 = (name.Aquaponics1, sys_type.Farm, fine, garden, maintained, on)
-VAR farm_unit2 = (name.Aquaponics2, sys_type.Farm, fine, garden, maintained, on)
-VAR farm_unit3 = (name.Aquaponics3, sys_type.Farm, fine, garden, maintained, on)
-VAR farm_unit4 = (name.Aquaponics4, sys_type.Farm, fine, garden, maintained, on)
+VAR farm_unit1 = (name.Aquaponics1, sys_type.Farm, fine, garden, loved, on)
+VAR farm_unit2 = (name.Aquaponics2, sys_type.Farm, fine, garden, loved, on)
+VAR farm_unit3 = (name.Aquaponics3, sys_type.Farm, fine, garden, loved, on)
+VAR farm_unit4 = (name.Aquaponics4, sys_type.Farm, fine, garden, loved, on)
 
 VAR food = 40
 
@@ -64,19 +64,24 @@ VAR food = 40
 === function repair_update(ref target, value) === 
 ~temp _debug = 1
 
+~temp old_state = target^repair_state
 {LIST_VALUE(target^repair_state)+value>=1:
     {LIST_VALUE(target^repair_state)+value<=LIST_VALUE(LIST_MAX(repair_state)):
-        ~temp old_state = target^repair_state
         ~target -= old_state
         ~target += repair_state(LIST_VALUE(old_state)+value)
         {_debug:
             ~debug_log("[{target^name} repair state is now {target^repair_state}]")
         }
     }
+-else:
+    ~old_state = target^repair_state
+    ~target -= old_state
+    ~target += repair_state.broken
 }
 {target^repair_state==repair_state.broken:
     ~power_update(target, power_state.off)
 }
+~power_check()
 //~pwr_cost_update(target)
 
 

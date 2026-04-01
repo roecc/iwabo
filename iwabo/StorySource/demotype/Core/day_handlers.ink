@@ -135,3 +135,6 @@ VAR next_day_script = ->empt
 ~temp d6 = roll_d(6)
 {d6>LIST_VALUE(target^maintain_state): {repair_update(target, -1)}}
 {_debug: {debug_log("[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}]")}}
+{target?sys_type.Farm&&target?power_state.off:
+    ~repair_update(target, -1000)
+}

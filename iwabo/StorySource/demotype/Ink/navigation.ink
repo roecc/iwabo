@@ -82,8 +82,8 @@
 === farm_cluster ===
 <-approach(->ue_farm_unit1, "aquaponics unit 1", false)
 <-approach(->ue_farm_unit2, "aquaponics unit 2", false)
-<-approach(->ue_farm_unit3, "aquaponics unit 2", false)
-<-approach(->ue_farm_unit4, "aquaponics unit 2", false)
+<-approach(->ue_farm_unit3, "aquaponics unit 3", false)
+<-approach(->ue_farm_unit4, "aquaponics unit 4", false)
 ->DONE
 
 === generator_cluster ===
