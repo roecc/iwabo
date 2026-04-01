@@ -1,8 +1,10 @@
-
+VAR conf_gen_pwr_cost_fine = pwr_cost.p4
+VAR conf_gen_pwr_cost_damaged = pwr_cost.p2
+VAR conf_farm_pwr_cost = pwr_cost.n2
 
 === function conf_init () ===
-~temp _gen_pwr_cost = p4
-~temp _farm_pwr_cost = n4
+~temp _gen_pwr_cost = conf_gen_pwr_cost_fine
+~temp _farm_pwr_cost = conf_farm_pwr_cost
 
 ~conf_gens(_gen_pwr_cost)
 ~conf_farms(_farm_pwr_cost)

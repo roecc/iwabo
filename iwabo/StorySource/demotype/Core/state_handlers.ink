@@ -74,6 +74,28 @@ VAR food = 40
         }
     }
 }
+{target^repair_state==repair_state.broken:
+    ~power_update(target, power_state.off)
+}
+~pwr_cost_update(target)
+
+
+//this works, however its very hard coded and will create problems with upgrades.
+=== function pwr_cost_update(ref _target) ===
+~temp _old_cost = _target^pwr_cost
+{_target^sys_type==sys_type.Generator:
+    {_target^repair_state:
+        -fine:
+            ~_target -= _old_cost
+            ~_target += conf_gen_pwr_cost_fine
+        -damaged:
+            ~_target -= _old_cost
+            ~_target += conf_gen_pwr_cost_damaged
+        //-broken: (turns it off anyway)
+    }
+}
+
+//doesnt need to be run here since they only break on next_day? or do we add crit fail breaking the generator?
 // {generator?broken:
 //     ~power_update(generator, power_state.off)
 //     ~power_update(farm, power_state.off)
@@ -96,6 +118,21 @@ VAR food = 40
         -else:
             ~trait_update(tinkering, 1)
     }
+}
+
+
+=== function power_switch(ref _target) ===
+~temp _inverse = power_state.off
+{_target?off:
+    ~_inverse=power_state.on
+}
+{_inverse==power_state.on && _target^repair_state==broken:
+    {_target^name} is broken.
+-else:
+    ~power_update(_target, _inverse)
+    //this really should be done in the check power loop
+    {_target^power_state!=_inverse: not enough power.}
+    ~buffer()
 }
 
 //this will turn something random or the same thing off as soon as something is turned on, should really prevent you from turning on maybe?
@@ -125,7 +162,7 @@ VAR food = 40
 ~power_add_if_on(farm_unit2, _total)
 ~power_add_if_on(farm_unit3, _total)
 ~power_add_if_on(farm_unit4, _total)
-//total power in system = {_total}
+total power in system = {_total}
 
 === function power_add_if_on (ref _target, ref _total) ===
 {_target^pwr_cost&&_target^power_state:
@@ -182,5 +219,6 @@ VAR food = 40
 }
 //->enter_room->
 
+//test with mixList!
 === function ItemByValue(_list, _value) ===
 ~return LIST_RANGE(LIST_ALL(_list), _value, _value)
