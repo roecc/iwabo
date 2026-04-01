@@ -77,11 +77,28 @@ VAR next_day_script = ->empt
 {debug_log("[food--] [food left: {food}]")}
 
 //farm growth
-
+//~day_farm_grow()
 ~wear_and_tear()
 
 //{game?unreal:::buffer # Linetime: {buffer_time}}
 ->main_day
+
+=== function day_farm_grow () ===
+~check_life(farm_unit1)
+~check_life(farm_unit2)
+~check_life(farm_unit3)
+~check_life(farm_unit4)
+
+=== function check_life(ref _target) ===
+~temp _debug = debug_flags?d_life_time
+
+{_target!?repair_state.broken && _target?power_state.on:
+    ~ListStep(_target, life_time, 1)
+}
+{_debug:
+    ~debug_log("{_target^name} life time: {_target^life_time}")
+}
+~debug_log("{_target^name} life time: {_target^life_time}")
 
 === function wear_and_tear() ===
 ~daily_damage(farm)
@@ -105,6 +122,7 @@ VAR next_day_script = ->empt
 ~maintain_update(generator3, -1)
 ~maintain_update(generator4, -1)
 ~power_check()
+~day_farm_grow()
 ~buffer()
 
 === function wakeup_gag() ===
@@ -140,5 +158,7 @@ VAR next_day_script = ->empt
 {d6>LIST_VALUE(target^maintain_state): {repair_update(target, -1)}}
 {_debug: {debug_log("[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}]")}}
 {target?sys_type.Farm&&target?power_state.off:
+    //see if can use generalised functions
     ~repair_update(target, -1000)
+    ~ListSetMin(target, life_time)
 }

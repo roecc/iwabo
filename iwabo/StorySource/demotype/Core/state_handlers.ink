@@ -169,7 +169,7 @@ VAR food = 40
 ~power_add_if_on(farm_unit2, _total)
 ~power_add_if_on(farm_unit3, _total)
 ~power_add_if_on(farm_unit4, _total)
-total power in system = {_total}
+//total power in system = {_total}
 
 === function power_add_if_on (ref _target, ref _total) ===
 {_target^pwr_cost&&_target^power_state:

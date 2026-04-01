@@ -1,6 +1,8 @@
 VAR conf_gen_pwr_cost_fine = pwr_cost.p4
 VAR conf_farm_pwr_cost = pwr_cost.n2
 
+LIST debug_flags = (d_life_time)
+
 === function conf_init () ===
 ~temp _gen_pwr_cost = conf_gen_pwr_cost_fine
 ~temp _farm_pwr_cost = conf_farm_pwr_cost
