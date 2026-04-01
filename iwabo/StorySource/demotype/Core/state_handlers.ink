@@ -15,7 +15,7 @@ LIST maintain_state = (forgotten), (neglected), (maintained), (well_maintained),
 LIST power_state = (off = 0), (on = 1)
 
 //the amount of power each generator produces when fine
-LIST pwr_cost = (n4 = -4), (n3 = -3), (n2 = -2), (n1 = -1), (p0 = 0), (p1 = 1), (p2 = 2), (p3 = 3), (p4 = 4)
+LIST pwr_cost = (n6 = -6), (n5 = -5), (n4 = -4), (n3 = -3), (n2 = -2), (n1 = -1), (p0 = 0), (p1 = 1), (p2 = 2), (p3 = 3), (p4 = 4), (p5 = 5), (p6 = 6)
 //instead of class (DO NOT USE CLASS)
 LIST sys_type = (Generator), (Farm)
 
@@ -77,23 +77,23 @@ VAR food = 40
 {target^repair_state==repair_state.broken:
     ~power_update(target, power_state.off)
 }
-~pwr_cost_update(target)
+//~pwr_cost_update(target)
 
 
 //this works, however its very hard coded and will create problems with upgrades.
-=== function pwr_cost_update(ref _target) ===
-~temp _old_cost = _target^pwr_cost
-{_target^sys_type==sys_type.Generator:
-    {_target^repair_state:
-        -fine:
-            ~_target -= _old_cost
-            ~_target += conf_gen_pwr_cost_fine
-        -damaged:
-            ~_target -= _old_cost
-            ~_target += conf_gen_pwr_cost_damaged
-        //-broken: (turns it off anyway)
-    }
-}
+// === function pwr_cost_update(ref _target) ===
+// ~temp _old_cost = _target^pwr_cost
+// {_target^sys_type==sys_type.Generator:
+//     {_target^repair_state:
+//         -fine:
+//             ~_target -= _old_cost
+//             ~_target += conf_gen_pwr_cost_fine
+//         -damaged:
+//             ~_target -= _old_cost
+//             ~_target += conf_gen_pwr_cost_damaged
+//         //-broken: (turns it off anyway)
+//     }
+// }
 
 //doesnt need to be run here since they only break on next_day? or do we add crit fail breaking the generator?
 // {generator?broken:
@@ -172,6 +172,9 @@ total power in system = {_total}
         {_total+_cost<0:
             ~power_update_loop(_target, power_state.off)
         -else:
+            {_target?repair_state.damaged && _target?sys_type.Generator:
+                ~_cost = _cost/2
+            }
             ~_total += _cost
         }
     }
