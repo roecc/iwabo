@@ -21,19 +21,19 @@ LIST sys_type = (Generator), (Farm)
 //time since seed/harvest
 LIST life_time = (0d = 0), (1d = 1), (2d = 2), (3d = 3), (4d = 4), (5d = 5)
 
-VAR generator = (name.Generator, sys_type.Generator, fine, garden, maintained, on)
-VAR farm = (name.Aquaponics, fine, garden, maintained, on)
+// VAR generator = (name.Generator, sys_type.Generator, fine, garden, maintained, on)
+// VAR farm = (name.Aquaponics, fine, garden, maintained, on)
 
 //when adding here, also add pwr_check
-VAR generator1 = (name.Generator1, sys_type.Generator, fine, garden, maintained, on)
-VAR generator2 = (name.Generator2, sys_type.Generator, fine, garden, maintained, on)
-VAR generator3 = (name.Generator3, sys_type.Generator, fine, garden, maintained, on)
-VAR generator4 = (name.Generator4, sys_type.Generator, fine, garden, maintained, on)
+VAR generator1 = (name.Generator1, sys_type.Generator, garden, loved, on)
+VAR generator2 = (name.Generator2, sys_type.Generator, garden, loved, on)
+VAR generator3 = (name.Generator3, sys_type.Generator, garden, loved, on)
+VAR generator4 = (name.Generator4, sys_type.Generator, garden, loved, on)
 
-VAR farm_unit1 = (name.Aquaponics1, sys_type.Farm, fine, garden, loved, on, life_time.2d)
-VAR farm_unit2 = (name.Aquaponics2, sys_type.Farm, fine, garden, loved, on)
-VAR farm_unit3 = (name.Aquaponics3, sys_type.Farm, fine, garden, loved, on)
-VAR farm_unit4 = (name.Aquaponics4, sys_type.Farm, fine, garden, loved, on)
+VAR farm_unit1 = (name.Aquaponics1, sys_type.Farm, fine, garden, loved, on, life_time.0d)
+VAR farm_unit2 = (name.Aquaponics2, sys_type.Farm, fine, garden, loved, on, life_time.0d)
+VAR farm_unit3 = (name.Aquaponics3, sys_type.Farm, fine, garden, loved, on, life_time.0d)
+VAR farm_unit4 = (name.Aquaponics4, sys_type.Farm, fine, garden, loved, on, life_time.0d)
 
 VAR food = 40
 
@@ -66,7 +66,6 @@ VAR food = 40
 //generalizing this throws: Line 250: Tried to divert to a target from a variable, but the variable (list_type) didn't contain a divert target, it contained 'broken, damaged, fine'.
 === function repair_update(ref target, value) === 
 ~temp _debug = debug_flags?d_repair
-
 ~temp old_state = target^repair_state
 {LIST_VALUE(target^repair_state)+value>=1:
     {LIST_VALUE(target^repair_state)+value<=LIST_VALUE(LIST_MAX(repair_state)):

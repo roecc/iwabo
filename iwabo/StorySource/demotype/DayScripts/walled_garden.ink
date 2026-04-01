@@ -109,7 +109,8 @@ J:You promised you would let me help you with the garden today!
 *Another day?
     J:But-
     <-stern_look
-    **{generator?broken}I wish I could but if I don't figure something out for the generator it could mean big trouble for us.
+    //{generator?broken}
+    **I wish I could but if I don't figure something out for the generator it could mean big trouble for us.
         ->june_disappointed
     ** -> //good place for conditionals if something urgent is going on
     --

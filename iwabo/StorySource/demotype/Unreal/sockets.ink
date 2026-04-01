@@ -74,12 +74,12 @@ VAR ue_generator_div = ->ERROR
 <-ue_done_option
 ->DONE
 
-=== ue_generator ===
-~location_update(daryl, garden)
-{ue_general_override!=->empt:->ue_general_override}
-<-chores_generator(generator)
-<-ue_done_option
-->DONE
+// === ue_generator ===
+// ~location_update(daryl, garden)
+// {ue_general_override!=->empt:->ue_general_override}
+// <-chores_generator(generator)
+// <-ue_done_option
+// ->DONE
 
 === ue_generator1 ===
 ~location_update(daryl, garden)
@@ -109,13 +109,13 @@ VAR ue_generator_div = ->ERROR
 <-ue_done_option
 ->DONE
 
-=== ue_farm ===
-~location_update(daryl, garden)
-{ue_farm_override!=->empt:->ue_farm_override}
-{ue_general_override!=->empt:->ue_general_override}
-<-chores_garden(farm)
-<-ue_done_option
-->DONE
+// === ue_farm ===
+// ~location_update(daryl, garden)
+// {ue_farm_override!=->empt:->ue_farm_override}
+// {ue_general_override!=->empt:->ue_general_override}
+// <-chores_garden(farm)
+// <-ue_done_option
+// ->DONE
 
 === ue_farm_unit1 ===
 ~location_update(daryl, garden)

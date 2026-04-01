@@ -100,22 +100,22 @@ VAR next_day_script = ->empt
 }
 
 === function wear_and_tear() ===
-~daily_damage(farm)
+//~daily_damage(farm)
 ~daily_damage(farm_unit1)
 ~daily_damage(farm_unit2)
 ~daily_damage(farm_unit3)
 ~daily_damage(farm_unit4)
-~daily_damage(generator)
+//~daily_damage(generator)
 ~daily_damage(generator1)
 ~daily_damage(generator2)
 ~daily_damage(generator3)
 ~daily_damage(generator4)
-~maintain_update(farm, -1)
+//~maintain_update(farm, -1)
 ~maintain_update(farm_unit1, -1)
 ~maintain_update(farm_unit2, -1)
 ~maintain_update(farm_unit3, -1)
 ~maintain_update(farm_unit4, -1)
-~maintain_update(generator, -1)
+//~maintain_update(generator, -1)
 ~maintain_update(generator1, -1)
 ~maintain_update(generator2, -1)
 ~maintain_update(generator3, -1)
@@ -151,14 +151,16 @@ VAR next_day_script = ->empt
 ~return _txt
 
 === function daily_damage(ref target) ===
-~temp _debug = 0
-
+~temp _debug = debug_flags?d_daily_damage
+// generator1 is {generator1^repair_state}
 ~temp d6 = roll_d(6)
-{d6>LIST_VALUE(target^maintain_state): {repair_update(target, -1)}}
-{_debug: {debug_log("[rolled: {d6}\], \[list value {target^maintain_state}: {LIST_VALUE(target^maintain_state)}]")}}
-{target?sys_type.Farm:
-    -target?power_state.off:
+~temp _failed = d6>LIST_VALUE(target^maintain_state)
+{_failed: {repair_update(target, -1)}}
+{_debug: {debug_log("[{_failed:failed! |passed! }rolled {d6} against \"{target^maintain_state}\": {LIST_VALUE(target^maintain_state)}]")}}
+{target?sys_type.Farm && target?power_state.off:
+        {target^name}
         //see if can use generalised functions
         ~repair_update(target, -1000)
         ~ListSetMin(target, life_time)
 }
+// generator1 is {generator1^repair_state}
