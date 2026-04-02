@@ -29,6 +29,9 @@
 ~_target -= _target^_list
 ~_target += ItemByValue(_list, _val)
 
+=== function ListValueGreater (_target, _compare)
+~return LIST_VALUE(_target) > LIST_VALUE(_compare)
+
 // === function ListUpdate (ref _target, _list, _val) ===
 // ~_target -= _target^_list
 // ~_target += _val

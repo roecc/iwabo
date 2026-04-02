@@ -57,7 +57,7 @@
         ~power_switch(_target)
         ->interaction_done
         //->chores_generator(_target)
-    {_target !? fine:<-tr_fix_farm(_target)}
+    //{_target !? fine:<-tr_fix_farm(_target)}
     +\ {ap_option("maintain farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         ~ap_update(-1)
@@ -65,12 +65,13 @@
         
         ~maintain_update(_target, 1)
         ->interaction_done
-    + {_target^repair_state==fine && _target^power_state==on}\ {ap_option("harvest farm", -1)}
+    // + {_target^repair_state==fine && _target^power_state==on}\ {ap_option("harvest farm", -1)}
+    + {b_can_farm(_target)}\ {ap_option("harvest farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         //should really check if farm was on last cycle, too?
         ~ap_update(-1)
         {npc_set(daryl, working, garden)}
-        
+        ~ListSetMin(_target, life_time)
         ~food++
         ->interaction_done
     +\ {ap_option("extend farm", -1)}

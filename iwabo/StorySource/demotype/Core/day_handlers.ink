@@ -91,38 +91,66 @@ VAR next_day_script = ->empt
 
 === function check_life(ref _target) ===
 ~temp _debug = debug_flags?d_life_time
+~temp _is_maintained = ListValueGreater(_target^maintain_state, maintain_state.maintained) //LIST_VALUE(_target^maintain_state) > LIST_VALUE(maintain_state.maintained)
 
-{_target!?repair_state.broken && _target?power_state.on:
+{_target!?repair_state.broken && _target?power_state.on && _is_maintained:
     ~ListStep(_target, life_time, 1)
+    {ListValueGreater(_target^life_time, conf_farm_grow_time):
+        {_target^repair_state:
+        -damaged:
+            ~repair_update(_target, 1)
+        -fine:
+            {_target^name} can farm.
+        }
+    }
 }
 {_debug:
     ~debug_log("{_target^name} life time: {_target^life_time}")
 }
 
+// === function daily_grow (ref _target) ===
+// ~temp _is_maintained = ListValueGreater(_target^maintain_state, maintain_state.maintained) //LIST_VALUE(_target^maintain_state) > LIST_VALUE(maintain_state.maintained)
+
+// {_target?power_state.on && _target?sys_type.Farm && _is_maintained:
+//     ~ListStep(_target, life_time, 1)
+// }
+
+// {ListValueGreater(_target^life_time, conf_farm_grow_time):
+//     farm growing!
+// }
+
 === function wear_and_tear() ===
-//~daily_damage(farm)
-~daily_damage(farm_unit1)
-~daily_damage(farm_unit2)
-~daily_damage(farm_unit3)
-~daily_damage(farm_unit4)
-//~daily_damage(generator)
-~daily_damage(generator1)
-~daily_damage(generator2)
-~daily_damage(generator3)
-~daily_damage(generator4)
-//~maintain_update(farm, -1)
-~maintain_update(farm_unit1, -1)
-~maintain_update(farm_unit2, -1)
-~maintain_update(farm_unit3, -1)
-~maintain_update(farm_unit4, -1)
-//~maintain_update(generator, -1)
-~maintain_update(generator1, -1)
-~maintain_update(generator2, -1)
-~maintain_update(generator3, -1)
-~maintain_update(generator4, -1)
-~power_check()
-~day_farm_grow()
-~buffer()
+ ~day_farm_grow()
+ 
+{debug_options!?do_disable_wear_and_tear:
+//moved up bc player should have chance to fix before death
+
+    //~daily_damage(farm)
+    ~daily_damage(farm_unit1)
+    ~daily_damage(farm_unit2)
+    ~daily_damage(farm_unit3)
+    ~daily_damage(farm_unit4)
+    //~daily_damage(generator)
+    ~daily_damage(generator1)
+    ~daily_damage(generator2)
+    ~daily_damage(generator3)
+    ~daily_damage(generator4)
+    //~maintain_update(farm, -1)
+    ~daily_wear(farm_unit1)
+    ~daily_wear(farm_unit2)
+    ~daily_wear(farm_unit3)
+    ~daily_wear(farm_unit4)
+    //~maintain_update(generator, -1)
+    ~daily_wear(generator1)
+    ~daily_wear(generator2)
+    ~daily_wear(generator3)
+    ~daily_wear(generator4)
+    ~power_check()
+    //~day_farm_grow()
+    ~buffer()
+-else:
+    ~debug_log("wear and tear disabled")
+}
 
 === function wakeup_gag() ===
 ~temp _txt = "{daryl^name} wake up"
@@ -150,13 +178,33 @@ VAR next_day_script = ->empt
 ~_txt += "."
 ~return _txt
 
+
+
+
+//for maintain--
+=== function daily_wear (ref _target) ===
+//bc this is called after damage, it will skip wear if broken
+{_target?power_state.on:
+    ~maintain_update(_target, -1)
+}
+
+
 === function daily_damage(ref target) ===
 ~temp _debug = debug_flags?d_daily_damage
-// generator1 is {generator1^repair_state}
-~temp d6 = roll_d(6)
-~temp _failed = d6>LIST_VALUE(target^maintain_state)
-{_failed: {repair_update(target, -1)}}
-{_debug: {debug_log("[{_failed:failed! |passed! }rolled {d6} against \"{target^maintain_state}\": {LIST_VALUE(target^maintain_state)}]")}}
+
+//basically, add mod against d6, if sum>6 grow?
+//~temp _grow_mod //no.
+
+{target?power_state.on:
+    ~temp d6 = roll_d(6)
+    ~temp _failed = d6>LIST_VALUE(target^maintain_state)
+    {_failed: {repair_update(target, -1)}}
+    {_debug && debug_flags?d_rolls: {debug_log("[{_failed:failed! |passed! }rolled {d6} against \"{target^maintain_state}\": {LIST_VALUE(target^maintain_state)}]")}}
+-else:
+    {_debug: {debug_log("skipped daily damage because {target^name} is {target^power_state}")}}
+}
+
+//kill farms if off/broken
 {target?sys_type.Farm && target?power_state.off:
         {target^name}
         //see if can use generalised functions

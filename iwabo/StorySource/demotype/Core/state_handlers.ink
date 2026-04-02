@@ -1,7 +1,7 @@
 //NPC
 LIST location = (none), (living_room), (garden), (parent_bedroom), (aprils_room), (junes_room), (pantry)
 LIST action = (none), (playing_guitar), (watching_tv), (cleaning), (cooking), (eating), (reading), (drawing), (sleeping), (waiting), (working), (exercising)
-LIST name = (you = -10), (Mary_Ann), (April), (June), (Generator), (Aquaponics), (Generator1), (Generator2), (Generator3), (Generator4), (Aquaponics1), (Aquaponics2), (Aquaponics3), (Aquaponics4)
+LIST name = (you), (Mary_Ann), (April), (June), (Generator), (Aquaponics), (Generator1), (Generator2), (Generator3), (Generator4), (Aquaponics1), (Aquaponics2), (Aquaponics3), (Aquaponics4)
 
 VAR daryl = (name.you, location.parent_bedroom, action.sleeping, morale.50m)
 VAR mary_ann = (name.Mary_Ann, location.living_room, action.none, morale.40m, skill.40m)
@@ -30,10 +30,10 @@ VAR generator2 = (name.Generator2, sys_type.Generator, garden, loved, on)
 VAR generator3 = (name.Generator3, sys_type.Generator, garden, loved, on)
 VAR generator4 = (name.Generator4, sys_type.Generator, garden, loved, on)
 
-VAR farm_unit1 = (name.Aquaponics1, sys_type.Farm, fine, garden, loved, on, life_time.0d)
-VAR farm_unit2 = (name.Aquaponics2, sys_type.Farm, fine, garden, loved, on, life_time.0d)
-VAR farm_unit3 = (name.Aquaponics3, sys_type.Farm, fine, garden, loved, on, life_time.0d)
-VAR farm_unit4 = (name.Aquaponics4, sys_type.Farm, fine, garden, loved, on, life_time.0d)
+VAR farm_unit1 = (name.Aquaponics1, sys_type.Farm, garden, loved, on, life_time.0d)
+VAR farm_unit2 = (name.Aquaponics2, sys_type.Farm, garden, loved, on, life_time.0d)
+VAR farm_unit3 = (name.Aquaponics3, sys_type.Farm, garden, loved, on, life_time.0d)
+VAR farm_unit4 = (name.Aquaponics4, sys_type.Farm, garden, loved, on, life_time.0d)
 
 VAR food = 40
 
@@ -83,6 +83,9 @@ VAR food = 40
 {target^repair_state==repair_state.broken:
     ~power_update(target, power_state.off)
 }
+{target?sys_type.Farm:
+    ~ListSetMin(target, life_time)
+}
 // {target?sys_type.Farm:
 //     -target?repair_state.damaged:
 //         ~ListSetTo(target, life_time, LIST_VALUE(target^life_time))
@@ -128,6 +131,7 @@ VAR food = 40
             ~debug_log("[{target^name} maintain state is now {target^maintain_state}]")
         }
         -else:
+            //needs to be moved elsewhere
             ~trait_update(tinkering, 1)
     }
 }
@@ -236,3 +240,5 @@ VAR food = 40
 }
 //->enter_room->
 
+=== function b_can_farm (_target) ===
+~ return _target?repair_state.fine && ListValueGreater(_target^life_time, conf_farm_grow_time)

@@ -53,7 +53,6 @@ IWABO DEMOTYPE DRAFT v0.5.260227.140
 //->tst_options
 +[start]
 -
-{ItemByValue(name, -10)}
 
 // ->next_day(->ds_walled_garden)
 ->next_day(->ds_1)
