@@ -47,7 +47,7 @@ VAR test_pwr = p4
 ~conf_init()
 
 
-IWABO DEMOTYPE DRAFT v0.5.260227.140
+IWABO DEMOTYPE DRAFT v0.5.260227.142
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options

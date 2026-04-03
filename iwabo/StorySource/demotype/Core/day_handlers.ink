@@ -100,7 +100,7 @@ VAR next_day_script = ->empt
         -damaged:
             ~repair_update(_target, 1)
         -fine:
-            {_target^name} can farm.
+            {_debug:{debug_log("{_target^name} can farm.")}}
         }
     }
 }
@@ -206,7 +206,7 @@ VAR next_day_script = ->empt
 
 //kill farms if off/broken
 {target?sys_type.Farm && target?power_state.off:
-        {target^name}
+        //{target^name}
         //see if can use generalised functions
         ~repair_update(target, -1000)
         ~ListSetMin(target, life_time)
