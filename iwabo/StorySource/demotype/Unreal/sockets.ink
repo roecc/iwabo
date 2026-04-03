@@ -201,6 +201,7 @@ ue_farm_unit1_override
 
 === ue_bed ===
 ~location_update(daryl, parent_bedroom)
+{ue_general_override!=->empt:->ue_general_override}
 your bed taunts you with its plushed coushions and inviting promise of warmth.
 <-chores_bedroom
 <-ue_done_option
@@ -208,6 +209,7 @@ your bed taunts you with its plushed coushions and inviting promise of warmth.
 
 === ue_tv ===
 ~location_update(daryl, living_room)
+{ue_general_override!=->empt:->ue_general_override}
 <-chores_tv
 <-ue_done_option
 ->DONE
@@ -215,28 +217,33 @@ your bed taunts you with its plushed coushions and inviting promise of warmth.
     
 === ue_kitchen ===
 ~location_update(daryl, living_room)
+{ue_general_override!=->empt:->ue_general_override}
 <-chores_kitchen
 <-ue_done_option
 ->DONE
 
 === ue_kitchen_table
 ~location_update(daryl, living_room)
+{ue_general_override!=->empt:->ue_general_override}
 //sit/getup
 <-ue_done_option
 ->DONE
 
 === ue_gym ===
 ~location_update(daryl, living_room)
+{ue_general_override!=->empt:->ue_general_override}
 <-chores_gym
 <-ue_done_option
 ->DONE
 
 === ue_pantry ===
+{ue_general_override!=->empt:->ue_general_override}
 <-ue_done_option
 ->DONE
 
 === ue_junes_bed ===
 ~location_update(daryl, junes_room)
+{ue_general_override!=->empt:->ue_general_override}
 some text
 <-ue_done_option
 ->DONE

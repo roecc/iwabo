@@ -47,7 +47,7 @@
 
 = go_to
 +go to
-    {ue_general_override!=->empt:->ue_general_override}
+    //{ue_general_override!=->empt:->ue_general_override}
     ->list_rooms->
 //->day_script
 //->-> (used to be)

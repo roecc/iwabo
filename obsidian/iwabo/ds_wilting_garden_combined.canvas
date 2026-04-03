@@ -1619,6 +1619,116 @@
 			"width":60,
 			"height":60,
 			"color":"3"
+		},
+		{
+			"id":"0b341ad6c5ea51e1",
+			"type":"text",
+			"text":"damaged generator less power output",
+			"styleAttributes":{},
+			"x":8600,
+			"y":-840,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9915a3049039f8cb",
+			"type":"text",
+			"text":"promised to start training",
+			"styleAttributes":{},
+			"x":7940,
+			"y":-1120,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"5a67f72f020ef6c1",
+			"type":"text",
+			"text":"this is powerhouse",
+			"styleAttributes":{},
+			"x":7940,
+			"y":-1040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ee38db0540d74093",
+			"type":"text",
+			"text":"generator heart of the bunker",
+			"styleAttributes":{},
+			"x":7940,
+			"y":-960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a767f0eaa61c7e0f",
+			"type":"text",
+			"text":"it powers the whole garden",
+			"styleAttributes":{},
+			"x":7940,
+			"y":-880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c57be7dc654a9b27",
+			"type":"text",
+			"text":"constant maintenance",
+			"styleAttributes":{},
+			"x":7940,
+			"y":-700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"bb5c31b58bd42478",
+			"type":"text",
+			"text":"while on, always wear",
+			"styleAttributes":{},
+			"x":7920,
+			"y":-760,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"540307c139946f4a",
+			"type":"text",
+			"text":"better care, less likely to break down",
+			"styleAttributes":{},
+			"x":7960,
+			"y":-640,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3d36e534e8d5f050",
+			"type":"text",
+			"text":"can usually tell at a glance, but to make sure not miss anything -> inspect!",
+			"styleAttributes":{},
+			"x":8220,
+			"y":-1040,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"ca5cd3a05c5fbed2",
+			"type":"text",
+			"text":"override -> dad? what are you doing? im waiting",
+			"styleAttributes":{},
+			"x":7560,
+			"y":-1140,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"475dadfc15555d34",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":7460,
+			"y":-1220,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
