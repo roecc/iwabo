@@ -36,7 +36,7 @@ VAR debug_history = ""
 
 
 === function buffer() ===
-{game?unreal:::buffer # buffer # Linetime: {buffer_time}}
+{game?unreal:::isnt writing BUFFER so what is? # buffer # Linetime: {buffer_time}}
 
 === ue_done_option ===
 //why is it tunneling through day_script?
