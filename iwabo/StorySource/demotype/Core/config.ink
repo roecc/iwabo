@@ -15,8 +15,8 @@ VAR conf_farm2_rep = broken
 VAR conf_farm3_rep = fine
 VAR conf_farm4_rep = fine
 
-LIST debug_flags = (d_life_time), d_power, (d_repair), (d_maintain), d_npc, d_action_points, (d_daily_damage), d_next_day, d_rolls
-LIST debug_options = (do_disable_wear_and_tear)
+LIST debug_flags = (d_life_time), (d_power), (d_repair), (d_maintain), d_npc, (d_action_points), (d_daily_damage), (d_next_day), d_rolls
+LIST debug_options = do_disable_wear_and_tear
 
 === function conf_init () ===
 ~temp _gen_pwr_cost = conf_gen_pwr_cost_fine

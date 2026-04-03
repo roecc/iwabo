@@ -43,11 +43,12 @@ VAR test_pwr = p4
 
 //INCLUDE Unreal/external.ink
 
-~SEED_RANDOM(256011)
+//~SEED_RANDOM(256011)
+~SEED_RANDOM(260403)
 ~conf_init()
 
-
-IWABO DEMOTYPE DRAFT v0.5.260227.142
+VAR debug_version = "IWABO DEMOTYPE DRAFT v0.5.260227.154"
+{debug_version}
 //->dt_d1_a1
 //->tst_the_note
 //->tst_options

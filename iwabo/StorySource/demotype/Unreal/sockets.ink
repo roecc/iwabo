@@ -18,8 +18,11 @@ VAR ue_general_override = ->empt
 //interactibles
 VAR ue_generator_div = ->ERROR
 
+VAR debug_history = ""
+
 === function debug_log (msg) ===
 //~temp _debug = debug
+~debug_history += "{msg} ]]]"
 {debug: 
     {game^mode:
         -unreal:
@@ -28,6 +31,9 @@ VAR ue_generator_div = ->ERROR
             ::{msg}
     }
 }
+
+// === function debug_log_history () ===
+
 
 === function buffer() ===
 {game?unreal:::buffer # buffer # Linetime: {buffer_time}}
@@ -38,15 +44,15 @@ VAR ue_generator_div = ->ERROR
 +[\[done\]]
     ->interaction_done
 
-=== ue_debug_states() ===
-{debug_states(generator1)}
-{debug_states(generator2)}
-{debug_states(generator3)}
-{debug_states(generator4)}
-->DONE
+// === ue_debug_states() ===
+// {debug_states(generator1)}
+// {debug_states(generator2)}
+// {debug_states(generator3)}
+// {debug_states(generator4)}
+// ->DONE
 
-=== function debug_states(_target) ===
-{_target?power_state}, {_target?repair_state}, {_target?maintain_state}
+// === function debug_states(_target) ===
+// {_target?power_state}, {_target?repair_state}, {_target?maintain_state}
 
 === ue_mary_ann ===
 {ue_general_override!=->empt:->ue_general_override}
