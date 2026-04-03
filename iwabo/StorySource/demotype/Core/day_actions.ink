@@ -53,11 +53,11 @@
     //should potentially not even be an action but happen over time if well maintained?
     //offer double maintain for trait roll?
     <-chores_inspect(_target)
+    {_target?broken:<-tr_fix_farm(_target)}
     +\ turn {_target^name} {_target?on:off|on}
         ~power_switch(_target)
         ->interaction_done
         //->chores_generator(_target)
-    //{_target !? fine:<-tr_fix_farm(_target)}
     +\ {ap_option("maintain farm", -1)}
         //could do passives with maintain chores for crit pos, crit fail?
         ~ap_update(-1)
@@ -87,25 +87,32 @@
     //    ->interaction_done
 
 = tr_fix_farm(ref _farm)
-~temp text = "fix farm"//"option text"
+~temp text = "start farm"//"option text"
 ~temp trait = tinkering//trait_name"
-~temp ap_cost = -1
 
-~temp mod_val = 0
-~temp mod_text = ""
-- (mods) //add trait-check modifiers
-{add_mod("friendly fish", 30, mod_text, mod_val)}
-- (option)
-->trait_option(text, trait, mod_val, mod_text, not counter_roll, ap_cost,->pass, ->fail)
-- (pass) //on success
-    the fish seems to be eating again.
-    ~repair_update(_farm, 1)
-    {npc_set(daryl, working, garden)}
-	->interaction_done
-- (fail) //on fail
-    the fish shake their heads at you disapprovingly.
-    {npc_set(daryl, working, garden)}
-	->interaction_done
+//no_fish?->divert!
+~temp ap_cost = -1
++\ {ap_option("restart the farm", -1)}
+	~ap_update(-1)
+	~repair_update(_farm, 1)
+    The few fish seem to take well to their new home, it will be a while before you can expect to reap what you've sewn.
+    ->interaction_done
+
+// ~temp mod_val = 0
+// ~temp mod_text = ""
+// - (mods) //add trait-check modifiers
+// //{add_mod("friendly fish", 30, mod_text, mod_val)}
+// - (option)
+// ->trait_option(text, trait, mod_val, mod_text, not counter_roll, ap_cost,->pass, ->fail)
+// - (pass) //on success
+//     the fish seems to be eating again.
+//     ~repair_update(_farm, 1)
+//     {npc_set(daryl, working, garden)}
+// 	->interaction_done
+// - (fail) //on fail
+//     the fish shake their heads at you disapprovingly.
+//     {npc_set(daryl, working, garden)}
+// 	->interaction_done
 
 
 === chores_breakerbox ===
