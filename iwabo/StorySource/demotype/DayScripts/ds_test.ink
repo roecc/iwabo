@@ -29,7 +29,9 @@ VAR ap_updated = -1
     ~ap_updated = action_points
     ~buffer()
 //   -else:  
-    
+    // ~ue_farm_unit1_override = ->ds_sleep_junes
+    // ~ue_farm_unit4_override = ->ds_test_bedtime_story
+    // ~ue_generator3_override = ->ds_test_marital_duty
 //
     
 }

@@ -7,7 +7,18 @@ VAR ue_june_div = ->empt //->ERROR.ue_socket_empty
 
 VAR ue_june_override = ->empt
 
+//legacy
 VAR ue_farm_override = ->empt
+
+VAR ue_generator1_override = ->empt
+VAR ue_generator2_override = ->empt
+VAR ue_generator3_override = ->empt
+VAR ue_generator4_override = ->empt
+VAR ue_farm_unit1_override = ->empt
+VAR ue_farm_unit2_override = ->empt
+VAR ue_farm_unit3_override = ->empt
+VAR ue_farm_unit4_override = ->empt
+
 VAR ue_general_override = ->empt
 
 === empt ===
@@ -99,6 +110,7 @@ VAR debug_history = ""
 
 === ue_generator1 ===
 ~location_update(daryl, garden)
+{ue_generator1_override!=->empt:->ue_generator1_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-chores_generator(generator1)
 <-ue_done_option
@@ -106,6 +118,7 @@ VAR debug_history = ""
 
 === ue_generator2 ===
 ~location_update(daryl, garden)
+{ue_generator2_override!=->empt:->ue_generator2_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-chores_generator(generator2)
 <-ue_done_option
@@ -113,6 +126,7 @@ VAR debug_history = ""
 
 === ue_generator3 ===
 ~location_update(daryl, garden)
+{ue_generator3_override!=->empt:->ue_generator3_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-chores_generator(generator3)
 <-ue_done_option
@@ -120,6 +134,7 @@ VAR debug_history = ""
 
 === ue_generator4 ===
 ~location_update(daryl, garden)
+{ue_generator4_override!=->empt:->ue_generator4_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-chores_generator(generator4)
 <-ue_done_option
@@ -133,9 +148,15 @@ VAR debug_history = ""
 // <-ue_done_option
 // ->DONE
 
+=== ue_override (-> _div, -> _return) ===
+{_div!=->empt:->_div}
+ue_farm_unit1_override
+->_return
+
 === ue_farm_unit1 ===
 ~location_update(daryl, garden)
-//{ue_farm_override!=->empt:->ue_farm_override}
+{ue_farm_unit1_override!=->empt:->ue_farm_unit1_override}
+//{ds_generator1_override!=->empt:->ds_generator1_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-chores_garden(farm_unit1)
 <-ue_done_option
@@ -143,7 +164,7 @@ VAR debug_history = ""
 
 === ue_farm_unit2 ===
 ~location_update(daryl, garden)
-//{ue_farm_override!=->empt:->ue_farm_override}
+{ue_farm_unit2_override!=->empt:->ue_farm_unit2_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-chores_garden(farm_unit2)
 <-ue_done_option
@@ -151,7 +172,7 @@ VAR debug_history = ""
 
 === ue_farm_unit3 ===
 ~location_update(daryl, garden)
-//{ue_farm_override!=->empt:->ue_farm_override}
+{ue_farm_unit3_override!=->empt:->ue_farm_unit3_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-chores_garden(farm_unit3)
 <-ue_done_option
@@ -160,6 +181,7 @@ VAR debug_history = ""
 === ue_farm_unit4 ===
 ~location_update(daryl, garden)
 //{ue_farm_override!=->empt:->ue_farm_override}
+{ue_farm_unit4_override!=->empt:->ue_farm_unit4_override}
 {ue_general_override!=->empt:->ue_general_override}
 <-chores_garden(farm_unit4)
 <-ue_done_option
