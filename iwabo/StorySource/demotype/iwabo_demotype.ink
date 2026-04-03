@@ -47,7 +47,7 @@ VAR test_pwr = p4
 ~SEED_RANDOM(260403)
 ~conf_init()
 
-VAR debug_version = "IWABO DEMOTYPE DRAFT v0.5.260227.159"
+VAR debug_version = "IWABO DEMOTYPE DRAFT v0.5.260227.161"
 {debug_version}
 //->dt_d1_a1
 //->tst_the_note

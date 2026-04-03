@@ -16,7 +16,8 @@ VAR conf_farm3_rep = fine
 VAR conf_farm4_rep = fine
 
 LIST debug_flags = (d_life_time), (d_power), (d_repair), (d_maintain), d_npc, (d_action_points), (d_daily_damage), (d_next_day), d_rolls
-LIST debug_options = do_disable_wear_and_tear
+LIST debug_options = do_disable_wear_and_tear, do_text_not_options
+VAR tno = false
 
 === function conf_init () ===
 ~temp _gen_pwr_cost = conf_gen_pwr_cost_fine
@@ -24,6 +25,8 @@ LIST debug_options = do_disable_wear_and_tear
 
 ~conf_gens(_gen_pwr_cost)
 ~conf_farms(_farm_pwr_cost)
+
+~tno = debug_options?do_text_not_options
 ~buffer()
 
 === function conf_gens (_pwr_cost) ===
