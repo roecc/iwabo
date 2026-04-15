@@ -61,16 +61,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hyper Reality.md",
+                "file": "Themes/Hyper Reality.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Hyper Reality"
             }
+          },
+          {
+            "id": "bd14a987b2829362",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "A MAZE demo.canvas",
+                "viewState": {
+                  "x": 609.8244310072741,
+                  "y": 606.7126286599282,
+                  "zoom": -0.21901888052622479
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "A MAZE demo"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -215,13 +232,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd0e4a8578164a77",
+  "active": "bd14a987b2829362",
   "lastOpenFiles": [
-    "Hyper Reality.md",
+    "A MAZE plan.canvas",
+    "A MAZE demo.canvas",
+    "Untitled.md",
+    "dt_d1.canvas",
     "ds_wilting_garden_combined.canvas",
-    "2026-03-31.md",
     "DEMOTYPE_TUTORIAL Generator.md",
     "DEMOTYPE_TUTORIAL Aquaponics.md",
+    "Themes/Hyper Reality.md",
+    "Untitled.base",
+    "2026-03-31.md",
     "dt_d2.canvas",
     "dt_d1 1 1.canvas",
     "Demotype/Mechanics/Trait System/Traits.md",
@@ -239,8 +261,6 @@
     "Img/Art/Rubens - Cronus.png",
     "Demotype/Mechanics/Trait System/Untitled.base",
     "Themes/Absolutism.md",
-    "dt_d1.canvas",
-    "Untitled.base",
     "Motifs/Time.md",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
     "OutGame/Research/InkPot/Inkpot Adventure Demo.md",
@@ -253,8 +273,6 @@
     "Themes/Catholicism.md",
     "Themes/Absolution.md",
     "Themes/God of the Gaps.md",
-    "Themes/Conservatism.md",
-    "Themes/Conspiracy Theorists.md",
     "OutGame/Research/InkPot/Documentation/VariableExistence.png",
     "OutGame/Research/InkPot/Documentation/UIEventGraph.png",
     "OutGame/Research/InkPot/Documentation/TagsGTFunctions.png",
