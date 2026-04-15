@@ -77,9 +77,9 @@
               "state": {
                 "file": "A MAZE demo.canvas",
                 "viewState": {
-                  "x": 609.8244310072741,
-                  "y": 606.7126286599282,
-                  "zoom": -0.21901888052622479
+                  "x": 197.98128206921083,
+                  "y": 2646.3541425482167,
+                  "zoom": -0.5141457489381229
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -234,15 +234,16 @@
   },
   "active": "bd14a987b2829362",
   "lastOpenFiles": [
-    "A MAZE plan.canvas",
+    "Untitled.base",
+    "Demotype/Mechanics/Trait System/Traits/Integrity - Stubbornness.md",
     "A MAZE demo.canvas",
+    "A MAZE plan.canvas",
     "Untitled.md",
     "dt_d1.canvas",
     "ds_wilting_garden_combined.canvas",
     "DEMOTYPE_TUTORIAL Generator.md",
     "DEMOTYPE_TUTORIAL Aquaponics.md",
     "Themes/Hyper Reality.md",
-    "Untitled.base",
     "2026-03-31.md",
     "dt_d2.canvas",
     "dt_d1 1 1.canvas",
@@ -272,7 +273,6 @@
     "Themes/Salvation.md",
     "Themes/Catholicism.md",
     "Themes/Absolution.md",
-    "Themes/God of the Gaps.md",
     "OutGame/Research/InkPot/Documentation/VariableExistence.png",
     "OutGame/Research/InkPot/Documentation/UIEventGraph.png",
     "OutGame/Research/InkPot/Documentation/TagsGTFunctions.png",
@@ -288,7 +288,6 @@
     "Img/Art/Untitled 1.base",
     "OutGame/People/Contacts",
     "Demotype/Architecture",
-    "Resource Management.canvas",
-    "Ink/Untitled.canvas"
+    "Resource Management.canvas"
   ]
 }
