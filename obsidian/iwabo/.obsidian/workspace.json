@@ -73,17 +73,14 @@
             "id": "bd14a987b2829362",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "A MAZE demo.canvas",
-                "viewState": {
-                  "x": 1591.6200592473763,
-                  "y": 3348.2634750687675,
-                  "zoom": -1.4211207401007402
-                }
+                "file": "Themes/Told you so (en-quotes) Ideologies.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "A MAZE demo"
+              "icon": "lucide-file",
+              "title": "Told you so (en-quotes) Ideologies"
             }
           }
         ],
@@ -234,9 +231,11 @@
   },
   "active": "bd14a987b2829362",
   "lastOpenFiles": [
+    "Themes/Strength(en-quotes).md",
+    "WEB.canvas",
+    "A MAZE demo.canvas",
     "Untitled.base",
     "Demotype/Mechanics/Trait System/Traits/Integrity - Stubbornness.md",
-    "A MAZE demo.canvas",
     "A MAZE plan.canvas",
     "Untitled.md",
     "dt_d1.canvas",
@@ -250,7 +249,6 @@
     "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Trait System/Trait System.md",
     "Demotype/Mechanics/Trait System/Trait Rolls.md",
-    "Themes/\"Strength\".md",
     "Ink/Other/SomeNewFile_ink.md",
     "Demotype/Architecture/Architecture.canvas",
     "Demotype/Mechanics/Advanced State Tracking.md",
@@ -287,7 +285,6 @@
     "Img/Art/Untitled.base",
     "Img/Art/Untitled 1.base",
     "OutGame/People/Contacts",
-    "Demotype/Architecture",
-    "Resource Management.canvas"
+    "Demotype/Architecture"
   ]
 }

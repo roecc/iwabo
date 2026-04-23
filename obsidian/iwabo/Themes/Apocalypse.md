@@ -5,7 +5,7 @@
 [[Religion]]
 [[Religion as Control]]
 [[Religious Fundamentalism]]
-[["Told you so" Ideologies]]
+[[Told you so (en-quotes) Ideologies]]
 [[In-Group]]
 
 

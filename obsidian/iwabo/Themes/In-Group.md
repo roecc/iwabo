@@ -3,6 +3,6 @@ a lot of ideologies seem to lure people in with "secret"/arcane/in-group knowled
 
 [[Prepping]]
 [[Religion]]
-[["Told you so" Ideologies]]
+[[Told you so (en-quotes) Ideologies]]
 [[High Control Groups]]
 [[Religion as Control]]

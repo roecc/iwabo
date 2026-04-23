@@ -26,4 +26,4 @@ https://www.youtube.com/watch?v=1NSprTJiR-4&pp=ygUVancgYnVua2VyIHZpZGVvcyBmdWxs
 
 [[Religion]]
 [[Fear]]
-[["Told you so" Ideologies]]
+[[Told you so (en-quotes) Ideologies]]
