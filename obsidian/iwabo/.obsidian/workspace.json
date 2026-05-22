@@ -73,14 +73,17 @@
             "id": "bd14a987b2829362",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Themes/Fetishisation of (en-quotes)Hard Choices.md",
-                "mode": "source",
-                "source": false
+                "file": "WorkHeaps.canvas",
+                "viewState": {
+                  "x": 2265.8209093144865,
+                  "y": 280.01988703212703,
+                  "zoom": -0.44774767092621415
+                }
               },
-              "icon": "lucide-file",
-              "title": "Fetishisation of (en-quotes)Hard Choices"
+              "icon": "lucide-layout-dashboard",
+              "title": "WorkHeaps"
             }
           }
         ],
@@ -231,17 +234,23 @@
   },
   "active": "bd14a987b2829362",
   "lastOpenFiles": [
+    "ds_wilting_garden_combined.canvas",
+    "A MAZE demo.canvas",
+    "DEMOTYPE_TUTORIAL Generator.md",
+    "Demotype/Hooks/USPs/Roll against Traits.md",
+    "Themes/Moral imperative to critical Self-Assessment.md",
+    "Demotype/Hooks/Breaking Elysium.md",
+    "Demotype/Architecture/Architecture.canvas",
+    "Themes/Social Contract Theory.md",
+    "WorkHeaps.canvas",
+    "Themes/Fetishisation of (en-quotes)Hard Choices.md",
     "Themes/Told you so (en-quotes) Ideologies.md",
     "Themes/Strength(en-quotes).md",
     "WEB.canvas",
-    "A MAZE demo.canvas",
     "Untitled.base",
     "Demotype/Mechanics/Trait System/Traits/Integrity - Stubbornness.md",
-    "A MAZE plan.canvas",
     "Untitled.md",
     "dt_d1.canvas",
-    "ds_wilting_garden_combined.canvas",
-    "DEMOTYPE_TUTORIAL Generator.md",
     "DEMOTYPE_TUTORIAL Aquaponics.md",
     "Themes/Hyper Reality.md",
     "2026-03-31.md",
@@ -251,7 +260,6 @@
     "Demotype/Mechanics/Trait System/Trait System.md",
     "Demotype/Mechanics/Trait System/Trait Rolls.md",
     "Ink/Other/SomeNewFile_ink.md",
-    "Demotype/Architecture/Architecture.canvas",
     "Demotype/Mechanics/Advanced State Tracking.md",
     "OutGame/People/Contacts/Life Take Two.md",
     "OutGame/People/Fritz Haber.md",
@@ -264,14 +272,8 @@
     "Motifs/Time.md",
     "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
     "OutGame/Research/InkPot/Inkpot Adventure Demo.md",
-    "Core/It would all be Over.md",
     "OutGame/Research/Untitled 1.base",
     "OutGame/Research/Untitled.base",
-    "OutGame/Research/Aquaponics.md",
-    "2026-03-27.md",
-    "Themes/Salvation.md",
-    "Themes/Catholicism.md",
-    "Themes/Absolution.md",
     "OutGame/Research/InkPot/Documentation/VariableExistence.png",
     "OutGame/Research/InkPot/Documentation/UIEventGraph.png",
     "OutGame/Research/InkPot/Documentation/TagsGTFunctions.png",
