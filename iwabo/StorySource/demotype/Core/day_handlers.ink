@@ -124,33 +124,38 @@ VAR next_day_script = ->empt
  
 {debug_options!?do_disable_wear_and_tear:
 //moved up bc player should have chance to fix before death
-
-    //~daily_damage(farm)
-    ~daily_damage(farm_unit1)
-    ~daily_damage(farm_unit2)
-    ~daily_damage(farm_unit3)
-    ~daily_damage(farm_unit4)
-    //~daily_damage(generator)
-    ~daily_damage(generator1)
-    ~daily_damage(generator2)
-    ~daily_damage(generator3)
-    ~daily_damage(generator4)
-    //~maintain_update(farm, -1)
-    ~daily_wear(farm_unit1)
-    ~daily_wear(farm_unit2)
-    ~daily_wear(farm_unit3)
-    ~daily_wear(farm_unit4)
-    //~maintain_update(generator, -1)
-    ~daily_wear(generator1)
-    ~daily_wear(generator2)
-    ~daily_wear(generator3)
-    ~daily_wear(generator4)
+    ~daily_damage_all()
+    ~daily_wear_all()
+    
     ~power_check()
     //~day_farm_grow()
     ~buffer()
 -else:
     ~debug_log("wear and tear disabled")
 }
+
+=== function daily_damage_all () ===
+    ~daily_damage(farm_unit1)
+    ~daily_damage(farm_unit2)
+    ~daily_damage(farm_unit3)
+    ~daily_damage(farm_unit4)
+    
+    ~daily_damage(generator1)
+    ~daily_damage(generator2)
+    ~daily_damage(generator3)
+    ~daily_damage(generator4)
+
+=== function daily_wear_all () ===
+    ~daily_wear(farm_unit1)
+    ~daily_wear(farm_unit2)
+    ~daily_wear(farm_unit3)
+    ~daily_wear(farm_unit4)
+    
+    ~daily_wear(generator1)
+    ~daily_wear(generator2)
+    ~daily_wear(generator3)
+    ~daily_wear(generator4)
+
 
 === function wakeup_gag() ===
 ~temp _txt = "{daryl^name} wake up"
