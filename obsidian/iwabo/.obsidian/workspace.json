@@ -75,15 +75,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "WorkHeaps.canvas",
+                "file": "MBB2607.canvas",
                 "viewState": {
-                  "x": 3268.2527343749953,
-                  "y": 95.94210937500016,
-                  "zoom": 0
+                  "x": 2330.832525906253,
+                  "y": 509.51680789474693,
+                  "zoom": -0.7770020767549684
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "WorkHeaps"
+              "title": "MBB2607"
             }
           }
         ],
@@ -234,11 +234,19 @@
   },
   "active": "bd14a987b2829362",
   "lastOpenFiles": [
+    "A MAZE demo.canvas",
+    "MBB2607.canvas",
+    "Videos/Consumption.canvas",
+    "WorkHeaps.canvas",
+    "Videos",
+    "2026-03-31.md",
+    "2026-03-27.md",
+    "2026-03-07.md",
+    "2026-03-05.md",
+    "2026-03-04.md",
     "ds_wilting_garden_combined.canvas",
     "DEMOTYPE_TUTORIAL Aquaponics.md",
     "Themes/Strength(en-quotes).md",
-    "WorkHeaps.canvas",
-    "A MAZE demo.canvas",
     "DEMOTYPE_TUTORIAL Generator.md",
     "Demotype/Hooks/USPs/Roll against Traits.md",
     "Themes/Moral imperative to critical Self-Assessment.md",
@@ -253,7 +261,6 @@
     "Untitled.md",
     "dt_d1.canvas",
     "Themes/Hyper Reality.md",
-    "2026-03-31.md",
     "dt_d2.canvas",
     "dt_d1 1 1.canvas",
     "Demotype/Mechanics/Trait System/Traits.md",
@@ -264,14 +271,9 @@
     "OutGame/People/Contacts/Life Take Two.md",
     "OutGame/People/Fritz Haber.md",
     "Themes/Apocalypse.md",
-    "Demotype/Hooks/Diegesis.md",
     "Demotype/Mechanics/Resource Management/Morale Canvas.canvas",
     "Img/Art/Rubens - Cronus.png",
     "Demotype/Mechanics/Trait System/Untitled.base",
-    "Themes/Absolutism.md",
-    "Motifs/Time.md",
-    "Demotype/Mechanics/Resource Management/Resource Management Canvas.canvas",
-    "OutGame/Research/InkPot/Inkpot Adventure Demo.md",
     "OutGame/Research/Untitled 1.base",
     "OutGame/Research/Untitled.base",
     "OutGame/Research/InkPot/Documentation/VariableExistence.png",
@@ -287,7 +289,6 @@
     "OutGame/Research/InkPot",
     "Img/Art/Untitled.base",
     "Img/Art/Untitled 1.base",
-    "OutGame/People/Contacts",
-    "Demotype/Architecture"
+    "OutGame/People/Contacts"
   ]
 }
