@@ -77,17 +77,34 @@
               "state": {
                 "file": "MBB2607.canvas",
                 "viewState": {
-                  "x": 2330.832525906253,
-                  "y": 509.51680789474693,
+                  "x": 2257.526156332042,
+                  "y": 452.1466056192773,
                   "zoom": -0.7770020767549684
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "MBB2607"
             }
+          },
+          {
+            "id": "c48524ffe1041ed1",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "iNotes/iNotes Ideas.canvas",
+                "viewState": {
+                  "x": -980.8268548040079,
+                  "y": 678.5773218264105,
+                  "zoom": -0.1909442640047229
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "iNotes Ideas"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -232,16 +249,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd14a987b2829362",
+  "active": "c48524ffe1041ed1",
   "lastOpenFiles": [
-    "A MAZE demo.canvas",
+    "2026-03-07.md",
+    "iNotes/iNotes Ideas.canvas",
+    "OutGame/References/Movies/The Hidden.md",
+    "OutGame/References/Movies/10 Cloverfield Lane.md",
+    "OutGame/References/Games/The Last of Us.md",
+    "OutGame/References/Games/The Walking Dead.md",
+    "iNotes/dhwaiodhiowa.md",
+    "OutGame/References/Movies",
+    "Themes/Useful or Happy.md",
     "MBB2607.canvas",
+    "iNotes",
+    "A MAZE demo.canvas",
     "Videos/Consumption.canvas",
     "WorkHeaps.canvas",
     "Videos",
     "2026-03-31.md",
     "2026-03-27.md",
-    "2026-03-07.md",
     "2026-03-05.md",
     "2026-03-04.md",
     "ds_wilting_garden_combined.canvas",
@@ -262,16 +288,8 @@
     "dt_d1.canvas",
     "Themes/Hyper Reality.md",
     "dt_d2.canvas",
-    "dt_d1 1 1.canvas",
     "Demotype/Mechanics/Trait System/Traits.md",
     "Demotype/Mechanics/Trait System/Trait System.md",
-    "Demotype/Mechanics/Trait System/Trait Rolls.md",
-    "Ink/Other/SomeNewFile_ink.md",
-    "Demotype/Mechanics/Advanced State Tracking.md",
-    "OutGame/People/Contacts/Life Take Two.md",
-    "OutGame/People/Fritz Haber.md",
-    "Themes/Apocalypse.md",
-    "Demotype/Mechanics/Resource Management/Morale Canvas.canvas",
     "Img/Art/Rubens - Cronus.png",
     "Demotype/Mechanics/Trait System/Untitled.base",
     "OutGame/Research/Untitled 1.base",
@@ -287,8 +305,6 @@
     "OutGame/Research/InkPot/Documentation/StorySetNGet.png",
     "OutGame/Research/InkPot/Documentation",
     "OutGame/Research/InkPot",
-    "Img/Art/Untitled.base",
-    "Img/Art/Untitled 1.base",
-    "OutGame/People/Contacts"
+    "Img/Art/Untitled.base"
   ]
 }
