@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"c46c97800626c106","type":"group","x":1460,"y":-1980,"width":1140,"height":380,"label":"Character Overviews"},
 		{
 			"id":"41c5a717d3e43f63",
 			"type":"text",
@@ -261,32 +262,12 @@
 			"height":120
 		},
 		{
-			"id":"6c22ef6813709ec7",
-			"type":"text",
-			"text":"UX",
-			"styleAttributes":{},
-			"x":-480,
-			"y":-500,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"a385a299b8f8f8d5",
 			"type":"text",
 			"text":"Morale",
 			"styleAttributes":{},
 			"x":-120,
 			"y":-500,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"6cd83b9d0d1969e0",
-			"type":"text",
-			"text":"Walls closing in, letterboxing, the lower the mood",
-			"styleAttributes":{},
-			"x":-420,
-			"y":-420,
 			"width":260,
 			"height":60
 		},
@@ -341,56 +322,6 @@
 			"height":60
 		},
 		{
-			"id":"30f7b4758debd41e",
-			"type":"text",
-			"text":"The main menu is a fridge with child drawings etc?\nThe fridge represents the need to conserve and coldness it takes to do what’s necessary. The family is put front and center yet feels tacked on and somewhat shallow. The food inside, over time, turns.",
-			"styleAttributes":{},
-			"x":-420,
-			"y":-340,
-			"width":260,
-			"height":240
-		},
-		{
-			"id":"f8237c74da98e94b",
-			"type":"text",
-			"text":"Use marble sculpture?\n\nReligious connotation\nMisconception and idealization of a past that never was",
-			"styleAttributes":{},
-			"x":-420,
-			"y":-80,
-			"width":260,
-			"height":140
-		},
-		{
-			"id":"96cbf7201f5e4bfa",
-			"type":"text",
-			"text":"Environment",
-			"styleAttributes":{},
-			"x":-960,
-			"y":-500,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"5e9ef47ae898ce46",
-			"type":"text",
-			"text":"Silo the only place for a tree\nOr a trash heap",
-			"styleAttributes":{},
-			"x":-900,
-			"y":-420,
-			"width":260,
-			"height":80
-		},
-		{
-			"id":"7cab449332d44b05",
-			"type":"text",
-			"text":"Go even further?\nif something major happens:\nThe father realises, the marble cracks!",
-			"styleAttributes":{},
-			"x":-420,
-			"y":80,
-			"width":260,
-			"height":120
-		},
-		{
 			"id":"5aa92fc7a84c37e3",
 			"type":"text",
 			"text":"**Dice - Gambler, +1 on all checks, can see the odds?**",
@@ -441,196 +372,6 @@
 			"height":60
 		},
 		{
-			"id":"1584922057b37837",
-			"type":"text",
-			"text":"Playing hide and seek kid goes where they shouldn’t",
-			"styleAttributes":{},
-			"x":-380,
-			"y":-1480,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c35d16af55d4b6b6",
-			"type":"text",
-			"text":"Playing hide and seek; kid “too old”",
-			"styleAttributes":{},
-			"x":-380,
-			"y":-1400,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"b1002a74d430f23a",
-			"type":"text",
-			"text":"Runs out of paper (starts painting on walls)",
-			"styleAttributes":{},
-			"x":-380,
-			"y":-1320,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"9a651d3a97ffaebc",
-			"type":"text",
-			"text":"Runs out of Paint (starts using rations)",
-			"styleAttributes":{},
-			"x":-380,
-			"y":-1240,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"3577b29cdaac3450",
-			"type":"text",
-			"text":"The Kids talk about what they would have been, had things been different.",
-			"styleAttributes":{},
-			"x":-100,
-			"y":-1480,
-			"width":260,
-			"height":100
-		},
-		{
-			"id":"5da253915011c183",
-			"type":"text",
-			"text":"Already at the bunker?\n\nWatch the sun go down before locking yourself in.\n\nBirds flying low.\n\n  \n\nWaiting for the end? Sundown.",
-			"styleAttributes":{},
-			"x":-100,
-			"y":-1360,
-			"width":260,
-			"height":120
-		},
-		{
-			"id":"d2734bc25e601a19",
-			"type":"text",
-			"text":"April does the dust blow cave painting, using June as the model\n\nNaturally June is covered head to toe in dust\nYou find her, June laughing April looking ertappt\nHuge mess\n\nArt critic\n-> will notice the implication\nDo you commend the work?\nDo you shut it down?",
-			"styleAttributes":{},
-			"x":180,
-			"y":-1480,
-			"width":260,
-			"height":360
-		},
-		{
-			"id":"c834f24f09d65a50",
-			"type":"text",
-			"text":"June tries to carry a heavy food bucket and drops it. Do you try and scrape it back in? Accept the loss, scold her?",
-			"styleAttributes":{},
-			"x":-380,
-			"y":-1160,
-			"width":260,
-			"height":120
-		},
-		{
-			"id":"533b340871aac769",
-			"type":"text",
-			"text":"Rushing to the bunker. Heavy storm to dead of night.",
-			"styleAttributes":{},
-			"x":-100,
-			"y":-1160,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"46b9fc42fd967549",
-			"type":"text",
-			"text":"**You’re not going to win any awards with that one**\n\nOkay? Who cares?",
-			"styleAttributes":{},
-			"x":-100,
-			"y":-1080,
-			"width":260,
-			"height":120
-		},
-		{
-			"id":"058433a186414683",
-			"type":"text",
-			"text":"Go full religion. Play baroque music preach from the pulpit that is the service stair to the second floor.",
-			"styleAttributes":{},
-			"x":-380,
-			"y":-1020,
-			"width":260,
-			"height":120
-		},
-		{
-			"id":"49fa71902537efd9",
-			"type":"text",
-			"text":"He takes April hunting again, she needs to learn\n\nI don’t want to kill it\n\nYou cant afford to be that person if you want to survive with us.\n\nAnd you not surviving with us is not an option.",
-			"styleAttributes":{},
-			"x":-380,
-			"y":-880,
-			"width":260,
-			"height":280
-		},
-		{
-			"id":"649821d928f6ef1c",
-			"type":"text",
-			"text":"Tree roots growing through ceiling",
-			"styleAttributes":{},
-			"x":-660,
-			"y":-1320,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c807c990547bebd8",
-			"type":"text",
-			"text":"Accidents, sickness, someone chokes on food",
-			"styleAttributes":{},
-			"x":-660,
-			"y":-1240,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"67ac1e34c17e5e1b",
-			"type":"text",
-			"text":"**The storm is a day early**",
-			"styleAttributes":{},
-			"x":-660,
-			"y":-1160,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"723e287c0c2b287e",
-			"type":"text",
-			"text":"They fight over their interpretations of a book. But not over what’s right or wrong, but rather over who gets the book",
-			"styleAttributes":{},
-			"x":-660,
-			"y":-1080,
-			"width":260,
-			"height":140
-		},
-		{
-			"id":"a0feed149ec2f74b",
-			"type":"text",
-			"text":"Events",
-			"styleAttributes":{},
-			"x":-700,
-			"y":-1560,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"38957ccd05ffcd21",
-			"type":"text",
-			"text":"Hunting ghosts (?)\nNo matter how many books, always more outside\n\nContinuations\n\nEmergency",
-			"styleAttributes":{},
-			"x":-660,
-			"y":-1480,
-			"width":260,
-			"height":140
-		},
-		{
-			"id":"9e808b2dada093e2",
-			"type":"text",
-			"text":"Someone falls into the rising water in the silo\n\nThey swim in standing water",
-			"styleAttributes":{},
-			"x":-660,
-			"y":-920,
-			"width":260,
-			"height":120
-		},
-		{
 			"id":"869d142a688edb7d",
 			"type":"text",
 			"text":"Is Greek tragedy\nIt’s oedipus from the perspective of the father\n\nIt’s cronos \nDevouring child-> April watching younger self consumed, Daryl huge, eyes wide open, caught in the act, afraid",
@@ -639,16 +380,6 @@
 			"y":1260,
 			"width":260,
 			"height":260
-		},
-		{
-			"id":"7448ba66724fffc5",
-			"type":"text",
-			"text":"Much like Daryl spending loads of food and time on gym maxing, eventually the player notices Mary-Ann “letting herself go”. The player can accept or respect this, but also call it out. Which may lead to her becoming much less effective at everything else. Time and effort spent on looking good, that could be spent on maintenance and frankly - rest.",
-			"styleAttributes":{},
-			"x":-100,
-			"y":-940,
-			"width":260,
-			"height":340
 		},
 		{
 			"id":"1ea7221e1bc425f4",
@@ -851,106 +582,6 @@
 			"height":100
 		},
 		{
-			"id":"6f4f160bdc77818c",
-			"type":"text",
-			"text":"When a system reaches a certain complexity it becomes nigh unpredictable both in what it does and in how it’s understood.\n\nBut There is a quality in that. But to try and control it..?\n\nYou can intentionally let go. Is what happened after intentional?\n\nWhen did you become so pensive?",
-			"styleAttributes":{},
-			"x":-1480,
-			"y":-120,
-			"width":260,
-			"height":380
-		},
-		{
-			"id":"07b591c37afb8183",
-			"type":"text",
-			"text":"The only character allowed to make erratic decisions is the player. Everyone else must be smart people doing smart things. Even if the player isn’t.",
-			"styleAttributes":{},
-			"x":-1760,
-			"y":-80,
-			"width":260,
-			"height":140
-		},
-		{
-			"id":"c53473d89735cedc",
-			"type":"text",
-			"text":"Tassen fallen, keine Tassen!",
-			"styleAttributes":{},
-			"x":-1760,
-			"y":80,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"cf85202b2046c499",
-			"type":"text",
-			"text":"Artist is something others should call you",
-			"styleAttributes":{},
-			"x":-1760,
-			"y":160,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"54f7274267834571",
-			"type":"text",
-			"text":"cat approach:\ndont preach, instead\nBut wants to send a message\n\nHere’s me sharing what I think is beautiful",
-			"styleAttributes":{},
-			"x":-1760,
-			"y":240,
-			"width":260,
-			"height":160
-		},
-		{
-			"id":"b886e9c40f1dbeb6",
-			"type":"text",
-			"text":"Misc",
-			"styleAttributes":{},
-			"x":-1800,
-			"y":-720,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c499424705d4ca1d",
-			"type":"text",
-			"text":"Apocalypse did happen.\n\nPeople turn up with things to trade.\n\nShoot them immediately?\n\nSets off sequence of events where the mostly peaceful group grows resentful towards Daryl and decides to steer clear. No trade, no exchange. Further isolation. Eventually a well armed group turns up. They, too wish to trade.",
-			"styleAttributes":{},
-			"x":-1760,
-			"y":-620,
-			"width":260,
-			"height":360
-		},
-		{
-			"id":"0ad6ce3690133914",
-			"type":"text",
-			"text":"How would even god know to find me?\n\nMany Aprils buried.\n\nUnderground\n\n  \n\nMakes me wish for\n\nNo more gilded Cage\n\nTurned to stone\n\n  \n\nGrave mistake\n\nNo Achieving heaven unless buried",
-			"styleAttributes":{},
-			"x":-1480,
-			"y":-620,
-			"width":260,
-			"height":400
-		},
-		{
-			"id":"2d6fcfd594dcc94c",
-			"type":"text",
-			"text":"Everyone distrustful, selfish and rich/powerful enough to hide in bunkers and facilities left the world to those who weren’t. A utopia is born.",
-			"styleAttributes":{},
-			"x":-1760,
-			"y":-240,
-			"width":260,
-			"height":140
-		},
-		{
-			"id":"42a156dbe163a309",
-			"type":"text",
-			"text":"only way to heaven is undergroud",
-			"styleAttributes":{},
-			"x":-1480,
-			"y":-200,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"60b7eaaaf717411f",
 			"type":"text",
 			"text":"18.04.2025 -> checkout",
@@ -969,6 +600,1086 @@
 			"y":600,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"9f5a7b9a19ea1535",
+			"type":"text",
+			"text":"No True Scottsmen",
+			"styleAttributes":{},
+			"x":-220,
+			"y":1540,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"aec8bc3306ea1c31",
+			"type":"text",
+			"text":"Trinity",
+			"styleAttributes":{},
+			"x":-220,
+			"y":1620,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b0b9918dfef1fd8d",
+			"type":"text",
+			"text":"Conservative /Conspiracy /Religion Venn-Diagram",
+			"styleAttributes":{},
+			"x":-220,
+			"y":1700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"85c61ebaf62e6f67",
+			"type":"text",
+			"text":"Schopenhauer",
+			"styleAttributes":{},
+			"x":180,
+			"y":760,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2336e6d11253b363",
+			"type":"text",
+			"text":"The second Sex",
+			"styleAttributes":{},
+			"x":180,
+			"y":840,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b67a36c586832106",
+			"type":"text",
+			"text":"Feedback",
+			"styleAttributes":{},
+			"x":-2400,
+			"y":-440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3af7d376ab7e2b7c",
+			"type":"text",
+			"text":"Cat:\nFamily themes resonate strongly\n\nConflict between mother and father very relatable\n\nSibling bond between April and June\n\nSees her as idol, frustration she can’t be the same\n\nCharacters have their own lives -> wants to feel that for them",
+			"styleAttributes":{},
+			"x":-2360,
+			"y":-360,
+			"width":260,
+			"height":300
+		},
+		{
+			"id":"bf3d968b3270b5a3",
+			"type":"text",
+			"text":"Gut defence mechanism (you just dont like thou because of women)",
+			"styleAttributes":{},
+			"x":-780,
+			"y":1660,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"a1e4d050ade8486b",
+			"type":"text",
+			"text":"Modern Notes",
+			"styleAttributes":{},
+			"x":760,
+			"y":1100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0314927151f297d8",
+			"type":"text",
+			"text":"Should do Floorplan only Layout test for Bunker (been overinvesting on detail)",
+			"styleAttributes":{},
+			"x":800,
+			"y":1180,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"dc0cd58059e95cfc",
+			"type":"text",
+			"text":"Organisational",
+			"styleAttributes":{},
+			"x":1200,
+			"y":1100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"bb45b603d8ee9268",
+			"type":"text",
+			"text":"Make Canvas for Trait notes overview",
+			"styleAttributes":{},
+			"x":1240,
+			"y":1180,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a9b59c6aebf7bbe2",
+			"type":"text",
+			"text":"Make \"#currentTrait\" tag for doc?",
+			"styleAttributes":{},
+			"x":1240,
+			"y":1260,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"286eda3f56c5428e",
+			"type":"text",
+			"text":"[One Chance](https://www.newgrounds.com/portal/view/555181)",
+			"styleAttributes":{},
+			"x":180,
+			"y":920,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c21772c711c77d29",
+			"type":"text",
+			"text":"Re-Set PC? Lots of Hassle but should do eventually anyway?",
+			"styleAttributes":{},
+			"x":1600,
+			"y":1180,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d8ec9838fd65863d",
+			"type":"text",
+			"text":"Check Steam Lib Compatibility w/ Linux",
+			"styleAttributes":{},
+			"x":1600,
+			"y":1260,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"38560f26a90fc4f1",
+			"type":"text",
+			"text":"Ufff",
+			"styleAttributes":{},
+			"x":1560,
+			"y":1100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"59d84d9b1c1f4ff8",
+			"type":"text",
+			"text":"Eschatology\nStudy of last things",
+			"styleAttributes":{},
+			"x":-500,
+			"y":1340,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8a8aabf36f9db1e3",
+			"type":"text",
+			"text":"Go full religion:\nDaryl turns to god and eventually is heard! The player for the first time doesn’t speak for Daryl, but to him!\n\nThis can imply two things: \n1 - you are the god who’s watching. The god outside the machine.\n2 - Or you are still Daryl, but disassociating from the self, to play your own god.",
+			"styleAttributes":{},
+			"x":-420,
+			"y":-420,
+			"width":260,
+			"height":360
+		},
+		{
+			"id":"6c22ef6813709ec7",
+			"type":"text",
+			"text":"UX",
+			"styleAttributes":{},
+			"x":-760,
+			"y":-500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6cd83b9d0d1969e0",
+			"type":"text",
+			"text":"Walls closing in, letterboxing, the lower the mood",
+			"styleAttributes":{},
+			"x":-700,
+			"y":-420,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"30f7b4758debd41e",
+			"type":"text",
+			"text":"The main menu is a fridge with child drawings etc?\nThe fridge represents the need to conserve and coldness it takes to do what’s necessary. The family is put front and center yet feels tacked on and somewhat shallow. The food inside, over time, turns.",
+			"styleAttributes":{},
+			"x":-700,
+			"y":-340,
+			"width":260,
+			"height":240
+		},
+		{
+			"id":"f8237c74da98e94b",
+			"type":"text",
+			"text":"Use marble sculpture?\n\nReligious connotation\nMisconception and idealization of a past that never was",
+			"styleAttributes":{},
+			"x":-700,
+			"y":-80,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"7cab449332d44b05",
+			"type":"text",
+			"text":"Go even further?\nif something major happens:\nThe father realises, the marble cracks!",
+			"styleAttributes":{},
+			"x":-700,
+			"y":80,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"96cbf7201f5e4bfa",
+			"type":"text",
+			"text":"Environment",
+			"styleAttributes":{},
+			"x":-1160,
+			"y":-500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"5e9ef47ae898ce46",
+			"type":"text",
+			"text":"Silo the only place for a tree\nOr a trash heap",
+			"styleAttributes":{},
+			"x":-1100,
+			"y":-420,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"54f7274267834571",
+			"type":"text",
+			"text":"cat approach:\ndont preach, instead\nBut wants to send a message\n\nHere’s me sharing what I think is beautiful",
+			"styleAttributes":{},
+			"x":-1920,
+			"y":240,
+			"width":260,
+			"height":160
+		},
+		{
+			"id":"0ad6ce3690133914",
+			"type":"text",
+			"text":"How would even god know to find me?\n\nMany Aprils buried.\n\nUnderground\n\n  \n\nMakes me wish for\n\nNo more gilded Cage\n\nTurned to stone\n\n  \n\nGrave mistake\n\nNo Achieving heaven unless buried",
+			"styleAttributes":{},
+			"x":-1640,
+			"y":-620,
+			"width":260,
+			"height":400
+		},
+		{
+			"id":"42a156dbe163a309",
+			"type":"text",
+			"text":"only way to heaven is undergroud",
+			"styleAttributes":{},
+			"x":-1640,
+			"y":-200,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6f4f160bdc77818c",
+			"type":"text",
+			"text":"When a system reaches a certain complexity it becomes nigh unpredictable both in what it does and in how it’s understood.\n\nBut There is a quality in that. But to try and control it..?\n\nYou can intentionally let go. Is what happened after intentional?\n\nWhen did you become so pensive?",
+			"styleAttributes":{},
+			"x":-1640,
+			"y":-120,
+			"width":260,
+			"height":380
+		},
+		{
+			"id":"5bf9b4fa24faeb52",
+			"type":"text",
+			"text":"Add full books/texts of public domain works (+export func)(+april/mary-ann annotations)",
+			"styleAttributes":{},
+			"x":-1640,
+			"y":280,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"b886e9c40f1dbeb6",
+			"type":"text",
+			"text":"Misc",
+			"styleAttributes":{},
+			"x":-1960,
+			"y":-720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c499424705d4ca1d",
+			"type":"text",
+			"text":"Apocalypse did happen.\n\nPeople turn up with things to trade.\n\nShoot them immediately?\n\nSets off sequence of events where the mostly peaceful group grows resentful towards Daryl and decides to steer clear. No trade, no exchange. Further isolation. Eventually a well armed group turns up. They, too wish to trade.",
+			"styleAttributes":{},
+			"x":-1920,
+			"y":-620,
+			"width":260,
+			"height":360
+		},
+		{
+			"id":"2d6fcfd594dcc94c",
+			"type":"text",
+			"text":"Everyone distrustful, selfish and rich/powerful enough to hide in bunkers and facilities left the world to those who weren’t. A utopia is born.",
+			"styleAttributes":{},
+			"x":-1920,
+			"y":-240,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"07b591c37afb8183",
+			"type":"text",
+			"text":"The only character allowed to make erratic decisions is the player. Everyone else must be smart people doing smart things. Even if the player isn’t.",
+			"styleAttributes":{},
+			"x":-1920,
+			"y":-80,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"c53473d89735cedc",
+			"type":"text",
+			"text":"Tassen fallen, keine Tassen!",
+			"styleAttributes":{},
+			"x":-1920,
+			"y":80,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"cf85202b2046c499",
+			"type":"text",
+			"text":"Artist is something others should call you",
+			"styleAttributes":{},
+			"x":-1920,
+			"y":160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"12d3e577729b72b9",
+			"type":"text",
+			"text":"April has a wall full of plants cascading down. However, keeping them alive requires constant power.",
+			"styleAttributes":{},
+			"x":1700,
+			"y":420,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"d5fbfe9f1d6a5a6c",
+			"type":"text",
+			"text":"Add eLiza to the game, for Daryl to talk to?",
+			"styleAttributes":{},
+			"x":1420,
+			"y":540,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"01d218d1a34e4db4",
+			"type":"text",
+			"text":"**rhetorical slight of hand**\nNot always. Not even usually. But sometimes.\n\nExploration and dissection of my own flaws.\n\nResponsibilities in family matters.\n\nYou can’t put all the blame on me, you’re your own person.\n\nWhen that’s not even what’s said.",
+			"styleAttributes":{},
+			"x":-500,
+			"y":1420,
+			"width":260,
+			"height":360
+		},
+		{
+			"id":"5e8edeb67954e4ed",
+			"type":"text",
+			"text":"Is art belief?",
+			"styleAttributes":{},
+			"x":-500,
+			"y":1800,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2d77445876732e82",
+			"type":"text",
+			"text":"Backstory",
+			"styleAttributes":{},
+			"x":1160,
+			"y":-1560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"47c0c5e6ad288dd2",
+			"type":"text",
+			"text":"Harold, while straight, used moneybags’ being gay to his advantage. He gave up some part of his masculinity to save his son.\n\nWhy did he die in a care facility?\n\nWhere are your siblings? \n\nWhy only us?",
+			"styleAttributes":{},
+			"x":1200,
+			"y":-1480,
+			"width":260,
+			"height":300
+		},
+		{
+			"id":"8662a864d6608b89",
+			"type":"text",
+			"text":"Choices",
+			"styleAttributes":{},
+			"x":2220,
+			"y":-1560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"756a73bdb5ee6c68",
+			"type":"text",
+			"text":"Give money to charity?\nHelp out brother?",
+			"styleAttributes":{},
+			"x":2280,
+			"y":-1480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"743ebbb9c2b7f01e",
+			"type":"text",
+			"text":"Everything bad happens at once\n\nWar breaks out\nDomestic terrorism\nStreet fights\nPandemic\nNuclear war threat\nNuclear testing\nDoomsday prognosis\nNatural disaster",
+			"styleAttributes":{},
+			"x":1480,
+			"y":-1480,
+			"width":260,
+			"height":280
+		},
+		{
+			"id":"95a04b203f5d6cec",
+			"type":"text",
+			"text":"Culture",
+			"styleAttributes":{},
+			"x":-500,
+			"y":1880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6379d8dad2fdba94",
+			"type":"text",
+			"text":"Art",
+			"styleAttributes":{},
+			"x":-500,
+			"y":1960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c362e3a2cfffca23",
+			"type":"text",
+			"text":"Stories/story telling",
+			"styleAttributes":{},
+			"x":-500,
+			"y":2040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"83e4bda23e62d802",
+			"type":"text",
+			"text":"Tradition",
+			"styleAttributes":{},
+			"x":-220,
+			"y":1880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b216bd4557f1b593",
+			"type":"text",
+			"text":"Identity",
+			"styleAttributes":{},
+			"x":-220,
+			"y":1960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"299b66471b6a379a",
+			"type":"text",
+			"text":"Gender",
+			"styleAttributes":{},
+			"x":-220,
+			"y":2040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ffcbb05f3bf4ccbf",
+			"type":"text",
+			"text":"(Cost of living) How much it really takes to live",
+			"styleAttributes":{},
+			"x":-780,
+			"y":1860,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1a8772dff631185c",
+			"type":"text",
+			"text":"Making a Living / Living Wage",
+			"styleAttributes":{},
+			"x":-780,
+			"y":1940,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d5c3663dbab93cea",
+			"type":"text",
+			"text":"Borrowed Cognition",
+			"styleAttributes":{},
+			"x":-780,
+			"y":1780,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e3183dd9b09473e2",
+			"type":"text",
+			"text":"Applied Philosophy\n(why care what old farts said?)",
+			"styleAttributes":{},
+			"x":-780,
+			"y":2020,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d022ab948cad31e3",
+			"type":"text",
+			"text":"Story",
+			"styleAttributes":{},
+			"x":1160,
+			"y":-2040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"66baae61e0a2e7b2",
+			"type":"text",
+			"text":"The only truly bad ending is the characters not addressing any of the issues between them but sticking together out of a feeling of obligation, being miserable.",
+			"styleAttributes":{},
+			"x":1200,
+			"y":-1960,
+			"width":260,
+			"height":180
+		},
+		{
+			"id":"d5eb7fc73df1e968",
+			"type":"text",
+			"text":"I WON’T END LIKE HER\n\nWhat does the end of the world mean to an artist who spent her life creating for social recognition?\u0003\n\nSkilled artist with nothing to say.\n\n-April",
+			"styleAttributes":{},
+			"x":2040,
+			"y":-1960,
+			"width":260,
+			"height":280
+		},
+		{
+			"id":"68922570cf4354a6",
+			"type":"text",
+			"text":"BEING YOURSELF IS DANGEROUS\n\nHow do you choose between who people need you to be with who you are. Especially if you don’t seem to be good at being yourself?\u0003\n\nGifted mechanic, terrible artist. Trans - but can’t express it - yet.\n\n-June",
+			"styleAttributes":{},
+			"x":2320,
+			"y":-1960,
+			"width":260,
+			"height":340
+		},
+		{
+			"id":"375afc4be3c45b52",
+			"type":"text",
+			"text":"FAMILY MATTERS MOST  \n\nWhat if, in trying to save your family, you are the one who hurt them most?\u0003\u0003  \nLoving dad who would do anything to protect his tribe, except question what that means.  \n\n-Daryl",
+			"styleAttributes":{},
+			"x":1480,
+			"y":-1960,
+			"width":260,
+			"height":280
+		},
+		{
+			"id":"9666f2eb39f89177",
+			"type":"text",
+			"text":"POTENTIAL ISN’T ENOUGH \n\nHow do you love a child you blame for the life you never wanted-pushed to live your dream, and resented for succeeding?  \n\nChild prodigy turned housewife.  \n\n-Mary-Ann",
+			"styleAttributes":{},
+			"x":1760,
+			"y":-1960,
+			"width":260,
+			"height":300
+		},
+		{
+			"id":"a31125fe7f361270",
+			"type":"text",
+			"text":"Religion without Faith",
+			"styleAttributes":{},
+			"x":-780,
+			"y":2100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"649821d928f6ef1c",
+			"type":"text",
+			"text":"Tree roots growing through ceiling",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-1320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c807c990547bebd8",
+			"type":"text",
+			"text":"Accidents, sickness, someone chokes on food",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-1240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9a651d3a97ffaebc",
+			"type":"text",
+			"text":"Runs out of Paint (starts using rations)",
+			"styleAttributes":{},
+			"x":-840,
+			"y":-1240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"67ac1e34c17e5e1b",
+			"type":"text",
+			"text":"**The storm is a day early**",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-1160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c834f24f09d65a50",
+			"type":"text",
+			"text":"June tries to carry a heavy food bucket and drops it. Do you try and scrape it back in? Accept the loss, scold her?",
+			"styleAttributes":{},
+			"x":-840,
+			"y":-1160,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"a0feed149ec2f74b",
+			"type":"text",
+			"text":"Events",
+			"styleAttributes":{},
+			"x":-1160,
+			"y":-1560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"38957ccd05ffcd21",
+			"type":"text",
+			"text":"Hunting ghosts (?)\nNo matter how many books, always more outside\n\nContinuations\n\nEmergency",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-1480,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"1584922057b37837",
+			"type":"text",
+			"text":"Playing hide and seek kid goes where they shouldn’t",
+			"styleAttributes":{},
+			"x":-840,
+			"y":-1480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c35d16af55d4b6b6",
+			"type":"text",
+			"text":"Playing hide and seek; kid “too old”",
+			"styleAttributes":{},
+			"x":-840,
+			"y":-1400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b1002a74d430f23a",
+			"type":"text",
+			"text":"Runs out of paper (starts painting on walls)",
+			"styleAttributes":{},
+			"x":-840,
+			"y":-1320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3577b29cdaac3450",
+			"type":"text",
+			"text":"The Kids talk about what they would have been, had things been different.",
+			"styleAttributes":{},
+			"x":-560,
+			"y":-1480,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"058433a186414683",
+			"type":"text",
+			"text":"Go full religion. Play baroque music preach from the pulpit that is the service stair to the second floor.",
+			"styleAttributes":{},
+			"x":-840,
+			"y":-1020,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"49fa71902537efd9",
+			"type":"text",
+			"text":"He takes April hunting again, she needs to learn\n\nI don’t want to kill it\n\nYou cant afford to be that person if you want to survive with us.\n\nAnd you not surviving with us is not an option.",
+			"styleAttributes":{},
+			"x":-840,
+			"y":-880,
+			"width":260,
+			"height":280
+		},
+		{
+			"id":"7448ba66724fffc5",
+			"type":"text",
+			"text":"Much like Daryl spending loads of food and time on gym maxing, eventually the player notices Mary-Ann “letting herself go”. The player can accept or respect this, but also call it out. Which may lead to her becoming much less effective at everything else. Time and effort spent on looking good, that could be spent on maintenance and frankly - rest.",
+			"styleAttributes":{},
+			"x":-560,
+			"y":-940,
+			"width":260,
+			"height":340
+		},
+		{
+			"id":"e8885cff8befa1b7",
+			"type":"text",
+			"text":"Masturbatory\n\nWhat’s wrong with masturbation? As long as I don’t expect people to ooh and aah at my brilliance. Besides, plenty of women have made good bank with that sort of thing in their bedrooms, so why shouldn’t in my study?\n\nWait, what do you know about women in bedrooms?\n\nWe did have the internet didn’t we?",
+			"styleAttributes":{},
+			"x":0,
+			"y":-1060,
+			"width":260,
+			"height":400
+		},
+		{
+			"id":"f7f09810e99753cb",
+			"type":"text",
+			"text":"Telling June Santa isnt real",
+			"styleAttributes":{},
+			"x":280,
+			"y":-900,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"533c92469780b7f5",
+			"type":"text",
+			"text":"June loses a Tooth",
+			"styleAttributes":{},
+			"x":280,
+			"y":-820,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0a0e12ce48d643c0",
+			"type":"text",
+			"text":"Mary-Ann finds her faith once more or never finds god again but finds comfort in ritual",
+			"styleAttributes":{},
+			"x":280,
+			"y":-740,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"723e287c0c2b287e",
+			"type":"text",
+			"text":"They fight over their interpretations of a book. But not over what’s right or wrong, but rather over who gets the book",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-1080,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"9e808b2dada093e2",
+			"type":"text",
+			"text":"Someone falls into the rising water in the silo\n\nThey swim in standing water",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-920,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"4afd5ea919af9eb6",
+			"type":"text",
+			"text":"april and june play catch and knock over the food table",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-780,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"45623c6d89d9d0c8",
+			"type":"text",
+			"text":"mary-ann breaks apils guitar",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"253f0f60fbde00b9",
+			"type":"text",
+			"text":"June disassembles something",
+			"styleAttributes":{},
+			"x":-1120,
+			"y":-620,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"5da253915011c183",
+			"type":"text",
+			"text":"Already at the bunker?\n\nWatch the sun go down before locking yourself in.\n\nBirds flying low.\n\n  \n\nWaiting for the end? Sundown.",
+			"styleAttributes":{},
+			"x":-560,
+			"y":-1360,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"533b340871aac769",
+			"type":"text",
+			"text":"Rushing to the bunker. Heavy storm to dead of night.",
+			"styleAttributes":{},
+			"x":-560,
+			"y":-1160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"46b9fc42fd967549",
+			"type":"text",
+			"text":"**You’re not going to win any awards with that one**\n\nOkay? Who cares?",
+			"styleAttributes":{},
+			"x":-560,
+			"y":-1080,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"d2734bc25e601a19",
+			"type":"text",
+			"text":"April does the dust blow cave painting, using June as the model\n\nNaturally June is covered head to toe in dust\nYou find her, June laughing April looking ertappt\nHuge mess\n\nArt critic\n-> will notice the implication\nDo you commend the work?\nDo you shut it down?",
+			"styleAttributes":{},
+			"x":-280,
+			"y":-1480,
+			"width":260,
+			"height":360
+		},
+		{
+			"id":"96df3bb6fefac1d3",
+			"type":"text",
+			"text":"**April snaps out of it by telling off Maryann for letting herself go and Mary Ann retorting she’s doing the same thing. But she does so out of a feeing of superiority, and must later uplift ma as well to redeem this.**",
+			"styleAttributes":{},
+			"x":-280,
+			"y":-1100,
+			"width":260,
+			"height":220
+		},
+		{
+			"id":"d8071d760c1bb7cf",
+			"type":"text",
+			"text":"**April goes on a journey to discover other religions**",
+			"styleAttributes":{},
+			"x":-280,
+			"y":-860,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e44cd969a488dac2",
+			"type":"text",
+			"text":"Why not sell the bunker?\n\nA lot of the games weight (actually not a lot, or at least not most, seeing that they will never get the years they lost back), hinges on them coming out of it with nothing, having left their house and everything behind. There are a few ways to attempt to fix this.\n\n  \n\n1 - when the attempt to sell it, the government or relatives of moneybags seize the property.\n\n  \n\n2 - selling it causes the cycle to continue. the only bidder is clearly planning to move his family there. And the characters decide against it because they dont want them to experience the same they do.\n\n  \n\n3 - they seal the bunker when they leave it\n\n  \n\n4 - they move back into the bunker, only coming out occasionally",
+			"styleAttributes":{},
+			"x":0,
+			"y":-1480,
+			"width":540,
+			"height":400
+		},
+		{
+			"id":"a14f0d67f73461cf",
+			"type":"text",
+			"text":"Forgot Junes Birthday",
+			"styleAttributes":{},
+			"x":280,
+			"y":-1060,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"579440b55f9108fb",
+			"type":"text",
+			"text":"(Forgot) Wedding Anniversary",
+			"styleAttributes":{},
+			"x":280,
+			"y":-980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"469f125057d11bb9",
+			"type":"text",
+			"text":"Characters have favourite meals",
+			"styleAttributes":{},
+			"x":1420,
+			"y":620,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"25affef9d667c2b8",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":660,
+			"y":860,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"120783fa6f27fc49",
+			"type":"text",
+			"text":"[I Was a Teenage Exocolonist](https://app.sensortower.com/vgi/game/i-was-a-teenage-exocolonist)",
+			"styleAttributes":{},
+			"x":180,
+			"y":1000,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a69cf00328beff3a",
+			"type":"text",
+			"text":"[Spiritfarer](https://app.sensortower.com/vgi/game/spiritfarer-farewell-edition)",
+			"styleAttributes":{},
+			"x":180,
+			"y":1080,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9958755fb81f0f1f",
+			"type":"text",
+			"text":"Blocks",
+			"styleAttributes":{},
+			"x":2020,
+			"y":1500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"957290679387b8f7",
+			"type":"text",
+			"text":"1. note transfer\n2. note transfer / brief font exp",
+			"styleAttributes":{},
+			"x":2060,
+			"y":1580,
+			"width":480,
+			"height":180
+		},
+		{
+			"id":"f65447d0b5795506",
+			"type":"text",
+			"text":"Creatures",
+			"styleAttributes":{},
+			"x":180,
+			"y":1160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ac8591b6e8e5d92e",
+			"type":"text",
+			"text":"Not keeping track of calendar makes it difficult to remember birthdays",
+			"styleAttributes":{},
+			"x":1700,
+			"y":640,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"e40d77138b8ca439",
+			"type":"text",
+			"text":"Can you train them to do your bidding? (Reward/punishment)",
+			"styleAttributes":{},
+			"x":1700,
+			"y":740,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9f02cfd04a74b260",
+			"type":"text",
+			"text":"Remember / Forget Birthdays etc",
+			"styleAttributes":{},
+			"x":1700,
+			"y":560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"689207a614f627e7",
+			"type":"text",
+			"text":"Shooting range, gun safety (leaving gun lying around)",
+			"styleAttributes":{},
+			"x":1700,
+			"y":820,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"dcc7933c60744547",
+			"type":"text",
+			"text":"Kids find /play with /hurt with gun",
+			"styleAttributes":{},
+			"x":560,
+			"y":-1480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"92603f04b85dcdaf",
+			"type":"text",
+			"text":"Mary-Ann isn’t too happy with June reading about other religions. To her they’re more curiosities rather than “serious religion”",
+			"styleAttributes":{},
+			"x":-280,
+			"y":-780,
+			"width":260,
+			"height":160
 		}
 	],
 	"edges":[
@@ -1002,6 +1713,113 @@
 			"fromNode":"7448ba66724fffc5",
 			"fromSide":"bottom",
 			"toNode":"1ea7221e1bc425f4",
+			"toSide":"right",
+			"color":"1"
+		},
+		{
+			"id":"e3047d6a949f7ec8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01d218d1a34e4db4",
+			"fromSide":"right",
+			"toNode":"85c61ebaf62e6f67",
+			"toSide":"left",
+			"color":"1"
+		},
+		{
+			"id":"de65d8b9346c994e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5e8edeb67954e4ed",
+			"fromSide":"right",
+			"toNode":"e8885cff8befa1b7",
+			"toSide":"left",
+			"toEnd":"none"
+		},
+		{
+			"id":"4dd6fb91a1507367",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"756a73bdb5ee6c68",
+			"fromSide":"left",
+			"toNode":"743ebbb9c2b7f01e",
+			"toSide":"right",
+			"toEnd":"none"
+		},
+		{
+			"id":"8fdc018d878136c5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ac8591b6e8e5d92e",
+			"fromSide":"left",
+			"toNode":"a14f0d67f73461cf",
+			"toSide":"right",
+			"color":"1"
+		},
+		{
+			"id":"fb3bb09ffaaa4651",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ac8591b6e8e5d92e",
+			"fromSide":"left",
+			"toNode":"579440b55f9108fb",
+			"toSide":"right",
+			"color":"1"
+		},
+		{
+			"id":"27d5d07b3dbc1c51",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a31125fe7f361270",
+			"fromSide":"right",
+			"toNode":"0a0e12ce48d643c0",
+			"toSide":"left",
+			"color":"1"
+		},
+		{
+			"id":"128fae34d305f9bc",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e40d77138b8ca439",
+			"fromSide":"left",
+			"toNode":"f65447d0b5795506",
+			"toSide":"right",
+			"toEnd":"none"
+		},
+		{
+			"id":"4289c2357f34f907",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"469f125057d11bb9",
+			"fromSide":"left",
+			"toNode":"a69cf00328beff3a",
+			"toSide":"right"
+		},
+		{
+			"id":"1a791c9ca539f67f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"469f125057d11bb9",
+			"fromSide":"left",
+			"toNode":"120783fa6f27fc49",
+			"toSide":"right"
+		},
+		{
+			"id":"c063d343b6b3d80d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9f02cfd04a74b260",
+			"fromSide":"left",
+			"toNode":"120783fa6f27fc49",
+			"toSide":"right"
+		},
+		{
+			"id":"d247b20fc8203e4c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"689207a614f627e7",
+			"fromSide":"left",
+			"toNode":"dcc7933c60744547",
 			"toSide":"right",
 			"color":"1"
 		}

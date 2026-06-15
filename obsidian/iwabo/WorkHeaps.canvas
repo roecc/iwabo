@@ -1842,6 +1842,56 @@
 			"y":-260,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"847abdd379043612",
+			"type":"text",
+			"text":"CI",
+			"styleAttributes":{},
+			"x":3160,
+			"y":820,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2f35db051d032afd",
+			"type":"text",
+			"text":"Website",
+			"styleAttributes":{},
+			"x":3180,
+			"y":900,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"88ea51f1a18e23bf",
+			"type":"text",
+			"text":"Cardback",
+			"styleAttributes":{},
+			"x":3180,
+			"y":980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c921584a98697a5c",
+			"type":"text",
+			"text":"Fonts/House Style",
+			"styleAttributes":{},
+			"x":3180,
+			"y":1060,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ee95e3ab47331a90",
+			"type":"text",
+			"text":"Fonts/Project Style",
+			"styleAttributes":{},
+			"x":3180,
+			"y":1140,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[

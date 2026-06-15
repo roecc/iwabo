@@ -75,15 +75,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "MBB2607.canvas",
+                "file": "WorkHeaps.canvas",
                 "viewState": {
-                  "x": 2257.526156332042,
-                  "y": 452.1466056192773,
-                  "zoom": -0.7770020767549684
+                  "x": 3215.7841270280533,
+                  "y": 795.8714581855313,
+                  "zoom": -1.1742310222361902
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "MBB2607"
+              "title": "WorkHeaps"
             }
           },
           {
@@ -94,9 +94,9 @@
               "state": {
                 "file": "iNotes/iNotes Ideas.canvas",
                 "viewState": {
-                  "x": -966.0659248964921,
-                  "y": 556.4613437775646,
-                  "zoom": -0.6002047014932793
+                  "x": 26.330697408001633,
+                  "y": 181.5149121079441,
+                  "zoom": -1.468974433809616
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -157,8 +157,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -252,8 +251,11 @@
   },
   "active": "c48524ffe1041ed1",
   "lastOpenFiles": [
-    "2026-03-07.md",
+    "Untitled 1.base",
     "iNotes/iNotes Ideas.canvas",
+    "WorkHeaps.canvas",
+    "MBB2607.canvas",
+    "2026-03-07.md",
     "OutGame/References/Movies/The Hidden.md",
     "OutGame/References/Movies/10 Cloverfield Lane.md",
     "OutGame/References/Games/The Last of Us.md",
@@ -261,11 +263,9 @@
     "iNotes/dhwaiodhiowa.md",
     "OutGame/References/Movies",
     "Themes/Useful or Happy.md",
-    "MBB2607.canvas",
     "iNotes",
     "A MAZE demo.canvas",
     "Videos/Consumption.canvas",
-    "WorkHeaps.canvas",
     "Videos",
     "2026-03-31.md",
     "2026-03-27.md",
@@ -305,7 +305,6 @@
     "OutGame/Research/InkPot/Documentation/TagCreated.png",
     "OutGame/Research/InkPot/Documentation/StorySetNGet.png",
     "OutGame/Research/InkPot/Documentation",
-    "OutGame/Research/InkPot",
-    "Img/Art/Untitled.base"
+    "OutGame/Research/InkPot"
   ]
 }
