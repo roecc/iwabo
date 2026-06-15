@@ -94,9 +94,9 @@
               "state": {
                 "file": "iNotes/iNotes Ideas.canvas",
                 "viewState": {
-                  "x": -980.8268548040079,
-                  "y": 678.5773218264105,
-                  "zoom": -0.1909442640047229
+                  "x": -966.0659248964921,
+                  "y": 556.4613437775646,
+                  "zoom": -0.6002047014932793
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -157,7 +157,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
