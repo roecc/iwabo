@@ -3301,6 +3301,16 @@
 			"y":920,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"338cdc1d232d60c0",
+			"type":"text",
+			"text":"misc",
+			"styleAttributes":{},
+			"x":-1380,
+			"y":1020,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
