@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"c46c97800626c106","type":"group","x":1460,"y":-1980,"width":1140,"height":380,"label":"Character Overviews"},
+		{"id":"c46c97800626c106","type":"group","x":2520,"y":-2000,"width":1140,"height":380,"label":"Character Overviews"},
 		{
 			"id":"9f8b28e6eae10159",
 			"type":"text",
@@ -164,7 +164,7 @@
 		{
 			"id":"6e89f2a5bf8c3e73",
 			"type":"text",
-			"text":"Themes / Questions / Philosophy",
+			"text":"Themes / Questions / Philosophy / Concepts",
 			"styleAttributes":{},
 			"x":-820,
 			"y":320,
@@ -932,32 +932,12 @@
 			"height":60
 		},
 		{
-			"id":"47c0c5e6ad288dd2",
-			"type":"text",
-			"text":"Harold, while straight, used moneybags’ being gay to his advantage. He gave up some part of his masculinity to save his son.\n\nWhy did he die in a care facility?\n\nWhere are your siblings? \n\nWhy only us?",
-			"styleAttributes":{},
-			"x":1200,
-			"y":-1480,
-			"width":260,
-			"height":300
-		},
-		{
 			"id":"dcc7933c60744547",
 			"type":"text",
 			"text":"Kids find /play with /hurt with gun",
 			"styleAttributes":{},
 			"x":560,
 			"y":-1480,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"2d77445876732e82",
-			"type":"text",
-			"text":"Backstory",
-			"styleAttributes":{},
-			"x":1160,
-			"y":-1560,
 			"width":260,
 			"height":60
 		},
@@ -1068,146 +1048,6 @@
 			"styleAttributes":{},
 			"x":-780,
 			"y":2100,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"dc0cd58059e95cfc",
-			"type":"text",
-			"text":"Organisational",
-			"styleAttributes":{},
-			"x":1200,
-			"y":1100,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"bb45b603d8ee9268",
-			"type":"text",
-			"text":"Make Canvas for Trait notes overview",
-			"styleAttributes":{},
-			"x":1240,
-			"y":1180,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"a9b59c6aebf7bbe2",
-			"type":"text",
-			"text":"Make \"#currentTrait\" tag for doc?",
-			"styleAttributes":{},
-			"x":1240,
-			"y":1260,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"9958755fb81f0f1f",
-			"type":"text",
-			"text":"Blocks",
-			"styleAttributes":{},
-			"x":2020,
-			"y":1500,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"957290679387b8f7",
-			"type":"text",
-			"text":"1. note transfer\n2. note transfer / brief font exp",
-			"styleAttributes":{},
-			"x":2060,
-			"y":1580,
-			"width":480,
-			"height":180
-		},
-		{
-			"id":"743ebbb9c2b7f01e",
-			"type":"text",
-			"text":"Everything bad happens at once\n\nWar breaks out\nDomestic terrorism\nStreet fights\nPandemic\nNuclear war threat\nNuclear testing\nDoomsday prognosis\nNatural disaster",
-			"styleAttributes":{},
-			"x":1480,
-			"y":-1480,
-			"width":260,
-			"height":280
-		},
-		{
-			"id":"375afc4be3c45b52",
-			"type":"text",
-			"text":"FAMILY MATTERS MOST  \n\nWhat if, in trying to save your family, you are the one who hurt them most?\u0003\u0003  \nLoving dad who would do anything to protect his tribe, except question what that means.  \n\n-Daryl",
-			"styleAttributes":{},
-			"x":1480,
-			"y":-1960,
-			"width":260,
-			"height":280
-		},
-		{
-			"id":"66baae61e0a2e7b2",
-			"type":"text",
-			"text":"The only truly bad ending is the characters not addressing any of the issues between them but sticking together out of a feeling of obligation, being miserable.",
-			"styleAttributes":{},
-			"x":1200,
-			"y":-1960,
-			"width":260,
-			"height":180
-		},
-		{
-			"id":"9666f2eb39f89177",
-			"type":"text",
-			"text":"POTENTIAL ISN’T ENOUGH \n\nHow do you love a child you blame for the life you never wanted-pushed to live your dream, and resented for succeeding?  \n\nChild prodigy turned housewife.  \n\n-Mary-Ann",
-			"styleAttributes":{},
-			"x":1760,
-			"y":-1960,
-			"width":260,
-			"height":300
-		},
-		{
-			"id":"d5eb7fc73df1e968",
-			"type":"text",
-			"text":"I WON’T END LIKE HER\n\nWhat does the end of the world mean to an artist who spent her life creating for social recognition?\u0003\n\nSkilled artist with nothing to say.\n\n-April",
-			"styleAttributes":{},
-			"x":2040,
-			"y":-1960,
-			"width":260,
-			"height":280
-		},
-		{
-			"id":"8662a864d6608b89",
-			"type":"text",
-			"text":"Choices",
-			"styleAttributes":{},
-			"x":2220,
-			"y":-1560,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"756a73bdb5ee6c68",
-			"type":"text",
-			"text":"Give money to charity?\nHelp out brother?",
-			"styleAttributes":{},
-			"x":2280,
-			"y":-1480,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"68922570cf4354a6",
-			"type":"text",
-			"text":"BEING YOURSELF IS DANGEROUS\n\nHow do you choose between who people need you to be with who you are. Especially if you don’t seem to be good at being yourself?\u0003\n\nGifted mechanic, terrible artist. Trans - but can’t express it - yet.\n\n-June",
-			"styleAttributes":{},
-			"x":2320,
-			"y":-1960,
-			"width":260,
-			"height":340
-		},
-		{
-			"id":"d022ab948cad31e3",
-			"type":"text",
-			"text":"Story",
-			"styleAttributes":{},
-			"x":1160,
-			"y":-2040,
 			"width":260,
 			"height":60
 		},
@@ -1390,16 +1230,6 @@
 			"y":-220,
 			"width":260,
 			"height":60
-		},
-		{
-			"id":"628d7bbfa29099e2",
-			"type":"text",
-			"text":"Keep it simple \nMajor developments on specific days",
-			"styleAttributes":{},
-			"x":1240,
-			"y":1340,
-			"width":260,
-			"height":100
 		},
 		{
 			"id":"9d08b8d29ac05199",
@@ -1702,36 +1532,6 @@
 			"height":60
 		},
 		{
-			"id":"a1e4d050ade8486b",
-			"type":"text",
-			"text":"Modern Notes",
-			"styleAttributes":{},
-			"x":860,
-			"y":1100,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"0314927151f297d8",
-			"type":"text",
-			"text":"Should do Floorplan only Layout test for Bunker (been overinvesting on detail)",
-			"styleAttributes":{},
-			"x":900,
-			"y":1180,
-			"width":260,
-			"height":80
-		},
-		{
-			"id":"e5cf5ec1e66946e7",
-			"type":"text",
-			"text":"Would the player encouraging June to grow up early soften the blow of \"unrealistic\" / \"precoscious\" child writing?",
-			"styleAttributes":{},
-			"x":900,
-			"y":1280,
-			"width":260,
-			"height":120
-		},
-		{
 			"id":"a3ccba9d1a09902c",
 			"type":"text",
 			"text":"Anarchism military proof\nMilitias: same as insurgency math",
@@ -1750,16 +1550,6 @@
 			"y":1000,
 			"width":260,
 			"height":100
-		},
-		{
-			"id":"39920baed5ffe8a0",
-			"type":"text",
-			"text":"Tell them the Truth",
-			"styleAttributes":{},
-			"x":2620,
-			"y":-1920,
-			"width":260,
-			"height":60
 		},
 		{
 			"id":"22fc427be58a20f2",
@@ -1942,96 +1732,6 @@
 			"height":300
 		},
 		{
-			"id":"d45727b69a842f54",
-			"type":"text",
-			"text":"Executive disfunction, wasting time on self-realisation",
-			"styleAttributes":{},
-			"x":880,
-			"y":1760,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"f1d7c3186f62fa2e",
-			"type":"text",
-			"text":"Loser to others, but living own best life?",
-			"styleAttributes":{},
-			"x":880,
-			"y":1840,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"9adadcdecb518160",
-			"type":"text",
-			"text":"Trapped by Expectation of self /perfectionism",
-			"styleAttributes":{},
-			"x":880,
-			"y":1680,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"633ee44958e2d5af",
-			"type":"text",
-			"text":"Self-doubt and Over-confidence",
-			"styleAttributes":{},
-			"x":800,
-			"y":1940,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"3a7b12e68f95b365",
-			"type":"text",
-			"text":"Arrogance",
-			"styleAttributes":{},
-			"x":800,
-			"y":2020,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"989c69f7ac284dcb",
-			"type":"text",
-			"text":"Sanctemoneous / holier than though",
-			"styleAttributes":{},
-			"x":820,
-			"y":2080,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"9233597ba23263b6",
-			"type":"text",
-			"text":"Change",
-			"styleAttributes":{},
-			"x":840,
-			"y":2180,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"e7048da51aece8df",
-			"type":"text",
-			"text":"Frustration with self",
-			"styleAttributes":{},
-			"x":780,
-			"y":2280,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"adb81f688b624cb5",
-			"type":"text",
-			"text":"Change impossible in moment?\nPerhaps possible over time.",
-			"styleAttributes":{},
-			"x":820,
-			"y":2380,
-			"width":260,
-			"height":80
-		},
-		{
 			"id":"816904d10e6a6a9c",
 			"type":"text",
 			"text":"Change not inherently good,\nchange required for betterment",
@@ -2181,16 +1881,6 @@
 			"y":700,
 			"width":260,
 			"height":80
-		},
-		{
-			"id":"25affef9d667c2b8",
-			"type":"text",
-			"text":"",
-			"styleAttributes":{},
-			"x":1160,
-			"y":820,
-			"width":260,
-			"height":60
 		},
 		{
 			"id":"9b9a4ef591a31b18",
@@ -2603,16 +2293,6 @@
 			"height":60
 		},
 		{
-			"id":"78fb6399104e7ca9",
-			"type":"text",
-			"text":"**the hiker is a bit of a creep  \n**",
-			"styleAttributes":{},
-			"x":1200,
-			"y":-1760,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"4497115c36f1b689",
 			"type":"text",
 			"text":"about the kind of men who will respond with nothing but “that guy needs to be murdered” when someone tells them they were assaulted.",
@@ -2699,46 +2379,6 @@
 			"styleAttributes":{},
 			"x":520,
 			"y":980,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"3bfbbba1eaccaed0",
-			"type":"text",
-			"text":"Writing",
-			"styleAttributes":{},
-			"x":480,
-			"y":1420,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c43572837bfa7024",
-			"type":"text",
-			"text":"**The talking pillow** \n->Breaking Bad",
-			"styleAttributes":{},
-			"x":520,
-			"y":1500,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"3873d782d9722f7b",
-			"type":"text",
-			"text":"Ahhh.. wire (Jesse/walt) dynamic",
-			"styleAttributes":{},
-			"x":520,
-			"y":1580,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"4c73aab26acee150",
-			"type":"text",
-			"text":"**Are you going to work today?**\nSkylar, there’s rot",
-			"styleAttributes":{},
-			"x":520,
-			"y":1660,
 			"width":260,
 			"height":60
 		},
@@ -2983,16 +2623,6 @@
 			"height":60
 		},
 		{
-			"id":"b4c9e68298b58104",
-			"type":"text",
-			"text":"**bombraid prelude**\n\nNuclear family\nMorale bombing\nIneffective but manly",
-			"styleAttributes":{},
-			"x":1200,
-			"y":-1160,
-			"width":260,
-			"height":140
-		},
-		{
 			"id":"b7e0d6532dd18ac7",
 			"type":"text",
 			"text":"House of dynamite movie",
@@ -3073,36 +2703,6 @@
 			"height":140
 		},
 		{
-			"id":"38560f26a90fc4f1",
-			"type":"text",
-			"text":"Ufff",
-			"styleAttributes":{},
-			"x":2880,
-			"y":1120,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c21772c711c77d29",
-			"type":"text",
-			"text":"Re-Set PC? Lots of Hassle but should do eventually anyway?",
-			"styleAttributes":{},
-			"x":2920,
-			"y":1200,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"d8ec9838fd65863d",
-			"type":"text",
-			"text":"Check Steam Lib Compatibility w/ Linux",
-			"styleAttributes":{},
-			"x":2920,
-			"y":1280,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"4a31f4a8fc6e9cf4",
 			"type":"text",
 			"text":"Scripture as control, morale and \n\nCheck the most popular pro big",
@@ -3153,16 +2753,6 @@
 			"height":120
 		},
 		{
-			"id":"14a2a280e97a90f3",
-			"type":"text",
-			"text":"Mechanic",
-			"styleAttributes":{},
-			"x":1800,
-			"y":-1600,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"35b2cd96e0f1cda6",
 			"type":"text",
 			"text":"About truths taken for granted",
@@ -3199,16 +2789,6 @@
 			"styleAttributes":{},
 			"x":1680,
 			"y":1440,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"dcc204e510dcccba",
-			"type":"text",
-			"text":"This is a family, not a democracy -> avatar 3",
-			"styleAttributes":{},
-			"x":520,
-			"y":1740,
 			"width":260,
 			"height":60
 		},
@@ -3309,6 +2889,1696 @@
 			"styleAttributes":{},
 			"x":-1380,
 			"y":1020,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e772b60af100abb4",
+			"type":"text",
+			"text":"**The more you care, the more your are “in” it, the more proof you should reaquire and actively seek out**",
+			"styleAttributes":{},
+			"x":-780,
+			"y":3880,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"24a2485d8a81a8c6",
+			"type":"text",
+			"text":"Meaning from randomness\nGod of coincidences\nGod of the Gaps",
+			"styleAttributes":{},
+			"x":-500,
+			"y":3920,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"11a90d963dfa58a6",
+			"type":"text",
+			"text":"ethics/philosophy as self help",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4020,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b3832a03df20ba22",
+			"type":"text",
+			"text":"applied philosophy",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f9b56e647b1a90f8",
+			"type":"text",
+			"text":"Prosecution complex",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"92932efcc6db68c1",
+			"type":"text",
+			"text":"Seeing world (and relations) only in terms of violence and dominance",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4120,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"50f89b2a7addf406",
+			"type":"text",
+			"text":"high control groups",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4260,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"47eaa216718c04ab",
+			"type":"text",
+			"text":"cults",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4180,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"004e5a8c1eec819b",
+			"type":"text",
+			"text":"Major part of cult is language and bespoke words to create in group out group and isolate",
+			"styleAttributes":{},
+			"x":-2380,
+			"y":820,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"f2064146f8fb1311",
+			"type":"text",
+			"text":"Toothpaste tube effect",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f4a52e9a55bdcae9",
+			"type":"text",
+			"text":"We need to retvrn",
+			"styleAttributes":{},
+			"x":-2100,
+			"y":720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"424687318def5f18",
+			"type":"text",
+			"text":"Caveman",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0bc8df3983535183",
+			"type":"text",
+			"text":"Lascaux",
+			"styleAttributes":{},
+			"x":180,
+			"y":4120,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2f3fa6b9b70e5a86",
+			"type":"text",
+			"text":"[$300 - Soul Coughing](https://youtu.be/ef3ghTSXOxo?si=CeqRFClHebtw3_tG)",
+			"styleAttributes":{},
+			"x":180,
+			"y":4200,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f6d5ac68adbdb6b5",
+			"type":"text",
+			"text":"We stretch the story using gameplay\n\nBut here, similar to games like pathologic or teenage colonist the gameplay is not tacked on or unnecessary bloat, it directly supports the core pillar(story) while making it easier to fulfill player expectations for game length.\n\nThe goal is to not have the story work despite or in parallel to the gameplay, but to be significantly enhanced by it. To weave them together so tightly one wouldn’t work without the other.",
+			"styleAttributes":{},
+			"x":-2100,
+			"y":800,
+			"width":260,
+			"height":480
+		},
+		{
+			"id":"a86f53e26bd9c66e",
+			"type":"text",
+			"text":"**atom and eve**",
+			"styleAttributes":{},
+			"x":-2380,
+			"y":940,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1fbfd5271c58f33b",
+			"type":"text",
+			"text":"eve of atom",
+			"styleAttributes":{},
+			"x":-2380,
+			"y":1020,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6d337dc9daf0b45a",
+			"type":"text",
+			"text":"Patterns - conspiracy",
+			"styleAttributes":{},
+			"x":840,
+			"y":-180,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0c3f065444e6df19",
+			"type":"text",
+			"text":"Pattern seeking\nReligion\nConspiracy\nConservatives",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4340,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"cd98dd0ec1c4e1bf",
+			"type":"text",
+			"text":"Based on their opinion of you they bring you a pillow/blanket or fresh coffee when you collapse\n\nOr sit next to you, poking your face to wake you\n\nOr June tries to make coffee and makes a mess instead",
+			"styleAttributes":{},
+			"x":2240,
+			"y":1140,
+			"width":260,
+			"height":260
+		},
+		{
+			"id":"429963a827885c6a",
+			"type":"text",
+			"text":"Further player expression by allowing them to set the literal expression? (LBP style?)\n\n(what would that look like?)\nCould be set from dialogue options",
+			"styleAttributes":{},
+			"x":2520,
+			"y":1220,
+			"width":260,
+			"height":180
+		},
+		{
+			"id":"9abbe07391e3bf4a",
+			"type":"text",
+			"text":"Writing Style",
+			"styleAttributes":{},
+			"x":260,
+			"y":-2060,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"22482fd1a94adbf7",
+			"type":"text",
+			"text":"Breaking Elysium",
+			"styleAttributes":{},
+			"x":280,
+			"y":-1980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d32a3bf35e8656eb",
+			"type":"text",
+			"text":"Narration is or can be interpreted by Daryl as god?\n\nIf enough faith Daryl has conversations with narration?\n\nDoes Daryl speak and the player answer or the player speak and narration answer?",
+			"styleAttributes":{},
+			"x":280,
+			"y":-1900,
+			"width":260,
+			"height":220
+		},
+		{
+			"id":"d29b7fc290c8add3",
+			"type":"text",
+			"text":"Story told from April's POV, in her Book?",
+			"styleAttributes":{},
+			"x":560,
+			"y":-1980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d1964a02791dd36b",
+			"type":"text",
+			"text":"**Omniscient narrator**",
+			"styleAttributes":{},
+			"x":560,
+			"y":-1900,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7b2fa8a9b0eb1012",
+			"type":"text",
+			"text":"Maintain state influence repair difficulty",
+			"styleAttributes":{},
+			"x":2520,
+			"y":1140,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"38560f26a90fc4f1",
+			"type":"text",
+			"text":"Ufff",
+			"styleAttributes":{},
+			"x":2860,
+			"y":1520,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c21772c711c77d29",
+			"type":"text",
+			"text":"Re-Set PC? Lots of Hassle but should do eventually anyway?",
+			"styleAttributes":{},
+			"x":2900,
+			"y":1600,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d8ec9838fd65863d",
+			"type":"text",
+			"text":"Check Steam Lib Compatibility w/ Linux",
+			"styleAttributes":{},
+			"x":2900,
+			"y":1680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"180bf1840db0140c",
+			"type":"text",
+			"text":"Reference powder and vi for June and april",
+			"styleAttributes":{},
+			"x":180,
+			"y":4280,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"994408595b81410d",
+			"type":"text",
+			"text":"Arcane",
+			"styleAttributes":{},
+			"x":180,
+			"y":4360,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7cb9b1315e1d3934",
+			"type":"text",
+			"text":"The Las of Us",
+			"styleAttributes":{},
+			"x":520,
+			"y":1280,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c43572837bfa7024",
+			"type":"text",
+			"text":"**The talking pillow** \n->Breaking Bad",
+			"styleAttributes":{},
+			"x":560,
+			"y":1720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3873d782d9722f7b",
+			"type":"text",
+			"text":"Ahhh.. wire (Jesse/walt) dynamic",
+			"styleAttributes":{},
+			"x":560,
+			"y":1800,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3bfbbba1eaccaed0",
+			"type":"text",
+			"text":"Writing",
+			"styleAttributes":{},
+			"x":520,
+			"y":1640,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4c73aab26acee150",
+			"type":"text",
+			"text":"**Are you going to work today?**\nSkylar, there’s rot",
+			"styleAttributes":{},
+			"x":560,
+			"y":1880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"dcc204e510dcccba",
+			"type":"text",
+			"text":"This is a family, not a democracy -> avatar 3",
+			"styleAttributes":{},
+			"x":560,
+			"y":1960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"090363a105689e52",
+			"type":"text",
+			"text":"The Longest Journey",
+			"styleAttributes":{},
+			"x":520,
+			"y":1360,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"efe0b8c61ac14629",
+			"type":"text",
+			"text":"Gallery Scene",
+			"styleAttributes":{},
+			"x":580,
+			"y":1440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a1e4d050ade8486b",
+			"type":"text",
+			"text":"Modern Notes",
+			"styleAttributes":{},
+			"x":960,
+			"y":1160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"dc0cd58059e95cfc",
+			"type":"text",
+			"text":"Organisational",
+			"styleAttributes":{},
+			"x":1300,
+			"y":1160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"bb45b603d8ee9268",
+			"type":"text",
+			"text":"Make Canvas for Trait notes overview",
+			"styleAttributes":{},
+			"x":1340,
+			"y":1240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a9b59c6aebf7bbe2",
+			"type":"text",
+			"text":"Make \"#currentTrait\" tag for doc?",
+			"styleAttributes":{},
+			"x":1340,
+			"y":1320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"628d7bbfa29099e2",
+			"type":"text",
+			"text":"Keep it simple \nMajor developments on specific days",
+			"styleAttributes":{},
+			"x":1340,
+			"y":1400,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"0314927151f297d8",
+			"type":"text",
+			"text":"Should do Floorplan only Layout test for Bunker (been overinvesting on detail)",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1240,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"e5cf5ec1e66946e7",
+			"type":"text",
+			"text":"Would the player encouraging June to grow up early soften the blow of \"unrealistic\" / \"precoscious\" child writing?",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1340,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"9adadcdecb518160",
+			"type":"text",
+			"text":"Trapped by Expectation of self /perfectionism",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d45727b69a842f54",
+			"type":"text",
+			"text":"Executive disfunction, wasting time on self-realisation",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f1d7c3186f62fa2e",
+			"type":"text",
+			"text":"Loser to others, but living own best life?",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1640,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"633ee44958e2d5af",
+			"type":"text",
+			"text":"Self-doubt and Over-confidence",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3a7b12e68f95b365",
+			"type":"text",
+			"text":"Arrogance",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1800,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"989c69f7ac284dcb",
+			"type":"text",
+			"text":"Sanctemoneous / holier than though",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9233597ba23263b6",
+			"type":"text",
+			"text":"Change",
+			"styleAttributes":{},
+			"x":1000,
+			"y":1960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e7048da51aece8df",
+			"type":"text",
+			"text":"Frustration with self",
+			"styleAttributes":{},
+			"x":1000,
+			"y":2040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"adb81f688b624cb5",
+			"type":"text",
+			"text":"Change impossible in moment?\nPerhaps possible over time.",
+			"styleAttributes":{},
+			"x":1000,
+			"y":2120,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"a27cfd1069e970df",
+			"type":"text",
+			"text":"Leviathanism",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7f5b68656138bc53",
+			"type":"text",
+			"text":"When programming, take big ideas and break them down into small ones.\neasy to lose track of the big picture this way.",
+			"styleAttributes":{},
+			"x":840,
+			"y":-1340,
+			"width":260,
+			"height":160
+		},
+		{
+			"id":"36207e19022cacf9",
+			"type":"text",
+			"text":"First impressions / Demo notes",
+			"styleAttributes":{},
+			"x":-3400,
+			"y":-500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"035e184c1c02752c",
+			"type":"text",
+			"text":"sequence where I put a personal want of a character versus a need of the system",
+			"styleAttributes":{},
+			"x":-3360,
+			"y":-420,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"9cf01bc191d3bda2",
+			"type":"text",
+			"text":"Video Ideas",
+			"styleAttributes":{},
+			"x":-3900,
+			"y":-560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"02c8c493ecaa90a8",
+			"type":"text",
+			"text":"First Impresssions:\nHello World in Kunei",
+			"styleAttributes":{},
+			"x":-3860,
+			"y":-480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4fc2a617920a6fcf",
+			"type":"text",
+			"text":"this channel is a sketchbook",
+			"styleAttributes":{},
+			"x":-3860,
+			"y":-400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9d37b90c4f3d84fb",
+			"type":"text",
+			"text":"an assumption that really kind of feels wrong, but is then justified post",
+			"styleAttributes":{},
+			"x":-3360,
+			"y":-300,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"a1ae725be627cff3",
+			"type":"text",
+			"text":"howcase the character dialogues. what they talk about and how all of it is, in a sense, a metaphor for something greater",
+			"styleAttributes":{},
+			"x":-3360,
+			"y":-200,
+			"width":260,
+			"height":160
+		},
+		{
+			"id":"16c045f453c75e04",
+			"type":"text",
+			"text":"petting fish",
+			"styleAttributes":{},
+			"x":840,
+			"y":-1160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f40ed3101ee1e2b2",
+			"type":"text",
+			"text":"reinforce and teach that fear for players, how foresight and paranoia can help you maintain this status quo",
+			"styleAttributes":{},
+			"x":-3380,
+			"y":0,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"a57c4eabea6e3e19",
+			"type":"text",
+			"text":"Harm without Evil",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"89a423d40398eaf6",
+			"type":"text",
+			"text":"lluminate the same idea from different angles",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4480,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2876b8fa09197c0b",
+			"type":"text",
+			"text":"Jose Ortega",
+			"styleAttributes":{},
+			"x":180,
+			"y":4440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"5bfbbdcb0f546417",
+			"type":"text",
+			"text":"Perspectivism",
+			"styleAttributes":{},
+			"x":220,
+			"y":4520,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b60fa3e558bf554f",
+			"type":"text",
+			"text":"Plato",
+			"styleAttributes":{},
+			"x":180,
+			"y":4620,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c3275efbfed1643e",
+			"type":"text",
+			"text":"Cave",
+			"styleAttributes":{},
+			"x":240,
+			"y":4700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"de395380594f54c2",
+			"type":"text",
+			"text":"exposed to different ideas and thoughts",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"cd3d5b20d9ecb8c2",
+			"type":"text",
+			"text":"focus, on making these small, sometimes funny, sometimes character driven interactions, surpris the player, but don't overdo it",
+			"styleAttributes":{},
+			"x":560,
+			"y":-1820,
+			"width":260,
+			"height":160
+		},
+		{
+			"id":"76a37b33f2ad0e68",
+			"type":"text",
+			"text":"June playing guitar\nDaryl closing door",
+			"styleAttributes":{},
+			"x":840,
+			"y":-1080,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3d122a8342ba6566",
+			"type":"text",
+			"text":"the drawing on the fridge",
+			"styleAttributes":{},
+			"x":840,
+			"y":-1000,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4e2c1a948cb70ef9",
+			"type":"text",
+			"text":"Capitalism\nyou need to keep the engine running, without the engine there is no life. There are no alternatives, to even suggest it is dangerous. I dont have time for you I need to keep feeding the engine I'm doing it for you. Because I must.",
+			"styleAttributes":{},
+			"x":-220,
+			"y":3600,
+			"width":260,
+			"height":240
+		},
+		{
+			"id":"cfb8d79f57492597",
+			"type":"text",
+			"text":"Fear of Death",
+			"styleAttributes":{},
+			"x":-220,
+			"y":3860,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3a54135f777a95a6",
+			"type":"text",
+			"text":"Of Loss",
+			"styleAttributes":{},
+			"x":-220,
+			"y":3940,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4b2364dccf1d5cdb",
+			"type":"text",
+			"text":"Patriachism",
+			"styleAttributes":{},
+			"x":-220,
+			"y":4020,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1ef1126998be1d85",
+			"type":"text",
+			"text":"Focus on the feel of it",
+			"styleAttributes":{},
+			"x":-3400,
+			"y":140,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ec4db62f7ffc1c73",
+			"type":"text",
+			"text":"dont worry about the first video being long working well for other channels, if you have one thats good, put it on a second channel and see if the algorythm favours it.",
+			"styleAttributes":{},
+			"x":-4300,
+			"y":-420,
+			"width":260,
+			"height":180
+		},
+		{
+			"id":"19af614fa328b2d8",
+			"type":"text",
+			"text":"Questions of the Day on Discord",
+			"styleAttributes":{},
+			"x":-4300,
+			"y":-160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ed42e15d48266954",
+			"type":"text",
+			"text":"Interesting Ideas on Bluesky",
+			"styleAttributes":{},
+			"x":-4360,
+			"y":-60,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fa904dfb7ca074db",
+			"type":"text",
+			"text":"don't spend too much time on trying to prepare the road before you've traveled it.",
+			"styleAttributes":{},
+			"x":1340,
+			"y":1520,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"d92df16817883637",
+			"type":"text",
+			"text":"put in a cut scene with those static poses. Ideally put in a character to kind of really roughly show what that would look and feel like, and then experiment with the way that's narrated. Have a narrator, have no narrator, etc",
+			"styleAttributes":{},
+			"x":1340,
+			"y":1640,
+			"width":260,
+			"height":220
+		},
+		{
+			"id":"d006146a899167b2",
+			"type":"text",
+			"text":"Prison, oppression, revolution as an aesthetic",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4560,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"910b18c4078222dc",
+			"type":"text",
+			"text":"**Art vs/as propaganda**\nI’m personally undecided if I think you can’t do that.\n\nBut I’m pretty adamant that you can’t while or specifically trying to seem important or like it’s more than just style",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4640,
+			"width":260,
+			"height":220
+		},
+		{
+			"id":"4a49e095d563afa5",
+			"type":"text",
+			"text":"Nausicaa",
+			"styleAttributes":{},
+			"x":180,
+			"y":4780,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e1df694f3c43a694",
+			"type":"text",
+			"text":"[hiding the Ohm](https://www.youtube.com/watch?v=sjbBrHsOqqY)",
+			"styleAttributes":{},
+			"x":240,
+			"y":4860,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"91a189892ab5f67d",
+			"type":"text",
+			"text":"[Arcane was always Centrist](https://www.youtube.com/watch?v=qAgP6V--qYM)",
+			"styleAttributes":{},
+			"x":180,
+			"y":4940,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8aa1d8b33eb575fe",
+			"type":"text",
+			"text":"Camera",
+			"styleAttributes":{},
+			"x":-140,
+			"y":4880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"70fbf39b39dfa79e",
+			"type":"text",
+			"text":"Development",
+			"styleAttributes":{},
+			"x":-140,
+			"y":4960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3a0e3abd3ec40008",
+			"type":"text",
+			"text":"Light and Shadow",
+			"styleAttributes":{},
+			"x":-140,
+			"y":5040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e402ee5461073e51",
+			"type":"text",
+			"text":"Trinity",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4880,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"17c94dd8095f5216",
+			"type":"text",
+			"text":"Religion /Conservative /Conspiracy overlap",
+			"styleAttributes":{},
+			"x":-780,
+			"y":4960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"5a0f02c188e0d4a3",
+			"type":"text",
+			"text":"Religion to art as\nWar to Technology",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"96fcac48846c6382",
+			"type":"text",
+			"text":"Change required for Betterment",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5120,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e35a9ca6ffd3a2f2",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":140,
+			"y":5300,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a537ffad97d6f8f2",
+			"type":"text",
+			"text":"Vander as wisened old guy instead of broken revolutionary",
+			"styleAttributes":{},
+			"x":240,
+			"y":5020,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4a4fbaebbad62b28",
+			"type":"text",
+			"text":"**Kinds of skills?\nTrait Types**\nLegislative\nJudicative\nExecutive",
+			"styleAttributes":{},
+			"x":860,
+			"y":-80,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"76bf9060c088d2f6",
+			"type":"text",
+			"text":"Bunker as Prison",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5200,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"10f511732e433d1e",
+			"type":"text",
+			"text":"Purpose of executive?\nOf prisons?\nTo punish or help or reform?",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5280,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"db0f5a5e9ee78936",
+			"type":"text",
+			"text":"Panopticon",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"23896715dae86c7c",
+			"type":"text",
+			"text":"**Rehabilitative Justice**\nRestorative Justice\nTransformative Justice",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5480,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"898ddf903b799d16",
+			"type":"text",
+			"text":"Abolitionism\nUtilitarianism\nEthics of Care",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5480,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"38adf398e26280b4",
+			"type":"text",
+			"text":"**Retributivism**",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1c8e2083578e130d",
+			"type":"text",
+			"text":"**Deterrence theory** and **Punitive Justice**",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f93fe9597ba6466a",
+			"type":"text",
+			"text":"[Jeremy Bentham](https://en.wikipedia.org/wiki/Jeremy_Bentham)",
+			"styleAttributes":{},
+			"x":180,
+			"y":5100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d14f805306883020",
+			"type":"text",
+			"text":"[Social Constructivism](https://en.wikipedia.org/wiki/Social_constructivism)",
+			"styleAttributes":{},
+			"x":60,
+			"y":5440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8a87475efcbc1df1",
+			"type":"text",
+			"text":"Social Constructivism",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5600,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d7be4eb429a7ef4b",
+			"type":"text",
+			"text":"Social Expectations / Corset",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c1fb917f56edfb13",
+			"type":"text",
+			"text":"Social Darwinism",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5600,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"82b8e6a1dac11c08",
+			"type":"text",
+			"text":"https://en.wikipedia.org/wiki/Social_Darwinism",
+			"styleAttributes":{},
+			"x":20,
+			"y":5580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fb5bf47e975846fc",
+			"type":"text",
+			"text":"Conspiracy Theorists",
+			"styleAttributes":{},
+			"x":180,
+			"y":6160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"55ca5e305a27e326",
+			"type":"text",
+			"text":"New Age Spirituality",
+			"styleAttributes":{},
+			"x":180,
+			"y":6240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"43947459f08cfe50",
+			"type":"text",
+			"text":"Muskrats",
+			"styleAttributes":{},
+			"x":180,
+			"y":6320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b1d54ddcf5e7043e",
+			"type":"text",
+			"text":"Scientology",
+			"styleAttributes":{},
+			"x":180,
+			"y":6400,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"83643e4147320c3c",
+			"type":"text",
+			"text":"Tech Bros",
+			"styleAttributes":{},
+			"x":180,
+			"y":6080,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ee0afbc274837ca3",
+			"type":"text",
+			"text":"Flat Earthers",
+			"styleAttributes":{},
+			"x":180,
+			"y":6000,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b2204c7c5aff2b3e",
+			"type":"text",
+			"text":"Ancient Aliens",
+			"styleAttributes":{},
+			"x":180,
+			"y":5920,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"8e01b04ec805bf60",
+			"type":"text",
+			"text":"love science for the aesthetic\nscience larpers",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5840,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"feab9f12c1319fed",
+			"type":"text",
+			"text":"Scientism",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5680,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7c31bc65b64abdfd",
+			"type":"text",
+			"text":"Pseudoscience",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5760,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ce15c042e3b71aad",
+			"type":"text",
+			"text":"Nuclear Family",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4640,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"26f8f3088aa12c73",
+			"type":"text",
+			"text":"Mutually Assured Destruction",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"ca29404243eaf535",
+			"type":"text",
+			"text":"Apokalypsis",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5040,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e1f5f59b858d40c6",
+			"type":"text",
+			"text":"Original Sin",
+			"styleAttributes":{},
+			"x":-500,
+			"y":4960,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7191ea452ce1913f",
+			"type":"text",
+			"text":"Revelation",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5120,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9591a97f9f6945c4",
+			"type":"text",
+			"text":"Good and Evil",
+			"styleAttributes":{},
+			"x":-500,
+			"y":5200,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"66bc3f8e4d6ed0b1",
+			"type":"text",
+			"text":"Nietzsche",
+			"styleAttributes":{},
+			"x":180,
+			"y":5820,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"fc9eee82a493dd09",
+			"type":"text",
+			"text":"Bible",
+			"styleAttributes":{},
+			"x":180,
+			"y":5740,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"22efa92c48290d5f",
+			"type":"text",
+			"text":"Is it more important a killer suffers than for the system not to create or even retrieve them?",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5760,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"ef8cc878d1c29f52",
+			"type":"text",
+			"text":"April does political art without consideration for context etc\n\nJune copies it",
+			"styleAttributes":{},
+			"x":840,
+			"y":-920,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"68922570cf4354a6",
+			"type":"text",
+			"text":"BEING YOURSELF IS DANGEROUS\n\nHow do you choose between who people need you to be with who you are. Especially if you don’t seem to be good at being yourself?\u0003\n\nGifted mechanic, terrible artist. Trans - but can’t express it - yet.\n\n-June",
+			"styleAttributes":{},
+			"x":3380,
+			"y":-1980,
+			"width":260,
+			"height":340
+		},
+		{
+			"id":"375afc4be3c45b52",
+			"type":"text",
+			"text":"FAMILY MATTERS MOST  \n\nWhat if, in trying to save your family, you are the one who hurt them most?\u0003\u0003  \nLoving dad who would do anything to protect his tribe, except question what that means.  \n\n-Daryl",
+			"styleAttributes":{},
+			"x":2540,
+			"y":-1980,
+			"width":260,
+			"height":280
+		},
+		{
+			"id":"9666f2eb39f89177",
+			"type":"text",
+			"text":"POTENTIAL ISN’T ENOUGH \n\nHow do you love a child you blame for the life you never wanted-pushed to live your dream, and resented for succeeding?  \n\nChild prodigy turned housewife.  \n\n-Mary-Ann",
+			"styleAttributes":{},
+			"x":2820,
+			"y":-1980,
+			"width":260,
+			"height":300
+		},
+		{
+			"id":"d5eb7fc73df1e968",
+			"type":"text",
+			"text":"I WON’T END LIKE HER\n\nWhat does the end of the world mean to an artist who spent her life creating for social recognition?\u0003\n\nSkilled artist with nothing to say.\n\n-April",
+			"styleAttributes":{},
+			"x":3100,
+			"y":-1980,
+			"width":260,
+			"height":280
+		},
+		{
+			"id":"743ebbb9c2b7f01e",
+			"type":"text",
+			"text":"Everything bad happens at once\n\nWar breaks out\nDomestic terrorism\nStreet fights\nPandemic\nNuclear war threat\nNuclear testing\nDoomsday prognosis\nNatural disaster",
+			"styleAttributes":{},
+			"x":2540,
+			"y":-1500,
+			"width":260,
+			"height":280
+		},
+		{
+			"id":"8662a864d6608b89",
+			"type":"text",
+			"text":"Choices",
+			"styleAttributes":{},
+			"x":3280,
+			"y":-1580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"14a2a280e97a90f3",
+			"type":"text",
+			"text":"Mechanic",
+			"styleAttributes":{},
+			"x":2860,
+			"y":-1620,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"756a73bdb5ee6c68",
+			"type":"text",
+			"text":"Give money to charity?\nHelp out brother?",
+			"styleAttributes":{},
+			"x":3340,
+			"y":-1500,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"39920baed5ffe8a0",
+			"type":"text",
+			"text":"Tell them the Truth",
+			"styleAttributes":{},
+			"x":3680,
+			"y":-1940,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"55241d51a327fe76",
+			"type":"text",
+			"text":"Marketing",
+			"styleAttributes":{},
+			"x":4080,
+			"y":-1700,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0f008f59139402fd",
+			"type":"text",
+			"text":"Lego movie approach\n\nMake something that people actually want to see irrespective of what you’re trying to sell.\n\n that is thematically or in target audience closely related",
+			"styleAttributes":{},
+			"x":4120,
+			"y":-1620,
+			"width":260,
+			"height":240
+		},
+		{
+			"id":"d022ab948cad31e3",
+			"type":"text",
+			"text":"Story",
+			"styleAttributes":{},
+			"x":2220,
+			"y":-2060,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2d77445876732e82",
+			"type":"text",
+			"text":"Backstory",
+			"styleAttributes":{},
+			"x":2220,
+			"y":-1580,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"66baae61e0a2e7b2",
+			"type":"text",
+			"text":"The only truly bad ending is the characters not addressing any of the issues between them but sticking together out of a feeling of obligation, being miserable.",
+			"styleAttributes":{},
+			"x":2260,
+			"y":-1980,
+			"width":260,
+			"height":180
+		},
+		{
+			"id":"47c0c5e6ad288dd2",
+			"type":"text",
+			"text":"Harold, while straight, used moneybags’ being gay to his advantage. He gave up some part of his masculinity to save his son.\n\nWhy did he die in a care facility?\n\nWhere are your siblings? \n\nWhy only us?",
+			"styleAttributes":{},
+			"x":2260,
+			"y":-1500,
+			"width":260,
+			"height":300
+		},
+		{
+			"id":"78fb6399104e7ca9",
+			"type":"text",
+			"text":"**the hiker is a bit of a creep  \n**",
+			"styleAttributes":{},
+			"x":2260,
+			"y":-1780,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b4c9e68298b58104",
+			"type":"text",
+			"text":"**bombraid prelude**\n\nNuclear family\nMorale bombing\nIneffective but manly",
+			"styleAttributes":{},
+			"x":2260,
+			"y":-1180,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"c6eeb1af6c9cdf33",
+			"type":"text",
+			"text":"April is an artist first, not a politician, so how can she be blamed for her work being misunderstood (even by herself, or even stemming from misunderstanding in the first place)?\n\nEven if politics was her bread and butter she would do political work first, not read political philosophy all day?\n\nSo is that the space for academics in society?\n\nHow then, as an artist or non-researcher can you minimise the risk of misinformation etc? Is the solution to say nothing?\n\nThat feels wrong but even if it wasn’t doesn’t seem like a realistically implementable solution",
+			"styleAttributes":{},
+			"x":1120,
+			"y":-1480,
+			"width":280,
+			"height":620
+		},
+		{
+			"id":"ac61b0ff6f5854db",
+			"type":"text",
+			"text":"Freedom of Speech",
+			"styleAttributes":{},
+			"x":-220,
+			"y":4100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a0bc40550056709f",
+			"type":"text",
+			"text":"how informed do you need to be to be allowed (or morally alright) to speak?",
+			"styleAttributes":{},
+			"x":-220,
+			"y":4180,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"d46f47a3b5cadf63",
+			"type":"text",
+			"text":"Mary Ann doing things when the player doesn’t\nif you dont hit kid, she will. otherwise gives you shit for hitting.\n\nperhaps not a great idea\n\nNot only does it double the work, it diminishes player input on what the story is about\n\nPerhaps they don’t want to engage with that idea\n\nThis could be a good way to “opt in” to those conversations\n\nOn the other hand, if it only comes up if the player does it, the player is auto cast into a position on a conversation they might genuinely want to have?",
+			"styleAttributes":{},
+			"x":1960,
+			"y":1380,
+			"width":260,
+			"height":540
+		},
+		{
+			"id":"9958755fb81f0f1f",
+			"type":"text",
+			"text":"Blocks",
+			"styleAttributes":{},
+			"x":2100,
+			"y":2420,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"957290679387b8f7",
+			"type":"text",
+			"text":"1. note transfer\n2. note transfer / brief font exp",
+			"styleAttributes":{},
+			"x":2140,
+			"y":2500,
+			"width":480,
+			"height":80
+		},
+		{
+			"id":"8ff59e6092cf275f",
+			"type":"text",
+			"text":"1. note transfer",
+			"styleAttributes":{},
+			"x":2140,
+			"y":2600,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"9d605ce98a8a6a61",
+			"type":"text",
+			"text":"Add a trigger warning of heavy topics (but where?)",
+			"styleAttributes":{},
+			"x":-700,
+			"y":220,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"26ee993a7ffc1231",
+			"type":"text",
+			"text":"Make unavailable options still visible just greyed out?",
+			"styleAttributes":{},
+			"x":-420,
+			"y":300,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3bacef637a0c6def",
+			"type":"text",
+			"text":"art as trigger / prompt",
+			"styleAttributes":{},
+			"x":-3860,
+			"y":-320,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"7d8b45ac709a97b4",
+			"type":"text",
+			"text":"Woke/bad writing in pop media\n\nEmpty progressivism \nEven arcane",
+			"styleAttributes":{},
+			"x":-3860,
+			"y":-240,
+			"width":260,
+			"height":120
+		},
+		{
+			"id":"ee249c78024c864a",
+			"type":"text",
+			"text":"Can you kill out of love?\nOr is all killing hateful?",
+			"styleAttributes":{},
+			"x":-220,
+			"y":4300,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"7f304468f85370ee",
+			"type":"text",
+			"text":"Needs more context \n“Love not hate” lessons in anti revolutionary propaganda",
+			"styleAttributes":{},
+			"x":-220,
+			"y":4400,
+			"width":260,
+			"height":100
+		},
+		{
+			"id":"0d5d16ed44d8d821",
+			"type":"text",
+			"text":"Have April be the one who observes the fish spend their whole lives in a tank?\n\nUse it in a song?",
+			"styleAttributes":{},
+			"x":840,
+			"y":-780,
+			"width":260,
+			"height":140
+		},
+		{
+			"id":"5af0aab2cbc4f369",
+			"type":"text",
+			"text":"Fish out of Water",
+			"styleAttributes":{},
+			"x":1120,
+			"y":-840,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"21343e2d786da3db",
+			"type":"text",
+			"text":"The aquaponics being a metaphor for the bunker is just another example for how things just click into one another",
+			"styleAttributes":{},
+			"x":-2380,
+			"y":1100,
+			"width":260,
+			"height":160
+		},
+		{
+			"id":"8f84d97d0f2b4180",
+			"type":"text",
+			"text":"Apple",
+			"styleAttributes":{},
+			"x":-780,
+			"y":5900,
 			"width":260,
 			"height":60
 		}
@@ -3607,6 +4877,233 @@
 			"fromSide":"left",
 			"toNode":"50c1bc16c7dc07e3",
 			"toSide":"right"
+		},
+		{
+			"id":"2d6b9da0b2c5fcbe",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"47eaa216718c04ab",
+			"fromSide":"left",
+			"toNode":"004e5a8c1eec819b",
+			"toSide":"right"
+		},
+		{
+			"id":"1c773e845eb91d4e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"50f89b2a7addf406",
+			"fromSide":"left",
+			"toNode":"004e5a8c1eec819b",
+			"toSide":"right"
+		},
+		{
+			"id":"4991731758e50878",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"89a423d40398eaf6",
+			"fromSide":"right",
+			"toNode":"5bfbbdcb0f546417",
+			"toSide":"left"
+		},
+		{
+			"id":"6610e731f033379a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"424687318def5f18",
+			"fromSide":"right",
+			"toNode":"c3275efbfed1643e",
+			"toSide":"left"
+		},
+		{
+			"id":"c68db852956c1901",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"89a423d40398eaf6",
+			"fromSide":"bottom",
+			"toNode":"8aa1d8b33eb575fe",
+			"toSide":"top"
+		},
+		{
+			"id":"1b1c2484a20fc21a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"de395380594f54c2",
+			"fromSide":"right",
+			"toNode":"8aa1d8b33eb575fe",
+			"toSide":"left"
+		},
+		{
+			"id":"d2e9f795a1fbf628",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"de395380594f54c2",
+			"fromSide":"right",
+			"toNode":"70fbf39b39dfa79e",
+			"toSide":"left"
+		},
+		{
+			"id":"8a5cf230d8311f3c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4a4fbaebbad62b28",
+			"fromSide":"left",
+			"toNode":"e402ee5461073e51",
+			"toSide":"right"
+		},
+		{
+			"id":"c2781d61d489a523",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"f93fe9597ba6466a",
+			"fromSide":"left",
+			"toNode":"db0f5a5e9ee78936",
+			"toSide":"right"
+		},
+		{
+			"id":"f56ca719859db79a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"feab9f12c1319fed",
+			"fromSide":"right",
+			"toNode":"43947459f08cfe50",
+			"toSide":"left"
+		},
+		{
+			"id":"b130f03d3d990217",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"feab9f12c1319fed",
+			"fromSide":"right",
+			"toNode":"b1d54ddcf5e7043e",
+			"toSide":"left"
+		},
+		{
+			"id":"9e3d965772ceb0d1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7c31bc65b64abdfd",
+			"fromSide":"right",
+			"toNode":"55ca5e305a27e326",
+			"toSide":"left"
+		},
+		{
+			"id":"d243ff898452e6d4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"38adf398e26280b4",
+			"fromSide":"right",
+			"toNode":"26f8f3088aa12c73",
+			"toSide":"right"
+		},
+		{
+			"id":"8ba236ea1de7a810",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9591a97f9f6945c4",
+			"fromSide":"right",
+			"toNode":"66bc3f8e4d6ed0b1",
+			"toSide":"left"
+		},
+		{
+			"id":"827b7a94ef106fb1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e1f5f59b858d40c6",
+			"fromSide":"right",
+			"toNode":"fc9eee82a493dd09",
+			"toSide":"left"
+		},
+		{
+			"id":"fc12a9d58d78dec1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ca29404243eaf535",
+			"fromSide":"right",
+			"toNode":"fc9eee82a493dd09",
+			"toSide":"left"
+		},
+		{
+			"id":"6594e3636ae45b5f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7191ea452ce1913f",
+			"fromSide":"right",
+			"toNode":"fc9eee82a493dd09",
+			"toSide":"left"
+		},
+		{
+			"id":"23c63b38e4099623",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7191ea452ce1913f",
+			"fromSide":"right",
+			"toNode":"c3275efbfed1643e",
+			"toSide":"left"
+		},
+		{
+			"id":"f87ba045b362468b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ca29404243eaf535",
+			"fromSide":"right",
+			"toNode":"c3275efbfed1643e",
+			"toSide":"left"
+		},
+		{
+			"id":"c23fdbb970f4f521",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"424687318def5f18",
+			"fromSide":"right",
+			"toNode":"0bc8df3983535183",
+			"toSide":"left"
+		},
+		{
+			"id":"774acddeff96df0b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7191ea452ce1913f",
+			"fromSide":"right",
+			"toNode":"f2064146f8fb1311",
+			"toSide":"right"
+		},
+		{
+			"id":"cefb51574d541060",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e1f5f59b858d40c6",
+			"fromSide":"right",
+			"toNode":"f2064146f8fb1311",
+			"toSide":"right"
+		},
+		{
+			"id":"d384e418ea234928",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ee249c78024c864a",
+			"fromSide":"right",
+			"toNode":"7f304468f85370ee",
+			"toSide":"right"
+		},
+		{
+			"id":"3b93cc866d1cf432",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5af0aab2cbc4f369",
+			"fromSide":"left",
+			"toNode":"0d5d16ed44d8d821",
+			"toSide":"right"
+		},
+		{
+			"id":"55319975145d4faa",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8f84d97d0f2b4180",
+			"fromSide":"right",
+			"toNode":"e1f5f59b858d40c6",
+			"toSide":"bottom"
 		}
 	],
 	"metadata":{
