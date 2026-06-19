@@ -4095,12 +4095,12 @@
 		{
 			"id":"8ff59e6092cf275f",
 			"type":"text",
-			"text":"1. note transfer",
+			"text":"1. note transfer\n2. note transfer\n3. note transfer (iwabo notes done)",
 			"styleAttributes":{},
 			"x":2140,
 			"y":2600,
-			"width":260,
-			"height":60
+			"width":480,
+			"height":100
 		},
 		{
 			"id":"1b4d2146ff4efb9a",
