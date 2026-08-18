@@ -94,8 +94,8 @@
               "state": {
                 "file": "iNotes/iNotes Ideas.canvas",
                 "viewState": {
-                  "x": 310,
-                  "y": 1643.5,
+                  "x": 3074,
+                  "y": 656,
                   "zoom": 0
                 }
               },
@@ -124,7 +124,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
