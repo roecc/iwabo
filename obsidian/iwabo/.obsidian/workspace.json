@@ -106,12 +106,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNotes/261025.md",
+                "file": "OutGame/References/Essays/Moby Dick and Gnosticism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "261025"
+              "title": "Moby Dick and Gnosticism"
             }
           }
         ],
@@ -264,8 +264,12 @@
   },
   "active": "895687bb0dd3dae6",
   "lastOpenFiles": [
-    "iNotes/dhwaiodhiowa.md",
+    "OutGame/References/Books/Moby Dick.md",
+    "OutGame/References/Essays/Moby Dick and Gnosticism.md",
+    "OutGame/References/Essays",
+    "OutGame/References/Games/The longest Journey.md",
     "iNotes/261025.md",
+    "iNotes/dhwaiodhiowa.md",
     "Core/Plot/Plot_Board.canvas",
     "Characters/TheFamily/Mary-Ann.md",
     "Characters/TheFamily/June.md",
@@ -296,16 +300,13 @@
     "A MAZE demo.canvas",
     "2026-03-31.md",
     "DEMOTYPE_TUTORIAL Aquaponics.md",
-    "DEMOTYPE_TUTORIAL Generator.md",
     "ds_wilting_garden_combined.canvas",
     "dt_d1.canvas",
     "dt_d2.canvas",
     "MBB2607.canvas",
     "Untitled.base",
-    "Untitled.md",
     "WEB.canvas",
     "WorkHeaps.canvas",
-    "OutGame/References/Art/Saturn devouring his Son.md",
     "Img/Aquapnonics - E1.png",
     "Untitled 1.base",
     "OutGame/References/Movies",
@@ -318,7 +319,6 @@
     "OutGame/Research/InkPot/Documentation/VariableExistence.png",
     "OutGame/Research/InkPot/Documentation/UIEventGraph.png",
     "OutGame/Research/InkPot/Documentation/TagsGTFunctions.png",
-    "OutGame/Research/InkPot/Documentation/TagsAndLists.png",
-    "OutGame/Research/InkPot/Documentation"
+    "OutGame/Research/InkPot/Documentation/TagsAndLists.png"
   ]
 }
