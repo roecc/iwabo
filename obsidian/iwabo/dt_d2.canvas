@@ -48,5 +48,9 @@
 		{"id":"6a275a823196c27e","fromNode":"9eac1ad43ceccc00","fromSide":"right","toNode":"5d814a2042c62e5c","toSide":"left","color":"6"},
 		{"id":"3da30062787ec32d","fromNode":"8efb07cb6d3e2865","fromSide":"bottom","toNode":"33782bf15cfdbc9c","toSide":"top"},
 		{"id":"542251d92f0aef7e","fromNode":"d94c2dbc08e0a0e7","fromSide":"bottom","toNode":"897cfc0e070ace42","toSide":"top"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
