@@ -90,21 +90,32 @@
             "id": "c48524ffe1041ed1",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Core/Plot/Plot_Board.canvas",
-                "viewState": {
-                  "x": 347.8325280523235,
-                  "y": 438.05282479872676,
-                  "zoom": -0.9022101743022604
-                }
+                "file": "iNotes/dhwaiodhiowa.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Plot_Board"
+              "icon": "lucide-file",
+              "title": "dhwaiodhiowa"
+            }
+          },
+          {
+            "id": "895687bb0dd3dae6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "iNotes/261025.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "261025"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -251,13 +262,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c48524ffe1041ed1",
+  "active": "895687bb0dd3dae6",
   "lastOpenFiles": [
+    "iNotes/dhwaiodhiowa.md",
+    "iNotes/261025.md",
+    "Core/Plot/Plot_Board.canvas",
     "Characters/TheFamily/Mary-Ann.md",
     "Characters/TheFamily/June.md",
     "Characters/TheFamily/Daryl.md",
     "Characters/TheFamily/April.md",
-    "Core/Plot/Plot_Board.canvas",
     "Core/It would all be Over.md",
     "Demotype/Architecture/Architecture.canvas",
     "Demotype/Scenes/This one goes on the Fridge.md",
@@ -280,7 +293,6 @@
     "Tone/Cozy.md",
     "iNotes/iNotes Ideas.canvas",
     "Core/Plot",
-    "iNotes/dhwaiodhiowa.md",
     "A MAZE demo.canvas",
     "2026-03-31.md",
     "DEMOTYPE_TUTORIAL Aquaponics.md",
@@ -296,7 +308,6 @@
     "OutGame/References/Art/Saturn devouring his Son.md",
     "Img/Aquapnonics - E1.png",
     "Untitled 1.base",
-    "2026-03-07.md",
     "OutGame/References/Movies",
     "iNotes",
     "Videos",
