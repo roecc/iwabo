@@ -106,12 +106,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OutGame/References/Essays/Moby Dick and Gnosticism.md",
+                "file": "Demotype/Scenes/Scratch/The Idiot Box.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Moby Dick and Gnosticism"
+              "title": "The Idiot Box"
             }
           }
         ],
@@ -264,8 +264,10 @@
   },
   "active": "895687bb0dd3dae6",
   "lastOpenFiles": [
-    "OutGame/References/Books/Moby Dick.md",
     "OutGame/References/Essays/Moby Dick and Gnosticism.md",
+    "Demotype/Scenes/Scratch/The Idiot Box.md",
+    "Demotype/Scenes/Scratch",
+    "OutGame/References/Books/Moby Dick.md",
     "OutGame/References/Essays",
     "OutGame/References/Games/The longest Journey.md",
     "iNotes/261025.md",
@@ -299,7 +301,6 @@
     "Core/Plot",
     "A MAZE demo.canvas",
     "2026-03-31.md",
-    "DEMOTYPE_TUTORIAL Aquaponics.md",
     "ds_wilting_garden_combined.canvas",
     "dt_d1.canvas",
     "dt_d2.canvas",
@@ -315,7 +316,6 @@
     "Img/Art/Rubens - Cronus.png",
     "Demotype/Mechanics/Trait System/Untitled.base",
     "OutGame/Research/Untitled 1.base",
-    "OutGame/Research/Untitled.base",
     "OutGame/Research/InkPot/Documentation/VariableExistence.png",
     "OutGame/Research/InkPot/Documentation/UIEventGraph.png",
     "OutGame/Research/InkPot/Documentation/TagsGTFunctions.png",
